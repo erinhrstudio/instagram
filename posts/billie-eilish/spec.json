@@ -4,12 +4,17 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.jpeg",
    "kicker": "BILLIE EILISH · LA VOCE",
    "title": "BILLIE",
    "title2": "EILISH",
    "subtitle": "La voce registrata in una cameretta",
-   "footer": "HOME RECORDING · MIX"
+   "footer": "HOME RECORDING · MIX",
+   "focus": [
+    0.5,
+    0.3
+   ],
+   "zoom": 1.1
   },
   {
    "type": "band",

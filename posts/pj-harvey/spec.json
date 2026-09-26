@@ -4,12 +4,17 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.jpeg",
    "kicker": "PJ HARVEY · LA VOCE",
    "title": "PJ",
    "title2": "HARVEY",
    "subtitle": "Rid of Me e la dinamica senza rete",
-   "footer": "HOME RECORDING · MIX"
+   "footer": "HOME RECORDING · MIX",
+   "focus": [
+    0.48,
+    0.26
+   ],
+   "zoom": 1.15
   },
   {
    "type": "band",

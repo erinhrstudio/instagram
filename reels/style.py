@@ -172,8 +172,8 @@ class Canvas:
         yy = np.linspace(0, 1, H, dtype=np.float32)[:, None, None]
         grad = np.clip((yy - fade_from) / (1 - fade_from), 0, 1) ** 1.2
         a = a * (1 - 0.92 * grad) + np.array(INK, np.float32) * 0.92 * grad
-        top_grad = np.clip((0.12 - yy) / 0.12, 0, 1)  # velo in alto per l'intestazione
-        a = a * (1 - 0.6 * top_grad) + np.array(INK, np.float32) * 0.6 * top_grad
+        top_grad = np.clip((0.16 - yy) / 0.16, 0, 1) ** 0.8  # velo in alto per l'intestazione
+        a = a * (1 - 0.85 * top_grad) + np.array(INK, np.float32) * 0.85 * top_grad
         a += np.random.default_rng(1).normal(0, 5, (H, W, 1)).astype(np.float32)
         self.img = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
         self.d = ImageDraw.Draw(self.img)

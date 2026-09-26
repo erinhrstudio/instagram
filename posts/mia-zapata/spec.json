@@ -4,12 +4,17 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.jpeg",
    "kicker": "THE GITS · LA VOCE",
    "title": "MIA",
    "title2": "ZAPATA",
    "subtitle": "Una voce blues dentro il punk di Seattle",
-   "footer": "HOME RECORDING · MIX"
+   "footer": "HOME RECORDING · MIX",
+   "focus": [
+    0.52,
+    0.33
+   ],
+   "zoom": 1.1
   },
   {
    "type": "band",

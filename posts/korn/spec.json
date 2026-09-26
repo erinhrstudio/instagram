@@ -4,12 +4,17 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.jpeg",
    "kicker": "KORN · LA VOCE",
    "title": "JONATHAN",
    "title2": "DAVIS",
    "subtitle": "Come si mixa una voce nu metal",
-   "footer": "HOME RECORDING · MIX"
+   "footer": "HOME RECORDING · MIX",
+   "focus": [
+    0.52,
+    0.22
+   ],
+   "zoom": 1.15
   },
   {
    "type": "band",

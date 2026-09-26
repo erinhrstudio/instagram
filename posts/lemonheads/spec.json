@@ -4,12 +4,17 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.webp",
    "kicker": "THE LEMONHEADS · LA VOCE",
    "title": "EVAN",
    "title2": "DANDO",
    "subtitle": "La voce di It's a Shame About Ray",
-   "footer": "HOME RECORDING · MIX"
+   "footer": "HOME RECORDING · MIX",
+   "focus": [
+    0.6,
+    0.2
+   ],
+   "zoom": 1.2
   },
   {
    "type": "band",

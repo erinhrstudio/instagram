@@ -4,12 +4,17 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.jpeg",
    "kicker": "K'S CHOICE · LA VOCE",
    "title": "SAM",
    "title2": "BETTENS",
    "subtitle": "La voce ruvida di Not an Addict",
-   "footer": "HOME RECORDING · MIX"
+   "footer": "HOME RECORDING · MIX",
+   "focus": [
+    0.45,
+    0.3
+   ],
+   "zoom": 1.25
   },
   {
    "type": "band",

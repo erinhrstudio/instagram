@@ -4,12 +4,17 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.webp",
    "kicker": "CONVERGE · LA VOCE",
    "title": "JACOB",
    "title2": "BANNON",
    "subtitle": "Come si mixa un urlo in Jane Doe",
-   "footer": "HOME RECORDING · MIX"
+   "footer": "HOME RECORDING · MIX",
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "zoom": 1.0
   },
   {
    "type": "band",

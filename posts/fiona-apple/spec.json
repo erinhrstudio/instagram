@@ -4,12 +4,17 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.webp",
    "kicker": "FIONA APPLE · LA VOCE",
    "title": "FIONA",
    "title2": "APPLE",
    "subtitle": "Un album intero registrato in casa",
-   "footer": "HOME RECORDING · MIX"
+   "footer": "HOME RECORDING · MIX",
+   "focus": [
+    0.57,
+    0.34
+   ],
+   "zoom": 1.1
   },
   {
    "type": "band",
