@@ -1,0 +1,147 @@
+{
+ "music": "The Strokes — Last Nite",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "THE STROKES · LA VOCE",
+   "title": "JULIAN",
+   "title2": "CASABLANCAS",
+   "subtitle": "Come si mixa la voce di Is This It",
+   "footer": "HOME RECORDING · MIX"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SUONO CHE VOLEVA",
+   "statement": [
+    "SPORCO,",
+    "MA NON TROPPO."
+   ],
+   "footer": "IS THIS IT · 2001"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — LA CATENA ORIGINALE",
+   "statement": [
+    "AT4033A",
+    "+ AVALON 737"
+   ],
+   "body": [
+    "In Is This It la voce è distorta",
+    "e compressa dall'inizio alla fine.",
+    "Gordon Raphael la registrava con un",
+    "Audio-Technica AT4033A nel preampli",
+    "valvolare Avalon VT-737, spinto fino",
+    "a sporcarla. A volte serviva un'ora",
+    "solo per trovare il timbro."
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL TRUCCO DEI DEMO",
+   "statement": [
+    "LA VOCE IN UN",
+    "AMPLI DA 20 CM"
+   ],
+   "body": [
+    "Nei demo Julian cantava dentro",
+    "un piccolo ampli Peavey, ripreso",
+    "con un Neumann TLM103.",
+    "Nel disco però ne è rimasto pochissimo."
+   ],
+   "footer": "PROVALO CON UN AMPLI DA CHITARRA"
+  },
+  {
+   "type": "eq",
+   "kicker": "04 — RIFALLO A CASA",
+   "title": "EQ E SATURAZIONE",
+   "lowcut": 300,
+   "highcut": 5000,
+   "boost": [
+    1500,
+    3
+   ],
+   "items": [
+    [
+     "Passa-alto",
+     "Taglia sotto i 200-300 Hz"
+    ],
+    [
+     "Passa-basso",
+     "Taglia sopra i 4-6 kHz: effetto telefono"
+    ],
+    [
+     "Distorsione in parallelo",
+     "Su un bus, miscelata al 20-40%"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — RIFALLO A CASA",
+   "title": "COMPRESSIONE",
+   "items": [
+    [
+     "Rapporto",
+     "Deciso: da 4:1 a 8:1"
+    ],
+    [
+     "Tempi",
+     "Attacco 1-5 ms, rilascio 50-100 ms"
+    ],
+    [
+     "Riduzione",
+     "6-10 dB: la voce resta sempre davanti"
+    ],
+    [
+     "Spazio",
+     "Niente riverbero, al massimo uno slapback"
+    ]
+   ],
+   "footer": "LA VOCE NON DEVE MAI MUOVERSI"
+  },
+  {
+   "type": "list",
+   "kicker": "06 — GRATIS",
+   "title": "I PLUGIN",
+   "items": [
+    [
+     "EQ",
+     "TDR Nova"
+    ],
+    [
+     "Saturazione",
+     "Softube Saturation Knob"
+    ],
+    [
+     "Compressore",
+     "Klanghelm DC1A"
+    ],
+    [
+     "Performance",
+     "Canta vicino al microfono, quasi parlato"
+    ]
+   ],
+   "footer": "TUTTI GRATUITI PER WINDOWS E MAC"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "VUOI IL PRIMA/DOPO?",
+    "SCRIVI \"VOCE\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "size": 80
+  }
+ ],
+ "caption": "Julian Casablancas non urla. Eppure la sua voce \"sporca, ma non troppo\" ha definito il rock dei primi anni 2000 🎙️\n\nIn Is This It, Gordon Raphael registrava la voce con un Audio-Technica AT4033A nel preampli valvolare Avalon VT-737, spinto fino a sporcarla. Nei demo Julian cantava perfino dentro un piccolo ampli Peavey.\n\nNelle slide trovi la catena per rifarla nel tuo home studio con plugin gratuiti: EQ passa-banda, distorsione in parallelo e compressione decisa.\n\nScrivi \"VOCE\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#thestrokes #juliancasablancas #homerecording #mixing #vocalmixing #produzionemusicale #indierock #homestudio"
+}

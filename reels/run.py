@@ -9,6 +9,7 @@ import argparse, json, os, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from reels.captions import with_brand_tags
 from reels.render import EPISODES, render
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -41,7 +42,7 @@ def main():
     OUT.mkdir(exist_ok=True)
     video = OUT / f"{ep['id']}.mp4"
     render(ep["id"], video)
-    (OUT / f"{ep['id']}.txt").write_text(ep["caption"], encoding="utf-8")
+    (OUT / f"{ep['id']}.txt").write_text(with_brand_tags(ep["caption"]), encoding="utf-8")
     print(f"Generato {video} ({video.stat().st_size // 1024} KB)")
 
     if not a.publish:
@@ -53,7 +54,7 @@ def main():
         print("Manca INSTAGRAM_TOKEN: aggiungilo nei secrets del repository.", file=sys.stderr)
         return 1
     from reels.publish import publish_reel
-    res = publish_reel(video, ep["caption"], token)
+    res = publish_reel(video, with_brand_tags(ep["caption"]), token)
     state.append({"id": ep["id"], "media_id": res["media_id"],
                   "published_at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
     STATE.parent.mkdir(exist_ok=True)

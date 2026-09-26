@@ -10,12 +10,17 @@ from reels.style import Canvas, font, TEXT, MUTED, LINE, PINK, PINK_SOFT, INK
 W, H, M = 1080, 1350, 90
 N = 7
 OUT = sys.argv[1]
+FOTO = sys.argv[2] if len(sys.argv) > 2 else None  # foto del cantante (qualsiasi formato)
+FOCUS = tuple(float(v) for v in sys.argv[3].split(",")) if len(sys.argv) > 3 else (0.5, 0.35)
 os.makedirs(OUT, exist_ok=True)
 BRAND = "ERIN · HOME RECORDING STUDIO"
 
 
+BG = {2: "sale-dolce", 3: "fascia", 4: "scende", 5: "pieno", 6: "pieno", 7: "sale"}
+
+
 def page(i, seed, glow=(0.85, 0.9)):
-    c = Canvas(W, H, seed, glow)
+    c = Canvas(W, H, seed, glow, bg=BG.get(i))
     c.header(BRAND, f"{i:02d} / {N:02d}")
     return c
 
@@ -46,16 +51,29 @@ def waveform(c, x0, x1, ymid, amp, seed, squash=1.0, color=PINK, width=1.6, step
 slides = []
 
 # 01 — copertina
-c = page(1, 11, glow=(0.2, 0.75))
-c.kicker(M, 200, "THE STROKES · LA VOCE")
-c.text((M - 6, 250), "JULIAN", font("display", 250), fill=TEXT)
-c.text((M - 6, 470), "CASABLANCAS", font("display", 172), fill=PINK)
-waveform(c, M, W - M, 800, 90, 3, squash=0.6, color=PINK_SOFT, width=2, step=8)
-c.paragraph(M, 930, ["La voce “rotta” che ha rimesso", "in piedi il rock dei primi 2000."],
-            font("serif", 50, 400), fill=TEXT, leading=1.25)
-c.line([(M, H - 120), (W - M, H - 120)])
-c.text((M, H - 92), "HOME RECORDING · STORIA", font("sans", 20, 500), fill=MUTED, tracking=2)
-c.text((W - M, H - 92), "SCORRI  →", font("sans", 20, 700), fill=PINK_SOFT, anchor="ra", tracking=3)
+if FOTO:
+    c = Canvas(W, H, 11)
+    c.portrait(FOTO, focus=FOCUS, fade_from=0.42)
+    c.header(BRAND, f"01 / {N:02d}")
+    c.kicker(M, 800, "THE STROKES · LA VOCE")
+    c.text((M - 6, 840), "JULIAN", font("display", 190), fill=TEXT)
+    c.text((M - 6, 1005), "CASABLANCAS", font("display", 150), fill=PINK)
+    c.paragraph(M, 1170, ["La voce “rotta” che ha rimesso in piedi il rock dei 2000."],
+                font("serif", 34, 400), fill=TEXT)
+    c.line([(M, H - 120), (W - M, H - 120)])
+    c.text((M, H - 92), "HOME RECORDING · STORIA", font("sans", 20, 500), fill=MUTED, tracking=2)
+    c.text((W - M, H - 92), "SCORRI  →", font("sans", 20, 700), fill=PINK_SOFT, anchor="ra", tracking=3)
+else:
+    c = page(1, 11, glow=(0.2, 0.75))
+    c.kicker(M, 200, "THE STROKES · LA VOCE")
+    c.text((M - 6, 250), "JULIAN", font("display", 250), fill=TEXT)
+    c.text((M - 6, 470), "CASABLANCAS", font("display", 172), fill=PINK)
+    waveform(c, M, W - M, 800, 90, 3, squash=0.6, color=PINK_SOFT, width=2, step=8)
+    c.paragraph(M, 930, ["La voce “rotta” che ha rimesso", "in piedi il rock dei primi 2000."],
+                font("serif", 50, 400), fill=TEXT, leading=1.25)
+    c.line([(M, H - 120), (W - M, H - 120)])
+    c.text((M, H - 92), "HOME RECORDING · STORIA", font("sans", 20, 500), fill=MUTED, tracking=2)
+    c.text((W - M, H - 92), "SCORRI  →", font("sans", 20, 700), fill=PINK_SOFT, anchor="ra", tracking=3)
 slides.append(c)
 
 # 02 — chi è

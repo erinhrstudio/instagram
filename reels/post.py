@@ -10,6 +10,8 @@ import argparse, json, os, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from reels.captions import with_brand_tags
+
 ROOT = Path(__file__).resolve().parent.parent
 STATE = ROOT / "state" / "published.json"
 
@@ -22,7 +24,11 @@ def main():
 
     folder = ROOT / "posts" / a.name
     images = sorted(folder.glob("*.jpg"))
-    caption = (folder / "caption.txt").read_text(encoding="utf-8").strip()
+    caption = with_brand_tags((folder / "caption.txt").read_text(encoding="utf-8").strip())
+    song = folder / "musica.txt"
+    if song.exists():
+        print("Canzone consigliata:", song.read_text(encoding="utf-8").strip(),
+              "(l'API non permette di aggiungerla: va messa dall'app)")
     if not 2 <= len(images) <= 10:
         print(f"Un carosello richiede da 2 a 10 immagini, trovate {len(images)}", file=sys.stderr)
         return 1
