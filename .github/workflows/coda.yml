@@ -2,8 +2,10 @@ name: Caroselli in coda
 
 on:
   schedule:
-    # ogni giorno alle 16:30 UTC (18:30 ora legale italiana): pubblica solo se è il giorno giusto
+    # ogni giorno alle 16:30 e 17:30 UTC: reels/coda.py pubblica solo dalle 18 ora italiana
+    # (18:30 sia con l'ora legale sia con l'ora solare) e solo nel giorno giusto
     - cron: "30 16 * * *"
+    - cron: "30 17 * * *"
   workflow_dispatch:
 
 permissions:

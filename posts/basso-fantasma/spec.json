@@ -1,0 +1,104 @@
+{
+ "music": "The White Stripes — Seven Nation Army",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "PSICOACUSTICA",
+   "title": "IL BASSO",
+   "title2": "FANTASMA",
+   "subtitle": "Perché senti bassi che il telefono non suona",
+   "footer": "HOME RECORDING · CERVELLO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — L'ILLUSIONE",
+   "statement": [
+    "IL TELEFONO",
+    "NON HA BASSI."
+   ],
+   "footer": "FONDAMENTALE MANCANTE"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — COSA SUCCEDE",
+   "statement": [
+    "LA NOTA",
+    "CHE NON C'È"
+   ],
+   "footer": "",
+   "body": [
+    "Una nota di basso ha una fondamentale",
+    "e tanti armonici sopra. Se la",
+    "fondamentale sparisce, il cervello",
+    "la ricostruisce dagli armonici:",
+    "la senti anche se non c'è."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL TRUCCO",
+   "statement": [
+    "SATURA",
+    "IL BASSO"
+   ],
+   "footer": "FUNZIONA ANCHE SULLA CASSA",
+   "body": [
+    "La saturazione aggiunge armonici.",
+    "Così il basso si sente anche",
+    "dalle casse di un telefono."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — NEL TUO MIX",
+   "title": "COME FARLO",
+   "items": [
+    [
+     "Traccia parallela",
+     "Duplica il basso e saturala forte"
+    ],
+    [
+     "Filtro",
+     "Passa-alto sulla copia, sopra i 150-200 Hz"
+    ],
+    [
+     "Dose",
+     "Miscela finché il basso si sente sul telefono"
+    ],
+    [
+     "Plugin gratis",
+     "Softube Saturation Knob"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "IL CERVELLO",
+    "COMPLETA LA NOTA"
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "LO SAPEVI?",
+    "SCRIVI \"BASSO\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
+   "size": 84
+  }
+ ],
+ "caption": "Il tuo telefono non riesce a riprodurre i bassi. Eppure li senti 📱\n\nSi chiama fondamentale mancante: una nota è fatta di una frequenza base e di armonici sopra. Se la base sparisce, il cervello la ricostruisce dagli armonici.\n\nNel mix si usa così: una copia saturata del basso aggiunge armonici e lo fa sentire anche dalle casse piccole. Nelle slide trovi come farlo con un plugin gratuito.\n\nScrivi \"BASSO\" nei commenti se vuoi il prima/dopo in un Reel 🎧\n\n#bassfantasma #fondamentalemancante #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio"
+}

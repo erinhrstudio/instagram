@@ -1,0 +1,104 @@
+{
+ "music": "Nirvana — Smells Like Teen Spirit",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "PSICOACUSTICA",
+   "title": "IL SUONO",
+   "title2": "CHE SPARISCE",
+   "subtitle": "Il mascheramento e i mix impastati",
+   "footer": "HOME RECORDING · CERVELLO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL FENOMENO",
+   "statement": [
+    "UN SUONO",
+    "NE NASCONDE UN ALTRO."
+   ],
+   "footer": "MASCHERAMENTO"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — COSA SUCCEDE",
+   "statement": [
+    "STESSE FREQUENZE,",
+    "UN SOLO VINCITORE"
+   ],
+   "footer": "",
+   "body": [
+    "Quando due suoni occupano le stesse",
+    "frequenze, il più forte copre",
+    "l'altro. Anche l'MP3 usa questo",
+    "effetto: elimina quello che",
+    "tanto non sentiresti."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — NEL MIX",
+   "statement": [
+    "IL FANGO",
+    "NASCE COSÌ"
+   ],
+   "footer": "PIÙ TRACCE NON VUOL DIRE PIÙ SUONO",
+   "body": [
+    "Chitarre, basso e voce",
+    "sulle stesse frequenze",
+    "si coprono a vicenda."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — NEL TUO MIX",
+   "title": "FARE SPAZIO",
+   "items": [
+    [
+     "EQ sottrattivo",
+     "Taglia su una traccia dove l'altra deve vivere"
+    ],
+    [
+     "Passa-alto",
+     "Su tutto ciò che non ha bisogno di bassi"
+    ],
+    [
+     "Sidechain",
+     "Il basso si abbassa quando suona la cassa"
+    ],
+    [
+     "Arrangiamento",
+     "A volte basta togliere una parte"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "TOGLIERE",
+    "È MIXARE"
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "LO SAPEVI?",
+    "SCRIVI \"SPAZIO\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
+   "size": 84
+  }
+ ],
+ "caption": "Hai registrato tutto bene, ma il mix suona impastato? Colpa del mascheramento 🔇\n\nQuando due suoni occupano le stesse frequenze, il più forte copre l'altro. È lo stesso principio che usa l'MP3 per risparmiare spazio: elimina ciò che tanto non sentiresti.\n\nNelle slide trovi come fare spazio nel mix: EQ sottrattivo, passa-alto, sidechain e, a volte, togliere una parte.\n\nScrivi \"SPAZIO\" nei commenti per il Reel con il prima/dopo 🎧\n\n#mascheramento #masking #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio"
+}

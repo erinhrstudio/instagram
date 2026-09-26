@@ -1,0 +1,103 @@
+{
+ "music": "Jeff Buckley — Hallelujah",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "PSICOACUSTICA",
+   "title": "I BRIVIDI",
+   "title2": "DA MUSICA",
+   "subtitle": "Perché certe canzoni ti fanno la pelle d'oca",
+   "footer": "HOME RECORDING · CERVELLO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL FENOMENO",
+   "statement": [
+    "PELLE D'OCA",
+    "A COMANDO."
+   ],
+   "footer": "FRISSON"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — COSA SUCCEDE",
+   "statement": [
+    "DOPAMINA",
+    "E SORPRESA"
+   ],
+   "footer": "",
+   "body": [
+    "In inglese si chiama frisson.",
+    "Uno studio del 2011 ha mostrato che",
+    "il cervello rilascia dopamina nei",
+    "momenti più emozionanti di un brano,",
+    "e già un attimo prima, nell'attesa."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — COSA LI SCATENA",
+   "statement": [
+    "L'INASPETTATO"
+   ],
+   "footer": "LA SORPRESA È TUTTO",
+   "body": [
+    "Un accordo che non ti aspetti,",
+    "un'entrata improvvisa,",
+    "un salto di volume o una voce che sale."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — NEL TUO MIX",
+   "title": "CREALI TU",
+   "items": [
+    [
+     "Contrasto",
+     "Una strofa più piccola rende enorme il ritornello"
+    ],
+    [
+     "Entrate",
+     "Aggiungi uno strumento nuovo al momento giusto"
+    ],
+    [
+     "Pausa",
+     "Un attimo di silenzio prima del drop"
+    ],
+    [
+     "Automazione",
+     "Alza piano piano, non tutto insieme"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "L'ATTESA",
+    "È METÀ DELL'EMOZIONE"
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "LO SAPEVI?",
+    "SCRIVI \"BRIVIDI\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
+   "size": 84
+  }
+ ],
+ "caption": "Ti è mai venuta la pelle d'oca ascoltando una canzone? Non capita a tutti 🎶\n\nIn inglese si chiama frisson. Uno studio del 2011 ha mostrato che il cervello rilascia dopamina nei momenti più intensi di un brano, e già un attimo prima, nell'attesa.\n\nLa sorpresa è la chiave: un accordo inatteso, un'entrata, un silenzio prima del ritornello. Nelle slide trovi come costruirla nel tuo arrangiamento e nel mix.\n\nQuale canzone ti dà i brividi? Scrivila nei commenti 👇\n\n#frisson #brividi #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio"
+}

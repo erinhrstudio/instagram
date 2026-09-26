@@ -9,7 +9,7 @@ Tipi di slide:
   list   antracite: kicker, titolo e punti (etichetta + testo)
   eq     antracite: kicker, titolo, curva EQ e punti
 """
-import json, math, sys
+import json, math, sys, zlib
 from pathlib import Path
 
 from reels.style import BACKDROPS, Canvas, font, MUTED, PINK, PINK_SOFT, TEXT
@@ -68,6 +68,8 @@ def heading(c, s, y=190):
 def slide_cover(c, s, i, n, root):
     if s.get("photo"):
         c.portrait(root / s["photo"], focus=tuple(s.get("focus", (0.5, 0.35))), zoom=s.get("zoom", 1.0))
+    else:
+        wave(c, s.get("wave_seed", zlib.crc32(s["title"].encode())))
     c.header(BRAND, f"{i:02d} / {n:02d}")
     y = 800
     c.kicker(0, y, s["kicker"], center=True)
@@ -81,6 +83,22 @@ def slide_cover(c, s, i, n, root):
     if s.get("subtitle"):
         centered(c, y + 16, [s["subtitle"]], "serif", 36, TEXT)
     footer(c, s.get("footer", "HOME RECORDING · STORIA"), "SCORRI  →")
+
+
+def wave(c, seed, cy=470, amp=190):
+    """Onda sonora sottile in rosa per le copertine senza foto."""
+    import random
+    r = random.Random(seed)
+    parts = [(r.uniform(2, 9), r.uniform(0, 6.3), r.uniform(0.3, 1)) for _ in range(4)]
+    for k, (col, w) in enumerate([((90, 52, 60), 1), ((150, 80, 92), 1), (PINK, 2)]):
+        pts = []
+        for n in range(600):
+            t = n / 599
+            env = math.sin(math.pi * t) ** 1.5
+            v = sum(a * math.sin(2 * math.pi * f * t * (1 + 0.04 * k) + p) for f, p, a in parts) / 2.2
+            pts.append((M + t * (W - 2 * M), cy + v * env * amp * (0.7 + 0.15 * k)))
+        c.line(pts, fill=col, width=w)
+    c.line([(M, cy), (W - M, cy)], fill=(58, 52, 64))
 
 
 def slide_band(c, s, i, n, root):

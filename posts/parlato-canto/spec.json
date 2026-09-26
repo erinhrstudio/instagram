@@ -1,0 +1,104 @@
+{
+ "music": "Steve Reich — It's Gonna Rain",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "PSICOACUSTICA",
+   "title": "QUANDO IL PARLATO",
+   "title2": "DIVENTA CANTO",
+   "subtitle": "L'illusione di Diana Deutsch",
+   "footer": "HOME RECORDING · CERVELLO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — L'ILLUSIONE",
+   "statement": [
+    "RIPETI UNA FRASE.",
+    "DIVENTA UNA MELODIA."
+   ],
+   "footer": "SPEECH-TO-SONG"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — LA SCOPERTA",
+   "statement": [
+    "DIANA DEUTSCH",
+    "1995"
+   ],
+   "footer": "",
+   "body": [
+    "La psicologa Diana Deutsch ripete in",
+    "loop una frase parlata: \"sometimes",
+    "behave so strangely\". Dopo qualche",
+    "ripetizione la maggior parte delle",
+    "persone la sente cantata."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — COSA SUCCEDE",
+   "statement": [
+    "IL CERVELLO",
+    "CERCA LE NOTE"
+   ],
+   "footer": "LA VOCE PARLATA HA GIÀ UNA MELODIA",
+   "body": [
+    "Con la ripetizione smettiamo",
+    "di ascoltare il significato",
+    "e ascoltiamo le altezze."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — NEL TUO BRANO",
+   "title": "USALA",
+   "items": [
+    [
+     "Sample",
+     "Taglia una frase parlata e mettila in loop"
+    ],
+    [
+     "Intonazione",
+     "Segui con il basso le note che senti"
+    ],
+    [
+     "Tempo",
+     "Allinea il loop alla griglia del brano"
+    ],
+    [
+     "Esempio",
+     "It's Gonna Rain di Steve Reich, 1965"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "OGNI VOCE",
+    "È GIÀ MUSICA"
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "LO SAPEVI?",
+    "SCRIVI \"LOOP\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
+   "size": 84
+  }
+ ],
+ "caption": "Ripeti una frase parlata abbastanza volte e diventa una canzone 🔁\n\nÈ l'illusione scoperta dalla psicologa Diana Deutsch nel 1995: dopo qualche ripetizione di \"sometimes behave so strangely\" la maggior parte delle persone la sente cantata. Con la ripetizione il cervello smette di seguire il significato e ascolta le note.\n\nNelle slide trovi come usare questo trucco nei tuoi brani con un semplice loop.\n\nScrivi \"LOOP\" nei commenti per il Reel con l'esempio 🎧\n\n#speechtosong #dianadeutsch #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio"
+}

@@ -1,0 +1,104 @@
+{
+ "music": "Daft Punk — Harder, Better, Faster, Stronger",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "PSICOACUSTICA",
+   "title": "YANNY",
+   "title2": "O LAUREL?",
+   "subtitle": "La registrazione che ha diviso internet",
+   "footer": "HOME RECORDING · CERVELLO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — MAGGIO 2018",
+   "statement": [
+    "STESSO FILE,",
+    "DUE PAROLE."
+   ],
+   "footer": "YANNY VS LAUREL"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — COSA SUCCEDE",
+   "statement": [
+    "DIPENDE DALLE",
+    "FREQUENZE"
+   ],
+   "footer": "",
+   "body": [
+    "La parola registrata è \"Laurel\".",
+    "Ma il file è povero di bassi e ricco",
+    "di acuti: chi sente meglio le alte,",
+    "o ascolta da casse piccole,",
+    "sente \"Yanny\"."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL PUNTO",
+   "statement": [
+    "IL CERVELLO",
+    "INDOVINA"
+   ],
+   "footer": "PROVA AD ASCOLTARLO CON UN EQ",
+   "body": [
+    "Con un segnale ambiguo il cervello",
+    "sceglie l'ipotesi più probabile.",
+    "Età, orecchio e casse cambiano tutto."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — NEL TUO MIX",
+   "title": "LA LEZIONE",
+   "items": [
+    [
+     "Casse diverse",
+     "Controlla il mix su cuffie, telefono e auto"
+    ],
+    [
+     "Intelligibilità",
+     "Le consonanti vivono tra 2 e 5 kHz"
+    ],
+    [
+     "Bassi",
+     "Troppi coprono le parole, pochi le svuotano"
+    ],
+    [
+     "Orecchie",
+     "Pause frequenti: l'orecchio stanco sbaglia"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "OGNI ASCOLTATORE",
+    "SENTE UN MIX DIVERSO"
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "LO SAPEVI?",
+    "SCRIVI \"YANNY\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
+   "size": 84
+  }
+ ],
+ "caption": "Yanny o Laurel? Nel 2018 una registrazione di quattro secondi ha diviso internet a metà 🎧\n\nLa parola registrata è \"Laurel\", ma il file ha pochi bassi e tanti acuti. Chi sente meglio le frequenze alte, o ascolta da casse piccole, sente \"Yanny\". Il cervello, davanti a un suono ambiguo, sceglie l'ipotesi più probabile.\n\nPer chi mixa la lezione è chiara: ognuno sente il tuo mix in modo diverso. Nelle slide trovi come tenerne conto.\n\nTu cosa senti? Scrivi \"YANNY\" o \"LAUREL\" nei commenti 👇\n\n#yannylaurel #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio"
+}

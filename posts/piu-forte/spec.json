@@ -1,0 +1,104 @@
+{
+ "music": "Metallica — The Day That Never Comes",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "PSICOACUSTICA",
+   "title": "PIÙ FORTE",
+   "title2": "SUONA MEGLIO",
+   "subtitle": "La trappola che rovina i tuoi mix",
+   "footer": "HOME RECORDING · CERVELLO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA TRAPPOLA",
+   "statement": [
+    "ALZI IL VOLUME.",
+    "TI PIACE DI PIÙ."
+   ],
+   "footer": "FLETCHER-MUNSON · 1933"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — COSA SUCCEDE",
+   "statement": [
+    "L'ORECCHIO",
+    "NON È PIATTO"
+   ],
+   "footer": "",
+   "body": [
+    "Nel 1933 Fletcher e Munson misurano",
+    "che a volume basso sentiamo meno",
+    "bassi e meno acuti. Alzando il volume",
+    "tornano pieni: per questo il suono",
+    "più forte sembra sempre migliore."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL RISCHIO",
+   "statement": [
+    "COMPRIMI",
+    "SENZA SAPERLO"
+   ],
+   "footer": "LA LOUDNESS WAR È NATA COSÌ",
+   "body": [
+    "Un plugin che alza il volume",
+    "sembra migliorare il suono.",
+    "Spesso è solo più forte."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — NEL TUO MIX",
+   "title": "CONFRONTI ONESTI",
+   "items": [
+    [
+     "Stesso volume",
+     "Pareggia il volume prima del confronto"
+    ],
+    [
+     "Plugin",
+     "Usa il gain in uscita per compensare"
+    ],
+    [
+     "Ascolto",
+     "Mixa a volume medio-basso"
+    ],
+    [
+     "Controllo",
+     "Ogni tanto alza, poi torna giù"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "PAREGGIA IL VOLUME",
+    "PRIMA DI GIUDICARE"
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "LO SAPEVI?",
+    "SCRIVI \"VOLUME\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
+   "size": 84
+  }
+ ],
+ "caption": "Alzi il volume e il mix ti sembra subito migliore. È una trappola 🎚️\n\nNel 1933 Fletcher e Munson hanno misurato che a volume basso sentiamo meno bassi e meno acuti. Alzando, il suono torna pieno: per questo più forte sembra sempre meglio. È anche così che è nata la loudness war.\n\nNelle slide trovi come fare confronti onesti tra prima e dopo.\n\nScrivi \"VOLUME\" nei commenti per il Reel con la prova 🎧\n\n#fletchermunson #loudnesswar #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio"
+}

@@ -8,14 +8,23 @@ Uso: python -m reels.coda
 import json, os
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 CODA = ROOT / "state" / "coda.json"
 STATE = ROOT / "state" / "published.json"
 
 
+ROMA = ZoneInfo("Europe/Rome")
+ORA = 18  # si pubblica dalle 18 ora italiana (il workflow gira alle 16:30 e 17:30 UTC)
+
+
 def prossimo(oggi=None):
-    oggi = oggi or datetime.now(timezone.utc).date()
+    if oggi is None:
+        adesso = datetime.now(ROMA)
+        if adesso.hour < ORA:
+            return None, f"sono le {adesso:%H:%M} in Italia, si pubblica dalle {ORA}"
+        oggi = adesso.date()
     coda = json.loads(CODA.read_text())
     state = json.loads(STATE.read_text()) if STATE.exists() else []
     fatti = {s["id"]: date.fromisoformat(s["published_at"][:10]) for s in state}
