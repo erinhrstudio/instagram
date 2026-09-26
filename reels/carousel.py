@@ -181,7 +181,11 @@ def slide_eq(c, s, i, n, root):
         return g + boost[1] * math.exp(-((math.log2(hz / boost[0])) ** 2) / 0.8)
 
     def gy(g): return min(gy1, max(gy0, (gy0 + gy1) / 2 - g * 7))
-    for hz, lab in [(100, "100"), (lo, str(lo)), (1000, "1K"), (hi, f"{hi // 1000}K"), (10000, "10K")]:
+    ticks, seen = [], []
+    for hz, lab in sorted([(100, "100"), (lo, str(lo)), (1000, "1K"), (hi, f"{hi // 1000}K"), (10000, "10K")]):
+        if all(abs(fx(hz) - x) > 45 for x in seen):
+            ticks.append((hz, lab)); seen.append(fx(hz))
+    for hz, lab in ticks:
         c.line([(fx(hz), gy0), (fx(hz), gy1)], fill=(52, 50, 54))
         c.text((fx(hz), gy1 + 14), lab, font("sans", 16, 600), fill=MUTED, anchor="ma", tracking=1)
     pts = [(fx(20 * 1000 ** (k / 399)), gy(gain(20 * 1000 ** (k / 399)))) for k in range(400)]
