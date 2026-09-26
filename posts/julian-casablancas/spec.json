@@ -4,12 +4,16 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.webp",
    "kicker": "THE STROKES · LA VOCE",
    "title": "JULIAN",
    "title2": "CASABLANCAS",
-   "subtitle": "Come si mixa la voce di Is This It",
-   "footer": "HOME RECORDING · MIX"
+   "subtitle": "Come si mixa la sua voce, da Is This It a oggi",
+   "footer": "HOME RECORDING · MIX",
+   "focus": [
+    0.56,
+    0.32
+   ]
   },
   {
    "type": "band",
@@ -132,6 +136,47 @@
   },
   {
    "type": "band",
+   "bg": "base",
+   "kicker": "07 — L'ULTIMO ALBUM",
+   "statement": [
+    "REALITY AWAITS",
+    "2026"
+   ],
+   "body": [
+    "Settimo album, uscito il 24 luglio 2026.",
+    "Di nuovo con Rick Rubin, registrato tra",
+    "il Costa Rica e lo studio Shangri-La.",
+    "La voce di Julian ora passa anche",
+    "dall'Autotune distorto dei Voidz."
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "08 — LA VOCE DI OGGI",
+   "title": "AUTOTUNE SPORCO",
+   "items": [
+    [
+     "Intonazione",
+     "Correzione al massimo, usata come effetto"
+    ],
+    [
+     "Plugin gratis",
+     "Auburn Sounds Graillon (free edition)"
+    ],
+    [
+     "Dopo",
+     "Saturazione e passa-banda, come nel 2001"
+    ],
+    [
+     "Parlato",
+     "Strofe recitate, voce vicina al microfono"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
    "bg": "sale",
    "kicker": "",
    "statement": [
@@ -143,5 +188,5 @@
    "size": 80
   }
  ],
- "caption": "Julian Casablancas non urla. Eppure la sua voce \"sporca, ma non troppo\" ha definito il rock dei primi anni 2000 🎙️\n\nIn Is This It, Gordon Raphael registrava la voce con un Audio-Technica AT4033A nel preampli valvolare Avalon VT-737, spinto fino a sporcarla. Nei demo Julian cantava perfino dentro un piccolo ampli Peavey.\n\nNelle slide trovi la catena per rifarla nel tuo home studio con plugin gratuiti: EQ passa-banda, distorsione in parallelo e compressione decisa.\n\nScrivi \"VOCE\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#thestrokes #juliancasablancas #homerecording #mixing #vocalmixing #produzionemusicale #indierock #homestudio"
+ "caption": "Julian Casablancas non urla. Eppure la sua voce \"sporca, ma non troppo\" ha definito il rock dei primi anni 2000 🎙️\n\nIn Is This It, Gordon Raphael registrava la voce con un Audio-Technica AT4033A nel preampli valvolare Avalon VT-737, spinto fino a sporcarla. Nei demo Julian cantava perfino dentro un piccolo ampli Peavey.\n\nNelle slide trovi la catena per rifarla nel tuo home studio con plugin gratuiti: EQ passa-banda, distorsione in parallelo e compressione decisa.\n\nNell'ultimo album, Reality Awaits (2026, prodotto da Rick Rubin), la voce cambia ancora: Autotune distorto usato come effetto, alla Voidz.\n\nScrivi \"VOCE\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#thestrokes #juliancasablancas #homerecording #mixing #vocalmixing #produzionemusicale #indierock #realityawaits #homestudio"
 }
