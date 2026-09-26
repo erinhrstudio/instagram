@@ -1,22 +1,22 @@
 {
-  "ogni_giorni": 2,
+  "ogni_giorni": 1,
   "inizio": "2026-09-27",
   "post": [
     "korn",
-    "billie-eilish",
-    "pj-harvey",
-    "fiona-apple",
-    "converge",
-    "mia-zapata",
-    "lemonheads",
-    "ks-choice",
     "yanny-laurel",
+    "billie-eilish",
     "basso-fantasma",
+    "pj-harvey",
     "cocktail-party",
+    "fiona-apple",
     "brividi",
+    "converge",
     "tormentoni",
+    "mia-zapata",
     "piu-forte",
+    "lemonheads",
     "parlato-canto",
+    "ks-choice",
     "mascheramento"
   ]
 }
