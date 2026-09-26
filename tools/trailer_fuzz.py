@@ -50,7 +50,7 @@ def clicks(clip):
 
 # testi per sezione (inizio, fine, righe grandi, riga piccola)
 SCENES = [
-    (0.0, 4.2, ["SENTI QUESTO", "CRACK?"], "USA LE CUFFIE"),
+    (0.0, 4.2, ["SENTI QUESTO", "SCHIFO?"], "USA LE CUFFIE"),
     (4.45, 8.7, ["MI HA RUBATO", "MESI."], "UN PLUGIN FUZZ. UN DIFETTO CHE NON VOLEVA MORIRE."),
     (8.9, 11.0, ["NON ERA", "L'ALIASING."], "E NEANCHE IL TIMING."),
     (11.0, 13.2, ["E ALLORA", "COS'ERA?"], ""),
