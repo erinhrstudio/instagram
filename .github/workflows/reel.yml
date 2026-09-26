@@ -1,0 +1,92 @@
+name: Reel automatico
+
+on:
+  schedule:
+    # martedì, giovedì e sabato alle 16:30 UTC (18:30 ora legale italiana, 17:30 ora solare)
+    - cron: "30 16 * * 2,4,6"
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Pubblica davvero su Instagram (altrimenti è solo una prova)"
+        type: boolean
+        default: false
+      episode:
+        description: "Episodio specifico (vuoto = il prossimo della lista)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reel
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installa dipendenze
+        run: |
+          sudo apt-get install -y -q fonts-dejavu-core
+          pip install -q -r requirements.txt
+
+      - name: Decidi se pubblicare
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            # le esecuzioni programmate pubblicano solo se la variabile PUBLISH_ENABLED vale true
+            echo "publish=${{ vars.PUBLISH_ENABLED == 'true' }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=${{ inputs.publish }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Genera (e pubblica) il Reel
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+        run: |
+          ARGS=""
+          [ "${{ steps.mode.outputs.publish }}" = "true" ] && ARGS="$ARGS --publish"
+          [ -n "${{ inputs.episode }}" ] && ARGS="$ARGS --episode ${{ inputs.episode }}"
+          python -m reels.run $ARGS
+
+      - name: Salva il video come file scaricabile
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel
+          path: out/
+          if-no-files-found: ignore
+
+      - name: Registra l'episodio pubblicato
+        if: steps.mode.outputs.publish == 'true'
+        run: |
+          git config user.name "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          git add state/published.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Pubblicato un nuovo Reel"
+            git push
+          fi
+
+      - name: Rinnova il token Instagram (se c'è GH_PAT)
+        if: github.event_name == 'schedule'
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$GH_TOKEN" ] || [ -z "$INSTAGRAM_TOKEN" ]; then
+            echo "GH_PAT o INSTAGRAM_TOKEN mancante: rinnovo automatico saltato."
+            exit 0
+          fi
+          NEW=$(python -c "import os; from reels.publish import refresh_token; print(refresh_token(os.environ['INSTAGRAM_TOKEN'])[0])")
+          echo "::add-mask::$NEW"
+          gh secret set INSTAGRAM_TOKEN --body "$NEW" --repo "${{ github.repository }}"
+          echo "Token rinnovato per altri 60 giorni."
