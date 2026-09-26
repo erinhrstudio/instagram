@@ -1,0 +1,98 @@
+{
+ "music": "Stone Temple Pilots — Interstate Love Song",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "CACCIA AL CREPITIO · EP 01",
+   "title": "VOLEVAMO CLONARE",
+   "title2": "UN PEDALE",
+   "subtitle": "E abbiamo creato un mostro",
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA PROMESSA",
+   "statement": [
+    "UN PEDALE VERO,",
+    "DENTRO UN PLUGIN."
+   ],
+   "footer": "EPISODIO 01 / 10"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL PIANO",
+   "statement": [
+    "DAL CIRCUITO",
+    "AL CODICE"
+   ],
+   "body": [
+    "Un fuzz con filtro parametrico estremo.",
+    "Lo schema diventa una simulazione",
+    "elettronica (SPICE), poi codice DSP.",
+    "Non \"ispirato a\": volevamo",
+    "la stessa macchina."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL MOSTRO",
+   "statement": [
+    "HEIGHT ALTO:",
+    "CREPITIO"
+   ],
+   "body": [
+    "A impostazioni normali suonava bene.",
+    "Con Height al massimo compariva",
+    "un crepitio che il pedale non ha."
+   ],
+   "footer": "UN DIFETTO, NON LA DISTORSIONE BELLA"
+  },
+  {
+   "type": "list",
+   "kicker": "04 — LA REGOLA",
+   "title": "NIENTE FIX A INTUITO",
+   "items": [
+    [
+     "Ipotesi",
+     "Ogni sospetto va messo alla prova"
+    ],
+    [
+     "Test",
+     "Un esperimento deve poterlo smentire"
+    ],
+    [
+     "Ascolto",
+     "Alla cieca, a volume pareggiato"
+    ]
+   ],
+   "footer": "MIGLIORARE IL NUMERO NON È CORREGGERE IL SUONO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "OGNI COLPEVOLE",
+    "VENIVA ASSOLTO"
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "IL PRIMO SOSPETTO?",
+    "L'ALIASING.",
+    "SEMBRAVA OVVIO."
+   ],
+   "footer": "SEGUI PER IL PROSSIMO EPISODIO",
+   "size": 80
+  }
+ ],
+ "caption": "Volevamo clonare un pedale dentro un plugin. Abbiamo creato un mostro 👹\n\nQuesta è la storia vera di ERIN Parametric Fuzz, il plugin che sto costruendo: un fuzz con un filtro parametrico estremo, dal circuito alla simulazione SPICE fino al codice.\n\nA impostazioni normali suonava bene. Con Height al massimo compariva un crepitio che il pedale vero non ha. Da lì, mesi di indagine con una sola regola: niente fix a intuito.\n\nEpisodio 1 di 10. Tu da dove avresti iniziato a cercare? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+}

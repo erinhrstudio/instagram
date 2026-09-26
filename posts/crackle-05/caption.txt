@@ -1,0 +1,9 @@
+Abbiamo passato settimane dentro il codice sbagliato 😅
+
+Con la simulazione SPICE finalmente pulita, lo stadio del filtro che sospettavamo coincideva quasi alla perfezione. Sull'evento peggiore l'errore totale era di circa 2464 nanosecondi: solo 18 venivano da lì. Il resto nasceva nel passaggio del segnale dallo stadio precedente.
+
+Alzando la risoluzione in quel punto, l'errore scendeva verso zero. Restava la domanda decisiva: il crepitio sarebbe sparito?
+
+Episodio 5 di 10. Tu cosa dici? 👇
+
+#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale

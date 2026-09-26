@@ -1,0 +1,9 @@
+Abbiamo eliminato oltre il 90% dell'errore numerico. All'ascolto cieco: identico 🎧
+
+Abbiamo calcolato lo stesso passaggio che crepitava a risoluzione normale, 4 volte e 16 volte più fine. L'errore crollava del 91,7%. Il verdetto dell'ascolto cieco: "mi sembrano tutti uguali".
+
+Se una causa è vera, riducendola deve ridursi anche il difetto. Qui non succedeva. Quel test ci ha salvato da un fix che non avrebbe risolto niente.
+
+Episodio 6 di 10. Avresti fatto il commit lo stesso? 👇
+
+#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale

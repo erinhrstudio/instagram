@@ -1,0 +1,96 @@
+{
+ "music": "Stone Temple Pilots — Interstate Love Song",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "CACCIA AL CREPITIO · EP 05",
+   "title": "IL CODICE SOSPETTO",
+   "title2": "ERA INNOCENTE",
+   "subtitle": "Il problema arrivava da prima",
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL COLPO DI SCENA",
+   "statement": [
+    "SETTIMANE",
+    "NEL POSTO SBAGLIATO."
+   ],
+   "footer": "EPISODIO 05 / 10"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL CONFRONTO",
+   "statement": [
+    "STADIO DEL FILTRO:",
+    "PROMOSSO"
+   ],
+   "body": [
+    "Confrontato con lo SPICE pulito,",
+    "lo stadio che sospettavamo",
+    "coincideva quasi alla perfezione."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — I NUMERI",
+   "statement": [
+    "2464 NS CONTRO",
+    "18 NS"
+   ],
+   "body": [
+    "Errore totale sull'evento peggiore:",
+    "circa 2464 nanosecondi.",
+    "Quota dello stadio sospettato: 18."
+   ],
+   "footer": "IL RESTO NASCEVA NELLO STADIO PRIMA"
+  },
+  {
+   "type": "list",
+   "kicker": "04 — LA SVOLTA",
+   "title": "ALZANDO LA RISOLUZIONE",
+   "items": [
+    [
+     "Dove",
+     "Nel passaggio del segnale tra due stadi"
+    ],
+    [
+     "Risultato",
+     "L'errore scendeva verso zero"
+    ],
+    [
+     "Domanda",
+     "Se lo correggiamo, il crepitio sparisce?"
+    ]
+   ],
+   "footer": "MIGLIORARE IL NUMERO NON È CORREGGERE IL SUONO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "TROVARE UN ERRORE",
+    "NON È TROVARE LA CAUSA"
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "LA RISPOSTA CI HA FATTO",
+    "BUTTARE VIA",
+    "UN'ALTRA TEORIA."
+   ],
+   "footer": "SEGUI PER IL PROSSIMO EPISODIO",
+   "size": 80
+  }
+ ],
+ "caption": "Abbiamo passato settimane dentro il codice sbagliato 😅\n\nCon la simulazione SPICE finalmente pulita, lo stadio del filtro che sospettavamo coincideva quasi alla perfezione. Sull'evento peggiore l'errore totale era di circa 2464 nanosecondi: solo 18 venivano da lì. Il resto nasceva nel passaggio del segnale dallo stadio precedente.\n\nAlzando la risoluzione in quel punto, l'errore scendeva verso zero. Restava la domanda decisiva: il crepitio sarebbe sparito?\n\nEpisodio 5 di 10. Tu cosa dici? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+}

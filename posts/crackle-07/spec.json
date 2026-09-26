@@ -1,0 +1,95 @@
+{
+ "music": "Stone Temple Pilots — Interstate Love Song",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "CACCIA AL CREPITIO · EP 07",
+   "title": "IL BLIND TEST",
+   "title2": "CHE HA CAMBIATO TUTTO",
+   "subtitle": "Quattro combinazioni, una sola crepitava",
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — L'ESPERIMENTO",
+   "statement": [
+    "QUATTRO FILE.",
+    "UNO SOLO CREPITA."
+   ],
+   "footer": "EPISODIO 07 / 10"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL SETUP",
+   "statement": [
+    "2 X 2"
+   ],
+   "body": [
+    "Due livelli di Height per il segnale",
+    "in ingresso, due per il modello.",
+    "Quattro combinazioni,",
+    "ascoltate alla cieca."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL RISULTATO",
+   "statement": [
+    "SOLO 90 + 90"
+   ],
+   "body": [
+    "70 e 70: pulito. 70 e 90: pulito.",
+    "90 e 70: pulito. 90 e 90: crepitio.",
+    "Serviva l'incontro dei due."
+   ],
+   "footer": "NESSUNO DEI DUE BASTAVA DA SOLO"
+  },
+  {
+   "type": "list",
+   "kicker": "04 — IL CONTEGGIO",
+   "title": "QUANTI DISTACCHI?",
+   "items": [
+    [
+     "File che crepita",
+     "72 distacchi dal limite"
+    ],
+    [
+     "Controllo pulito",
+     "Solo 4"
+    ],
+    [
+     "Nuova idea",
+     "Non un evento sbagliato: troppi eventi"
+    ]
+   ],
+   "footer": "MIGLIORARE IL NUMERO NON È CORREGGERE IL SUONO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "NON L'EVENTO SBAGLIATO.",
+    "LA QUANTITÀ SBAGLIATA."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "72 EVENTI.",
+    "POI 295.",
+    "E IL CREPITIO LI SEGUIVA."
+   ],
+   "footer": "SEGUI PER IL PROSSIMO EPISODIO",
+   "size": 80
+  }
+ ],
+ "caption": "Quattro combinazioni. Solo una crepitava 🔍\n\nAbbiamo incrociato due livelli di Height per il segnale in ingresso e due per il modello, e ascoltato tutto alla cieca. Solo la combinazione 90 + 90 crepitava: nessuno dei due da solo bastava.\n\nPoi abbiamo contato gli eventi, cioè le volte in cui l'amplificatore si stacca dal limite: 72 nel file che crepitava, 4 nel controllo pulito. Forse il problema non era un evento sbagliato, ma troppi eventi.\n\nEpisodio 7 di 10. Causa o sintomo? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+}

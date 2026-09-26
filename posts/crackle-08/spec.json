@@ -1,0 +1,98 @@
+{
+ "music": "Stone Temple Pilots — Interstate Love Song",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "CACCIA AL CREPITIO · EP 08",
+   "title": "72 EVENTI. POI 295.",
+   "title2": "IL CREPITIO SEGUIVA",
+   "subtitle": "La prima prova all'ascolto",
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA SVOLTA",
+   "statement": [
+    "PIÙ EVENTI,",
+    "PIÙ CREPITIO."
+   ],
+   "footer": "EPISODIO 08 / 10"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL METODO",
+   "statement": [
+    "CONTARE",
+    "E ASCOLTARE"
+   ],
+   "body": [
+    "Abbiamo variato Height, contato",
+    "gli eventi e ascoltato alla cieca",
+    "con il volume pareggiato.",
+    "Con un duplicato nascosto",
+    "per controllare chi ascolta."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA SCALA",
+   "statement": [
+    "0 · 4 · 9",
+    "72 · 295"
+   ],
+   "body": [
+    "0 e 4 eventi: pulito. 9: leggero.",
+    "72: medio. 295: forte.",
+    "Il crepitio seguiva il conteggio."
+   ],
+   "footer": "LA PRIMA DOSE-RISPOSTA VERA"
+  },
+  {
+   "type": "list",
+   "kicker": "04 — LA CAUTELA",
+   "title": "CORRELAZIONE, NON CAUSA",
+   "items": [
+    [
+     "Problema",
+     "Height ed eventi crescevano insieme"
+    ],
+    [
+     "Serve",
+     "Height fisso e un'altra variabile"
+    ],
+    [
+     "Scelta",
+     "Il livello del segnale in ingresso"
+    ]
+   ],
+   "footer": "MIGLIORARE IL NUMERO NON È CORREGGERE IL SUONO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "CRESCONO INSIEME",
+    "NON VUOL DIRE CAUSA"
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "HEIGHT FISSO.",
+    "SOLO L'INGRESSO.",
+    "LA CURVA ERA QUASI TROPPO PULITA."
+   ],
+   "footer": "SEGUI PER IL PROSSIMO EPISODIO",
+   "size": 80
+  }
+ ],
+ "caption": "0, 4, 9, 72, 295. Più eventi, più crepitio 📈\n\nAbbiamo variato Height, contato gli eventi e ascoltato alla cieca con il volume pareggiato, più un duplicato nascosto per mettere alla prova l'orecchio. Con 0 e 4 eventi: pulito. Con 9: leggero. 72: medio. 295: forte.\n\nMa Height e numero di eventi crescevano insieme. Per separarli serviva un esperimento con Height fermo.\n\nEpisodio 8 di 10. Tu cosa avresti variato? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+}

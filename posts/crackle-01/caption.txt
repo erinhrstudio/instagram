@@ -1,0 +1,9 @@
+Volevamo clonare un pedale dentro un plugin. Abbiamo creato un mostro 👹
+
+Questa è la storia vera di ERIN Parametric Fuzz, il plugin che sto costruendo: un fuzz con un filtro parametrico estremo, dal circuito alla simulazione SPICE fino al codice.
+
+A impostazioni normali suonava bene. Con Height al massimo compariva un crepitio che il pedale vero non ha. Da lì, mesi di indagine con una sola regola: niente fix a intuito.
+
+Episodio 1 di 10. Tu da dove avresti iniziato a cercare? 👇
+
+#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale

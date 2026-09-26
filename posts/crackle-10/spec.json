@@ -1,0 +1,98 @@
+{
+ "music": "Stone Temple Pilots — Interstate Love Song",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "CACCIA AL CREPITIO · EP 10",
+   "title": "ORA SAPPIAMO",
+   "title2": "DOVE GUARDARE",
+   "subtitle": "Non ancora cosa correggere",
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — DOPO MESI",
+   "statement": [
+    "LA DOMANDA",
+    "È FINALMENTE PICCOLA."
+   ],
+   "footer": "EPISODIO 10 / 10"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — LA CATENA",
+   "statement": [
+    "SEGNALE + EVENTI",
+    "= CREPITIO"
+   ],
+   "body": [
+    "Più il segnale e il modello spingono,",
+    "più volte l'amplificatore si stacca",
+    "dal limite, e più si sente",
+    "il crepitio."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL MISTERO",
+   "statement": [
+    "OGNI DISTACCO",
+    "LASCIA UNA SCIA?"
+   ],
+   "body": [
+    "Forse ogni distacco genera un piccolo",
+    "transitorio sempre uguale.",
+    "O forse gli eventi sono solo un indizio."
+   ],
+   "footer": "IL PROSSIMO ESPERIMENTO: GATE 14"
+  },
+  {
+   "type": "list",
+   "kicker": "04 — IL PIANO",
+   "title": "GATE 14",
+   "items": [
+    [
+     "Allineare",
+     "Tutti i distacchi, uno sopra l'altro"
+    ],
+    [
+     "Cercare",
+     "Una \"scia\" ripetibile dopo ognuno"
+    ],
+    [
+     "Provare",
+     "Toglierla a dosi crescenti e ascoltare alla cieca"
+    ]
+   ],
+   "footer": "MIGLIORARE IL NUMERO NON È CORREGGERE IL SUONO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "NON VOGLIAMO NASCONDERLO",
+    "CON UN FILTRO.",
+    "VOGLIAMO CAPIRLO."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "IL DEBUG PIÙ DIFFICILE:",
+    "PROVARE CHE LA TUA",
+    "SPIEGAZIONE È SBAGLIATA."
+   ],
+   "footer": "SEGUI PER IL PROSSIMO EPISODIO",
+   "size": 80
+  }
+ ],
+ "caption": "Dopo mesi, sappiamo dove guardare. Non ancora cosa correggere 🧭\n\nLa catena: più il segnale e il modello spingono, più volte l'amplificatore si stacca dal limite, più si sente il crepitio. La domanda ora è piccola: ogni distacco lascia una \"scia\" sempre uguale, o gli eventi sono solo un indizio di qualcos'altro?\n\nIl prossimo esperimento, Gate 14, lo metterà alla prova. Non vogliamo nascondere il crepitio con un filtro: vogliamo capire perché il modello lo crea e il pedale no.\n\nFine della prima stagione. Vuoi provare il plugin in beta? Scrivi \"FUZZ\" nei commenti 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+}

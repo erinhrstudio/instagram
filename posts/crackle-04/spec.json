@@ -1,0 +1,98 @@
+{
+ "music": "Stone Temple Pilots — Interstate Love Song",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "CACCIA AL CREPITIO · EP 04",
+   "title": "ANCHE SPICE",
+   "title2": "PUÒ MENTIRE",
+   "subtitle": "La trappola del riferimento",
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA SCOPERTA",
+   "statement": [
+    "IL RIFERIMENTO",
+    "ERA SBAGLIATO."
+   ],
+   "footer": "EPISODIO 04 / 10"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — GLI ERRORI",
+   "statement": [
+    "DUE PARAMETRI",
+    "NASCOSTI"
+   ],
+   "body": [
+    "Una vecchia simulazione usava",
+    "un'impostazione che spostava un nodo",
+    "di qualche volt. Un'altra calcolava",
+    "a passi di 20,8 µs: proprio il",
+    "periodo di un campione a 48 kHz."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — L'EFFETTO",
+   "statement": [
+    "UN ERRORE FINTO",
+    "DI 1,4 µS"
+   ],
+   "body": [
+    "Lo stesso ordine di grandezza",
+    "del misterioso errore di timing",
+    "che stavamo inseguendo."
+   ],
+   "footer": "IL MOSTRO ERA IN PARTE NEL RIFERIMENTO"
+  },
+  {
+   "type": "list",
+   "kicker": "04 — IL METODO",
+   "title": "SPICE CERTIFICATO",
+   "items": [
+    [
+     "Passo",
+     "Fino a 25 nanosecondi"
+    ],
+    [
+     "Controlli",
+     "Convergenza e metodi diversi a confronto"
+    ],
+    [
+     "Risultato",
+     "Incertezza sotto il nanosecondo"
+    ]
+   ],
+   "footer": "MIGLIORARE IL NUMERO NON È CORREGGERE IL SUONO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "PRIMA DI TUTTO",
+    "VERIFICA IL RIFERIMENTO"
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "CON UN RIFERIMENTO PULITO",
+    "IL NOSTRO CODICE",
+    "ERA QUASI GIUSTO."
+   ],
+   "footer": "SEGUI PER IL PROSSIMO EPISODIO",
+   "size": 80
+  }
+ ],
+ "caption": "Avevamo una simulazione \"di riferimento\". Poi abbiamo scoperto che mentiva 🕵️\n\nSPICE è il simulatore di circuiti usato dagli ingegneri. Ma una nostra vecchia simulazione usava un'impostazione che spostava un nodo di qualche volt, e un'altra calcolava a passi di 20,8 µs, proprio la durata di un campione a 48 kHz. Risultato: un errore finto di 1,4 µs, lo stesso che stavamo inseguendo.\n\nAbbiamo rifatto tutto a passi di 25 nanosecondi.\n\nEpisodio 4 di 10. Avresti ancora fiducia in SPICE? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+}

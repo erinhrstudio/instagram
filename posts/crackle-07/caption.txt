@@ -1,0 +1,9 @@
+Quattro combinazioni. Solo una crepitava 🔍
+
+Abbiamo incrociato due livelli di Height per il segnale in ingresso e due per il modello, e ascoltato tutto alla cieca. Solo la combinazione 90 + 90 crepitava: nessuno dei due da solo bastava.
+
+Poi abbiamo contato gli eventi, cioè le volte in cui l'amplificatore si stacca dal limite: 72 nel file che crepitava, 4 nel controllo pulito. Forse il problema non era un evento sbagliato, ma troppi eventi.
+
+Episodio 7 di 10. Causa o sintomo? 👇
+
+#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale

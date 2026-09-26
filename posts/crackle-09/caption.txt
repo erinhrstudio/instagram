@@ -1,0 +1,9 @@
+Height fermo. Abbiamo cambiato solo il livello del segnale. Il crepitio ha seguito gli eventi 🎯
+
+Con Height a 0,90, alzando l'ingresso gli eventi salivano: 0, 5, 11, 72, 240. Tutti i file a -13,3 LUFS, così il più forte non vince. Classifica alla cieca, dal migliore al peggiore: 5, 0, 11, 72, 240, 240. I due file da 240, identici bit per bit, sono finiti entrambi ultimi.
+
+Correlazione fortissima. Ma non ancora causa.
+
+Episodio 9 di 10. Cosa manca secondo te? 👇
+
+#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale

@@ -1,0 +1,95 @@
+{
+ "music": "Stone Temple Pilots — Interstate Love Song",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "CACCIA AL CREPITIO · EP 09",
+   "title": "HEIGHT FISSO.",
+   "title2": "SOLO L'INGRESSO",
+   "subtitle": "Il test che ha ristretto il caso",
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — L'ESPERIMENTO",
+   "statement": [
+    "STESSO HEIGHT.",
+    "PIÙ SEGNALE."
+   ],
+   "footer": "EPISODIO 09 / 10"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — I NUMERI",
+   "statement": [
+    "DA 0 A 240",
+    "EVENTI"
+   ],
+   "body": [
+    "Height fermo a 0,90. Alzando il",
+    "segnale in ingresso gli eventi",
+    "salivano: 0, 5, 11, 72, 240."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — L'ASCOLTO",
+   "statement": [
+    "VOLUME PAREGGIATO"
+   ],
+   "body": [
+    "Tutti i file a -13,3 LUFS,",
+    "così il più forte non vince.",
+    "Classifica cieca: 5, 0, 11, 72, 240, 240."
+   ],
+   "footer": "I DUE 240 IDENTICI: ENTRAMBI ULTIMI"
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COSA SIGNIFICA",
+   "title": "SEGUE GLI EVENTI",
+   "items": [
+    [
+     "Height",
+     "Sempre lo stesso"
+    ],
+    [
+     "Volume",
+     "Nessun vantaggio"
+    ],
+    [
+     "Crepitio",
+     "Cresce con il numero di eventi"
+    ]
+   ],
+   "footer": "MIGLIORARE IL NUMERO NON È CORREGGERE IL SUONO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "CORRELAZIONE FORTISSIMA.",
+    "MA NON ANCORA CAUSA."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANCA",
+    "UN ULTIMO",
+    "ANELLO."
+   ],
+   "footer": "SEGUI PER IL PROSSIMO EPISODIO",
+   "size": 80
+  }
+ ],
+ "caption": "Height fermo. Abbiamo cambiato solo il livello del segnale. Il crepitio ha seguito gli eventi 🎯\n\nCon Height a 0,90, alzando l'ingresso gli eventi salivano: 0, 5, 11, 72, 240. Tutti i file a -13,3 LUFS, così il più forte non vince. Classifica alla cieca, dal migliore al peggiore: 5, 0, 11, 72, 240, 240. I due file da 240, identici bit per bit, sono finiti entrambi ultimi.\n\nCorrelazione fortissima. Ma non ancora causa.\n\nEpisodio 9 di 10. Cosa manca secondo te? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+}

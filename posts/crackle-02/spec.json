@@ -1,0 +1,96 @@
+{
+ "music": "Stone Temple Pilots — Interstate Love Song",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "CACCIA AL CREPITIO · EP 02",
+   "title": "IL PRIMO COLPEVOLE:",
+   "title2": "L'ALIASING",
+   "subtitle": "Quasi perfetto",
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SOSPETTO",
+   "statement": [
+    "FREQUENZE",
+    "FANTASMA."
+   ],
+   "footer": "EPISODIO 02 / 10"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — COS'È",
+   "statement": [
+    "L'ALIASING"
+   ],
+   "body": [
+    "Quando il digitale distorce, crea",
+    "frequenze che non dovrebbero esserci",
+    "e che si ripiegano nell'udibile.",
+    "In un fuzz è il sospettato numero uno."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA PROVA",
+   "statement": [
+    "-20 DB DI",
+    "ALIASING"
+   ],
+   "body": [
+    "Oversampling 4x sullo stadio del filtro.",
+    "Eccesso di aliasing: da +19,6 a +6,8 dB.",
+    "Ruvidità misurata: -43%."
+   ],
+   "footer": "UN RISULTATO DA FESTEGGIARE"
+  },
+  {
+   "type": "list",
+   "kicker": "04 — IL TWIST",
+   "title": "ALL'ASCOLTO CIECO",
+   "items": [
+    [
+     "Risultato",
+     "Il crepitio c'era ancora"
+    ],
+    [
+     "Numeri",
+     "Migliorati davvero"
+    ],
+    [
+     "Lezione",
+     "Avevamo curato un problema vero, ma non quello giusto"
+    ]
+   ],
+   "footer": "MIGLIORARE IL NUMERO NON È CORREGGERE IL SUONO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "UN GRAFICO PUÒ ESSERE",
+    "GIUSTO E LA TEORIA SBAGLIATA"
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "POI IL DIFETTO",
+    "SI È SINCRONIZZATO",
+    "CON UN MICRO-EVENTO."
+   ],
+   "footer": "SEGUI PER IL PROSSIMO EPISODIO",
+   "size": 80
+  }
+ ],
+ "caption": "Abbiamo ridotto l'aliasing di quasi 20 dB. Il crepitio è rimasto identico 🤯\n\nL'aliasing è il primo sospettato quando un plugin distorce: frequenze fantasma create dal digitale. Con l'oversampling 4x sullo stadio del filtro l'eccesso di aliasing è sceso da +19,6 a +6,8 dB e la ruvidità misurata del 43%.\n\nSulla carta era il fix perfetto. All'ascolto cieco, niente da fare.\n\nEpisodio 2 di 10. Tu avresti continuato sull'aliasing? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+}

@@ -1,0 +1,9 @@
+Abbiamo ridotto l'aliasing di quasi 20 dB. Il crepitio è rimasto identico 🤯
+
+L'aliasing è il primo sospettato quando un plugin distorce: frequenze fantasma create dal digitale. Con l'oversampling 4x sullo stadio del filtro l'eccesso di aliasing è sceso da +19,6 a +6,8 dB e la ruvidità misurata del 43%.
+
+Sulla carta era il fix perfetto. All'ascolto cieco, niente da fare.
+
+Episodio 2 di 10. Tu avresti continuato sull'aliasing? 👇
+
+#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale

@@ -1,0 +1,95 @@
+{
+ "music": "Stone Temple Pilots — Interstate Love Song",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "CACCIA AL CREPITIO · EP 06",
+   "title": "-90% DI ERRORE.",
+   "title2": "STESSO CREPITIO",
+   "subtitle": "Il test che ci ha salvato da un fix sbagliato",
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL TEST",
+   "statement": [
+    "TOLTO IL 90%.",
+    "NON È CAMBIATO NIENTE."
+   ],
+   "footer": "EPISODIO 06 / 10"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL CONFRONTO",
+   "statement": [
+    "1X, 4X, 16X"
+   ],
+   "body": [
+    "Lo stesso passaggio che crepitava,",
+    "calcolato a risoluzione normale,",
+    "4 volte e 16 volte più fine."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — I NUMERI",
+   "statement": [
+    "-91,7%",
+    "DI ERRORE"
+   ],
+   "body": [
+    "La risoluzione più fine eliminava",
+    "oltre il 91,7% della discrepanza.",
+    "Il crepitio però restava."
+   ],
+   "footer": "ASCOLTO CIECO: \"SEMBRANO TUTTI UGUALI\""
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COSA SIGNIFICA",
+   "title": "NESSUNA DOSE-RISPOSTA",
+   "items": [
+    [
+     "Se fosse la causa",
+     "Meno errore = meno crepitio"
+    ],
+    [
+     "Invece",
+     "Errore giù del 90%, crepitio identico"
+    ],
+    [
+     "Quindi",
+     "Quell'errore non basta a spiegarlo"
+    ]
+   ],
+   "footer": "MIGLIORARE IL NUMERO NON È CORREGGERE IL SUONO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "MIGLIORARE IL NUMERO",
+    "NON È CORREGGERE IL SUONO"
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "BASTA INSEGUIRE LA FORMA D'ONDA.",
+    "DOVEVAMO METTERE ALLA PROVA",
+    "IL CIRCUITO."
+   ],
+   "footer": "SEGUI PER IL PROSSIMO EPISODIO",
+   "size": 80
+  }
+ ],
+ "caption": "Abbiamo eliminato oltre il 90% dell'errore numerico. All'ascolto cieco: identico 🎧\n\nAbbiamo calcolato lo stesso passaggio che crepitava a risoluzione normale, 4 volte e 16 volte più fine. L'errore crollava del 91,7%. Il verdetto dell'ascolto cieco: \"mi sembrano tutti uguali\".\n\nSe una causa è vera, riducendola deve ridursi anche il difetto. Qui non succedeva. Quel test ci ha salvato da un fix che non avrebbe risolto niente.\n\nEpisodio 6 di 10. Avresti fatto il commit lo stesso? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+}
