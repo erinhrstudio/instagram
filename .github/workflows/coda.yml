@@ -1,0 +1,43 @@
+name: Caroselli in coda
+
+on:
+  schedule:
+    # ogni giorno alle 16:30 UTC (18:30 ora legale italiana): pubblica solo se è il giorno giusto
+    - cron: "30 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reel
+  cancel-in-progress: false
+
+jobs:
+  coda:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q requests
+      - name: Scegli il post di oggi
+        id: coda
+        run: python -m reels.coda
+      - name: Pubblica il carosello
+        if: steps.coda.outputs.name != ''
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+        run: python -m reels.post "${{ steps.coda.outputs.name }}" --publish
+      - name: Registra il post pubblicato
+        if: steps.coda.outputs.name != ''
+        run: |
+          git config user.name "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          git add state/published.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Pubblicato il post ${{ steps.coda.outputs.name }}"
+            git push
+          fi
