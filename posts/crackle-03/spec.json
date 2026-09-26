@@ -4,12 +4,19 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.jpg",
    "kicker": "DIARIO DI UN FUZZ · EP 03",
    "title": "UN BUG PIÙ CORTO",
    "title2": "DI UN BATTITO DI CIGLIA",
    "subtitle": "Quasi un singolo campione",
-   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO",
+   "focus": [
+    0.5,
+    0.7
+   ],
+   "zoom": 1.6,
+   "darken": 0.6,
+   "fade_from": 0.3
   },
   {
    "type": "band",

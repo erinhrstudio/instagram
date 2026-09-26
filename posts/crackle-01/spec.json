@@ -4,12 +4,17 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.jpg",
    "kicker": "DIARIO DI UN FUZZ · EP 01",
    "title": "VOLEVAMO CLONARE",
    "title2": "UN PEDALE",
    "subtitle": "E abbiamo creato un mostro",
-   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO",
+   "focus": [
+    0.5,
+    0.32
+   ],
+   "zoom": 1.0
   },
   {
    "type": "band",

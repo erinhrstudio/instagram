@@ -4,12 +4,19 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.jpg",
    "kicker": "DIARIO DI UN FUZZ · EP 04",
    "title": "ANCHE SPICE",
    "title2": "PUÒ MENTIRE",
    "subtitle": "La trappola del riferimento",
-   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO",
+   "focus": [
+    0.5,
+    0.3
+   ],
+   "zoom": 1.4,
+   "darken": 0.55,
+   "fade_from": 0.3
   },
   {
    "type": "band",
