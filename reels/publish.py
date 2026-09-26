@@ -55,6 +55,37 @@ def publish_reel(video_path, caption, token, wait_s=900):
     return {"media_id": p["id"], "username": me.get("username")}
 
 
+def _wait(cid, token, wait_s):
+    deadline = time.time() + wait_s
+    while True:
+        s = _check(requests.get(f"{API}/{cid}", params={"fields": "status_code,status",
+                                                         "access_token": token}, timeout=30))
+        if s.get("status_code") == "FINISHED":
+            return
+        if s.get("status_code") in ("ERROR", "EXPIRED") or time.time() > deadline:
+            raise RuntimeError(f"Elaborazione fallita: {s}")
+        time.sleep(5)
+
+
+def publish_carousel(image_urls, caption, token, wait_s=300):
+    """Pubblica un carosello (2-10 immagini JPEG). Le immagini devono avere un URL pubblico."""
+    me = account(token)
+    uid = me["user_id"]
+    children = []
+    for url in image_urls:
+        c = _check(requests.post(f"{API}/{uid}/media", data={
+            "image_url": url, "is_carousel_item": "true", "access_token": token}, timeout=60))
+        _wait(c["id"], token, wait_s)
+        children.append(c["id"])
+    c = _check(requests.post(f"{API}/{uid}/media", data={
+        "media_type": "CAROUSEL", "children": ",".join(children), "caption": caption,
+        "access_token": token}, timeout=60))
+    _wait(c["id"], token, wait_s)
+    p = _check(requests.post(f"{API}/{uid}/media_publish",
+                             data={"creation_id": c["id"], "access_token": token}, timeout=60))
+    return {"media_id": p["id"], "username": me.get("username")}
+
+
 def refresh_token(token):
     """Rinnova il token (vale 60 giorni). Restituisce il nuovo token."""
     r = _check(requests.get("https://graph.instagram.com/refresh_access_token",

@@ -31,3 +31,8 @@ Per una prova a mano: scheda **Actions › Reel automatico › Run workflow**.
 pip install -r requirements.txt
 python -m reels.run --episode compressione   # crea out/compressione.mp4
 ```
+
+## Post pronti (caroselli)
+
+Metti le immagini JPEG (1080x1350, in ordine alfabetico) e `caption.txt` in `posts/<nome>/`, poi lancia **Actions › Pubblica post pronto** con quel nome.
+Instagram scarica le immagini dall'indirizzo pubblico del file su GitHub, quindi per i caroselli il repository deve essere **pubblico** (i secrets restano comunque privati).

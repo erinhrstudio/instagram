@@ -1,0 +1,48 @@
+name: Pubblica post pronto
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Cartella in posts/ (es. strokes-casablancas)"
+        required: true
+      publish:
+        description: "Pubblica davvero su Instagram (altrimenti è solo una prova)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reel
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q requests
+      - name: Pubblica il carosello
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          NAME: ${{ inputs.name }}
+        run: |
+          ARGS=""
+          [ "${{ inputs.publish }}" = "true" ] && ARGS="--publish"
+          python -m reels.post "$NAME" $ARGS
+      - name: Registra il post pubblicato
+        if: inputs.publish
+        run: |
+          git config user.name "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          git add state/published.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Pubblicato il post ${{ inputs.name }}"
+            git push
+          fi
