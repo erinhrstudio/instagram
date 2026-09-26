@@ -4,12 +4,19 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.png",
    "kicker": "DIARIO DI UN FUZZ · EP 08",
    "title": "72 EVENTI. POI 295.",
    "title2": "IL CREPITIO SEGUIVA",
    "subtitle": "La prima prova all'ascolto",
-   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "zoom": 1.0,
+   "darken": 0.35,
+   "fade_from": 0.35
   },
   {
    "type": "band",

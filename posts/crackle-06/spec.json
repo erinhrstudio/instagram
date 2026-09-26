@@ -4,12 +4,19 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.png",
    "kicker": "DIARIO DI UN FUZZ · EP 06",
    "title": "-90% DI ERRORE.",
    "title2": "STESSO CREPITIO",
    "subtitle": "Il test che ci ha salvato da un fix sbagliato",
-   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "zoom": 1.0,
+   "darken": 0.35,
+   "fade_from": 0.35
   },
   {
    "type": "band",

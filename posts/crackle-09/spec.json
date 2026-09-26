@@ -4,12 +4,19 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.png",
    "kicker": "DIARIO DI UN FUZZ · EP 09",
    "title": "HEIGHT FISSO.",
    "title2": "SOLO L'INGRESSO",
    "subtitle": "Il test che ha ristretto il caso",
-   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": 1.0,
+   "darken": 0.35,
+   "fade_from": 0.35
   },
   {
    "type": "band",

@@ -4,12 +4,19 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.png",
    "kicker": "DIARIO DI UN FUZZ · EP 10",
    "title": "ORA SAPPIAMO",
    "title2": "DOVE GUARDARE",
    "subtitle": "Non ancora cosa correggere",
-   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO",
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "zoom": 1.0,
+   "darken": 0.1,
+   "fade_from": 0.5
   },
   {
    "type": "band",

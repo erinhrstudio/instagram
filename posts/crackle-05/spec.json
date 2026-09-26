@@ -4,12 +4,19 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.png",
    "kicker": "DIARIO DI UN FUZZ · EP 05",
    "title": "IL CODICE SOSPETTO",
    "title2": "ERA INNOCENTE",
    "subtitle": "Il problema arrivava da prima",
-   "footer": "ERIN PARAMETRIC FUZZ · DIARIO"
+   "footer": "ERIN PARAMETRIC FUZZ · DIARIO",
+   "focus": [
+    0.78,
+    0.5
+   ],
+   "zoom": 1.0,
+   "darken": 0.35,
+   "fade_from": 0.35
   },
   {
    "type": "band",
