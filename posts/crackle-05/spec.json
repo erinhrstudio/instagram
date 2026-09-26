@@ -5,7 +5,7 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "",
-   "kicker": "CACCIA AL CREPITIO · EP 05",
+   "kicker": "DIARIO DI UN FUZZ · EP 05",
    "title": "IL CODICE SOSPETTO",
    "title2": "ERA INNOCENTE",
    "subtitle": "Il problema arrivava da prima",
@@ -92,5 +92,5 @@
    "size": 80
   }
  ],
- "caption": "Abbiamo passato settimane dentro il codice sbagliato 😅\n\nCon la simulazione SPICE finalmente pulita, lo stadio del filtro che sospettavamo coincideva quasi alla perfezione. Sull'evento peggiore l'errore totale era di circa 2464 nanosecondi: solo 18 venivano da lì. Il resto nasceva nel passaggio del segnale dallo stadio precedente.\n\nAlzando la risoluzione in quel punto, l'errore scendeva verso zero. Restava la domanda decisiva: il crepitio sarebbe sparito?\n\nEpisodio 5 di 10. Tu cosa dici? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+ "caption": "Abbiamo passato settimane dentro il codice sbagliato 😅\n\nCon la simulazione SPICE finalmente pulita, lo stadio del filtro che sospettavamo coincideva quasi alla perfezione. Sull'evento peggiore l'errore totale era di circa 2464 nanosecondi: solo 18 venivano da lì. Il resto nasceva nel passaggio del segnale dallo stadio precedente.\n\nAlzando la risoluzione in quel punto, l'errore scendeva verso zero. Restava la domanda decisiva: il crepitio sarebbe sparito?\n\nEpisodio 5 di 10. Tu cosa dici? 👇\n\n#diariodiunfuzz #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
 }

@@ -5,7 +5,7 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "",
-   "kicker": "CACCIA AL CREPITIO · EP 03",
+   "kicker": "DIARIO DI UN FUZZ · EP 03",
    "title": "UN BUG PIÙ CORTO",
    "title2": "DI UN BATTITO DI CIGLIA",
    "subtitle": "Quasi un singolo campione",
@@ -94,5 +94,5 @@
    "size": 80
   }
  ],
- "caption": "Il bug durava meno di un battito di ciglia: quasi un singolo campione audio ⏱️\n\nNel circuito c'è un amplificatore che, con Height alto, sbatte contro il limite dell'alimentazione e poi si stacca. Le nostre correzioni funzionavano solo nel campione subito prima del distacco: 20,8 milionesimi di secondo a 48 kHz.\n\nSembrava un errore di timing. Ma una correzione che suona meglio non dimostra di aver trovato la causa.\n\nEpisodio 3 di 10. Ti fideresti di un fix che \"suona meglio\"? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+ "caption": "Il bug durava meno di un battito di ciglia: quasi un singolo campione audio ⏱️\n\nNel circuito c'è un amplificatore che, con Height alto, sbatte contro il limite dell'alimentazione e poi si stacca. Le nostre correzioni funzionavano solo nel campione subito prima del distacco: 20,8 milionesimi di secondo a 48 kHz.\n\nSembrava un errore di timing. Ma una correzione che suona meglio non dimostra di aver trovato la causa.\n\nEpisodio 3 di 10. Ti fideresti di un fix che \"suona meglio\"? 👇\n\n#diariodiunfuzz #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
 }

@@ -6,4 +6,4 @@ Alzando la risoluzione in quel punto, l'errore scendeva verso zero. Restava la d
 
 Episodio 5 di 10. Tu cosa dici? 👇
 
-#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale
+#diariodiunfuzz #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale

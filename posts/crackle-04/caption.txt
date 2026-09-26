@@ -6,4 +6,4 @@ Abbiamo rifatto tutto a passi di 25 nanosecondi.
 
 Episodio 4 di 10. Avresti ancora fiducia in SPICE? 👇
 
-#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale
+#diariodiunfuzz #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale

@@ -6,4 +6,4 @@ Sembrava un errore di timing. Ma una correzione che suona meglio non dimostra di
 
 Episodio 3 di 10. Ti fideresti di un fix che "suona meglio"? 👇
 
-#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale
+#diariodiunfuzz #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale

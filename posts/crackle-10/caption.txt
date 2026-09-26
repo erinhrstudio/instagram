@@ -6,4 +6,4 @@ Il prossimo esperimento, Gate 14, lo metterà alla prova. Non vogliamo nasconder
 
 Fine della prima stagione. Vuoi provare il plugin in beta? Scrivi "FUZZ" nei commenti 👇
 
-#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale
+#diariodiunfuzz #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale

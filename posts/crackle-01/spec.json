@@ -5,7 +5,7 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "",
-   "kicker": "CACCIA AL CREPITIO · EP 01",
+   "kicker": "DIARIO DI UN FUZZ · EP 01",
    "title": "VOLEVAMO CLONARE",
    "title2": "UN PEDALE",
    "subtitle": "E abbiamo creato un mostro",
@@ -94,5 +94,5 @@
    "size": 80
   }
  ],
- "caption": "Volevamo clonare un pedale dentro un plugin. Abbiamo creato un mostro 👹\n\nQuesta è la storia vera di ERIN Parametric Fuzz, il plugin che sto costruendo: un fuzz con un filtro parametrico estremo, dal circuito alla simulazione SPICE fino al codice.\n\nA impostazioni normali suonava bene. Con Height al massimo compariva un crepitio che il pedale vero non ha. Da lì, mesi di indagine con una sola regola: niente fix a intuito.\n\nEpisodio 1 di 10. Tu da dove avresti iniziato a cercare? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+ "caption": "Volevamo clonare un pedale dentro un plugin. Abbiamo creato un mostro 👹\n\nQuesta è la storia vera di ERIN Parametric Fuzz, il plugin che sto costruendo: un fuzz con un filtro parametrico estremo, dal circuito alla simulazione SPICE fino al codice.\n\nA impostazioni normali suonava bene. Con Height al massimo compariva un crepitio che il pedale vero non ha. Da lì, mesi di indagine con una sola regola: niente fix a intuito.\n\nEpisodio 1 di 10. Tu da dove avresti iniziato a cercare? 👇\n\n#diariodiunfuzz #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
 }

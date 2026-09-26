@@ -5,7 +5,7 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "",
-   "kicker": "CACCIA AL CREPITIO · EP 04",
+   "kicker": "DIARIO DI UN FUZZ · EP 04",
    "title": "ANCHE SPICE",
    "title2": "PUÒ MENTIRE",
    "subtitle": "La trappola del riferimento",
@@ -94,5 +94,5 @@
    "size": 80
   }
  ],
- "caption": "Avevamo una simulazione \"di riferimento\". Poi abbiamo scoperto che mentiva 🕵️\n\nSPICE è il simulatore di circuiti usato dagli ingegneri. Ma una nostra vecchia simulazione usava un'impostazione che spostava un nodo di qualche volt, e un'altra calcolava a passi di 20,8 µs, proprio la durata di un campione a 48 kHz. Risultato: un errore finto di 1,4 µs, lo stesso che stavamo inseguendo.\n\nAbbiamo rifatto tutto a passi di 25 nanosecondi.\n\nEpisodio 4 di 10. Avresti ancora fiducia in SPICE? 👇\n\n#cacciaalcrepitio #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
+ "caption": "Avevamo una simulazione \"di riferimento\". Poi abbiamo scoperto che mentiva 🕵️\n\nSPICE è il simulatore di circuiti usato dagli ingegneri. Ma una nostra vecchia simulazione usava un'impostazione che spostava un nodo di qualche volt, e un'altra calcolava a passi di 20,8 µs, proprio la durata di un campione a 48 kHz. Risultato: un errore finto di 1,4 µs, lo stesso che stavamo inseguendo.\n\nAbbiamo rifatto tutto a passi di 25 nanosecondi.\n\nEpisodio 4 di 10. Avresti ancora fiducia in SPICE? 👇\n\n#diariodiunfuzz #pluginaudio #audioprogramming #dsp #juce #fuzz #guitarpedals #homerecording #produzionemusicale"
 }
