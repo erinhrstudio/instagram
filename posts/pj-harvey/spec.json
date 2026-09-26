@@ -1,0 +1,120 @@
+{
+ "music": "PJ Harvey — Rid of Me",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "PJ HARVEY · LA VOCE",
+   "title": "PJ",
+   "title2": "HARVEY",
+   "subtitle": "Rid of Me e la dinamica senza rete",
+   "footer": "HOME RECORDING · MIX"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SUONO",
+   "statement": [
+    "PIANO,",
+    "POI ESPLODE."
+   ],
+   "footer": "RID OF ME · 1993"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL DISCO",
+   "statement": [
+    "STEVE ALBINI",
+    "+ PACHYDERM"
+   ],
+   "footer": "",
+   "body": [
+    "Rid of Me è stato registrato a",
+    "dicembre 1992 ai Pachyderm Studios,",
+    "in Minnesota, con Steve Albini.",
+    "Quasi tutto dal vivo, con la band",
+    "nella stessa stanza."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA LEZIONE",
+   "statement": [
+    "LASCIA LA",
+    "DINAMICA"
+   ],
+   "footer": "IL VOLUME È UNO STRUMENTO",
+   "body": [
+    "Il pianissimo e l'urlo",
+    "devono restare distanti.",
+    "Se comprimi troppo, sparisce tutto."
+   ]
+  },
+  {
+   "type": "eq",
+   "kicker": "04 — RIFALLO A CASA",
+   "title": "EQ",
+   "lowcut": 100,
+   "highcut": 10000,
+   "boost": [
+    2000,
+    2
+   ],
+   "items": [
+    [
+     "Passa-alto",
+     "Sotto i 100 Hz"
+    ],
+    [
+     "Corpo",
+     "Lascia i 200-300 Hz: danno calore"
+    ],
+    [
+     "Presenza",
+     "+2 dB sui 2 kHz"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — RIFALLO A CASA",
+   "title": "DAL VIVO",
+   "items": [
+    [
+     "Take",
+     "Registra voce e band insieme"
+    ],
+    [
+     "Compressione",
+     "Leggera, 2-4 dB: solo i picchi"
+    ],
+    [
+     "Stanza",
+     "Microfono ambiente per le parti forti"
+    ],
+    [
+     "Rientri",
+     "Non temerli: sono il suono del live"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "VUOI IL PRIMA/DOPO?",
+    "SCRIVI \"RID\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "size": 80
+  }
+ ],
+ "caption": "In Rid of Me PJ Harvey passa dal quasi sussurro all'urlo, e nessuno ha provato ad appiattirla 🎙️\n\nIl disco è stato registrato a dicembre 1992 ai Pachyderm Studios con Steve Albini, quasi tutto dal vivo. La dinamica è rimasta intatta.\n\nNelle slide trovi come registrare e mixare una voce così: poca compressione, microfono ambiente e rientri usati come suono.\n\nScrivi \"RID\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#pjharvey #ridofme #stevealbini #homerecording #mixing #vocalmixing #homestudio #produzionemusicale"
+}

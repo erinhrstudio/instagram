@@ -1,0 +1,120 @@
+{
+ "music": "Billie Eilish — Bad Guy",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "BILLIE EILISH · LA VOCE",
+   "title": "BILLIE",
+   "title2": "EILISH",
+   "subtitle": "La voce registrata in una cameretta",
+   "footer": "HOME RECORDING · MIX"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SUONO",
+   "statement": [
+    "VICINA,",
+    "QUASI UN SEGRETO."
+   ],
+   "footer": "WHEN WE ALL FALL ASLEEP · 2019"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — LA CATENA",
+   "statement": [
+    "TLM 103",
+    "IN CAMERETTA"
+   ],
+   "footer": "",
+   "body": [
+    "Il primo album è nato nella camera",
+    "di Finneas, a Highland Park: Billie",
+    "cantava seduta sul letto in un",
+    "Neumann TLM 103. Nel mix, Rob Kinelski",
+    "usa compressione e rider di volume."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL TRUCCO",
+   "statement": [
+    "IL BASSO FA",
+    "SPAZIO ALLA VOCE"
+   ],
+   "footer": "FUNZIONA ANCHE CON LA CASSA",
+   "body": [
+    "In Bad Guy la voce è sempre davanti:",
+    "un sidechain abbassa il basso",
+    "quando lei canta."
+   ]
+  },
+  {
+   "type": "eq",
+   "kicker": "04 — RIFALLO A CASA",
+   "title": "EQ",
+   "lowcut": 100,
+   "highcut": 14000,
+   "boost": [
+    5000,
+    2
+   ],
+   "items": [
+    [
+     "Passa-alto",
+     "Sotto i 90-100 Hz"
+    ],
+    [
+     "Presenza",
+     "+2 dB intorno ai 5 kHz"
+    ],
+    [
+     "De-esser",
+     "Sulle S, tra 6 e 8 kHz"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — RIFALLO A CASA",
+   "title": "VOCE SUSSURRATA",
+   "items": [
+    [
+     "Distanza",
+     "Canta a 10 cm, a volume basso"
+    ],
+    [
+     "Compressione",
+     "Forte ma lenta: 4:1, 6-8 dB"
+    ],
+    [
+     "Volume",
+     "Automazione o un rider di volume"
+    ],
+    [
+     "Ritornelli",
+     "Voce doppiata e un po' saturata"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "VUOI IL PRIMA/DOPO?",
+    "SCRIVI \"BILLIE\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "size": 80
+  }
+ ],
+ "caption": "La voce di Billie Eilish sembra cantata a un centimetro dal tuo orecchio. È stata registrata in una cameretta 🎙️\n\nIl primo album è nato nella camera di Finneas: Billie cantava seduta sul letto in un Neumann TLM 103. Nel mix il basso si abbassa quando lei canta, così la voce resta sempre davanti.\n\nNelle slide trovi come rifare una voce sussurrata a casa: distanza giusta, compressione, sidechain e de-esser.\n\nScrivi \"BILLIE\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#billieeilish #finneas #bedroompop #homerecording #mixing #vocalmixing #homestudio #produzionemusicale"
+}

@@ -1,0 +1,120 @@
+{
+ "music": "K's Choice — Not an Addict",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "K'S CHOICE · LA VOCE",
+   "title": "SAM",
+   "title2": "BETTENS",
+   "subtitle": "La voce ruvida di Not an Addict",
+   "footer": "HOME RECORDING · MIX"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SUONO",
+   "statement": [
+    "RUVIDA,",
+    "MA CALDA."
+   ],
+   "footer": "PARADISE IN ME · 1995"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL DISCO",
+   "statement": [
+    "PARADISE",
+    "IN ME"
+   ],
+   "footer": "",
+   "body": [
+    "Il disco del 1995 è prodotto da",
+    "Jean Blaute e registrato ai Jet Studios",
+    "di Bruxelles. Not an Addict, scritta",
+    "da Gert e Sam Bettens, porta la band",
+    "in tutto il mondo."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA LEZIONE",
+   "statement": [
+    "LA GRANA",
+    "È IL TIMBRO"
+   ],
+   "footer": "MENO PLUGIN, PIÙ CARATTERE",
+   "body": [
+    "Una voce fumosa non va ripulita:",
+    "va messa in primo piano",
+    "e lasciata sporca."
+   ]
+  },
+  {
+   "type": "eq",
+   "kicker": "04 — RIFALLO A CASA",
+   "title": "EQ",
+   "lowcut": 100,
+   "highcut": 11000,
+   "boost": [
+    1200,
+    2
+   ],
+   "items": [
+    [
+     "Passa-alto",
+     "Sotto i 100 Hz"
+    ],
+    [
+     "Calore",
+     "+2 dB intorno a 1-1,5 kHz"
+    ],
+    [
+     "Asprezza",
+     "Taglia 3-4 kHz se graffia troppo"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — RIFALLO A CASA",
+   "title": "COMPRESSIONE",
+   "items": [
+    [
+     "Stile",
+     "Ottico e morbido, tipo LA-2A"
+    ],
+    [
+     "Riduzione",
+     "3-5 dB, rilascio lento"
+    ],
+    [
+     "Saturazione",
+     "Un filo, per aggiungere grana"
+    ],
+    [
+     "Spazio",
+     "Plate corto, 1-1,5 secondi"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "VUOI IL PRIMA/DOPO?",
+    "SCRIVI \"SAM\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "size": 80
+  }
+ ],
+ "caption": "La voce di Sam Bettens in Not an Addict è ruvida e calda allo stesso tempo 🎙️\n\nParadise in Me (1995) è prodotto da Jean Blaute e registrato ai Jet Studios di Bruxelles. Not an Addict, scritta da Gert e Sam Bettens, ha portato i K's Choice in tutto il mondo.\n\nNelle slide trovi come mixare una voce fumosa senza ripulirla: EQ sul calore, compressione ottica e un plate corto.\n\nScrivi \"SAM\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#kschoice #sambettens #notanaddict #90s #homerecording #mixing #vocalmixing #homestudio"
+}

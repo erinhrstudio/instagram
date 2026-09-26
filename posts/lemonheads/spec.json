@@ -1,0 +1,120 @@
+{
+ "music": "The Lemonheads — It's a Shame About Ray",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "THE LEMONHEADS · LA VOCE",
+   "title": "EVAN",
+   "title2": "DANDO",
+   "subtitle": "La voce di It's a Shame About Ray",
+   "footer": "HOME RECORDING · MIX"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SUONO",
+   "statement": [
+    "PIGRA,",
+    "MA PRECISA."
+   ],
+   "footer": "IT'S A SHAME ABOUT RAY · 1992"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL DISCO",
+   "statement": [
+    "DANDO, HATFIELD",
+    "+ RYAN"
+   ],
+   "footer": "",
+   "body": [
+    "Nel 1992, con i produttori Robb",
+    "Brothers, le basi sono registrate",
+    "insieme da Evan Dando, Juliana Hatfield",
+    "e David Ryan. Poche sovraincisioni:",
+    "il disco dura mezz'ora."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA LEZIONE",
+   "statement": [
+    "DI MENO",
+    "È DI PIÙ"
+   ],
+   "footer": "NON RIEMPIRE OGNI SPAZIO",
+   "body": [
+    "Canzoni brevi, pochi strati.",
+    "Una voce e un'armonia",
+    "bastano a riempire il ritornello."
+   ]
+  },
+  {
+   "type": "eq",
+   "kicker": "04 — RIFALLO A CASA",
+   "title": "EQ",
+   "lowcut": 100,
+   "highcut": 12000,
+   "boost": [
+    3000,
+    2
+   ],
+   "items": [
+    [
+     "Passa-alto",
+     "Sotto i 100 Hz"
+    ],
+    [
+     "Presenza",
+     "+2 dB sui 3 kHz"
+    ],
+    [
+     "Armonia",
+     "Più scura della voce principale"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — RIFALLO A CASA",
+   "title": "VOCE E ARMONIA",
+   "items": [
+    [
+     "Compressione",
+     "Morbida, 3:1, 3-4 dB"
+    ],
+    [
+     "Armonia",
+     "5-8 dB sotto la voce principale"
+    ],
+    [
+     "Panorama",
+     "Armonia leggermente di lato"
+    ],
+    [
+     "Spazio",
+     "Una room corta, niente effetti"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "VUOI IL PRIMA/DOPO?",
+    "SCRIVI \"RAY\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "size": 80
+  }
+ ],
+ "caption": "It's a Shame About Ray dura mezz'ora e non ha niente di troppo. Anche la voce di Evan Dando 🎙️\n\nNel 1992, con i Robb Brothers, le basi sono state registrate insieme da Dando, Juliana Hatfield e David Ryan, con poche sovraincisioni. Il risultato è uno dei suoni più diretti degli anni '90.\n\nNelle slide trovi come mixare voce e armonia in stile Lemonheads: compressione morbida, armonia più bassa e di lato, niente effetti.\n\nScrivi \"RAY\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#thelemonheads #evandando #julianahatfield #90s #homerecording #mixing #vocalmixing #homestudio"
+}

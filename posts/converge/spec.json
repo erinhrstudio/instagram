@@ -1,0 +1,120 @@
+{
+ "music": "Converge — Concubine",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "CONVERGE · LA VOCE",
+   "title": "JACOB",
+   "title2": "BANNON",
+   "subtitle": "Come si mixa un urlo in Jane Doe",
+   "footer": "HOME RECORDING · MIX"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SUONO",
+   "statement": [
+    "UN URLO",
+    "CHE SI CAPISCE."
+   ],
+   "footer": "JANE DOE · 2001"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL DISCO",
+   "statement": [
+    "JANE DOE",
+    "+ KURT BALLOU"
+   ],
+   "footer": "",
+   "body": [
+    "Jane Doe (2001) è registrato in",
+    "analogico tra Q Division, GodCity",
+    "e Fort Apache, con Kurt Ballou",
+    "al banco. Bannon dice di non avere",
+    "una tecnica: conosci i tuoi limiti."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA LEZIONE",
+   "statement": [
+    "CONOSCI I",
+    "TUOI LIMITI"
+   ],
+   "footer": "LA VOCE NON SI RICOMPRA",
+   "body": [
+    "Urlare bene è gestire il fiato.",
+    "Scaldati, bevi acqua,",
+    "registra poche take ma vere."
+   ]
+  },
+  {
+   "type": "eq",
+   "kicker": "04 — RIFALLO A CASA",
+   "title": "EQ",
+   "lowcut": 150,
+   "highcut": 8000,
+   "boost": [
+    1500,
+    3
+   ],
+   "items": [
+    [
+     "Passa-alto",
+     "Sotto i 150 Hz"
+    ],
+    [
+     "Taglio",
+     "Leggero sui 3 kHz se fa male"
+    ],
+    [
+     "Distorsione",
+     "In parallelo, al 20-30%"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — RIFALLO A CASA",
+   "title": "COMPRESSIONE",
+   "items": [
+    [
+     "Primo",
+     "Veloce, 8:1, solo sui picchi"
+    ],
+    [
+     "Secondo",
+     "Lento, 3:1, per la costanza"
+    ],
+    [
+     "Doppie",
+     "Una seconda urla sotto, più bassa"
+    ],
+    [
+     "Spazio",
+     "Delay corto, niente riverbero lungo"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "VUOI IL PRIMA/DOPO?",
+    "SCRIVI \"URLO\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "size": 80
+  }
+ ],
+ "caption": "Come si mixa un urlo senza farlo diventare rumore? Jacob Bannon in Jane Doe ne è l'esempio 🎙️\n\nJane Doe (2001) è stato registrato in analogico tra Q Division, GodCity e Fort Apache, con Kurt Ballou. Bannon dice di non avere una tecnica: conosci i tuoi limiti.\n\nNelle slide trovi la catena per le voci urlate: due compressori in serie, distorsione in parallelo e delay corto.\n\nScrivi \"URLO\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#converge #jacobbannon #janedoe #kurtballou #hardcore #homerecording #mixing #vocalmixing"
+}

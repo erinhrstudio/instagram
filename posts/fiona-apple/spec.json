@@ -1,0 +1,120 @@
+{
+ "music": "Fiona Apple — Shameika",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "FIONA APPLE · LA VOCE",
+   "title": "FIONA",
+   "title2": "APPLE",
+   "subtitle": "Un album intero registrato in casa",
+   "footer": "HOME RECORDING · MIX"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SUONO",
+   "statement": [
+    "LA CASA È",
+    "IL MICROFONO."
+   ],
+   "footer": "FETCH THE BOLT CUTTERS · 2020"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL DISCO",
+   "statement": [
+    "FETCH THE",
+    "BOLT CUTTERS"
+   ],
+   "footer": "",
+   "body": [
+    "Registrato tra il 2015 e il 2020",
+    "nella sua casa di Venice, in California,",
+    "anche con GarageBand. Take lunghe,",
+    "quasi senza tagli: si sentono i cani,",
+    "i passi e gli oggetti percossi."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA LEZIONE",
+   "statement": [
+    "NON NASCONDERE",
+    "LA STANZA"
+   ],
+   "footer": "IL TUO HOME STUDIO È GIÀ UN SUONO",
+   "body": [
+    "Il rumore della casa è parte del suono.",
+    "Usa la stanza come riverbero:",
+    "un microfono più lontano, non un plugin."
+   ]
+  },
+  {
+   "type": "eq",
+   "kicker": "04 — RIFALLO A CASA",
+   "title": "EQ",
+   "lowcut": 80,
+   "highcut": 12000,
+   "boost": [
+    4000,
+    2
+   ],
+   "items": [
+    [
+     "Passa-alto",
+     "Leggero, sotto gli 80 Hz"
+    ],
+    [
+     "Stanza",
+     "Taglia 200-400 Hz se rimbomba"
+    ],
+    [
+     "Voce",
+     "+2 dB sui 4 kHz, niente di più"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — RIFALLO A CASA",
+   "title": "TAKE LUNGHE",
+   "items": [
+    [
+     "Microfono",
+     "Due: uno vicino, uno nella stanza"
+    ],
+    [
+     "Compressione",
+     "Leggera, 2-3 dB: la dinamica è tutto"
+    ],
+    [
+     "Montaggio",
+     "Il meno possibile, tieni gli errori belli"
+    ],
+    [
+     "Plugin gratis",
+     "TDR Kotelnikov come compressore"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "VUOI IL PRIMA/DOPO?",
+    "SCRIVI \"CASA\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "size": 80
+  }
+ ],
+ "caption": "Fiona Apple ha registrato un album da Grammy nella sua casa, anche con GarageBand 🎙️\n\nFetch the Bolt Cutters (2020) è fatto di take lunghe e quasi senza tagli: si sentono i cani, i passi, gli oggetti percossi. La casa diventa parte del suono.\n\nNelle slide trovi come usare la tua stanza come uno strumento: due microfoni, compressione leggera e pochissimo montaggio.\n\nScrivi \"CASA\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#fionaapple #fetchtheboltcutters #homerecording #mixing #vocalmixing #homestudio #produzionemusicale"
+}

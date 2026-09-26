@@ -1,0 +1,120 @@
+{
+ "music": "Korn — Freak on a Leash",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "KORN · LA VOCE",
+   "title": "JONATHAN",
+   "title2": "DAVIS",
+   "subtitle": "Come si mixa una voce nu metal",
+   "footer": "HOME RECORDING · MIX"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SUONO",
+   "statement": [
+    "SUSSURRO",
+    "E URLO."
+   ],
+   "footer": "KORN · 1994"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL DISCO",
+   "statement": [
+    "INDIGO RANCH",
+    "+ ROSS ROBINSON"
+   ],
+   "footer": "",
+   "body": [
+    "Il primo album dei Korn nasce nel 1994",
+    "all'Indigo Ranch, a Malibu, con il",
+    "produttore Ross Robinson: prese",
+    "intense, pochi ritocchi, la band",
+    "spinta al limite in ogni take."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA LEZIONE",
+   "statement": [
+    "LA PRIMA TAKE",
+    "È QUELLA BUONA"
+   ],
+   "footer": "TIENI SEMPRE IL REC ACCESO",
+   "body": [
+    "Lo scat di Freak on a Leash",
+    "è nato improvvisato.",
+    "Registra sempre, anche le prove."
+   ]
+  },
+  {
+   "type": "eq",
+   "kicker": "04 — RIFALLO A CASA",
+   "title": "EQ",
+   "lowcut": 100,
+   "highcut": 10000,
+   "boost": [
+    3000,
+    3
+   ],
+   "items": [
+    [
+     "Passa-alto",
+     "Sotto i 100 Hz"
+    ],
+    [
+     "Sussurri",
+     "+3 dB intorno ai 3 kHz"
+    ],
+    [
+     "Urla",
+     "Taglio stretto sui 2-4 kHz se graffiano"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — RIFALLO A CASA",
+   "title": "DUE VOCI",
+   "items": [
+    [
+     "Traccia A",
+     "Parti sussurrate: compressione forte, 8:1"
+    ],
+    [
+     "Traccia B",
+     "Urla: più saturazione, meno volume"
+    ],
+    [
+     "Doppie",
+     "Due take a sinistra e destra nei ritornelli"
+    ],
+    [
+     "Automazione",
+     "Volume a mano, parola per parola"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "VUOI IL PRIMA/DOPO?",
+    "SCRIVI \"KORN\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "size": 80
+  }
+ ],
+ "caption": "Jonathan Davis passa dal sussurro all'urlo nella stessa frase. Come si tiene tutto nel mix? 🎙️\n\nIl primo album dei Korn è stato registrato nel 1994 all'Indigo Ranch di Malibu con Ross Robinson: prese intense e pochi ritocchi. E lo scat di Freak on a Leash è nato improvvisato.\n\nNelle slide trovi il trucco per mixare a casa una voce così: due tracce separate, una per i sussurri e una per le urla.\n\nScrivi \"KORN\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#korn #jonathandavis #numetal #homerecording #mixing #vocalmixing #produzionemusicale #homestudio"
+}

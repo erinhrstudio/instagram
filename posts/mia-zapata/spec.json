@@ -1,0 +1,120 @@
+{
+ "music": "The Gits — Second Skin",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "THE GITS · LA VOCE",
+   "title": "MIA",
+   "title2": "ZAPATA",
+   "subtitle": "Una voce blues dentro il punk di Seattle",
+   "footer": "HOME RECORDING · MIX"
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SUONO",
+   "statement": [
+    "RAUCA,",
+    "MAI LEVIGATA."
+   ],
+   "footer": "FRENCHING THE BULLY · 1992"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL DISCO",
+   "statement": [
+    "FRENCHING",
+    "THE BULLY"
+   ],
+   "footer": "",
+   "body": [
+    "Il primo album dei Gits, 1992.",
+    "Una band di quattro persone che suona",
+    "come dal vivo: chitarre ruvide e",
+    "la voce di Mia in primo piano,",
+    "con tutta la grana del blues."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA LEZIONE",
+   "statement": [
+    "NON PULIRE",
+    "LA RAUCEDINE"
+   ],
+   "footer": "LASCIA RESPIRARE LA VOCE",
+   "body": [
+    "La grana è il carattere della voce.",
+    "Se la togli con EQ e de-esser",
+    "resta un punk qualunque."
+   ]
+  },
+  {
+   "type": "eq",
+   "kicker": "04 — RIFALLO A CASA",
+   "title": "EQ",
+   "lowcut": 120,
+   "highcut": 9000,
+   "boost": [
+    2500,
+    3
+   ],
+   "items": [
+    [
+     "Passa-alto",
+     "Sotto gli 80-120 Hz"
+    ],
+    [
+     "Presenza",
+     "+2/3 dB tra 2 e 3 kHz"
+    ],
+    [
+     "Aria",
+     "Niente boost sopra i 10 kHz"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — RIFALLO A CASA",
+   "title": "COMPRESSIONE",
+   "items": [
+    [
+     "Stile",
+     "Un 1176 (o Klanghelm DC1A gratis)"
+    ],
+    [
+     "Rapporto",
+     "4:1, attacco medio per i transienti"
+    ],
+    [
+     "Riduzione",
+     "4-6 dB sui picchi urlati"
+    ],
+    [
+     "Spazio",
+     "Una room corta, quasi niente coda"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "VUOI IL PRIMA/DOPO?",
+    "SCRIVI \"GITS\"",
+    "NEI COMMENTI"
+   ],
+   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "size": 80
+  }
+ ],
+ "caption": "Mia Zapata cantava punk con la voce di una cantante blues 🎙️\n\nNei Gits la sua voce era rauca, piena, mai levigata: il contrario delle voci perfette di oggi. In Frenching the Bully (1992) la band suona quasi come dal vivo e la voce sta davanti a tutto.\n\nNelle slide trovi come mixare una voce così senza togliere la grana: EQ leggero, compressione sui picchi e poco riverbero.\n\nScrivi \"GITS\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#thegits #miazapata #seattle #punk #homerecording #mixing #vocalmixing #homestudio"
+}
