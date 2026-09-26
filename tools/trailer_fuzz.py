@@ -130,7 +130,7 @@ def frame(c, t, starts, dur, cl, peaks, gx0, gy, total):
     c.kicker(0, 560, "UNA STORIA VERA IN 10 EPISODI", center=True)
     c.text((W / 2, 640), "DIARIO", font("display", 230), fill=fade(WHITE), anchor="ma")
     c.text((W / 2, 850), "DI UN FUZZ", font("display", 230), fill=fade(PINK), anchor="ma")
-    c.text((W / 2, 1120), "Episodio 1 · domenica, ore 18:30", font("serif", 48), fill=fade(TEXT), anchor="ma")
+    c.text((W / 2, 1120), "Episodio 1 · giovedì, ore 21:00", font("serif", 48), fill=fade(TEXT), anchor="ma")
     c.line([(W / 2 - 80, 1230), (W / 2 + 80, 1230)], fill=PINK, width=2)
     c.text((W / 2, 1290), "SEGUI PER NON PERDERLO", font("sans", 30, 700), fill=fade(PINK_SOFT), anchor="ma", tracking=5)
 
