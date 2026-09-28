@@ -41,6 +41,20 @@ def font(kind, size, weight=400):
 
 CHARCOAL = (31, 31, 31)
 BAND = (236, 133, 143)  # rosa delle fasce (campionato dal post Morrissey)
+GLOW = (40, 14, 20)
+DIM = ((90, 52, 60), (150, 80, 92), (70, 44, 50))  # accento scurito: onde e barre EQ
+
+# Colori d'accento per serie: stessa luminosità e saturazione del rosa, cambia solo la tinta.
+ACCENTS = {
+    "rosa": dict(PINK=(237, 133, 145), PINK_SOFT=(247, 184, 191), BAND=(236, 133, 143),
+                 GLOW=(40, 14, 20), DIM=((90, 52, 60), (150, 80, 92), (70, 44, 50))),
+    "azzurro": dict(PINK=(133, 194, 237), PINK_SOFT=(184, 221, 247), BAND=(133, 193, 236),
+                    GLOW=(14, 29, 40), DIM=((52, 74, 90), (80, 121, 150), (44, 59, 70))),
+}
+
+
+def set_accent(name="rosa"):
+    globals().update(ACCENTS[name])
 
 # Sfondi di default dei caroselli: antracite granuloso + fascia rosa.
 # Ogni fascia è un poligono con coordinate relative (x, y da 0 a 1).
@@ -91,7 +105,7 @@ class Canvas:
         yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
         gx, gy = glow
         g = np.exp(-(((xx - gx * W) / (0.55 * W)) ** 2 + ((yy - gy * H) / (0.45 * H)) ** 2))
-        a += g[..., None] * np.array([40, 14, 20], np.float32)
+        a += g[..., None] * np.array(GLOW, np.float32)
         a += rng.normal(0, 3.2, (H, W, 1)).astype(np.float32)  # grana da pellicola
         self.img = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
         self.d = ImageDraw.Draw(self.img)

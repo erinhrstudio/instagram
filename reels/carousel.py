@@ -8,11 +8,14 @@ Tipi di slide:
   band   sfondo con fascia rosa ("bg"), frase principale sulla fascia, testo breve nella zona scura
   list   antracite: kicker, titolo e punti (etichetta + testo)
   eq     antracite: kicker, titolo, curva EQ e punti
+
+Opzionale nello spec: "accent": "azzurro" (default "rosa") per cambiare colore a una serie.
 """
 import json, math, sys, zlib
 from pathlib import Path
 
-from reels.style import BACKDROPS, Canvas, font, MUTED, PINK, PINK_SOFT, TEXT
+from reels import style
+from reels.style import BACKDROPS, Canvas, font, MUTED, TEXT
 
 W, H, M = 1080, 1350, 90
 WHITE = (255, 255, 255)
@@ -53,7 +56,7 @@ def footer(c, text, right=None, rule=True):
         c.line([(M, H - 120), (W - M, H - 120)])
     if right:
         c.text((M, H - 92), text, font("sans", 20, 500), fill=MUTED, tracking=2)
-        c.text((W - M, H - 92), right, font("sans", 20, 700), fill=PINK_SOFT, anchor="ra", tracking=3)
+        c.text((W - M, H - 92), right, font("sans", 20, 700), fill=style.PINK_SOFT, anchor="ra", tracking=3)
     elif text:
         c.text((CX, H - 92), text, font("sans", 20, 500), fill=MUTED, anchor="ma", tracking=2)
 
@@ -79,7 +82,7 @@ def slide_cover(c, s, i, n, root):
     y += 44 + t1 * 0.86
     if s.get("title2"):
         t2 = fit(c, [s["title2"]], "display", 150, W - 2 * M)
-        c.text((CX, y), s["title2"], font("display", t2), fill=PINK, anchor="ma")
+        c.text((CX, y), s["title2"], font("display", t2), fill=style.PINK, anchor="ma")
         y += t2 * 0.92
     if s.get("subtitle"):
         centered(c, y + 16, [s["subtitle"]], "serif", 36, TEXT)
@@ -91,7 +94,7 @@ def wave(c, seed, cy=470, amp=190):
     import random
     r = random.Random(seed)
     parts = [(r.uniform(2, 9), r.uniform(0, 6.3), r.uniform(0.3, 1)) for _ in range(4)]
-    for k, (col, w) in enumerate([((90, 52, 60), 1), ((150, 80, 92), 1), (PINK, 2)]):
+    for k, (col, w) in enumerate([(style.DIM[0], 1), (style.DIM[1], 1), (style.PINK, 2)]):
         pts = []
         for n in range(600):
             t = n / 599
@@ -137,9 +140,9 @@ def kicker_at(c, cx, y, text):
     f = font("sans", 22, 700)
     w = c.textlength(text, f, 4)
     x = cx - w / 2
-    c.rect((x - 50, y + 12, x - 22, y + 15), fill=PINK)
-    c.rect((x + w + 22, y + 12, x + w + 50, y + 15), fill=PINK)
-    c.text((x, y), text, f, fill=PINK_SOFT, tracking=4)
+    c.rect((x - 50, y + 12, x - 22, y + 15), fill=style.PINK)
+    c.rect((x + w + 22, y + 12, x + w + 50, y + 15), fill=style.PINK)
+    c.text((x, y), text, f, fill=style.PINK_SOFT, tracking=4)
 
 
 def free_zone(bg, need, top=150, bottom=H - 140, pad=36):
@@ -172,9 +175,9 @@ def free_zone(bg, need, top=150, bottom=H - 140, pad=36):
 def items_block(c, y, items, gap=36):
     for k, (lab, txt) in enumerate(items, 1):
         if k > 1:
-            c.line([(CX - 60, y), (CX + 60, y)], fill=PINK, width=1.5)
+            c.line([(CX - 60, y), (CX + 60, y)], fill=style.PINK, width=1.5)
             y += gap
-        c.text((CX, y), f"{k:02d} · {lab.upper()}", font("sans", 20, 700), fill=PINK_SOFT, anchor="ma", tracking=4)
+        c.text((CX, y), f"{k:02d} · {lab.upper()}", font("sans", 20, 700), fill=style.PINK_SOFT, anchor="ma", tracking=4)
         y = centered(c, y + 38, txt if isinstance(txt, list) else [txt], "sans", 33, TEXT, leading=1.35) + gap - 10
     return y
 
@@ -209,8 +212,8 @@ def slide_eq(c, s, i, n, root):
         c.text((fx(hz), gy1 + 14), lab, font("sans", 16, 600), fill=MUTED, anchor="ma", tracking=1)
     pts = [(fx(20 * 1000 ** (k / 399)), gy(gain(20 * 1000 ** (k / 399)))) for k in range(400)]
     for x, yy in pts[::2]:
-        c.line([(x, yy), (x, gy1)], fill=(70, 44, 50), width=1.2)
-    c.line(pts, fill=PINK, width=3)
+        c.line([(x, yy), (x, gy1)], fill=style.DIM[2], width=1.2)
+    c.line(pts, fill=style.PINK, width=3)
     items_block(c, gy1 + 80, s["items"], gap=s.get("gap", 30))
     footer(c, s.get("footer", ""))
 
@@ -222,6 +225,7 @@ def build(folder):
     folder = Path(folder)
     spec = json.loads((folder / "spec.json").read_text(encoding="utf-8"))
     slides = spec["slides"]
+    style.set_accent(spec.get("accent", "rosa"))
     for old in folder.glob("[0-9][0-9].jpg"):
         old.unlink()
     for i, s in enumerate(slides, 1):
