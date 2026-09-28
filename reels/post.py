@@ -36,8 +36,13 @@ def main():
         return 1
     repo = os.environ.get("GITHUB_REPOSITORY", "erinhrstudio/instagram")
     ref = os.environ.get("GITHUB_SHA", "main")
-    urls = [str(p) if p.suffix == ".mp4" else
-            f"https://raw.githubusercontent.com/{repo}/{ref}/{p.relative_to(ROOT).as_posix()}" for p in images]
+    def url(p):
+        rel = p.relative_to(ROOT).as_posix()
+        raw = f"https://raw.githubusercontent.com/{repo}/{ref}/{rel}"
+        if p.suffix == ".mp4":  # jsDelivr serve i video come video/mp4, GitHub raw no
+            return [f"https://cdn.jsdelivr.net/gh/{repo}@{ref}/{rel}", raw]
+        return raw
+    urls = [url(p) for p in images]
     print(f"Carosello '{a.name}': {len(urls)} elementi")
     for u in urls:
         print(" ", u)

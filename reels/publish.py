@@ -67,28 +67,33 @@ def _wait(cid, token, wait_s):
         time.sleep(5)
 
 
-def _carousel_video(uid, path, token, wait_s):
-    """Carica un video come elemento del carosello (upload resumable, niente URL pubblico)."""
-    c = _check(requests.post(f"{API}/{uid}/media", data={
-        "media_type": "VIDEO", "upload_type": "resumable", "is_carousel_item": "true",
-        "access_token": token}, timeout=60))
-    upload_uri = c.get("uri") or f"https://rupload.facebook.com/ig-api-upload/v23.0/{c['id']}"
-    with open(path, "rb") as f:
-        _check(requests.post(upload_uri, data=f, timeout=600, headers={
-            "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(os.path.getsize(path))}))
-    _wait(c["id"], token, wait_s)
-    return c["id"]
+def _carousel_video(uid, urls, token, wait_s):
+    """Video come elemento del carosello. Instagram vuole un URL pubblico (video_url):
+    si prova ogni URL della lista finché uno viene accettato."""
+    err = None
+    for url in urls:
+        try:
+            c = _check(requests.post(f"{API}/{uid}/media", data={
+                "media_type": "VIDEO", "video_url": url, "is_carousel_item": "true",
+                "access_token": token}, timeout=60))
+            _wait(c["id"], token, wait_s)
+            print("  video accettato da", url)
+            return c["id"]
+        except RuntimeError as e:
+            print("  video rifiutato da", url, "->", e)
+            err = e
+    raise err
 
 
 def publish_carousel(items, caption, token, wait_s=300, publish=True):
     """Pubblica un carosello (2-10 elementi). Un elemento è l'URL pubblico di un JPEG
-    oppure il percorso locale di un video MP4. Con publish=False crea solo i contenitori
+    oppure una lista di URL alternativi di un video MP4. Con publish=False crea solo i contenitori
     (verifica che Instagram accetti tutto) senza pubblicare nulla."""
     me = account(token)
     uid = me["user_id"]
     children = []
     for item in items:
-        if str(item).endswith(".mp4"):
+        if isinstance(item, (list, tuple)):
             children.append(_carousel_video(uid, item, token, max(wait_s, 600)))
             continue
         c = _check(requests.post(f"{API}/{uid}/media", data={
