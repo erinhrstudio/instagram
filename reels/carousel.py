@@ -4,7 +4,8 @@ Uso: python -m reels.carousel posts/<nome>
 Legge posts/<nome>/spec.json e scrive posts/<nome>/01.jpg, 02.jpg, ... più caption.txt e musica.txt
 
 Tipi di slide:
-  cover  foto (bianco e nero, primo piano) o sfondo, con kicker / titolo / titolo2 / sottotitolo
+  cover  foto (bianco e nero, primo piano) o sfondo, con kicker / titolo / titolo2 / sottotitolo,
+         oppure "hook": [righe] per la copertina-domanda (artista piccolo nel sottotitolo)
   band   sfondo con fascia rosa ("bg"), frase principale sulla fascia, testo breve nella zona scura
   list   antracite: kicker, titolo e punti (etichetta + testo)
   eq     antracite: kicker, titolo, curva EQ e punti
@@ -76,6 +77,9 @@ def slide_cover(c, s, i, n, root):
     else:
         wave(c, s.get("wave_seed", zlib.crc32(s["title"].encode())))
     c.header(BRAND, f"{i:02d} / {n:02d}")
+    if s.get("hook"):
+        hook_cover(c, s)
+        return
     y = 800
     c.kicker(0, y, s["kicker"], center=True)
     t1 = fit(c, [s["title"]], "display", 190, W - 2 * M)
@@ -87,6 +91,22 @@ def slide_cover(c, s, i, n, root):
         y += t2 * 0.92
     if s.get("subtitle"):
         centered(c, y + 16, [s["subtitle"]], "serif", 36, TEXT)
+    footer(c, s.get("footer", "HOME RECORDING · STORIA"), "SCORRI  →")
+
+
+def hook_cover(c, s):
+    """Copertina-domanda: il gancio grande (ultima riga in accento), l'artista piccolo sotto."""
+    lines = s["hook"]
+    size = fit(c, lines, "display", s.get("hook_size", 128), W - 2 * M)
+    lh = size * 0.93
+    y = H - 185 - lh * len(lines) - (60 if s.get("subtitle") else 0)
+    if s.get("kicker"):
+        c.kicker(0, y - 60, s["kicker"], center=True)
+    for i, l in enumerate(lines):
+        c.text((CX, y), l, font("display", size), fill=style.PINK if i == len(lines) - 1 else TEXT, anchor="ma")
+        y += lh
+    if s.get("subtitle"):
+        centered(c, y + 14, [s["subtitle"]], "serif", 36, TEXT)
     footer(c, s.get("footer", "HOME RECORDING · STORIA"), "SCORRI  →")
 
 

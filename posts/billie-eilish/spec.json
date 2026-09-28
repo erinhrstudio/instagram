@@ -5,121 +5,114 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "foto.jpeg",
-   "kicker": "BILLIE EILISH · LA VOCE",
-   "title": "BILLIE",
-   "title2": "EILISH",
-   "subtitle": "La voce registrata in una cameretta",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Billie Eilish · registrata in una cameretta",
    "footer": "HOME RECORDING · MIX",
    "focus": [
     0.5,
     0.3
    ],
-   "zoom": 1.1
+   "zoom": 1.1,
+   "hook": [
+    "PERCHÉ BILLIE EILISH",
+    "SEMBRA CANTARE",
+    "DENTRO LA TUA TESTA?"
+   ],
+   "fade_from": 0.3,
+   "darken": 0.3
   },
   {
    "type": "band",
    "bg": "sale-dolce",
-   "kicker": "01 — IL SUONO",
+   "kicker": "",
    "statement": [
-    "VICINA,",
-    "QUASI UN SEGRETO."
+    "NON È SOLO",
+    "IL SUSSURRO."
    ],
    "footer": "WHEN WE ALL FALL ASLEEP · 2019"
   },
   {
    "type": "band",
    "bg": "base",
-   "kicker": "02 — LA CATENA",
+   "kicker": "01 — LA DISTANZA",
    "statement": [
-    "TLM 103",
-    "IN CAMERETTA"
+    "10 CENTIMETRI"
    ],
    "footer": "",
    "body": [
-    "Il primo album è nato nella camera",
-    "di Finneas, a Highland Park: Billie",
-    "cantava seduta sul letto in un",
-    "Neumann TLM 103. Nel mix, Rob Kinelski",
-    "usa compressione e rider di volume."
+    "Il cervello capisce quanto è vicina",
+    "una voce da tre indizi: il respiro,",
+    "i bassi dell'effetto prossimità",
+    "e quasi niente eco della stanza."
    ]
   },
   {
    "type": "band",
    "bg": "fascia",
-   "kicker": "03 — IL TRUCCO",
+   "kicker": "02 — LA STANZA",
    "statement": [
-    "IL BASSO FA",
-    "SPAZIO ALLA VOCE"
+    "UNA CAMERETTA,",
+    "NON UNO STUDIO"
    ],
-   "footer": "FUNZIONA ANCHE CON LA CASSA",
+   "footer": "NEUMANN TLM 103, SEDUTA SUL LETTO",
    "body": [
-    "In Bad Guy la voce è sempre davanti:",
-    "un sidechain abbassa il basso",
-    "quando lei canta."
+    "Il primo album è nato nella camera",
+    "di Finneas. Una stanza piccola e piena",
+    "di roba riflette poco: resta la voce."
    ]
   },
   {
-   "type": "eq",
-   "kicker": "04 — RIFALLO A CASA",
-   "title": "EQ",
-   "lowcut": 100,
-   "highcut": 14000,
-   "boost": [
-    5000,
-    2
-   ],
+   "type": "list",
+   "kicker": "03 — NEL TUO MIX",
+   "title": "NON COPIARE L'EQ",
    "items": [
     [
-     "Passa-alto",
-     "Sotto i 90-100 Hz"
+     "Il respiro",
+     "Non toglierlo col gate: è lui che avvicina"
     ],
     [
-     "Presenza",
-     "+2 dB intorno ai 5 kHz"
+     "I bassi",
+     "Tieni il calore, taglia solo il rimbombo"
     ],
     [
-     "De-esser",
-     "Sulle S, tra 6 e 8 kHz"
+     "Le S",
+     "Da vicino esplodono: serve un de-esser"
+    ],
+    [
+     "Il livello",
+     "Compressione e automazione: ogni sussurro deve arrivare"
     ]
    ],
-   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+   "footer": "CONTA IL PERCHÉ, NON I NUMERI"
   },
   {
-   "type": "list",
-   "kicker": "05 — RIFALLO A CASA",
-   "title": "VOCE SUSSURRATA",
-   "items": [
-    [
-     "Distanza",
-     "Canta a 10 cm, a volume basso"
-    ],
-    [
-     "Compressione",
-     "Forte ma lenta: 4:1, 6-8 dB"
-    ],
-    [
-     "Volume",
-     "Automazione o un rider di volume"
-    ],
-    [
-     "Ritornelli",
-     "Voce doppiata e un po' saturata"
-    ]
+   "type": "band",
+   "bg": "base",
+   "kicker": "04 — PROVALO",
+   "statement": [
+    "50 CM",
+    "CONTRO 10 CM"
    ],
-   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+   "footer": "",
+   "body": [
+    "Canta la stessa frase, a voce bassa,",
+    "prima lontano e poi vicino al microfono.",
+    "Riascolta in cuffia: cambia la persona,",
+    "non solo il suono."
+   ]
   },
   {
    "type": "band",
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "VUOI IL PRIMA/DOPO?",
-    "SCRIVI \"BILLIE\"",
-    "NEI COMMENTI"
+    "ORA RIASCOLTA",
+    "BAD GUY",
+    "IN CUFFIA"
    ],
-   "footer": "A 20 COMMENTI ARRIVA IL REEL",
-   "size": 80
+   "footer": "E MANDALO A CHI CANTA A UN METRO DAL MICROFONO",
+   "size": 84
   }
  ],
- "caption": "La voce di Billie Eilish sembra cantata a un centimetro dal tuo orecchio. È stata registrata in una cameretta 🎙️\n\nIl primo album è nato nella camera di Finneas: Billie cantava seduta sul letto in un Neumann TLM 103. Nel mix il basso si abbassa quando lei canta, così la voce resta sempre davanti.\n\nNelle slide trovi come rifare una voce sussurrata a casa: distanza giusta, compressione, sidechain e de-esser.\n\nScrivi \"BILLIE\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#billieeilish #finneas #bedroompop #homerecording #mixing #vocalmixing #homestudio #produzionemusicale"
+ "caption": "Perché Billie Eilish sembra cantarti dentro la testa? Non è solo il sussurro 🎧\n\nIl cervello misura la distanza di una voce da tre indizi: il respiro che senti, i bassi che crescono quando il microfono è vicino (effetto prossimità) e quanta eco della stanza arriva. Nella cameretta di Finneas, con Billie seduta sul letto davanti a un Neumann TLM 103, la stanza non si sente quasi: resta solo lei, a pochi centimetri.\n\nIl test da fare stasera: canta la stessa frase a 50 cm e a 10 cm dal microfono e riascolta in cuffia.\n\nMandalo a chi canta sempre troppo lontano dal microfono 👇\n\n#billieeilish #finneas #bedroompop #homerecording #vocalmixing #mixing #homestudio #produzionemusicale"
 }
