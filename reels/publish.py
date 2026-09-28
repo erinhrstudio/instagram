@@ -67,20 +67,40 @@ def _wait(cid, token, wait_s):
         time.sleep(5)
 
 
-def publish_carousel(image_urls, caption, token, wait_s=300):
-    """Pubblica un carosello (2-10 immagini JPEG). Le immagini devono avere un URL pubblico."""
+def _carousel_video(uid, path, token, wait_s):
+    """Carica un video come elemento del carosello (upload resumable, niente URL pubblico)."""
+    c = _check(requests.post(f"{API}/{uid}/media", data={
+        "media_type": "VIDEO", "upload_type": "resumable", "is_carousel_item": "true",
+        "access_token": token}, timeout=60))
+    upload_uri = c.get("uri") or f"https://rupload.facebook.com/ig-api-upload/v23.0/{c['id']}"
+    with open(path, "rb") as f:
+        _check(requests.post(upload_uri, data=f, timeout=600, headers={
+            "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(os.path.getsize(path))}))
+    _wait(c["id"], token, wait_s)
+    return c["id"]
+
+
+def publish_carousel(items, caption, token, wait_s=300, publish=True):
+    """Pubblica un carosello (2-10 elementi). Un elemento è l'URL pubblico di un JPEG
+    oppure il percorso locale di un video MP4. Con publish=False crea solo i contenitori
+    (verifica che Instagram accetti tutto) senza pubblicare nulla."""
     me = account(token)
     uid = me["user_id"]
     children = []
-    for url in image_urls:
+    for item in items:
+        if str(item).endswith(".mp4"):
+            children.append(_carousel_video(uid, item, token, max(wait_s, 600)))
+            continue
         c = _check(requests.post(f"{API}/{uid}/media", data={
-            "image_url": url, "is_carousel_item": "true", "access_token": token}, timeout=60))
+            "image_url": item, "is_carousel_item": "true", "access_token": token}, timeout=60))
         _wait(c["id"], token, wait_s)
         children.append(c["id"])
     c = _check(requests.post(f"{API}/{uid}/media", data={
         "media_type": "CAROUSEL", "children": ",".join(children), "caption": caption,
         "access_token": token}, timeout=60))
     _wait(c["id"], token, wait_s)
+    if not publish:
+        return {"media_id": None, "container_id": c["id"], "username": me.get("username")}
     p = _check(requests.post(f"{API}/{uid}/media_publish",
                              data={"creation_id": c["id"], "access_token": token}, timeout=60))
     return {"media_id": p["id"], "username": me.get("username")}

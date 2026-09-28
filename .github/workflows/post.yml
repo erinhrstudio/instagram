@@ -7,7 +7,7 @@ on:
         description: "Cartella in posts/ (es. strokes-casablancas)"
         required: true
       publish:
-        description: "Pubblica davvero su Instagram (altrimenti è solo una prova)"
+        description: "Pubblica davvero su Instagram (altrimenti prova: Instagram controlla i file ma non pubblica nulla)"
         type: boolean
         default: false
 
@@ -33,7 +33,7 @@ jobs:
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
           NAME: ${{ inputs.name }}
         run: |
-          ARGS=""
+          ARGS="--check"
           [ "${{ inputs.publish }}" = "true" ] && ARGS="--publish"
           python -m reels.post "$NAME" $ARGS
       - name: Registra il post pubblicato

@@ -9,7 +9,8 @@ Tipi di slide:
   list   antracite: kicker, titolo e punti (etichetta + testo)
   eq     antracite: kicker, titolo, curva EQ e punti
 
-Opzionale nello spec: "accent": "azzurro" (default "rosa") per cambiare colore a una serie.
+Opzionale nello spec: "accent": "azzurro" (default "rosa") per cambiare colore a una serie;
+"video_after": N inserisce una slide video (NN.mp4, generata a parte) dopo la slide N.
 """
 import json, math, sys, zlib
 from pathlib import Path
@@ -228,10 +229,13 @@ def build(folder):
     style.set_accent(spec.get("accent", "rosa"))
     for old in folder.glob("[0-9][0-9].jpg"):
         old.unlink()
-    for i, s in enumerate(slides, 1):
+    va = spec.get("video_after")  # una slide video (NN.mp4, già pronta) dopo la slide numero va
+    n = len(slides) + (1 if va else 0)
+    for k, s in enumerate(slides, 1):
+        i = k + 1 if va and k > va else k
         bg = s.get("bg", "pieno") if s["type"] != "cover" or not s.get("photo") else "pieno"
-        c = Canvas(W, H, seed=i, bg=bg)
-        KINDS[s["type"]](c, s, i, len(slides), folder)
+        c = Canvas(W, H, seed=k, bg=bg)
+        KINDS[s["type"]](c, s, i, n, folder)
         c.final().convert("RGB").save(folder / f"{i:02d}.jpg", quality=94, subsampling=0)
     (folder / "caption.txt").write_text(spec["caption"].strip() + "\n", encoding="utf-8")
     if spec.get("music"):

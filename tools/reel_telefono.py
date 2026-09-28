@@ -4,7 +4,8 @@ Le sillabe sono sintetizzate una volta con espeak-ng + MBROLA (voce mb-it4) e sa
 assets/audio/voce-sa.wav e voce-fa.wav. Qui vengono filtrate a 300-3400 Hz (banda telefonica)
 e montate in un quiz: prima al telefono, poi senza filtro.
 
-Uso: python -m tools.reel_telefono out/sa-o-fa.mp4
+Uso: python -m tools.reel_telefono out/sa-o-fa.mp4           (Reel 9:16)
+     python -m tools.reel_telefono posts/x/07.mp4 4:5 "07 / 08"  (slide video del carosello)
 """
 import subprocess, sys, tempfile, wave
 from pathlib import Path
@@ -19,6 +20,12 @@ from reels.style import Canvas, font, MUTED, TEXT, LINE
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 ROOT = Path(__file__).resolve().parent.parent
 SR, FPS, W, H = 48000, 30, 1080, 1920
+# posizioni verticali: 9:16 per il Reel, 4:5 per la slide video del carosello
+LAYOUTS = {
+    1920: dict(title=330, small=1500, labels=470, spectrum=1220, end=520),
+    1350: dict(title=190, small=1190, labels=330, spectrum=920, end=270),
+}
+L = LAYOUTS[H]
 WHITE = (255, 255, 255)
 ORDER = ["sa", "fa", "fa", "sa"]
 STEP = 1.6
@@ -91,26 +98,26 @@ def big(c, y, lines, k, second=None):
 def frame(c, t, audio, events, bins):
     k = lambda t0: min(1, max(0, (t - t0) / 0.25))
     if t < ROUND1:
-        big(c, 330, ["AL TELEFONO", "SA O FA?"], k(0))
-        c.text((W / 2, 1500), "USA LE CUFFIE · QUATTRO SILLABE", font("sans", 30, 500), fill=MUTED, anchor="ma", tracking=2)
+        big(c, L["title"], ["AL TELEFONO", "SA O FA?"], k(0))
+        c.text((W / 2, L["small"]), "USA LE CUFFIE · QUATTRO SILLABE", font("sans", 30, 500), fill=MUTED, anchor="ma", tracking=2)
     elif t < END - 5.2:
         filt = t < ROUND2
         r0 = ROUND1 if filt else ROUND2
         if filt and t >= ROUND1 + 4 * STEP:
-            big(c, 330, ["QUALI ERANO", "LE S?"], k(ROUND1 + 4 * STEP))
-            c.text((W / 2, 1500), "SCRIVILO NEI COMMENTI, POI ASCOLTA SENZA FILTRO", font("sans", 28, 500),
+            big(c, L["title"], ["QUALI ERANO", "LE S?"], k(ROUND1 + 4 * STEP))
+            c.text((W / 2, L["small"]), "SCRIVILO NEI COMMENTI, POI ASCOLTA SENZA FILTRO", font("sans", 28, 500),
                    fill=MUTED, anchor="ma", tracking=2)
         else:
-            c.kicker(0, 330, "AL TELEFONO · 300–3400 HZ" if filt else "SENZA FILTRO · TUTTE LE FREQUENZE", center=True)
+            c.kicker(0, L["title"], "AL TELEFONO · 300–3400 HZ" if filt else "SENZA FILTRO · TUTTE LE FREQUENZE", center=True)
             for i, n in enumerate(ORDER):
                 x = W / 2 + (i - 1.5) * 210
                 on = r0 + i * STEP <= t
                 playing = any(e[0] <= t < e[0] + e[1] and e[3] == filt and e[4] == i for e in events)
                 lab = f"{i + 1}" if filt else ("S" if n == "sa" else "F")
                 col = WHITE if playing else (style.PINK if on else (70, 64, 76))
-                c.text((x, 470), lab, font("display", 170), fill=col, anchor="ma")
+                c.text((x, L["labels"]), lab, font("display", 170), fill=col, anchor="ma")
         # spettro: la zona fuori banda è grigia nel giro al telefono
-        gx0, gx1, gy = 110, W - 110, 1220
+        gx0, gx1, gy = 110, W - 110, L["spectrum"]
         c.line([(gx0, gy), (gx1, gy)], fill=LINE)
         # barre con rilascio lento: restano visibili per qualche frame dopo la sillaba
         sp = np.max([spectrum(audio, t - d, bins) * (1 - d / 0.3) for d in (0, 0.06, 0.12, 0.18, 0.24)], axis=0)
@@ -131,22 +138,24 @@ def frame(c, t, audio, events, bins):
                anchor="ma", tracking=4)
     else:
         t0 = END - 5.2
-        c.kicker(0, 520, "PSICOACUSTICA", center=True)
-        big(c, 600, ["IL TELEFONO", "TAGLIA LA S"], k(t0))
-        c.text((W / 2, 960), "Per questo diciamo", font("serif", 52), fill=fade(TEXT, k(t0 + 0.4)), anchor="ma")
-        c.text((W / 2, 1030), "“S come Savona, F come Firenze”.", font("serif", 52),
+        c.kicker(0, L["end"], "PSICOACUSTICA", center=True)
+        big(c, L["end"] + 80, ["IL TELEFONO", "TAGLIA LA S"], k(t0))
+        c.text((W / 2, L["end"] + 440), "Per questo diciamo", font("serif", 52), fill=fade(TEXT, k(t0 + 0.4)), anchor="ma")
+        c.text((W / 2, L["end"] + 510), "“S come Savona, F come Firenze”.", font("serif", 52),
                fill=fade(TEXT, k(t0 + 0.4)), anchor="ma")
-        c.line([(W / 2 - 80, 1170), (W / 2 + 80, 1170)], fill=style.PINK, width=2)
-        c.text((W / 2, 1230), "STESSO TRUCCO DI YANNY / LAUREL", font("sans", 30, 700),
+        c.line([(W / 2 - 80, L["end"] + 650), (W / 2 + 80, L["end"] + 650)], fill=style.PINK, width=2)
+        c.text((W / 2, L["end"] + 710), "STESSO TRUCCO DI YANNY / LAUREL", font("sans", 30, 700),
                fill=fade(style.PINK_SOFT, k(t0 + 0.8)), anchor="ma", tracking=5)
 
 
-def render(out):
+def render(out, height=1920, page="PSICOACUSTICA"):
+    global H, L
+    H, L = height, LAYOUTS[height]
     style.set_accent("azzurro")
     audio, events = build_audio()
     bins = np.geomspace(150, 8000, 41)
     base = Canvas(W, H, seed=11, bg="pieno")
-    base.header("ERIN · HOME RECORDING STUDIO", "PSICOACUSTICA")
+    base.header("ERIN · HOME RECORDING STUDIO", page)
     base_img = base.img.copy()
     with tempfile.TemporaryDirectory() as td:
         wav = Path(td) / "a.wav"
@@ -171,7 +180,11 @@ def render(out):
 
 
 if __name__ == "__main__":
+    # python -m tools.reel_telefono out.mp4 [4:5 "07 / 08"]
     out = Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / "out" / "sa-o-fa.mp4")
     out.parent.mkdir(exist_ok=True)
-    render(out)
+    if len(sys.argv) > 2 and sys.argv[2] == "4:5":
+        render(out, 1350, sys.argv[3] if len(sys.argv) > 3 else "PSICOACUSTICA")
+    else:
+        render(out)
     print("scritto", out)
