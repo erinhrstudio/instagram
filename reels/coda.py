@@ -1,6 +1,7 @@
 """Coda dei caroselli: sceglie il prossimo post da pubblicare oggi.
 
 state/coda.json contiene l'ordine dei post, la data di inizio e ogni quanti giorni pubblicare.
+Con "pausa": true non pubblica niente finché non si toglie.
 Stampa il nome del post da pubblicare oggi (o niente) e, su GitHub Actions, lo scrive in GITHUB_OUTPUT.
 
 Uso: python -m reels.coda
@@ -26,6 +27,8 @@ def prossimo(oggi=None):
             return None, f"sono le {adesso:%H:%M} in Italia, si pubblica dalle {ORA}"
         oggi = adesso.date()
     coda = json.loads(CODA.read_text())
+    if coda.get("pausa"):
+        return None, "coda in pausa (\"pausa\": true in state/coda.json)"
     state = json.loads(STATE.read_text()) if STATE.exists() else []
     fatti = {s["id"]: date.fromisoformat(s["published_at"][:10]) for s in state}
     if oggi < date.fromisoformat(coda["inizio"]):

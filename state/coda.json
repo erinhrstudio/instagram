@@ -1,22 +1,23 @@
 {
-  "ogni_giorni": 1,
-  "inizio": "2026-09-27",
-  "post": [
-    "korn",
-    "yanny-laurel",
-    "billie-eilish",
-    "basso-fantasma",
-    "pj-harvey",
-    "cocktail-party",
-    "fiona-apple",
-    "brividi",
-    "converge",
-    "tormentoni",
-    "mia-zapata",
-    "piu-forte",
-    "lemonheads",
-    "parlato-canto",
-    "ks-choice",
-    "mascheramento"
-  ]
+ "pausa": true,
+ "ogni_giorni": 1,
+ "inizio": "2026-09-27",
+ "post": [
+  "korn",
+  "yanny-laurel",
+  "billie-eilish",
+  "basso-fantasma",
+  "pj-harvey",
+  "cocktail-party",
+  "fiona-apple",
+  "brividi",
+  "converge",
+  "tormentoni",
+  "mia-zapata",
+  "piu-forte",
+  "lemonheads",
+  "parlato-canto",
+  "ks-choice",
+  "mascheramento"
+ ]
 }
