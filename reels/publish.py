@@ -85,21 +85,36 @@ def _carousel_video(uid, urls, token, wait_s):
     raise err
 
 
+def _carousel_image(uid, urls, token, wait_s):
+    """Immagine del carosello. Instagram a volte non riesce a scaricare un URL:
+    riprova e poi passa all'URL alternativo."""
+    err = None
+    for url in [u for u in urls for _ in range(2)]:
+        try:
+            c = _check(requests.post(f"{API}/{uid}/media", data={
+                "image_url": url, "is_carousel_item": "true", "access_token": token}, timeout=60))
+            _wait(c["id"], token, wait_s)
+            return c["id"]
+        except RuntimeError as e:
+            print("  immagine rifiutata da", url, "->", str(e)[:200])
+            err = e
+            time.sleep(5)
+    raise err
+
+
 def publish_carousel(items, caption, token, wait_s=300, publish=True):
     """Pubblica un carosello (2-10 elementi). Un elemento è l'URL pubblico di un JPEG
-    oppure una lista di URL alternativi di un video MP4. Con publish=False crea solo i contenitori
+    una lista di URL alternativi dello stesso JPEG,
+    oppure {"video": [URL alternativi]} per un video MP4. Con publish=False crea solo i contenitori
     (verifica che Instagram accetti tutto) senza pubblicare nulla."""
     me = account(token)
     uid = me["user_id"]
     children = []
     for item in items:
-        if isinstance(item, (list, tuple)):
-            children.append(_carousel_video(uid, item, token, max(wait_s, 600)))
+        if isinstance(item, dict):
+            children.append(_carousel_video(uid, item["video"], token, max(wait_s, 600)))
             continue
-        c = _check(requests.post(f"{API}/{uid}/media", data={
-            "image_url": item, "is_carousel_item": "true", "access_token": token}, timeout=60))
-        _wait(c["id"], token, wait_s)
-        children.append(c["id"])
+        children.append(_carousel_image(uid, item if isinstance(item, (list, tuple)) else [item], token, wait_s))
     c = _check(requests.post(f"{API}/{uid}/media", data={
         "media_type": "CAROUSEL", "children": ",".join(children), "caption": caption,
         "access_token": token}, timeout=60))

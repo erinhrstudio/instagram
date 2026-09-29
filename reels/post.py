@@ -39,9 +39,10 @@ def main():
     def url(p):
         rel = p.relative_to(ROOT).as_posix()
         raw = f"https://raw.githubusercontent.com/{repo}/{ref}/{rel}"
+        cdn = f"https://cdn.jsdelivr.net/gh/{repo}@{ref}/{rel}"
         if p.suffix == ".mp4":  # jsDelivr serve i video come video/mp4, GitHub raw no
-            return [f"https://cdn.jsdelivr.net/gh/{repo}@{ref}/{rel}", raw]
-        return raw
+            return {"video": [cdn, raw]}
+        return [raw, cdn]
     urls = [url(p) for p in images]
     print(f"Carosello '{a.name}': {len(urls)} elementi")
     for u in urls:
