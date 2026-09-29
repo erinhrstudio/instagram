@@ -1,9 +1,9 @@
-Il tuo telefono non riesce a riprodurre i bassi. Eppure li senti 📱
+Il tuo telefono non può suonare questa nota. Eppure la senti 📱
 
-Si chiama fondamentale mancante: una nota è fatta di una frequenza base e di armonici sopra. Se la base sparisce, il cervello la ricostruisce dagli armonici.
+Nella slide 2 c'è l'esperimento: prima un La a 55 Hz puro, che dalle casse del telefono quasi sparisce. Poi la stessa nota fatta solo di armonici (165, 220, 275 Hz…): a 55 Hz non c'è niente, ma il basso lo senti lo stesso. È la fondamentale mancante: il cervello trova il passo comune degli armonici e ricostruisce la nota.
 
-Nel mix si usa così: una copia saturata del basso aggiunge armonici e lo fa sentire anche dalle casse piccole. Nelle slide trovi come farlo con un plugin gratuito.
+Nel mix si usa così: una copia saturata del basso aggiunge armonici e lo fa arrivare anche dalle casse piccole. Nelle slide trovi come farlo con un plugin gratuito.
 
-Scrivi "BASSO" nei commenti se vuoi il prima/dopo in un Reel 🎧
+Ascoltalo dal telefono, poi in cuffia. E mandalo a chi mixa solo dal telefono 👇
 
-#bassfantasma #fondamentalemancante #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio
+#fondamentalemancante #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio #bassline

@@ -5,26 +5,22 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "",
-   "kicker": "PSICOACUSTICA",
-   "title": "IL BASSO",
-   "title2": "FANTASMA",
-   "subtitle": "Perché senti bassi che il telefono non suona",
-   "footer": "HOME RECORDING · CERVELLO"
-  },
-  {
-   "type": "band",
-   "bg": "sale-dolce",
-   "kicker": "01 — L'ILLUSIONE",
-   "statement": [
-    "IL TELEFONO",
-    "NON HA BASSI."
+   "kicker": "ESPERIMENTO",
+   "subtitle": "Scorri e ascolta dal telefono",
+   "footer": "HOME RECORDING · CERVELLO",
+   "hook": [
+    "IL TUO TELEFONO",
+    "NON PUÒ SUONARE",
+    "QUESTA NOTA.",
+    "EPPURE LA SENTI."
    ],
-   "footer": "FONDAMENTALE MANCANTE"
+   "hook_size": 100,
+   "wave_seed": 3479431834
   },
   {
    "type": "band",
    "bg": "base",
-   "kicker": "02 — COSA SUCCEDE",
+   "kicker": "01 — COSA SUCCEDE",
    "statement": [
     "LA NOTA",
     "CHE NON C'È"
@@ -41,7 +37,7 @@
   {
    "type": "band",
    "bg": "fascia",
-   "kicker": "03 — IL TRUCCO",
+   "kicker": "02 — IL TRUCCO",
    "statement": [
     "SATURA",
     "IL BASSO"
@@ -55,7 +51,7 @@
   },
   {
    "type": "list",
-   "kicker": "04 — NEL TUO MIX",
+   "kicker": "03 — NEL TUO MIX",
    "title": "COME FARLO",
    "items": [
     [
@@ -79,27 +75,18 @@
   },
   {
    "type": "band",
-   "bg": "scende",
-   "kicker": "",
-   "statement": [
-    "IL CERVELLO",
-    "COMPLETA LA NOTA"
-   ],
-   "footer": ""
-  },
-  {
-   "type": "band",
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "LO SAPEVI?",
-    "SCRIVI \"BASSO\"",
-    "NEI COMMENTI"
+    "ORA RIASCOLTA",
+    "LA SLIDE 2",
+    "IN CUFFIA"
    ],
-   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
+   "footer": "E MANDALO A CHI MIXA SOLO DAL TELEFONO",
    "size": 84
   }
  ],
- "caption": "Il tuo telefono non riesce a riprodurre i bassi. Eppure li senti 📱\n\nSi chiama fondamentale mancante: una nota è fatta di una frequenza base e di armonici sopra. Se la base sparisce, il cervello la ricostruisce dagli armonici.\n\nNel mix si usa così: una copia saturata del basso aggiunge armonici e lo fa sentire anche dalle casse piccole. Nelle slide trovi come farlo con un plugin gratuito.\n\nScrivi \"BASSO\" nei commenti se vuoi il prima/dopo in un Reel 🎧\n\n#bassfantasma #fondamentalemancante #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio",
- "accent": "azzurro"
+ "caption": "Il tuo telefono non può suonare questa nota. Eppure la senti 📱\n\nNella slide 2 c'è l'esperimento: prima un La a 55 Hz puro, che dalle casse del telefono quasi sparisce. Poi la stessa nota fatta solo di armonici (165, 220, 275 Hz…): a 55 Hz non c'è niente, ma il basso lo senti lo stesso. È la fondamentale mancante: il cervello trova il passo comune degli armonici e ricostruisce la nota.\n\nNel mix si usa così: una copia saturata del basso aggiunge armonici e lo fa arrivare anche dalle casse piccole. Nelle slide trovi come farlo con un plugin gratuito.\n\nAscoltalo dal telefono, poi in cuffia. E mandalo a chi mixa solo dal telefono 👇\n\n#fondamentalemancante #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio #bassline",
+ "accent": "azzurro",
+ "video_after": 1
 }

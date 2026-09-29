@@ -20,6 +20,12 @@ from reels.style import Canvas, font, MUTED, TEXT, LINE
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 ROOT = Path(__file__).resolve().parent.parent
 SR, FPS, W, H = 48000, 30, 1080, 1920
+# posizioni verticali: 9:16 per il Reel, 4:5 per la slide video del carosello
+LAYOUTS = {
+    1920: dict(title=300, scale=1.0, small=1560, spectrum=1300, expl=380, end=700),
+    1350: dict(title=175, scale=0.85, small=1195, spectrum=1030, expl=230, end=440),
+}
+L = LAYOUTS[H]
 WHITE = (255, 255, 255)
 F0 = 55.0
 HARM = range(3, 11)
@@ -99,14 +105,14 @@ def frame(c, t, audio, bins):
     scene = next((s for s in SCENES if s[0] <= t < s[1] + 0.2), None)
     if t < SPIEGA and scene:
         t0, _, title, small, kind = scene
-        y, size = 300, 150 if len(title) < 3 else 130
+        y, size = L["title"], int((150 if len(title) < 3 else 130) * L["scale"])
         for i, l in enumerate(title):
             col = WHITE if i < len(title) - 1 else style.PINK
             c.text((W / 2, y), l, font("display", size), fill=fade(col, k(t0)), anchor="ma")
             y += size
-        c.text((W / 2, 1560), small, font("sans", 28, 600), fill=MUTED, anchor="ma", tracking=3)
+        c.text((W / 2, L["small"]), small, font("sans", 28, 600), fill=MUTED, anchor="ma", tracking=3)
         # spettro 30 Hz - 2 kHz; sotto i 150 Hz la zona che un telefono riproduce a fatica
-        gx0, gx1, gy = 110, W - 110, 1300
+        gx0, gx1, gy = 110, W - 110, L["spectrum"]
         lx = lambda hz: gx0 + (np.log10(hz) - np.log10(bins[0])) / (np.log10(bins[-1]) - np.log10(bins[0])) * (gx1 - gx0)
         c.rect((gx0, gy - 380, lx(150), gy), fill=(40, 40, 44))
         c.text(((gx0 + lx(150)) / 2, gy - 430), "IL TELEFONO", font("sans", 20, 700), fill=MUTED, anchor="ma", tracking=2)
@@ -126,34 +132,36 @@ def frame(c, t, audio, bins):
             c.text((lx(hz), gy + 22), lab, font("sans", 22, 600), fill=MUTED, anchor="ma", tracking=1)
         return
     if t < END - 3.2:
-        c.kicker(0, 380, "LA FONDAMENTALE MANCANTE", center=True)
-        c.text((W / 2, 460), "NON SENTI LA NOTA.", font("display", 120), fill=fade(WHITE, k(SPIEGA)), anchor="ma")
-        c.text((W / 2, 580), "LA CALCOLI.", font("display", 120), fill=fade(style.PINK, k(SPIEGA)), anchor="ma")
+        c.kicker(0, L["expl"], "LA FONDAMENTALE MANCANTE", center=True)
+        c.text((W / 2, L["expl"] + 80), "NON SENTI LA NOTA.", font("display", 120), fill=fade(WHITE, k(SPIEGA)), anchor="ma")
+        c.text((W / 2, L["expl"] + 200), "LA CALCOLI.", font("display", 120), fill=fade(style.PINK, k(SPIEGA)), anchor="ma")
         lines = ["165, 220, 275 Hz sono tutti multipli di 55.",
                  "Il cervello trova il passo comune",
                  "e ti fa sentire la nota che manca.",
                  "",
                  "È il trucco dei plugin «bass enhancer»:",
                  "far sentire il basso anche dove non può suonare."]
-        y = 820
+        y = L["expl"] + 420
         for i, l in enumerate(lines):
             c.text((W / 2, y), l, font("sans", 38), fill=fade(TEXT, k(SPIEGA + 0.3 + 0.15 * i)), anchor="ma")
             y += 60
         return
     t0 = END - 3.2
-    c.text((W / 2, 700), "ORA RIASCOLTALO", font("display", 130), fill=fade(WHITE, k(t0)), anchor="ma")
-    c.text((W / 2, 830), "IN CUFFIA", font("display", 130), fill=fade(style.PINK, k(t0)), anchor="ma")
-    c.line([(W / 2 - 80, 1030), (W / 2 + 80, 1030)], fill=style.PINK, width=2)
-    c.text((W / 2, 1080), "E MANDALO A CHI GIURA DI SENTIRE IL BASSO DAL TELEFONO", font("sans", 26, 700),
+    c.text((W / 2, L["end"]), "ORA RIASCOLTALO", font("display", 130), fill=fade(WHITE, k(t0)), anchor="ma")
+    c.text((W / 2, L["end"] + 130), "IN CUFFIA", font("display", 130), fill=fade(style.PINK, k(t0)), anchor="ma")
+    c.line([(W / 2 - 80, L["end"] + 330), (W / 2 + 80, L["end"] + 330)], fill=style.PINK, width=2)
+    c.text((W / 2, L["end"] + 380), "E MANDALO A CHI GIURA DI SENTIRE IL BASSO DAL TELEFONO", font("sans", 26, 700),
            fill=fade(style.PINK_SOFT, k(t0 + 0.5)), anchor="ma", tracking=2)
 
 
-def render(out):
+def render(out, height=1920, page="PSICOACUSTICA"):
+    global H, L
+    H, L = height, LAYOUTS[height]
     style.set_accent("azzurro")
     audio = build_audio()
     bins = np.geomspace(30, 2000, 49)
     base = Canvas(W, H, seed=21, bg="pieno")
-    base.header("ERIN · HOME RECORDING STUDIO", "PSICOACUSTICA")
+    base.header("ERIN · HOME RECORDING STUDIO", page)
     base_img = base.img.copy()
     with tempfile.TemporaryDirectory() as td:
         wav = Path(td) / "a.wav"
@@ -180,5 +188,8 @@ def render(out):
 if __name__ == "__main__":
     out = Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / "out" / "basso-fantasma.mp4")
     out.parent.mkdir(exist_ok=True)
-    render(out)
+    if len(sys.argv) > 2 and sys.argv[2] == "4:5":  # slide video del carosello: ... out.mp4 4:5 "02 / 06"
+        render(out, 1350, sys.argv[3] if len(sys.argv) > 3 else "PSICOACUSTICA")
+    else:
+        render(out)
     print("scritto", out)
