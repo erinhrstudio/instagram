@@ -24,6 +24,7 @@ SR, FPS, W, H = 48000, 30, 1080, 1920
 LAYOUTS = {
     1920: dict(title=300, scale=1.0, small=1560, spectrum=1300, expl=380, end=700),
     1350: dict(title=175, scale=0.85, small=1195, spectrum=1030, expl=230, end=440),
+    "tiktok": dict(title=280, scale=1.0, small=1330, spectrum=1150, expl=360, end=640),  # testi lontani da barra e pulsanti di TikTok
 }
 L = LAYOUTS[H]
 WHITE = (255, 255, 255)
@@ -154,9 +155,9 @@ def frame(c, t, audio, bins):
            fill=fade(style.PINK_SOFT, k(t0 + 0.5)), anchor="ma", tracking=2)
 
 
-def render(out, height=1920, page="PSICOACUSTICA"):
+def render(out, height=1920, page="PSICOACUSTICA", layout=None):
     global H, L
-    H, L = height, LAYOUTS[height]
+    H, L = height, LAYOUTS[layout or height]
     style.set_accent("azzurro")
     audio = build_audio()
     bins = np.geomspace(30, 2000, 49)
@@ -188,7 +189,9 @@ def render(out, height=1920, page="PSICOACUSTICA"):
 if __name__ == "__main__":
     out = Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / "out" / "basso-fantasma.mp4")
     out.parent.mkdir(exist_ok=True)
-    if len(sys.argv) > 2 and sys.argv[2] == "4:5":  # slide video del carosello: ... out.mp4 4:5 "02 / 06"
+    if len(sys.argv) > 2 and sys.argv[2] == "tiktok":  # versione per TikTok: ... out.mp4 tiktok
+        render(out, layout="tiktok")
+    elif len(sys.argv) > 2 and sys.argv[2] == "4:5":  # slide video del carosello: ... out.mp4 4:5 "02 / 06"
         render(out, 1350, sys.argv[3] if len(sys.argv) > 3 else "PSICOACUSTICA")
     else:
         render(out)

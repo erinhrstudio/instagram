@@ -24,6 +24,7 @@ SR, FPS, W, H = 48000, 30, 1080, 1920
 LAYOUTS = {
     1920: dict(title=330, small=1500, labels=470, spectrum=1220, end=520),
     1350: dict(title=190, small=1190, labels=330, spectrum=920, end=270),
+    "tiktok": dict(title=300, small=1340, labels=440, spectrum=1120, end=480),  # testi lontani da barra e pulsanti di TikTok
 }
 L = LAYOUTS[H]
 WHITE = (255, 255, 255)
@@ -148,9 +149,9 @@ def frame(c, t, audio, events, bins):
                fill=fade(style.PINK_SOFT, k(t0 + 0.8)), anchor="ma", tracking=5)
 
 
-def render(out, height=1920, page="PSICOACUSTICA"):
+def render(out, height=1920, page="PSICOACUSTICA", layout=None):
     global H, L
-    H, L = height, LAYOUTS[height]
+    H, L = height, LAYOUTS[layout or height]
     style.set_accent("azzurro")
     audio, events = build_audio()
     bins = np.geomspace(150, 8000, 41)
@@ -183,7 +184,9 @@ if __name__ == "__main__":
     # python -m tools.reel_telefono out.mp4 [4:5 "07 / 08"]
     out = Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / "out" / "sa-o-fa.mp4")
     out.parent.mkdir(exist_ok=True)
-    if len(sys.argv) > 2 and sys.argv[2] == "4:5":
+    if len(sys.argv) > 2 and sys.argv[2] == "tiktok":  # versione per TikTok: ... out.mp4 tiktok
+        render(out, layout="tiktok")
+    elif len(sys.argv) > 2 and sys.argv[2] == "4:5":
         render(out, 1350, sys.argv[3] if len(sys.argv) > 3 else "PSICOACUSTICA")
     else:
         render(out)
