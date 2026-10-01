@@ -10,100 +10,94 @@
     0.25
    ],
    "zoom": 1.0,
-   "kicker": "QUEENS OF THE STONE AGE · LA CHITARRA",
-   "title": "JOSH",
-   "title2": "HOMME",
-   "subtitle": "Pesante senza troppa distorsione",
-   "footer": "HOME RECORDING · SUONO"
+   "kicker": "ANATOMIA DI UN SUONO",
+   "subtitle": "Josh Homme · Queens of the Stone Age",
+   "footer": "HOME RECORDING · SUONO",
+   "hook": [
+    "COME FA JOSH HOMME",
+    "A SUONARE COSÌ PESANTE",
+    "CON POCA DISTORSIONE?"
+   ],
+   "fade_from": 0.3,
+   "darken": 0.3
   },
   {
    "type": "band",
    "bg": "sale-dolce",
-   "kicker": "01 — IL SUONO",
+   "kicker": "",
    "statement": [
-    "MEDI NASALI,",
-    "COME UN WAH FERMO."
+    "NON È IL GAIN."
    ],
    "footer": "SONGS FOR THE DEAF · 2002"
   },
   {
    "type": "band",
    "bg": "base",
-   "kicker": "02 — IL SEGRETO",
+   "kicker": "01 — IL SEGRETO",
    "statement": [
-    "UN FILTRO",
-    "PARAMETRICO"
+    "UN WAH",
+    "BLOCCATO"
    ],
+   "footer": "",
    "body": [
-    "Da Rated R Homme aggiunge un Maestro",
-    "MPF-1, filtro parametrico degli anni '70:",
-    "spinge una sola fetta di medi, come",
-    "un wah bloccato. Oggi lo stesso ruolo",
-    "lo fanno i pedali Stone Deaf PDF."
+    "Da Rated R Homme usa un Maestro MPF-1,",
+    "filtro parametrico degli anni '70:",
+    "spinge una sola fetta di medi",
+    "e la chitarra diventa nasale, quasi una voce."
    ]
   },
   {
    "type": "band",
    "bg": "fascia",
-   "kicker": "03 — IL RESTO",
+   "kicker": "02 — IL PESO",
    "statement": [
-    "POCO GAIN,",
-    "ACCORDATURA IN DO"
+    "È NELL'ACCORDATURA"
    ],
+   "footer": "IL GAIN RESTA BASSO",
    "body": [
-    "Ampli spesso piccoli e poco spinti,",
-    "anche a transistor, e chitarra in Do:",
-    "due toni sotto lo standard."
-   ],
-   "footer": "IL PESO VIENE DALL'ACCORDATURA"
-  },
-  {
-   "type": "eq",
-   "kicker": "04 — RIFALLO A CASA",
-   "title": "EQ",
-   "lowcut": 90,
-   "highcut": 7000,
-   "boost": [
-    1200,
-    8
-   ],
-   "items": [
-    [
-     "Campana stretta",
-     "+6/+10 dB tra 800 Hz e 1,5 kHz"
-    ],
-    [
-     "Cerca il punto",
-     "Muovi la frequenza finché la nota \"parla\""
-    ],
-    [
-     "Plugin gratis",
-     "TDR Nova, poi un filo di saturazione"
-    ]
-   ],
-   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+    "Chitarra in Do, due toni sotto lo standard,",
+    "e ampli poco spinti: il peso arriva",
+    "dalle note gravi, non dalla saturazione."
+   ]
   },
   {
    "type": "list",
-   "kicker": "05 — RIFALLO A CASA",
-   "title": "LA CATENA",
+   "kicker": "03 — NEL TUO MIX",
+   "title": "CERCA IL PUNTO",
    "items": [
     [
-     "Accordatura",
-     "Do standard (C G C F A D)"
+     "Non copiare l'EQ",
+     "Ogni chitarra parla su una frequenza diversa"
     ],
     [
-     "Gain",
-     "Basso: il filtro fa il carattere"
+     "Campana stretta",
+     "Molto alta, poi spostala piano"
     ],
     [
-     "Ordine",
-     "Filtro parametrico prima dell'ampli"
+     "Il gain",
+     "Meno di quanto pensi: il filtro fa il carattere"
     ],
     [
-     "Doppie",
+     "Le doppie",
      "Due take della stessa parte, a sinistra e a destra"
     ]
+   ],
+   "footer": "CONTA IL PERCHÉ, NON I NUMERI"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "04 — PROVALO",
+   "statement": [
+    "UNA CAMPANA",
+    "A +10 DB"
+   ],
+   "footer": "",
+   "body": [
+    "Campana stretta a +10 dB su un EQ gratuito.",
+    "Spostala tra 500 Hz e 2 kHz mentre suoni:",
+    "quando la chitarra inizia a \"parlare\",",
+    "fermati. Hai trovato la tua nota."
    ]
   },
   {
@@ -115,9 +109,9 @@
     "UN PLUGIN",
     "PER QUESTO SUONO"
    ],
-   "footer": "DIARIO DI UN FUZZ · OGNI GIOVEDÌ 21:00",
+   "footer": "SEGUI PER IL DIARIO DI UN FUZZ",
    "size": 80
   }
  ],
- "caption": "Come fa Josh Homme a suonare così pesante senza affogare nella distorsione? 🎸\n\nIl segreto sono i medi: da Rated R usa un Maestro MPF-1, un filtro parametrico degli anni '70 che spinge una sola fetta di frequenze, come un wah bloccato. Poi ampli poco spinti e accordatura in Do, due toni sotto lo standard. Oggi quel ruolo lo fanno i pedali Stone Deaf PDF.\n\nNelle slide trovi come rifarlo a casa con un EQ gratuito.\n\nE da qui nasce una storia: sto costruendo un plugin per avere questo suono nel computer. La racconto in \"Diario di un fuzz\", ogni giovedì alle 21:00 🎧\n\n#joshhomme #queensofthestoneage #qotsa #guitartone #homerecording #mixing #produzionemusicale #diariodiunfuzz"
+ "caption": "Come fa Josh Homme a suonare così pesante con poca distorsione? Non è il gain 🎸\n\nDa Rated R usa un Maestro MPF-1, un filtro parametrico degli anni '70 che spinge una sola fetta di medi: la chitarra diventa nasale, quasi un wah bloccato. Il peso invece arriva dall'accordatura in Do, due toni sotto lo standard, con ampli poco spinti.\n\nIl test: una campana stretta a +10 dB su un EQ gratuito, spostala piano tra 500 Hz e 2 kHz mentre suoni. Quando la chitarra inizia a \"parlare\", fermati lì.\n\nE da qui nasce una storia: sto costruendo un plugin per avere questo suono nel computer. La racconto in \"Diario di un fuzz\" 🎧\n\nMandalo a chi alza il gain per avere un suono pesante 👇\n\n#joshhomme #queensofthestoneage #qotsa #guitartone #homerecording #mixing #produzionemusicale #diariodiunfuzz"
 }

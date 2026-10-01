@@ -1,9 +1,11 @@
-Come fa Josh Homme a suonare così pesante senza affogare nella distorsione? 🎸
+Come fa Josh Homme a suonare così pesante con poca distorsione? Non è il gain 🎸
 
-Il segreto sono i medi: da Rated R usa un Maestro MPF-1, un filtro parametrico degli anni '70 che spinge una sola fetta di frequenze, come un wah bloccato. Poi ampli poco spinti e accordatura in Do, due toni sotto lo standard. Oggi quel ruolo lo fanno i pedali Stone Deaf PDF.
+Da Rated R usa un Maestro MPF-1, un filtro parametrico degli anni '70 che spinge una sola fetta di medi: la chitarra diventa nasale, quasi un wah bloccato. Il peso invece arriva dall'accordatura in Do, due toni sotto lo standard, con ampli poco spinti.
 
-Nelle slide trovi come rifarlo a casa con un EQ gratuito.
+Il test: una campana stretta a +10 dB su un EQ gratuito, spostala piano tra 500 Hz e 2 kHz mentre suoni. Quando la chitarra inizia a "parlare", fermati lì.
 
-E da qui nasce una storia: sto costruendo un plugin per avere questo suono nel computer. La racconto in "Diario di un fuzz", ogni giovedì alle 21:00 🎧
+E da qui nasce una storia: sto costruendo un plugin per avere questo suono nel computer. La racconto in "Diario di un fuzz" 🎧
+
+Mandalo a chi alza il gain per avere un suono pesante 👇
 
 #joshhomme #queensofthestoneage #qotsa #guitartone #homerecording #mixing #produzionemusicale #diariodiunfuzz
