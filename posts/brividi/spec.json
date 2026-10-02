@@ -6,10 +6,15 @@
    "bg": "pieno",
    "photo": "",
    "kicker": "PSICOACUSTICA",
-   "title": "I BRIVIDI",
-   "title2": "DA MUSICA",
-   "subtitle": "Perché certe canzoni ti fanno la pelle d'oca",
-   "footer": "HOME RECORDING · CERVELLO"
+   "subtitle": "Frisson · la dopamina arriva prima del ritornello",
+   "footer": "HOME RECORDING · CERVELLO",
+   "hook": [
+    "PERCHÉ CERTE CANZONI",
+    "TI FANNO VENIRE",
+    "LA PELLE D'OCA?"
+   ],
+   "hook_size": 96,
+   "wave_seed": 2011
   },
   {
    "type": "band",
@@ -91,14 +96,14 @@
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "LO SAPEVI?",
-    "SCRIVI \"BRIVIDI\"",
-    "NEI COMMENTI"
+    "QUAL È LA TUA",
+    "CANZONE",
+    "DA BRIVIDI?"
    ],
-   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
+   "footer": "SCRIVILA NEI COMMENTI · PROVALA IN CUFFIA",
    "size": 84
   }
  ],
- "caption": "Ti è mai venuta la pelle d'oca ascoltando una canzone? Non capita a tutti 🎶\n\nIn inglese si chiama frisson. Uno studio del 2011 ha mostrato che il cervello rilascia dopamina nei momenti più intensi di un brano, e già un attimo prima, nell'attesa.\n\nLa sorpresa è la chiave: un accordo inatteso, un'entrata, un silenzio prima del ritornello. Nelle slide trovi come costruirla nel tuo arrangiamento e nel mix.\n\nQuale canzone ti dà i brividi? Scrivila nei commenti 👇\n\n#frisson #brividi #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio",
+ "caption": "Ti è mai venuta la pelle d'oca ascoltando una canzone? Non capita a tutti 🎶\n\nIn inglese si chiama frisson. Uno studio del 2011 ha mostrato che il cervello rilascia dopamina nei momenti più intensi di un brano, e già un attimo prima, nell'attesa.\n\nLa sorpresa è la chiave: un accordo inatteso, un'entrata, un silenzio prima del ritornello. Nelle slide trovi come costruirla nel tuo arrangiamento e nel mix.\n\nQuale canzone ti dà i brividi? Scrivila nei commenti, la ascolto in cuffia 👇\n\n#frisson #brividi #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio",
  "accent": "azzurro"
 }
