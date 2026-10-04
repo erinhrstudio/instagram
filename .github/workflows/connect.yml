@@ -11,15 +11,17 @@ on:
 jobs:
   connect:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
+      - uses: actions/checkout@v4
       - name: Scambia il codice e salva il collegamento
         shell: bash
         env:
           # accetta sia le chiavi sandbox sia quelle definitive
           CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY_SANDBOX || secrets.TIKTOK_CLIENT_KEY }}
           CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET_SANDBOX || secrets.TIKTOK_CLIENT_SECRET }}
-          GH_TOKEN: ${{ secrets.GH_PAT }}
           REDIRECT_URI: https://erinhrstudio.github.io/instagram/tiktok.html
         run: |
           set -euo pipefail
@@ -57,11 +59,13 @@ jobs:
           open("/tmp/openid", "w").write(d.get("open_id", ""))
           PY
           rm -f /tmp/t.json
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::error::Autorizzazione riuscita ma manca il secret GH_PAT, quindi non posso salvare il collegamento."
-            exit 1
-          fi
-          gh secret set TIKTOK_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < /tmp/refresh
-          gh secret set TIKTOK_OPEN_ID --repo "$GITHUB_REPOSITORY" < /tmp/openid
+          # il collegamento si salva cifrato con il client secret: nel repo pubblico resta illeggibile
+          printf '{"refresh_token":"%s","open_id":"%s"}' "$(cat /tmp/refresh)" "$(cat /tmp/openid)" \
+            | openssl enc -aes-256-cbc -pbkdf2 -salt -pass env:CLIENT_SECRET -out state/tiktok.enc
           rm -f /tmp/refresh /tmp/openid
-          echo "Collegamento salvato nei secrets TIKTOK_REFRESH_TOKEN e TIKTOK_OPEN_ID."
+          git config user.name "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          git add state/tiktok.enc
+          git commit -m "TikTok collegato"
+          git push
+          echo "Collegamento salvato (cifrato) in state/tiktok.enc."
