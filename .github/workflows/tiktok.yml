@@ -1,0 +1,42 @@
+name: "TikTok: carica in bozze"
+
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: "Video da caricare (es. media/tiktok/basso-fantasma.mp4)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tiktok
+  cancel-in-progress: false
+
+jobs:
+  bozza:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Carica nelle bozze
+        env:
+          CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY_SANDBOX || secrets.TIKTOK_CLIENT_KEY }}
+          CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET_SANDBOX || secrets.TIKTOK_CLIENT_SECRET }}
+          VIDEO: ${{ inputs.video }}
+        run: python -m tools.tiktok_bozza "$VIDEO"
+      - name: Salva il collegamento rinnovato
+        if: always()
+        run: |
+          git config user.name "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          git add state/tiktok.enc
+          if ! git diff --cached --quiet; then
+            git commit -m "TikTok: collegamento rinnovato"
+            git push
+          fi
