@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       authorization_code:
-        description: "Codice restituito da TikTok"
+        description: "Codice mostrato dalla pagina tiktok.html (vale pochi minuti e una volta sola)"
         required: true
         type: string
 
@@ -13,50 +13,55 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Exchange authorization code
+      - name: Scambia il codice e salva il collegamento
         shell: bash
         env:
-          CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY_SANDBOX }}
-          CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET_SANDBOX }}
-          AUTH_CODE: ${{ inputs.authorization_code }}
+          # accetta sia le chiavi sandbox sia quelle definitive
+          CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY_SANDBOX || secrets.TIKTOK_CLIENT_KEY }}
+          CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET_SANDBOX || secrets.TIKTOK_CLIENT_SECRET }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
           REDIRECT_URI: https://erinhrstudio.github.io/instagram/tiktok.html
         run: |
           set -euo pipefail
-
-          curl --fail-with-body -sS \
-            -X POST 'https://open.tiktokapis.com/v2/oauth/token/' \
+          # il codice si legge dall'evento, così non compare nei log (il repo è pubblico)
+          AUTH_CODE=$(jq -r '.inputs.authorization_code' "$GITHUB_EVENT_PATH" | tr -d '[:space:]')
+          echo "::add-mask::$AUTH_CODE"
+          if [ -z "$CLIENT_KEY" ] || [ -z "$CLIENT_SECRET" ]; then
+            echo "::error::Mancano i secrets TIKTOK_CLIENT_KEY / TIKTOK_CLIENT_SECRET (o le versioni _SANDBOX)."
+            exit 1
+          fi
+          curl -sS -X POST 'https://open.tiktokapis.com/v2/oauth/token/' \
             -H 'Content-Type: application/x-www-form-urlencoded' \
             --data-urlencode "client_key=${CLIENT_KEY}" \
             --data-urlencode "client_secret=${CLIENT_SECRET}" \
             --data-urlencode "code=${AUTH_CODE}" \
             --data-urlencode 'grant_type=authorization_code' \
             --data-urlencode "redirect_uri=${REDIRECT_URI}" \
-            -o /tmp/tiktok-token.json
-
+            -o /tmp/t.json
           python3 - <<'PY'
-          import json
-          import sys
-
-          with open("/tmp/tiktok-token.json") as f:
-              d = json.load(f)
-
-          required = ("access_token", "refresh_token", "open_id")
-          missing = [k for k in required if not d.get(k)]
-
-          if missing:
-              print("TikTok token exchange FAILED", file=sys.stderr)
-              print("Missing:", ", ".join(missing), file=sys.stderr)
-              print("Error:", d.get("error", "unknown"), file=sys.stderr)
-              print("Error description:", d.get("error_description", ""), file=sys.stderr)
+          import json, sys
+          d = json.load(open("/tmp/t.json"))
+          for k in ("access_token", "refresh_token"):
+              if d.get(k):
+                  print(f"::add-mask::{d[k]}")
+          if not d.get("refresh_token"):
+              err, desc = d.get("error", "sconosciuto"), d.get("error_description", "")
+              hint = {
+                  "invalid_client": "Client key o secret sbagliati: in Sandbox TikTok dà chiavi diverse da quelle dell'app definitiva.",
+                  "invalid_grant": "Codice scaduto o già usato: rifai l'autorizzazione e lancia subito il workflow.",
+              }.get(err, "")
+              print(f"::error::Collegamento fallito: {err} {desc} {hint}")
               sys.exit(1)
-
-          print("✓ TikTok authorization successful")
-          print("✓ access_token received")
-          print("✓ refresh_token received")
-          print("✓ open_id received")
-          print("✓ scopes:", d.get("scope", ""))
-
-          # Deliberatamente NON stampiamo i token nei log.
+          print("Autorizzazione riuscita. Permessi:", d.get("scope", ""))
+          open("/tmp/refresh", "w").write(d["refresh_token"])
+          open("/tmp/openid", "w").write(d.get("open_id", ""))
           PY
-
-          rm -f /tmp/tiktok-token.json
+          rm -f /tmp/t.json
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::Autorizzazione riuscita ma manca il secret GH_PAT, quindi non posso salvare il collegamento."
+            exit 1
+          fi
+          gh secret set TIKTOK_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < /tmp/refresh
+          gh secret set TIKTOK_OPEN_ID --repo "$GITHUB_REPOSITORY" < /tmp/openid
+          rm -f /tmp/refresh /tmp/openid
+          echo "Collegamento salvato nei secrets TIKTOK_REFRESH_TOKEN e TIKTOK_OPEN_ID."
