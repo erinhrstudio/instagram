@@ -1,0 +1,62 @@
+name: "TikTok: collega account"
+
+on:
+  workflow_dispatch:
+    inputs:
+      authorization_code:
+        description: "Codice restituito da TikTok"
+        required: true
+        type: string
+
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Exchange authorization code
+        shell: bash
+        env:
+          CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY_SANDBOX }}
+          CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET_SANDBOX }}
+          AUTH_CODE: ${{ inputs.authorization_code }}
+          REDIRECT_URI: https://erinhrstudio.github.io/instagram/tiktok.html
+        run: |
+          set -euo pipefail
+
+          curl --fail-with-body -sS \
+            -X POST 'https://open.tiktokapis.com/v2/oauth/token/' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode "client_key=${CLIENT_KEY}" \
+            --data-urlencode "client_secret=${CLIENT_SECRET}" \
+            --data-urlencode "code=${AUTH_CODE}" \
+            --data-urlencode 'grant_type=authorization_code' \
+            --data-urlencode "redirect_uri=${REDIRECT_URI}" \
+            -o /tmp/tiktok-token.json
+
+          python3 - <<'PY'
+          import json
+          import sys
+
+          with open("/tmp/tiktok-token.json") as f:
+              d = json.load(f)
+
+          required = ("access_token", "refresh_token", "open_id")
+          missing = [k for k in required if not d.get(k)]
+
+          if missing:
+              print("TikTok token exchange FAILED", file=sys.stderr)
+              print("Missing:", ", ".join(missing), file=sys.stderr)
+              print("Error:", d.get("error", "unknown"), file=sys.stderr)
+              print("Error description:", d.get("error_description", ""), file=sys.stderr)
+              sys.exit(1)
+
+          print("✓ TikTok authorization successful")
+          print("✓ access_token received")
+          print("✓ refresh_token received")
+          print("✓ open_id received")
+          print("✓ scopes:", d.get("scope", ""))
+
+          # Deliberatamente NON stampiamo i token nei log.
+          PY
+
+          rm -f /tmp/tiktok-token.json
