@@ -1,10 +1,19 @@
 <!doctype html><html lang="it"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Collegamento TikTok</title>
 <body style="font-family:sans-serif;max-width:640px;margin:40px auto;padding:0 16px;line-height:1.5">
 <h1>Collegamento TikTok</h1>
-<p id="msg">Nessun codice ricevuto.</p>
+<p id="msg">Incolla la <b>Client key</b> della Sandbox e premi Autorizza.</p>
+<form id="f"><input id="k" placeholder="Client key" style="width:100%;padding:10px;font-size:16px" autocomplete="off">
+<button style="margin-top:10px;padding:10px 20px;font-size:16px">Autorizza su TikTok</button></form>
 <script>
+document.getElementById("f").onsubmit = e => {
+  e.preventDefault();
+  const q = new URLSearchParams({client_key: document.getElementById("k").value.trim(), scope: "user.info.basic,video.upload",
+    response_type: "code", redirect_uri: location.origin + location.pathname, state: "erin"});
+  location.href = "https://www.tiktok.com/v2/auth/authorize/?" + q;
+};
 const p = new URLSearchParams(location.search);
 if (p.get("code")) {
+  document.getElementById("f").remove();
   document.getElementById("msg").innerHTML =
     "Copia questo codice e incollalo nel workflow «TikTok: collega account» su GitHub (scade in pochi minuti):" +
     "<pre style='white-space:pre-wrap;word-break:break-all;background:#eee;padding:12px'>" +
