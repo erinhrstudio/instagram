@@ -5,16 +5,21 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "foto.jpeg",
-   "kicker": "THE GITS · LA VOCE",
-   "title": "MIA",
-   "title2": "ZAPATA",
-   "subtitle": "Una voce blues dentro il punk di Seattle",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Mia Zapata · The Gits",
    "footer": "HOME RECORDING · MIX",
    "focus": [
     0.52,
     0.33
    ],
-   "zoom": 1.1
+   "zoom": 1.1,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "COME SI MIXA UNA VOCE",
+    "BLUES DENTRO",
+    "UNA BAND PUNK?"
+   ]
   },
   {
    "type": "band",
@@ -113,13 +118,12 @@
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "VUOI IL PRIMA/DOPO?",
-    "SCRIVI \"GITS\"",
-    "NEI COMMENTI"
+    "NON LEVIGARE",
+    "TUTTO"
    ],
-   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "footer": "MANDALO A CHI PULISCE OGNI RESPIRO",
    "size": 80
   }
  ],
- "caption": "Mia Zapata cantava punk con la voce di una cantante blues 🎙️\n\nNei Gits la sua voce era rauca, piena, mai levigata: il contrario delle voci perfette di oggi. In Frenching the Bully (1992) la band suona quasi come dal vivo e la voce sta davanti a tutto.\n\nNelle slide trovi come mixare una voce così senza togliere la grana: EQ leggero, compressione sui picchi e poco riverbero.\n\nScrivi \"GITS\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#thegits #miazapata #seattle #punk #homerecording #mixing #vocalmixing #homestudio"
+ "caption": "Mia Zapata cantava punk con la voce di una cantante blues 🎙️\n\nNei Gits la sua voce era rauca, piena, mai levigata: il contrario delle voci perfette di oggi. In Frenching the Bully (1992) la band suona quasi come dal vivo e la voce sta davanti a tutto.\n\nNelle slide trovi come mixare una voce così senza togliere la grana: EQ leggero, compressione sui picchi e poco riverbero.\n\nMandalo a chi pulisce ogni respiro dalle sue voci 🎙️\n\n#thegits #miazapata #seattle #punk #homerecording #mixing #vocalmixing #homestudio"
 }

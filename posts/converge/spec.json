@@ -5,16 +5,21 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "foto.webp",
-   "kicker": "CONVERGE · LA VOCE",
-   "title": "JACOB",
-   "title2": "BANNON",
-   "subtitle": "Come si mixa un urlo in Jane Doe",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Jacob Bannon · Converge, Jane Doe",
    "footer": "HOME RECORDING · MIX",
    "focus": [
     0.5,
     0.4
    ],
-   "zoom": 1.0
+   "zoom": 1.0,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "COME SI MIXA UN URLO",
+    "SENZA FARLO DIVENTARE",
+    "RUMORE?"
+   ]
   },
   {
    "type": "band",
@@ -113,13 +118,13 @@
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "VUOI IL PRIMA/DOPO?",
-    "SCRIVI \"URLO\"",
-    "NEI COMMENTI"
+    "ORA RIASCOLTA",
+    "JANE DOE",
+    "IN CUFFIA"
    ],
-   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "footer": "E MANDALO A CHI HA UNA BAND HARDCORE",
    "size": 80
   }
  ],
- "caption": "Come si mixa un urlo senza farlo diventare rumore? Jacob Bannon in Jane Doe ne è l'esempio 🎙️\n\nJane Doe (2001) è stato registrato in analogico tra Q Division, GodCity e Fort Apache, con Kurt Ballou. Bannon dice di non avere una tecnica: conosci i tuoi limiti.\n\nNelle slide trovi la catena per le voci urlate: due compressori in serie, distorsione in parallelo e delay corto.\n\nScrivi \"URLO\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#converge #jacobbannon #janedoe #kurtballou #hardcore #homerecording #mixing #vocalmixing"
+ "caption": "Come si mixa un urlo senza farlo diventare rumore? Jacob Bannon in Jane Doe ne è l'esempio 🎙️\n\nJane Doe (2001) è stato registrato in analogico tra Q Division, GodCity e Fort Apache, con Kurt Ballou. Bannon dice di non avere una tecnica: conosci i tuoi limiti.\n\nNelle slide trovi la catena per le voci urlate: due compressori in serie, distorsione in parallelo e delay corto.\n\nRiascolta Jane Doe in cuffia dopo le slide, e mandalo a chi canta in una band hardcore 🎧\n\n#converge #jacobbannon #janedoe #kurtballou #hardcore #homerecording #mixing #vocalmixing"
 }

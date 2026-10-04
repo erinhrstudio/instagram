@@ -6,10 +6,15 @@
    "bg": "pieno",
    "photo": "",
    "kicker": "PSICOACUSTICA",
-   "title": "LA CANZONE",
-   "title2": "IN TESTA",
-   "subtitle": "Perché alcuni ritornelli non se ne vanno più",
-   "footer": "HOME RECORDING · CERVELLO"
+   "subtitle": "Earworm · la ricetta di un ritornello",
+   "footer": "HOME RECORDING · CERVELLO",
+   "hook": [
+    "PERCHÉ UNA CANZONE",
+    "TI RESTA IN TESTA",
+    "PER GIORNI?"
+   ],
+   "hook_size": 104,
+   "wave_seed": 873079668
   },
   {
    "type": "band",
@@ -92,12 +97,12 @@
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "LO SAPEVI?",
-    "SCRIVI \"TESTA\"",
-    "NEI COMMENTI"
+    "QUAL È LA TUA",
+    "CANZONE",
+    "TORMENTONE?"
    ],
-   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
-   "size": 84
+   "footer": "SCRIVILA NEI COMMENTI (A TUO RISCHIO)",
+   "size": 80
   }
  ],
  "caption": "C'è una canzone che non riesci a toglierti dalla testa? Si chiama earworm 🐛\n\nUno studio del 2016 ha chiesto a 3.000 persone quali canzoni restano in testa: al primo posto Bad Romance di Lady Gaga, poi Can't Get You Out of My Head di Kylie Minogue. La ricetta: tempo veloce, melodia semplice e un salto insolito.\n\nNelle slide trovi come usarla nei tuoi brani.\n\nQual è la tua canzone tormentone? Scrivila nei commenti 👇\n\n#earworm #tormentone #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio",

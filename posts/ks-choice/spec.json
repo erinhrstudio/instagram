@@ -5,16 +5,21 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "foto.jpeg",
-   "kicker": "K'S CHOICE · LA VOCE",
-   "title": "SAM",
-   "title2": "BETTENS",
-   "subtitle": "La voce ruvida di Not an Addict",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Sam Bettens · K's Choice",
    "footer": "HOME RECORDING · MIX",
    "focus": [
     0.45,
     0.3
    ],
-   "zoom": 1.25
+   "zoom": 1.25,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "COME SI MIXA UNA VOCE",
+    "RUVIDA E CALDA",
+    "ALLO STESSO TEMPO?"
+   ]
   },
   {
    "type": "band",
@@ -113,13 +118,13 @@
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "VUOI IL PRIMA/DOPO?",
-    "SCRIVI \"SAM\"",
-    "NEI COMMENTI"
+    "ORA RIASCOLTA",
+    "NOT AN ADDICT",
+    "IN CUFFIA"
    ],
-   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "footer": "E MANDALO A CHI HA UNA VOCE GRAFFIANTE",
    "size": 80
   }
  ],
- "caption": "La voce di Sam Bettens in Not an Addict è ruvida e calda allo stesso tempo 🎙️\n\nParadise in Me (1995) è prodotto da Jean Blaute e registrato ai Jet Studios di Bruxelles. Not an Addict, scritta da Gert e Sam Bettens, ha portato i K's Choice in tutto il mondo.\n\nNelle slide trovi come mixare una voce fumosa senza ripulirla: EQ sul calore, compressione ottica e un plate corto.\n\nScrivi \"SAM\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#kschoice #sambettens #notanaddict #90s #homerecording #mixing #vocalmixing #homestudio"
+ "caption": "La voce di Sam Bettens in Not an Addict è ruvida e calda allo stesso tempo 🎙️\n\nParadise in Me (1995) è prodotto da Jean Blaute e registrato ai Jet Studios di Bruxelles. Not an Addict, scritta da Gert e Sam Bettens, ha portato i K's Choice in tutto il mondo.\n\nNelle slide trovi come mixare una voce fumosa senza ripulirla: EQ sul calore, compressione ottica e un plate corto.\n\nRiascolta Not an Addict in cuffia e mandalo a chi ha una voce graffiante 🎙️\n\n#kschoice #sambettens #notanaddict #90s #homerecording #mixing #vocalmixing #homestudio"
 }

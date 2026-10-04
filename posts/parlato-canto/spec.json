@@ -6,10 +6,15 @@
    "bg": "pieno",
    "photo": "",
    "kicker": "PSICOACUSTICA",
-   "title": "QUANDO IL PARLATO",
-   "title2": "DIVENTA CANTO",
    "subtitle": "L'illusione di Diana Deutsch",
-   "footer": "HOME RECORDING · CERVELLO"
+   "footer": "HOME RECORDING · CERVELLO",
+   "hook": [
+    "UNA FRASE PARLATA",
+    "PUÒ DIVENTARE",
+    "UNA CANZONE?"
+   ],
+   "hook_size": 104,
+   "wave_seed": 569128365
   },
   {
    "type": "band",
@@ -92,14 +97,13 @@
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "LO SAPEVI?",
-    "SCRIVI \"LOOP\"",
-    "NEI COMMENTI"
+    "RIPETILA",
+    "DIECI VOLTE"
    ],
-   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
-   "size": 84
+   "footer": "PROVALO IN CUFFIA CON UNA FRASE TUA",
+   "size": 80
   }
  ],
- "caption": "Ripeti una frase parlata abbastanza volte e diventa una canzone 🔁\n\nÈ l'illusione scoperta dalla psicologa Diana Deutsch nel 1995: dopo qualche ripetizione di \"sometimes behave so strangely\" la maggior parte delle persone la sente cantata. Con la ripetizione il cervello smette di seguire il significato e ascolta le note.\n\nNelle slide trovi come usare questo trucco nei tuoi brani con un semplice loop.\n\nScrivi \"LOOP\" nei commenti per il Reel con l'esempio 🎧\n\n#speechtosong #dianadeutsch #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio",
+ "caption": "Ripeti una frase parlata abbastanza volte e diventa una canzone 🔁\n\nÈ l'illusione scoperta dalla psicologa Diana Deutsch nel 1995: dopo qualche ripetizione di \"sometimes behave so strangely\" la maggior parte delle persone la sente cantata. Con la ripetizione il cervello smette di seguire il significato e ascolta le note.\n\nNelle slide trovi come usare questo trucco nei tuoi brani con un semplice loop.\n\nProvalo in cuffia: registra una frase, mettila in loop e ascolta quando comincia a cantare 🔁\n\n#speechtosong #dianadeutsch #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio",
  "accent": "azzurro"
 }

@@ -6,10 +6,15 @@
    "bg": "pieno",
    "photo": "",
    "kicker": "PSICOACUSTICA",
-   "title": "PIÙ FORTE",
-   "title2": "SUONA MEGLIO",
-   "subtitle": "La trappola che rovina i tuoi mix",
-   "footer": "HOME RECORDING · CERVELLO"
+   "subtitle": "Fletcher-Munson · la trappola del volume",
+   "footer": "HOME RECORDING · CERVELLO",
+   "hook": [
+    "PERCHÉ IL TUO MIX",
+    "SEMBRA MIGLIORE",
+    "APPENA ALZI IL VOLUME?"
+   ],
+   "hook_size": 96,
+   "wave_seed": 597542982
   },
   {
    "type": "band",
@@ -92,14 +97,14 @@
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "LO SAPEVI?",
-    "SCRIVI \"VOLUME\"",
-    "NEI COMMENTI"
+    "CONFRONTA",
+    "SEMPRE",
+    "ALLO STESSO VOLUME"
    ],
-   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
-   "size": 84
+   "footer": "PROVALO STASERA SUL TUO MIX",
+   "size": 80
   }
  ],
- "caption": "Alzi il volume e il mix ti sembra subito migliore. È una trappola 🎚️\n\nNel 1933 Fletcher e Munson hanno misurato che a volume basso sentiamo meno bassi e meno acuti. Alzando, il suono torna pieno: per questo più forte sembra sempre meglio. È anche così che è nata la loudness war.\n\nNelle slide trovi come fare confronti onesti tra prima e dopo.\n\nScrivi \"VOLUME\" nei commenti per il Reel con la prova 🎧\n\n#fletchermunson #loudnesswar #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio",
+ "caption": "Alzi il volume e il mix ti sembra subito migliore. È una trappola 🎚️\n\nNel 1933 Fletcher e Munson hanno misurato che a volume basso sentiamo meno bassi e meno acuti. Alzando, il suono torna pieno: per questo più forte sembra sempre meglio. È anche così che è nata la loudness war.\n\nNelle slide trovi come fare confronti onesti tra prima e dopo.\n\nProva stasera: confronta due versioni del tuo mix allo stesso volume e dimmi cosa cambia 🎚️\n\n#fletchermunson #loudnesswar #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio",
  "accent": "azzurro"
 }

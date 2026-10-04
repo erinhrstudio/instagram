@@ -6,10 +6,15 @@
    "bg": "pieno",
    "photo": "",
    "kicker": "PSICOACUSTICA",
-   "title": "IL SUONO",
-   "title2": "CHE SPARISCE",
-   "subtitle": "Il mascheramento e i mix impastati",
-   "footer": "HOME RECORDING · CERVELLO"
+   "subtitle": "Il mascheramento · il suono che sparisce",
+   "footer": "HOME RECORDING · CERVELLO",
+   "hook": [
+    "PERCHÉ IL TUO MIX",
+    "SUONA IMPASTATO",
+    "ANCHE SE È REGISTRATO BENE?"
+   ],
+   "hook_size": 92,
+   "wave_seed": 795330272
   },
   {
    "type": "band",
@@ -92,14 +97,14 @@
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "LO SAPEVI?",
-    "SCRIVI \"SPAZIO\"",
-    "NEI COMMENTI"
+    "NON TOGLIERE",
+    "STRUMENTI.",
+    "FAGLI SPAZIO."
    ],
-   "footer": "E SALVA IL POST PER IL PROSSIMO MIX",
-   "size": 84
+   "footer": "MANDALO A CHI ALZA TUTTO PER SENTIRE TUTTO",
+   "size": 80
   }
  ],
- "caption": "Hai registrato tutto bene, ma il mix suona impastato? Colpa del mascheramento 🔇\n\nQuando due suoni occupano le stesse frequenze, il più forte copre l'altro. È lo stesso principio che usa l'MP3 per risparmiare spazio: elimina ciò che tanto non sentiresti.\n\nNelle slide trovi come fare spazio nel mix: EQ sottrattivo, passa-alto, sidechain e, a volte, togliere una parte.\n\nScrivi \"SPAZIO\" nei commenti per il Reel con il prima/dopo 🎧\n\n#mascheramento #masking #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio",
+ "caption": "Hai registrato tutto bene, ma il mix suona impastato? Colpa del mascheramento 🔇\n\nQuando due suoni occupano le stesse frequenze, il più forte copre l'altro. È lo stesso principio che usa l'MP3 per risparmiare spazio: elimina ciò che tanto non sentiresti.\n\nNelle slide trovi come fare spazio nel mix: EQ sottrattivo, passa-alto, sidechain e, a volte, togliere una parte.\n\nMandalo a chi alza tutto per sentire tutto 🔇\n\n#mascheramento #masking #psicoacustica #homerecording #mixing #produzionemusicale #homestudio #audio",
  "accent": "azzurro"
 }

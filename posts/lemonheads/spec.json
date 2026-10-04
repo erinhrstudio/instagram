@@ -5,16 +5,21 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "foto.webp",
-   "kicker": "THE LEMONHEADS · LA VOCE",
-   "title": "EVAN",
-   "title2": "DANDO",
-   "subtitle": "La voce di It's a Shame About Ray",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Evan Dando · The Lemonheads",
    "footer": "HOME RECORDING · MIX",
    "focus": [
     0.6,
     0.2
    ],
-   "zoom": 1.2
+   "zoom": 1.2,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "PERCHÉ LA VOCE",
+    "DI EVAN DANDO SUONA",
+    "COSÌ VICINA?"
+   ]
   },
   {
    "type": "band",
@@ -113,13 +118,12 @@
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "VUOI IL PRIMA/DOPO?",
-    "SCRIVI \"RAY\"",
-    "NEI COMMENTI"
+    "MENO TAKE,",
+    "PIÙ VERITÀ"
    ],
-   "footer": "A 20 COMMENTI ARRIVA IL REEL",
+   "footer": "MANDALO A CHI FA 40 TAKE DELLA STESSA FRASE",
    "size": 80
   }
  ],
- "caption": "It's a Shame About Ray dura mezz'ora e non ha niente di troppo. Anche la voce di Evan Dando 🎙️\n\nNel 1992, con i Robb Brothers, le basi sono state registrate insieme da Dando, Juliana Hatfield e David Ryan, con poche sovraincisioni. Il risultato è uno dei suoni più diretti degli anni '90.\n\nNelle slide trovi come mixare voce e armonia in stile Lemonheads: compressione morbida, armonia più bassa e di lato, niente effetti.\n\nScrivi \"RAY\" nei commenti: a 20 commenti pubblico il Reel con il prima/dopo 🎧\n\n#thelemonheads #evandando #julianahatfield #90s #homerecording #mixing #vocalmixing #homestudio"
+ "caption": "It's a Shame About Ray dura mezz'ora e non ha niente di troppo. Anche la voce di Evan Dando 🎙️\n\nNel 1992, con i Robb Brothers, le basi sono state registrate insieme da Dando, Juliana Hatfield e David Ryan, con poche sovraincisioni. Il risultato è uno dei suoni più diretti degli anni '90.\n\nNelle slide trovi come mixare voce e armonia in stile Lemonheads: compressione morbida, armonia più bassa e di lato, niente effetti.\n\nMandalo a chi fa 40 take della stessa frase 😅\n\n#thelemonheads #evandando #julianahatfield #90s #homerecording #mixing #vocalmixing #homestudio"
 }
