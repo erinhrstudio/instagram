@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       video:
-        description: "Video da caricare (es. media/tiktok/basso-fantasma.mp4)"
+        description: "Cosa mandare, separato da virgole: video .mp4 o nomi di post (es. billie-eilish,media/tiktok/sa-o-fa.mp4)"
         required: true
         type: string
 
@@ -35,8 +35,8 @@ jobs:
         run: |
           git config user.name "reel-bot"
           git config user.email "reel-bot@users.noreply.github.com"
-          git add state/tiktok.enc
+          git add state/tiktok.enc state/tiktok_sent.json
           if ! git diff --cached --quiet; then
-            git commit -m "TikTok: collegamento rinnovato"
+            git commit -m "TikTok: bozze inviate"
             git push
           fi
