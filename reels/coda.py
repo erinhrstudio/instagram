@@ -42,9 +42,19 @@ def prossimo(oggi=None):
     return None, "coda finita: aggiungi altri post in state/coda.json"
 
 
+def formato(oggi=None):
+    """Dal giorno "reel_da" si alterna: un giorno Reel, il giorno dopo carosello."""
+    coda = json.loads(CODA.read_text())
+    if not coda.get("reel_da"):
+        return "carosello"
+    oggi = oggi or datetime.now(ROMA).date()
+    return "reel" if (oggi - date.fromisoformat(coda["reel_da"])).days % 2 == 0 else "carosello"
+
+
 if __name__ == "__main__":
     nome, motivo = prossimo()
-    print(nome or "nessun post oggi", "-", motivo)
+    fmt = formato()
+    print(nome or "nessun post oggi", "-", motivo, "-", fmt)
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-            f.write(f"name={nome or ''}\n")
+            f.write(f"name={nome or ''}\nreel={'--reel' if fmt == 'reel' else ''}\n")

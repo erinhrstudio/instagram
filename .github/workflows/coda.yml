@@ -24,15 +24,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install -q requests
+      - run: pip install -q -r requirements.txt
       - name: Scegli il post di oggi
         id: coda
         run: python -m reels.coda
-      - name: Pubblica il carosello
+      - name: Pubblica il post (carosello o Reel, a giorni alterni)
         if: steps.coda.outputs.name != ''
         env:
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
-        run: python -m reels.post "${{ steps.coda.outputs.name }}" --publish
+        run: python -m reels.post "${{ steps.coda.outputs.name }}" --publish ${{ steps.coda.outputs.reel }}
       - name: Registra il post pubblicato
         if: steps.coda.outputs.name != ''
         run: |
