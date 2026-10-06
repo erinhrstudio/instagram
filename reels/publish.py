@@ -21,6 +21,29 @@ def account(token):
                                timeout=30))
 
 
+def publish_reel_url(urls, caption, token, wait_s=900):
+    """Reel da URL pubblico (video_url): l'upload resumable non è accettato su questo account.
+    Prova ogni URL della lista finché uno viene accettato."""
+    me = account(token)
+    uid, err = me["user_id"], None
+    for url in urls:
+        try:
+            c = _check(requests.post(f"{API}/{uid}/media", data={
+                "media_type": "REELS", "video_url": url, "caption": caption,
+                "share_to_feed": "true", "access_token": token}, timeout=60))
+            _wait(c["id"], token, wait_s)
+            print("  video accettato da", url)
+            break
+        except RuntimeError as e:
+            print("  video rifiutato da", url, "->", e)
+            err = e
+    else:
+        raise err
+    p = _check(requests.post(f"{API}/{uid}/media_publish",
+                             data={"creation_id": c["id"], "access_token": token}, timeout=60))
+    return {"media_id": p["id"], "username": me.get("username")}
+
+
 def publish_reel(video_path, caption, token, wait_s=900):
     me = account(token)
     uid = me["user_id"]

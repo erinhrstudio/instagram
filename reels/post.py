@@ -88,8 +88,13 @@ def reel(a):
     if not token:
         print("Manca INSTAGRAM_TOKEN: aggiungilo nei secrets del repository.", file=sys.stderr)
         return 1
-    from reels.publish import publish_reel
-    res = publish_reel(str(video), caption, token)
+    repo = os.environ.get("GITHUB_REPOSITORY", "erinhrstudio/instagram")
+    ref = os.environ.get("GITHUB_SHA", "main")
+    rel = video.relative_to(ROOT).as_posix()
+    # il video deve essere già nel repository: Instagram lo scarica da un URL pubblico
+    urls = [f"https://cdn.jsdelivr.net/gh/{repo}@{ref}/{rel}", f"https://raw.githubusercontent.com/{repo}/{ref}/{rel}"]
+    from reels.publish import publish_reel_url
+    res = publish_reel_url(urls, caption, token)
     state = json.loads(STATE.read_text()) if STATE.exists() else []
     state.append({"id": f"post:{a.name}", "media_id": res["media_id"], "formato": "reel",
                   "published_at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
