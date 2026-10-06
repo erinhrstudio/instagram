@@ -1,0 +1,110 @@
+{
+ "music": "Radiohead — Creep",
+ "accent": "azzurro",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "PSICOACUSTICA",
+   "subtitle": "Conduzione ossea · la voce che senti solo tu",
+   "footer": "HOME RECORDING · CERVELLO",
+   "hook": [
+    "PERCHÉ ODI",
+    "LA TUA VOCE",
+    "REGISTRATA?"
+   ],
+   "hook_size": 110,
+   "wave_seed": 66759608
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VERITÀ",
+   "statement": [
+    "QUELLA REGISTRATA",
+    "È LA TUA VERA VOCE."
+   ],
+   "footer": "È QUELLA CHE SENTONO GLI ALTRI"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — COSA SUCCEDE",
+   "statement": [
+    "TU TI SENTI",
+    "DA DENTRO"
+   ],
+   "footer": "",
+   "body": [
+    "Quando parli, la voce arriva",
+    "all'orecchio anche attraverso le ossa",
+    "del cranio. Le ossa esaltano i bassi:",
+    "per questo dentro la tua testa",
+    "suoni più profondo e pieno."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL CERVELLO",
+   "statement": [
+    "NON È LA VOCE",
+    "CHE CONOSCI"
+   ],
+   "footer": "OGNI VOLTA CHE TI RIASCOLTI",
+   "body": [
+    "Il microfono sente solo l'aria.",
+    "Ti manca quel corpo che conosci",
+    "e il cervello lo segnala come errore."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — QUANDO REGISTRI LA VOCE",
+   "title": "FIDATI DEL MIC",
+   "items": [
+    [
+     "Cuffie in ascolto",
+     "Ti senti come il microfono, non come il tuo cranio"
+    ],
+    [
+     "Non pompare i bassi",
+     "Il corpo che ti manca lo senti solo tu"
+    ],
+    [
+     "Riascolta domani",
+     "Dopo qualche ascolto l'orecchio si abitua"
+    ],
+    [
+     "Chiedi a un altro",
+     "Per lui quella è la tua voce di sempre"
+    ]
+   ],
+   "footer": "IL PROBLEMA È L'ABITUDINE, NON LA VOCE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "IL MIC",
+    "NON MENTE"
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "TU SEI L'UNICO",
+    "A SENTIRE",
+    "L'ALTRA VERSIONE."
+   ],
+   "footer": "MANDALO A CHI NON SI RIASCOLTA MAI",
+   "size": 80
+  }
+ ],
+ "caption": "Ti riascolti in un vocale e pensi \"ma davvero parlo così?\". Sì, ed è normale odiarla 🎙️\n\nQuando parli la voce ti arriva anche attraverso le ossa del cranio, che esaltano i bassi. Dentro la tua testa suoni più profondo. Il microfono sente solo l'aria, e il cervello segnala la differenza come un errore.\n\nNelle slide trovi come non farti fregare quando registri la tua voce: cuffie in ascolto, niente bassi pompati per compensare, e riascolta il giorno dopo.\n\nMandalo a chi non si riascolta mai 🎧\n\n#psicoacustica #conduzioneossea #vocerecording #homerecording #mixing #produzionemusicale #homestudio #audio"
+}

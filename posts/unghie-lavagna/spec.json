@@ -1,0 +1,110 @@
+{
+ "music": "Metallica — St. Anger",
+ "accent": "azzurro",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "PSICOACUSTICA",
+   "subtitle": "Le frequenze che il cervello non sopporta",
+   "footer": "HOME RECORDING · CERVELLO",
+   "hook": [
+    "PERCHÉ LE UNGHIE",
+    "SULLA LAVAGNA",
+    "TI FANNO IMPAZZIRE?"
+   ],
+   "hook_size": 96,
+   "wave_seed": 378855176
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL COLPEVOLE",
+   "statement": [
+    "NON È IL RUMORE.",
+    "È DOVE STA."
+   ],
+   "footer": "TRA 2.000 E 4.000 HZ"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — LO STUDIO",
+   "statement": [
+    "UNO STUDIO",
+    "DEL 2011"
+   ],
+   "footer": "",
+   "body": [
+    "Due ricercatori, a Vienna e Colonia,",
+    "hanno filtrato il suono delle unghie",
+    "sulla lavagna. Togliendo la zona",
+    "tra 2 e 4 kHz, le persone",
+    "lo trovavano molto meno fastidioso."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — COSA SUCCEDE",
+   "statement": [
+    "IL TUO ORECCHIO",
+    "LE AMPLIFICA"
+   ],
+   "footer": "SONO ANCHE LE FREQUENZE DI UN URLO",
+   "body": [
+    "Il condotto uditivo risuona proprio lì,",
+    "quindi quelle frequenze arrivano più",
+    "forti. E il cervello le tratta da allarme."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — NEL TUO MIX",
+   "title": "LA ZONA CHE FERISCE",
+   "items": [
+    [
+     "Voci",
+     "Una S tagliente vive qui: usa un de-esser"
+    ],
+    [
+     "Chitarre distorte",
+     "Un taglio stretto toglie la fatica d'ascolto"
+    ],
+    [
+     "Piatti e rullante",
+     "Troppo presenti stancano in pochi minuti"
+    ],
+    [
+     "Volume basso",
+     "Controlla il mix piano: se fa male lì, fa male ovunque"
+    ]
+   ],
+   "footer": "PUNTO DI PARTENZA, POI REGOLA A ORECCHIO"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "",
+   "statement": [
+    "PRESENZA",
+    "NON È DOLORE"
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "SE IL MIX",
+    "TI STANCA,",
+    "CERCA LÌ."
+   ],
+   "footer": "PROVALO IN CUFFIA, A VOLUME BASSO",
+   "size": 84
+  }
+ ],
+ "caption": "Il suono delle unghie sulla lavagna ti fa venire i brividi? Non è colpa del rumore in sé, è colpa delle frequenze 😖\n\nNel 2011 due ricercatori, a Vienna e Colonia, lo hanno filtrato: togliendo la zona tra 2.000 e 4.000 Hz diventava molto meno fastidioso. Il nostro condotto uditivo risuona proprio lì e le amplifica, e sono le stesse frequenze di un urlo.\n\nNelle slide trovi dove si nasconde questa zona nel tuo mix: voci, chitarre distorte, piatti e rullante.\n\nProvalo in cuffia, a volume basso: se un mix ti stanca, cerca lì 🎧\n\n#psicoacustica #frequenze #eq #homerecording #mixing #produzionemusicale #homestudio #audio"
+}
