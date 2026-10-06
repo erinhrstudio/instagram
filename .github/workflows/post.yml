@@ -44,5 +44,5 @@ jobs:
           git add state/published.json
           if ! git diff --cached --quiet; then
             git commit -m "Pubblicato il post ${{ inputs.name }}"
-            git push
+            git pull --rebase -q origin main && git push
           fi
