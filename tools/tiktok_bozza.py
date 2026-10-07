@@ -56,16 +56,18 @@ def _check(r, cosa):
 
 
 def _wait(h, pid):
-    for _ in range(30):
-        time.sleep(5)
+    """True se il video è arrivato nella posta in arrivo, False se TikTok sta ancora elaborando."""
+    for i in range(80):
+        time.sleep(5 if i < 12 else 10)
         st = requests.post(f"{API}/post/publish/status/fetch/", headers=h, json={"publish_id": pid}, timeout=30).json()
         s = st.get("data", {}).get("status")
         print("  stato:", s)
         if s in ("SEND_TO_USER_INBOX", "PUBLISH_COMPLETE"):
-            return
-        if s == "FAILED":
-            sys.exit(f"TikTok non ha accettato il contenuto: {st['data'].get('fail_reason')}")
-    print("  TikTok sta ancora elaborando: arriverà tra qualche minuto.")
+            return True
+        if s == "FAILED" or st.get("error", {}).get("code") not in (None, "ok"):
+            sys.exit(f"TikTok non ha accettato il contenuto: {st.get('data', {}).get('fail_reason')} {st.get('error')}")
+    print("::warning::TikTok non ha ancora confermato l'arrivo nella posta in arrivo.")
+    return False
 
 
 def photos(h, name):
@@ -81,7 +83,7 @@ def photos(h, name):
         "source_info": {"source": "PULL_FROM_URL", "photo_cover_index": 0,
                         "photo_images": [f"{PAGES}/{name}/{p.name}" for p in imgs]},
         "post_mode": "MEDIA_UPLOAD", "media_type": "PHOTO"}).json()
-    _wait(h, _check(r, f"le foto di {name}")["publish_id"])
+    return _wait(h, _check(r, f"le foto di {name}")["publish_id"])
 
 
 def upload(path, tok=None):
@@ -97,11 +99,12 @@ def upload(path, tok=None):
         "Content-Type": "video/mp4", "Content-Length": str(n), "Content-Range": f"bytes 0-{n - 1}/{n}"})
     if up.status_code not in (200, 201):
         sys.exit(f"Invio del file fallito: HTTP {up.status_code} {up.text[:300]}")
-    _wait(h, pid)
+    return _wait(h, pid)
 
 
 def main(items):
     sent = json.loads(SENT.read_text()) if SENT.exists() else []
+    mancanti = []
     tok = access_token()
     h = {"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8"}
     for it in [i.strip() for i in items.split(",") if i.strip()]:
@@ -110,13 +113,19 @@ def main(items):
             continue
         print(f"{it}: invio…")
         try:
-            upload(it, tok) if it.endswith(".mp4") else photos(h, it)
+            ok = upload(it, tok) if it.endswith(".mp4") else photos(h, it)
         except TroppiInSospeso as e:
             print(f"::warning::TikTok non accetta altre bozze finché non pubblichi quelle in sospeso ({e}). Mi fermo prima di {it}.")
             break
+        if not ok:
+            print(f"::error::{it}: non confermato, non lo segno come mandato")
+            mancanti.append(it)
+            continue
         sent.append(it)
         SENT.write_text(json.dumps(sent, indent=1))
         print(f"{it}: nelle bozze")
+    if mancanti:
+        sys.exit(f"Non confermati: {', '.join(mancanti)}")
 
 
 if __name__ == "__main__":
