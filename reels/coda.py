@@ -33,6 +33,8 @@ def prossimo(oggi=None, manuale=False):
     coda = json.loads(CODA.read_text())
     if coda.get("pausa"):
         return None, "coda in pausa (\"pausa\": true in state/coda.json)"
+    if oggi.isoformat() in coda.get("salta", []):
+        return None, "giorno saltato apposta (\"salta\" in state/coda.json)"
     state = json.loads(STATE.read_text()) if STATE.exists() else []
     fatti = {s["id"]: date.fromisoformat(s["published_at"][:10]) for s in state}
     if oggi < date.fromisoformat(coda["inizio"]):
