@@ -101,5 +101,11 @@
     "id": "post:ks-choice",
     "media_id": "18140075092619540",
     "published_at": "2026-10-11T16:46:38+00:00"
+  },
+  {
+    "id": "post:mascheramento",
+    "media_id": null,
+    "formato": "reel-manuale",
+    "published_at": "2026-10-12T15:50:10+00:00"
   }
 ]
