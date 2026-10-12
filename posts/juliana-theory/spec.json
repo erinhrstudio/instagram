@@ -4,7 +4,7 @@
   {
    "type": "cover",
    "bg": "pieno",
-   "photo": "",
+   "photo": "foto.jpg",
    "kicker": "DISCHI DA RECUPERARE · 01",
    "subtitle": "The Juliana Theory · Emotion Is Dead (2000)",
    "footer": "HOME RECORDING · ASCOLTI",
@@ -14,7 +14,14 @@
     "IN UNA CAMERA DEGLI OSPITI"
    ],
    "hook_size": 84,
-   "wave_seed": 958120780
+   "wave_seed": 958120780,
+   "focus": [
+    0.45,
+    0.4
+   ],
+   "zoom": 1.0,
+   "fade_from": 0.3,
+   "darken": 0.35
   },
   {
    "type": "band",

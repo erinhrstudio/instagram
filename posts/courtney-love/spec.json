@@ -1,0 +1,168 @@
+{
+ "music": "Hole — Violet",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Courtney Love · Hole",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.45,
+    0.35
+   ],
+   "zoom": 1.0,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "SUSSURRA COME",
+    "UNA BAMBINA.",
+    "POI URLA."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "COURTNEY LOVE:",
+    "UNA VOCE PIÙ GRANDE DI LEI."
+   ],
+   "footer": "HOLE · LOS ANGELES"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "UN ANNUNCIO",
+    "SUL GIORNALE"
+   ],
+   "footer": "",
+   "body": [
+    "Nel 1989 mette un annuncio su",
+    "The Recycler, un giornale di Los Angeles.",
+    "Risponde il chitarrista Eric Erlandson:",
+    "nascono le Hole."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — PRIMA DELLE HOLE",
+   "statement": [
+    "CACCIATA DAI",
+    "FAITH NO MORE"
+   ],
+   "footer": "",
+   "body": [
+    "Nei primi anni 80 è per poco",
+    "la cantante dei Faith No More.",
+    "La mandano via:",
+    "volevano un cantante uomo."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Sussurro",
+     "Dolce, quasi infantile"
+    ],
+    [
+     "Urlo",
+     "Ruvido, sgraziato apposta"
+    ],
+    [
+     "Il colpo",
+     "Passa dall'uno all'altro nella stessa strofa"
+    ],
+    [
+     "Intorno",
+     "Chitarre grunge, ritornelli pop"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "4 BRANI",
+   "items": [
+    [
+     "Celebrity Skin (1998)",
+     "La porta d'ingresso, la più melodica"
+    ],
+    [
+     "Doll Parts (1994)",
+     "Strofa fragile che cresce, da Live Through This"
+    ],
+    [
+     "Violet (1994)",
+     "Sussurro e urlo, stesso disco"
+    ],
+    [
+     "Miss World (1994)",
+     "Cruda e fragile"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "statement": [
+    "DIMENTICA",
+    "I GIORNALI"
+   ],
+   "footer": "",
+   "body": [
+    "Ascolta Live Through This",
+    "dall'inizio alla fine.",
+    "Senti una voce, non un personaggio.",
+    ""
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "URLARE DAVVERO",
+   "items": [
+    [
+     "Imperfezioni",
+     "Lasciale: sono il punto"
+    ],
+    [
+     "Gain",
+     "Regolalo sull'urlo più forte"
+    ],
+    [
+     "Distanza",
+     "Indietro nell'urlo, vicina nel sussurro"
+    ],
+    [
+     "Doppia",
+     "Il ritornello doppiato rende enorme la voce"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "L'HA CONOSCIUTA",
+    "SOLO DAI GIORNALI"
+   ],
+   "footer": "E ASCOLTA VIOLET A TUTTO VOLUME",
+   "size": 80
+  }
+ ],
+ "caption": "Sussurra come una bambina, poi urla: Courtney Love delle Hole 🎙️\n\nNei primi anni 80 è stata per poco la cantante dei Faith No More, che la mandarono via perché volevano un uomo. Nel 1989 mette un annuncio su un giornale di Los Angeles, risponde Eric Erlandson e nascono le Hole. Il loro primo disco lo produce Kim Gordon dei Sonic Youth.\n\nDa dove partire: Celebrity Skin, Doll Parts, Violet, Miss World.\n\nMandalo a chi l'ha conosciuta solo dai giornali 🖤\n\n#erinhrstudio #1eyedpet #courtneylove #hole #grunge"
+}

@@ -1,0 +1,168 @@
+{
+ "music": "Chelsea Wolfe — Feral Love",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Chelsea Wolfe · cantautrice",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.45,
+    0.35
+   ],
+   "zoom": 1.1,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "CANTA IL BUIO",
+    "COME FOSSE",
+    "UNA PREGHIERA."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "CHELSEA WOLFE:",
+    "LA VOCE DEL BUIO."
+   ],
+   "footer": "CALIFORNIA · GOTHIC, DOOM, FOLK"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "A 9 ANNI",
+    "GIÀ IN STUDIO"
+   ],
+   "footer": "",
+   "body": [
+    "Il padre suonava in una band country",
+    "e aveva uno studio in casa.",
+    "Lei ci registrava le prime canzoni:",
+    "\"R&B gotico con il Casio\", dice oggi."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA CARRIERA",
+   "statement": [
+    "UNA VOCE",
+    "FUORI DAI GENERI"
+   ],
+   "footer": "",
+   "body": [
+    "Primo disco nel 2010. Da allora",
+    "cambia pelle a ogni album: gothic,",
+    "doom, folk, elettronica.",
+    "La voce resta sempre al centro."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Timbro",
+     "Soprano caldo, avvolgente"
+    ],
+    [
+     "Spazio",
+     "Spesso immersa nel riverbero, come in una chiesa"
+    ],
+    [
+     "Dinamica",
+     "Dal filo di voce alla forza piena"
+    ],
+    [
+     "Intorno",
+     "Chitarre pesanti, elettronica, folk"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "4 BRANI",
+   "items": [
+    [
+     "Feral Love (2013)",
+     "La porta d'ingresso, dal disco Pain Is Beauty"
+    ],
+    [
+     "Carrion Flowers (2015)",
+     "Più pesante, dal disco Abyss"
+    ],
+    [
+     "16 Psyche (2017)",
+     "Il lato doom, dal disco Hiss Spun"
+    ],
+    [
+     "Tunnel Lights (2023)",
+     "Il suo periodo più recente"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "statement": [
+    "SE TI PIACE LA MUSICA",
+    "CHE FA UN PO' PAURA"
+   ],
+   "footer": "",
+   "body": [
+    "Non è metal, non è folk, non è pop.",
+    "È una voce bellissima",
+    "dentro un suono scurissimo.",
+    "Ascoltala di notte, in cuffia."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "VOCE E SPAZIO",
+   "items": [
+    [
+     "Riverbero",
+     "Su un send, mai direttamente sulla traccia"
+    ],
+    [
+     "Pre-delay",
+     "30-80 ms: la voce resta davanti"
+    ],
+    [
+     "EQ sul riverbero",
+     "Togli bassi e acuti dal send"
+    ],
+    [
+     "Doppia",
+     "Una seconda voce bassissima sotto"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "ASCOLTA MUSICA",
+    "SOLO DI NOTTE"
+   ],
+   "footer": "E ASCOLTA FERAL LOVE IN CUFFIA",
+   "size": 80
+  }
+ ],
+ "caption": "Canta il buio come fosse una preghiera: Chelsea Wolfe 🎙️\n\nCresciuta in California, a 9 anni registrava già canzoni nello studio di casa del padre, che suonava in una band country. Dal 2010 a oggi è passata dal gothic al doom al folk, sempre con la voce al centro.\n\nDa dove partire: Feral Love, Carrion Flowers, 16 Psyche, Tunnel Lights.\n\nMandalo a chi ascolta musica solo di notte 🌙\n\n#erinhrstudio #1eyedpet #chelseawolfe #darkfolk #gothic"
+}

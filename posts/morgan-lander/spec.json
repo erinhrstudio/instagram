@@ -1,0 +1,168 @@
+{
+ "music": "Kittie — Brackish",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Morgan Lander · Kittie",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.45,
+    0.35
+   ],
+   "zoom": 1.1,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "AVEVA 14 ANNI.",
+    "IL METAL",
+    "NON ERA PRONTO."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "MORGAN LANDER:",
+    "DAL SUSSURRO AL RUGGITO."
+   ],
+   "footer": "KITTIE · LONDON, ONTARIO"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "UNA BAND",
+    "DI RAGAZZINE"
+   ],
+   "footer": "",
+   "body": [
+    "Nel 1996 fonda le Kittie in Canada",
+    "con la sorella Mercedes alla batteria",
+    "e Fallon Bowman. Avevano",
+    "tra i 12 e i 14 anni."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL BOTTO",
+   "statement": [
+    "OZZFEST",
+    "2000"
+   ],
+   "footer": "",
+   "body": [
+    "Il primo disco, Spit, esce nel 1999.",
+    "L'anno dopo sono la band più giovane",
+    "e l'unica tutta femminile",
+    "sul secondo palco dell'Ozzfest."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Pulito",
+     "Melodico, a volte quasi sussurrato"
+    ],
+    [
+     "Growl",
+     "Profondo, da far paura"
+    ],
+    [
+     "Il passaggio",
+     "Dal sussurro all'ululato, senza avvisare"
+    ],
+    [
+     "Oggi",
+     "Nel disco Fire (2024) più aggressiva che mai"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "4 BRANI",
+   "items": [
+    [
+     "Charlotte (1999)",
+     "La porta d'ingresso, dal disco Spit"
+    ],
+    [
+     "Brackish (1999)",
+     "La prima canzone che hanno scritto insieme"
+    ],
+    [
+     "Eyes Wide Open (2024)",
+     "Il ritorno, dal disco Fire"
+    ],
+    [
+     "Vultures (2024)",
+     "La più pesante, stesso disco"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "statement": [
+    "13 ANNI DOPO,",
+    "PIÙ FORTI DI PRIMA"
+   ],
+   "footer": "",
+   "body": [
+    "Fire è il primo disco in 13 anni.",
+    "Ascolta Brackish e poi Vultures:",
+    "è la stessa voce, cresciuta.",
+    ""
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "VOCI ESTREME",
+   "items": [
+    [
+     "Microfono",
+     "Un dinamico regge l'urlo meglio di un condensatore"
+    ],
+    [
+     "Distanza",
+     "Una mano aperta tra bocca e capsula"
+    ],
+    [
+     "Pad",
+     "Se il preamp distorce, attenua prima, non dopo"
+    ],
+    [
+     "Pause",
+     "Registra a blocchi: la voce si stanca"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "HA FONDATO UNA BAND",
+    "DA RAGAZZINO"
+   ],
+   "footer": "E ASCOLTA BRACKISH, POI VULTURES",
+   "size": 80
+  }
+ ],
+ "caption": "Aveva 14 anni e il metal non era pronto: Morgan Lander delle Kittie 🎙️\n\nNel 1996 fonda le Kittie in Canada con la sorella Mercedes e Fallon Bowman, tutte tra i 12 e i 14 anni. Nel 2000 sono la band più giovane, e l'unica tutta femminile, sul secondo palco dell'Ozzfest. Nel 2024 tornano con Fire, il primo disco in 13 anni.\n\nDa dove partire: Charlotte, Brackish, Eyes Wide Open, Vultures.\n\nMandalo a chi ha fondato una band da ragazzino 🤘\n\n#erinhrstudio #1eyedpet #kittie #morganlander #numetal"
+}

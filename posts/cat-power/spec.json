@@ -1,0 +1,168 @@
+{
+ "music": "Cat Power — The Greatest",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Cat Power · Chan Marshall",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.48,
+    0.38
+   ],
+   "zoom": 1.1,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "LA VOCE",
+    "PIÙ FUMOSA",
+    "CHE SENTIRAI OGGI."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "CAT POWER:",
+    "IL FUMO E LA CAREZZA."
+   ],
+   "footer": "CHAN MARSHALL · ATLANTA"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "IMPARA",
+    "DA SOLA"
+   ],
+   "footer": "",
+   "body": [
+    "Nasce ad Atlanta nel 1972. Il padre",
+    "suonava blues e pianoforte, lei impara",
+    "la chitarra da sola. A New York",
+    "Steve Shelley dei Sonic Youth le produce i primi dischi."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL DISCO",
+   "statement": [
+    "MEMPHIS,",
+    "2006"
+   ],
+   "footer": "",
+   "body": [
+    "Registra The Greatest a Memphis",
+    "con Teenie Hodges, il chitarrista",
+    "di Al Green. La sua voce",
+    "incontra il soul."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Timbro",
+     "Fumoso, ipnotico"
+    ],
+    [
+     "Dinamica",
+     "Graffia e vola nello stesso momento"
+    ],
+    [
+     "Le cover",
+     "Trasforma le canzoni degli altri in sue"
+    ],
+    [
+     "Intorno",
+     "Chitarra, piano, soul di Memphis"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "4 BRANI",
+   "items": [
+    [
+     "The Greatest (2006)",
+     "La porta d'ingresso, dal disco omonimo"
+    ],
+    [
+     "Sea of Love (2000)",
+     "Una cover, finita nel film Juno"
+    ],
+    [
+     "He War (2003)",
+     "Più nervosa, dal disco You Are Free"
+    ],
+    [
+     "Lived in Bars (2006)",
+     "Di nuovo The Greatest, al bancone"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "statement": [
+    "SE CERCHI UNA VOCE",
+    "PER LE TRE DI NOTTE"
+   ],
+   "footer": "",
+   "body": [
+    "Non alza mai la voce",
+    "e non ne ha bisogno.",
+    "Ascolta The Greatest",
+    "con le luci spente."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "VOCE INTIMA",
+   "items": [
+    [
+     "Distanza",
+     "Pochi centimetri, con l'antipop"
+    ],
+    [
+     "Compressione",
+     "Attacco lento: lascia passare il respiro"
+    ],
+    [
+     "De-esser",
+     "Da vicino le S si fanno taglienti"
+    ],
+    [
+     "Take",
+     "Cantala intera, non a pezzi"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "È SVEGLIO",
+    "ALLE TRE DI NOTTE"
+   ],
+   "footer": "E ASCOLTA THE GREATEST AL BUIO",
+   "size": 80
+  }
+ ],
+ "caption": "La voce più fumosa che sentirai oggi: Cat Power, al secolo Chan Marshall 🎙️\n\nNata ad Atlanta, figlia di un musicista blues, ha imparato la chitarra da sola. I primi dischi li ha prodotti Steve Shelley dei Sonic Youth, e The Greatest (2006) l'ha registrato a Memphis con Teenie Hodges, il chitarrista di Al Green.\n\nDa dove partire: The Greatest, Sea of Love, He War, Lived in Bars.\n\nMandalo a chi è sveglio alle tre di notte 🌙\n\n#erinhrstudio #1eyedpet #catpower #chanmarshall #indiefolk"
+}

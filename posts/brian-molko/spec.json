@@ -1,0 +1,168 @@
+{
+ "music": "Placebo — Every You Every Me",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Brian Molko · Placebo",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "zoom": 1.0,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "NASALE, ACUTA,",
+    "INCONFONDIBILE.",
+    "BOWIE LA ADORAVA."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "BRIAN MOLKO:",
+    "LA VOCE CHE DIVIDE."
+   ],
+   "footer": "PLACEBO · LONDRA"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "BRUXELLES,",
+    "LUSSEMBURGO, LONDRA"
+   ],
+   "footer": "",
+   "body": [
+    "Nato nel 1972, cresce cambiando paese.",
+    "Nel 1994 incontra per caso a Londra",
+    "Stefan Olsdal, ex compagno di scuola",
+    "in Lussemburgo: nascono i Placebo."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — L'INVITO",
+   "statement": [
+    "CHIAMATI",
+    "DA BOWIE"
+   ],
+   "footer": "",
+   "body": [
+    "Nel 1997 Bowie li invita a suonare",
+    "al concerto per i suoi 50 anni,",
+    "al Madison Square Garden. Poi incidono",
+    "insieme Without You I'm Nothing."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Timbro",
+     "Nasale, acuto"
+    ],
+    [
+     "Carattere",
+     "Androgino: lo riconosci in una nota"
+    ],
+    [
+     "Ballate",
+     "Delicato e tenero"
+    ],
+    [
+     "Effetto",
+     "O la ami o la odi"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "4 BRANI",
+   "items": [
+    [
+     "Every You Every Me (1998)",
+     "La porta d'ingresso, da Without You I'm Nothing"
+    ],
+    [
+     "Pure Morning (1998)",
+     "Stesso disco, il singolo più famoso"
+    ],
+    [
+     "Running Up That Hill (2003)",
+     "La cover di Kate Bush, lenta e scura"
+    ],
+    [
+     "Nancy Boy (1996)",
+     "Dal primo disco, Placebo"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLO",
+   "statement": [
+    "SE UNA VOCE",
+    "TI È SEMBRATA STRANA"
+   ],
+   "footer": "",
+   "body": [
+    "Ascoltala tre volte.",
+    "Alla terza non la confondi più",
+    "con nessun'altra.",
+    ""
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "VOCE NASALE",
+   "items": [
+    [
+     "EQ",
+     "Il naso vive intorno a 1 kHz: taglia poco"
+    ],
+    [
+     "Microfono",
+     "Uno scuro bilancia una voce acuta"
+    ],
+    [
+     "De-esser",
+     "Le voci acute fischiano prima"
+    ],
+    [
+     "Carattere",
+     "Non correggerlo: è il motivo per cui la ascolti"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "ASCOLTAVA I PLACEBO",
+    "A 16 ANNI"
+   ],
+   "footer": "E ASCOLTA EVERY YOU EVERY ME",
+   "size": 80
+  }
+ ],
+ "caption": "Nasale, acuta, inconfondibile. Bowie la adorava: Brian Molko dei Placebo 🎙️\n\nNato a Bruxelles e cresciuto tra più paesi, nel 1994 incontra per caso a Londra Stefan Olsdal, che aveva frequentato la sua stessa scuola in Lussemburgo: nascono i Placebo. Nel 1997 Bowie li invita al concerto per i suoi 50 anni al Madison Square Garden.\n\nDa dove partire: Every You Every Me, Pure Morning, Running Up That Hill, Nancy Boy.\n\nMandalo a chi ascoltava i Placebo a 16 anni 🖤\n\n#erinhrstudio #1eyedpet #placebo #brianmolko #alternativerock"
+}

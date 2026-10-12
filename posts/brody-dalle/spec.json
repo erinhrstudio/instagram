@@ -1,0 +1,168 @@
+{
+ "music": "The Distillers — Drain the Blood",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Brody Dalle · The Distillers",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.4,
+    0.35
+   ],
+   "zoom": 1.0,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "LA CHIAMAVANO",
+    "LA NUOVA",
+    "COURTNEY LOVE."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "BRODY DALLE:",
+    "IL RUGGITO DI MELBOURNE."
+   ],
+   "footer": "THE DISTILLERS · SPINNERETTE"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "MELBOURNE,",
+    "POI LOS ANGELES"
+   ],
+   "footer": "",
+   "body": [
+    "Nasce a Melbourne nel 1979.",
+    "A 18 anni si trasferisce a Los Angeles",
+    "e nel 1998 fonda i Distillers.",
+    ""
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL PREZZO",
+   "statement": [
+    "DUE ORE",
+    "DI URLA A SERA"
+   ],
+   "footer": "",
+   "body": [
+    "Con i Distillers urlava due ore",
+    "a concerto. Oggi racconta",
+    "che deve stare molto attenta",
+    "alla sua voce."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Timbro",
+     "Contralto ruvido, graffiato"
+    ],
+    [
+     "Growl",
+     "Il suo marchio di fabbrica"
+    ],
+    [
+     "Il passaggio",
+     "Dall'urlo al canto in un attimo"
+    ],
+    [
+     "Intorno",
+     "Punk veloce, poi rock più scuro"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "4 BRANI",
+   "items": [
+    [
+     "Drain the Blood (2003)",
+     "La porta d'ingresso, dal disco Coral Fang"
+    ],
+    [
+     "City of Angels (2002)",
+     "Dal disco Sing Sing Death House"
+    ],
+    [
+     "The Hunger (2003)",
+     "Il lato lento e scuro, da Coral Fang"
+    ],
+    [
+     "Meet the Foetus / Oh the Joy (2014)",
+     "Da solista, con Shirley Manson ai cori"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "statement": [
+    "SE TI PIACE",
+    "IL PUNK CHE CANTA"
+   ],
+   "footer": "",
+   "body": [
+    "Non solo urla: dentro il graffio",
+    "c'è una melodia vera.",
+    "Ascolta The Hunger",
+    "per sentirla tutta."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "PROTEGGI LA VOCE",
+   "items": [
+    [
+     "Riscaldamento",
+     "Prima di registrare, sempre"
+    ],
+    [
+     "Ordine",
+     "Le parti urlate alla fine della sessione"
+    ],
+    [
+     "Take",
+     "Meno ripetizioni, più concentrazione"
+    ],
+    [
+     "Dolore",
+     "Se fa male, ti fermi"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "ASCOLTAVA PUNK",
+    "A TUTTO VOLUME"
+   ],
+   "footer": "E ASCOLTA DRAIN THE BLOOD",
+   "size": 80
+  }
+ ],
+ "caption": "La chiamavano la nuova Courtney Love: Brody Dalle dei Distillers 🎙️\n\nNata a Melbourne, a 18 anni si trasferisce a Los Angeles e nel 1998 fonda i Distillers. Poi gli Spinnerette e, nel 2014, il disco solista Diploid Love. Con i Distillers urlava due ore a concerto: oggi dice che deve stare molto attenta alla voce.\n\nDa dove partire: Drain the Blood, City of Angels, The Hunger, Meet the Foetus / Oh the Joy.\n\nMandalo a chi ascoltava punk a tutto volume 🤘\n\n#erinhrstudio #1eyedpet #brodydalle #thedistillers #punk"
+}

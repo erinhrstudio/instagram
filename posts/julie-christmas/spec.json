@@ -1,0 +1,168 @@
+{
+ "music": "Julie Christmas — Supernatural",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Julie Christmas · Made Out of Babies · Battle of Mice",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.5,
+    0.3
+   ],
+   "zoom": 1.1,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "SUSSURRA COME",
+    "UNA FILASTROCCA.",
+    "POI URLA."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "JULIE CHRISTMAS:",
+    "LA FIABA E L'INCUBO."
+   ],
+   "footer": "BROOKLYN · NOISE ROCK"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "NATA A NATALE,",
+    "DI NOME E DI FATTO"
+   ],
+   "footer": "",
+   "body": [
+    "Nasce a Brooklyn il 25 dicembre 1975.",
+    "Canta nei Made Out of Babies e nei",
+    "Battle of Mice. Nel 2010 esce",
+    "il suo primo disco solista, The Bad Wife."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — L'ATTESA",
+   "statement": [
+    "14 ANNI",
+    "DI ATTESA"
+   ],
+   "footer": "",
+   "body": [
+    "Il secondo disco solista, Ridiculous",
+    "and Full of Blood, arriva nel 2024.",
+    "Nel mezzo, Mariner (2016):",
+    "un disco intero con i Cult of Luna."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Sussurro",
+     "Quasi una filastrocca, all'orecchio"
+    ],
+    [
+     "Urlo",
+     "Da strega, arriva senza preavviso"
+    ],
+    [
+     "Il colpo",
+     "Passa dall'uno all'altro nella stessa frase"
+    ],
+    [
+     "Intorno",
+     "Chitarre enormi, post-metal"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "4 BRANI",
+   "items": [
+    [
+     "Supernatural (2024)",
+     "La porta d'ingresso: tutta la sua voce in un brano"
+    ],
+    [
+     "The Ash (2024)",
+     "Dallo stesso disco, più cupa"
+    ],
+    [
+     "The Wreck of S.S. Needle (2016)",
+     "Con i Cult of Luna, dal disco Mariner"
+    ],
+    [
+     "Bow (2010)",
+     "Dal primo disco solista, The Bad Wife"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "statement": [
+    "SE TI PIACCIONO",
+    "LE STORIE"
+   ],
+   "footer": "",
+   "body": [
+    "Ogni brano è un piccolo teatro:",
+    "personaggi, sussurri, grida.",
+    "Ascoltala come un racconto,",
+    "dall'inizio alla fine."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "SUSSURRO E URLO",
+   "items": [
+    [
+     "Sussurro",
+     "Vicino al microfono: la voce si scalda"
+    ],
+    [
+     "Urlo",
+     "Fai un passo indietro o gira la testa"
+    ],
+    [
+     "Gain",
+     "Regolalo sull'urlo, non sul sussurro"
+    ],
+    [
+     "Volume",
+     "Automazione a mano, invece di schiacciare tutto"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "AMA LE VOCI",
+    "CHE FANNO PAURA"
+   ],
+   "footer": "E ASCOLTA SUPERNATURAL AL BUIO",
+   "size": 80
+  }
+ ],
+ "caption": "Sussurra come una filastrocca, poi urla senza preavviso: Julie Christmas 🎙️\n\nNata a Brooklyn il giorno di Natale, ha cantato nei Made Out of Babies e nei Battle of Mice. Nel 2016 ha fatto un disco intero con i Cult of Luna, Mariner, e nel 2024 è tornata da solista dopo 14 anni con Ridiculous and Full of Blood.\n\nDa dove partire: Supernatural, The Ash, The Wreck of S.S. Needle, Bow.\n\nMandalo a chi ama le voci che fanno paura 🖤\n\n#erinhrstudio #1eyedpet #juliechristmas #postmetal #cultofluna"
+}

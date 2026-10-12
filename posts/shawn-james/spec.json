@@ -1,0 +1,164 @@
+{
+ "music": "Shawn James — Through the Valley",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Shawn James · blues e folk",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "zoom": 1.05,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "LA CANZONE",
+    "DI THE LAST OF US",
+    "È SUA."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "SHAWN JAMES:",
+    "TRA RUGGITO E SUSSURRO."
+   ],
+   "footer": "CHICAGO · ARKANSAS · BLUES"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "DAL GOSPEL",
+    "AL BLUES"
+   ],
+   "footer": "",
+   "body": [
+    "Nasce a Chicago nel 1986 e cresce",
+    "cantando gospel in chiesa.",
+    "Poi impara chitarra e pianoforte.",
+    "Oggi vive in Arkansas."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL TRAILER",
+   "statement": [
+    "ELLIE",
+    "LA CANTA"
+   ],
+   "footer": "",
+   "body": [
+    "Nel 2016 Through the Valley,",
+    "dal suo disco Shadows (2012),",
+    "è la canzone che Ellie canta nel trailer",
+    "di The Last of Us Part II."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Estensione",
+     "Più ottave, dal basso profondo all'acuto"
+    ],
+    [
+     "Timbro",
+     "Soul, ruvido, da predicatore"
+    ],
+    [
+     "Dinamica",
+     "Dal ruggito al sussurro"
+    ],
+    [
+     "Intorno",
+     "Blues, folk, chitarra acustica"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "3 BRANI",
+   "items": [
+    [
+     "Through the Valley (2012)",
+     "La porta d'ingresso, dal disco Shadows"
+    ],
+    [
+     "American Hearts (2015)",
+     "Una cover, cantata con i lupi che ululano"
+    ],
+    [
+     "Orpheus (2019)",
+     "Dal disco The Dark & The Light"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLO",
+   "statement": [
+    "SE HAI GIOCATO",
+    "A THE LAST OF US"
+   ],
+   "footer": "",
+   "body": [
+    "La canzone la conosci già.",
+    "Ora ascolta chi l'ha scritta",
+    "e come la canta lui.",
+    ""
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "VOCE POTENTE",
+   "items": [
+    [
+     "Distanza",
+     "Allontanati nei passaggi più forti"
+    ],
+    [
+     "Stanza",
+     "Un po' di stanza vera aiuta il blues"
+    ],
+    [
+     "Compressione",
+     "Due compressori leggeri invece di uno pesante"
+    ],
+    [
+     "Saturazione",
+     "Nastro o valvola, appena"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "HA PIANTO CON",
+    "THE LAST OF US"
+   ],
+   "footer": "E ASCOLTA THROUGH THE VALLEY IN CUFFIA",
+   "size": 80
+  }
+ ],
+ "caption": "La canzone di The Last of Us è sua: Shawn James 🎙️\n\nCresciuto a Chicago cantando gospel in chiesa, oggi vive in Arkansas. Through the Valley, dal suo disco Shadows (2012), è la canzone che Ellie canta nel trailer di The Last of Us Part II. Nel 2015 ha cantato American Hearts in un rifugio per lupi: e i lupi ululano con lui.\n\nDa dove partire: Through the Valley, American Hearts, Orpheus.\n\nMandalo a chi ha pianto con The Last of Us 🐺\n\n#erinhrstudio #1eyedpet #shawnjames #thelastofus #blues"
+}

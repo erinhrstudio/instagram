@@ -1,0 +1,168 @@
+{
+ "music": "Geneviève Racette — Instagram",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Geneviève Racette · Québec",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "zoom": 1.1,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "UNA COVER",
+    "SU INSTAGRAM",
+    "LE HA CAMBIATO LA VITA."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "GENEVIÈVE RACETTE:",
+    "LA VOCE LIMPIDA."
+   ],
+   "footer": "QUÉBEC · FOLK"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "DUE LINGUE,",
+    "UNA CHITARRA"
+   ],
+   "footer": "",
+   "body": [
+    "Cantautrice folk di Dorval,",
+    "vicino a Montréal. Canta in francese",
+    "e in inglese, spesso",
+    "nello stesso disco."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA SVOLTA",
+   "statement": [
+    "LA COVER CHE",
+    "L'HA FATTA NOTARE"
+   ],
+   "footer": "",
+   "body": [
+    "Dallas Green (City and Colour) vede",
+    "una sua cover su Instagram e la invita",
+    "sul palco a Osheaga nel 2019.",
+    "Poi duettano nel suo disco Satellite."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Timbro",
+     "Pulito e liquido"
+    ],
+    [
+     "Vicinanza",
+     "Sembra cantare a un metro da te"
+    ],
+    [
+     "Lingue",
+     "Passa dal francese all'inglese"
+    ],
+    [
+     "Intorno",
+     "Chitarra acustica, folk, americana"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "4 BRANI",
+   "items": [
+    [
+     "The Reasons (I'll Be Alright) (2024)",
+     "La porta d'ingresso, dal disco Golden"
+    ],
+    [
+     "Same Old Me (2024)",
+     "Il primo singolo di Golden"
+    ],
+    [
+     "Instagram (2024)",
+     "Un titolo, una storia"
+    ],
+    [
+     "X2 (2024)",
+     "Sempre da Golden"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "statement": [
+    "SE TI PIACCIONO",
+    "LE VOCI SENZA TRUCCO"
+   ],
+   "footer": "",
+   "body": [
+    "Niente effetti, niente urla:",
+    "una voce, una chitarra",
+    "e una storia per canzone.",
+    ""
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "VOCE E CHITARRA",
+   "items": [
+    [
+     "Due microfoni",
+     "Uno per la voce, uno per la chitarra"
+    ],
+    [
+     "Fase",
+     "Controlla che non si cancellino a vicenda"
+    ],
+    [
+     "Compressione",
+     "Poca: la dinamica è la bellezza"
+    ],
+    [
+     "Stanza",
+     "Registra in una stanza morbida, non in bagno"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "CANTA COVER",
+    "SU INSTAGRAM"
+   ],
+   "footer": "POTREBBE ESSERE LA PROSSIMA",
+   "size": 80
+  }
+ ],
+ "caption": "Una cover su Instagram le ha cambiato la vita: Geneviève Racette 🎙️\n\nCantautrice folk del Québec, canta in francese e in inglese. Dallas Green (City and Colour) ha visto una sua cover su Instagram e l'ha invitata sul palco a Osheaga nel 2019. Con No Water, No Flowers ha vinto il premio come artista emergente dell'anno ai Canadian Folk Music Awards.\n\nDa dove partire: The Reasons (I'll Be Alright), Same Old Me, Instagram, X2.\n\nMandalo a chi canta cover su Instagram: potrebbe essere la prossima 🎸\n\n#erinhrstudio #1eyedpet #genevieveracette #folk #quebec"
+}
