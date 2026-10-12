@@ -1,0 +1,167 @@
+{
+ "music": "Rolo Tomassi — Aftermath",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Eva Korman · Rolo Tomassi",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.48,
+    0.3
+   ],
+   "zoom": 1.15,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "URLA COME UN TRENO.",
+    "POI CANTA COME",
+    "UNA NINNA NANNA."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "EVA KORMAN:",
+    "L'URLO E LA CAREZZA."
+   ],
+   "footer": "ROLO TOMASSI · SHEFFIELD"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "A 14 ANNI",
+    "AL MICROFONO"
+   ],
+   "footer": "",
+   "body": [
+    "Fonda i Rolo Tomassi a Sheffield",
+    "nel 2005 con il fratello James.",
+    "Suonava le tastiere: nessuno",
+    "voleva cantare, ci ha provato lei."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA PALESTRA",
+   "statement": [
+    "URLARE",
+    "IN MACCHINA"
+   ],
+   "footer": "",
+   "body": [
+    "Con il fratello si allenava",
+    "a urlare nell'auto dei genitori,",
+    "con la musica a tutto volume."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Urlo",
+     "Gutturale, con tante sfumature"
+    ],
+    [
+     "Voce pulita",
+     "Limpida, sempre più centrale dal 2010"
+    ],
+    [
+     "Il colpo",
+     "Passa dall'una all'altra nello stesso brano"
+    ],
+    [
+     "Intorno",
+     "Pianoforte e tastiere, non solo chitarre"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "4 BRANI",
+   "items": [
+    [
+     "Aftermath (2018)",
+     "Voce morbida, poi il crescendo: la porta d'ingresso"
+    ],
+    [
+     "Ex Luna Scientia (2012)",
+     "Urlo e voce pulita nello stesso respiro"
+    ],
+    [
+     "Rituals (2018)",
+     "Il lato furioso"
+    ],
+    [
+     "Cloaked (2022)",
+     "La più pesante, per chi vuole il colpo"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "statement": [
+    "ANCHE SE IL METAL",
+    "NON TI PIACE"
+   ],
+   "footer": "",
+   "body": [
+    "Ascolta cosa succede quando",
+    "la voce pulita arriva subito",
+    "dopo un urlo: la dolcezza",
+    "colpisce il doppio."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "URLO E PULITO",
+   "items": [
+    [
+     "Due tracce",
+     "Mai sulla stessa catena"
+    ],
+    [
+     "Distanza",
+     "Per l'urlo, un passo indietro dal microfono"
+    ],
+    [
+     "Gain",
+     "Regolalo sull'urlo, non sulla strofa"
+    ],
+    [
+     "Compressione",
+     "Più decisa sull'urlo, gentile sul pulito"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI DICE",
+    "CHE NEL METAL",
+    "NON SI CANTA"
+   ],
+   "footer": "E ASCOLTA AFTERMATH IN CUFFIA",
+   "size": 80
+  }
+ ],
+ "caption": "Urla come un treno, poi canta come una ninna nanna: Eva Korman (nata Spence) dei Rolo Tomassi 🎙️\n\nHa fondato la band a Sheffield nel 2005, a 14 anni, con il fratello James. Suonava le tastiere e al microfono ci è finita perché nessun altro voleva cantare. Da Cosmology (2010) la sua voce pulita è sempre più al centro, alternata all'urlo anche nello stesso brano.\n\nDa dove partire: Aftermath, Ex Luna Scientia, Rituals e Cloaked.\n\nMandalo a chi dice che nel metal non si canta 🎙️\n\n#erinhrstudio #1eyedpet #rolotomassi #evakorman #screamingvocals"
+}
