@@ -57,7 +57,8 @@ def write_mp4(out, audio, end, draw, seed):
         wav = Path(td) / "a.wav"
         with wave.open(str(wav), "wb") as w:
             w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
-            w.writeframes((np.repeat(audio[:, None], 2, 1) * 32767).astype("<i2").tobytes())
+            st = audio if audio.ndim == 2 else np.repeat(audio[:, None], 2, 1)
+            w.writeframes((st * 32767).astype("<i2").tobytes())
         p = subprocess.Popen([FF, "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                               "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", str(wav),
                               "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
