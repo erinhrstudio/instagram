@@ -10,6 +10,10 @@ on:
         description: "Pubblica davvero su Instagram (altrimenti prova: Instagram controlla i file ma non pubblica nulla)"
         type: boolean
         default: false
+      reel:
+        description: "Pubblica come Reel verticale (media/tiktok/<nome>.mp4) invece che come carosello"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -35,6 +39,7 @@ jobs:
         run: |
           ARGS="--check"
           [ "${{ inputs.publish }}" = "true" ] && ARGS="--publish"
+          [ "${{ inputs.reel }}" = "true" ] && ARGS="$ARGS --reel"
           python -m reels.post "$NAME" $ARGS
       - name: Registra il post pubblicato
         if: inputs.publish
