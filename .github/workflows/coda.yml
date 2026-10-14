@@ -25,6 +25,8 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -q -r requirements.txt
+      - name: Aggiorna lo stato (un'altra esecuzione può aver appena pubblicato)
+        run: git pull -q origin main
       - name: Scegli il post di oggi
         id: coda
         run: python -m reels.coda
