@@ -30,7 +30,10 @@ def main():
 
     folder = ROOT / "posts" / a.name
     images = sorted([*folder.glob("[0-9][0-9]*.jpg"), *folder.glob("[0-9][0-9]*.mp4")], key=lambda p: p.name)
-    caption = with_brand_tags((folder / "caption.txt").read_text(encoding="utf-8").strip())
+    cap = folder / "reel_caption.txt"
+    if not cap.exists():
+        cap = folder / "caption.txt"
+    caption = with_brand_tags(cap.read_text(encoding="utf-8").strip())
     song = folder / "musica.txt"
     if song.exists():
         print("Canzone consigliata:", song.read_text(encoding="utf-8").strip(),
@@ -78,7 +81,10 @@ def reel(a):
     if not video.exists():
         from tools.tiktok_slideshow import render
         render(a.name)
-    caption = with_brand_tags((folder / "caption.txt").read_text(encoding="utf-8").strip())
+    cap = folder / "reel_caption.txt"
+    if not cap.exists():
+        cap = folder / "caption.txt"
+    caption = with_brand_tags(cap.read_text(encoding="utf-8").strip())
     caption = caption.replace("Nelle slide", "Nel video").replace("nelle slide", "nel video")
     print(f"Reel '{a.name}': {video.relative_to(ROOT)}")
     if not a.publish:

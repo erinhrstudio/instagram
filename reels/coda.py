@@ -27,9 +27,7 @@ def prossimo(oggi=None, manuale=False):
             return None, f"sono le {adesso:%H:%M} in Italia, si pubblica dalle {ORA}"
         oggi = adesso.date()
     oggi = oggi or datetime.now(ROMA).date()
-    if formato(oggi) == "reel" and not manuale:
-        # l'API pubblica i Reel senza musica: nei giorni Reel il video lo pubblica Giuseppe dall'app
-        return None, "giorno Reel: lo pubblica Giuseppe dall'app (python -m reels.coda --manuale)"
+    reel_day = formato(oggi) == "reel"
     coda = json.loads(CODA.read_text())
     if coda.get("pausa"):
         return None, "coda in pausa (\"pausa\": true in state/coda.json)"
@@ -44,8 +42,22 @@ def prossimo(oggi=None, manuale=False):
         return None, f"ultimo post della coda il {max(date_coda)}"
     for n in coda["post"]:
         if f"post:{n}" not in fatti:
+            if reel_day:
+                # l'API pubblica i Reel senza musica di libreria: se il Reel ha già il suo audio
+                # (reel_musica.txt dice NESSUNA) esce in automatico, altrimenti lo pubblica Giuseppe dall'app
+                auto = audio_proprio(n)
+                if auto and manuale:
+                    return None, f"{n} ha il suo audio: esce in automatico alle 18:30"
+                if not auto and not manuale:
+                    return None, f"giorno Reel: {n} lo pubblica Giuseppe dall'app (python -m reels.coda --manuale)"
             return n, "da pubblicare oggi"
     return None, "coda finita: aggiungi altri post in state/coda.json"
+
+
+def audio_proprio(nome):
+    """True se il Reel non vuole musica di libreria: l'audio del video è il contenuto."""
+    f = ROOT / "posts" / nome / "reel_musica.txt"
+    return f.exists() and f.read_text(encoding="utf-8").strip().upper().startswith("NESSUNA")
 
 
 def formato(oggi=None):
