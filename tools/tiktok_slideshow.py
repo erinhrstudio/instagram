@@ -1,7 +1,9 @@
 """Trasforma un carosello (posts/<nome>/NN.jpg) in un video verticale per TikTok.
 
-Ogni slide 1080x1350 sta al centro di un fondo 1080x1920, per 3,5 s (la copertina 2,5 s), con una
-dissolvenza breve. Audio muto: il suono di tendenza si aggiunge dall'app.
+Ogni slide 1080x1350 sta al centro di un fondo 1080x1920 con un lento zoom (movimento fin dal primo
+fotogramma), per 2,4 s (la copertina 1,5 s), con una dissolvenza breve: circa 20 s per 9 slide.
+Dal 14/10 i tempi sono più corti perché su TikTok la visione media del post Eva Korman era 4,4 s su 30,5.
+Audio muto: il suono di tendenza si aggiunge dall'app.
 
 Uso: python -m tools.tiktok_slideshow billie-eilish   ->  media/tiktok/billie-eilish.mp4
 """
@@ -25,8 +27,16 @@ def frames(name):
         im = Image.open(p).convert("RGB").resize((W, int(W * 1350 / 1080)))
         canvas = Image.new("RGB", (W, H), BG)
         canvas.paste(im, (0, (H - im.height) // 2 - 60))
-        out.append((np.asarray(canvas), 2.5 if i == 0 else 3.5))
+        out.append((canvas, 1.5 if i == 0 else 2.4))
     return out
+
+
+def zoom(img, x, amount=0.04):
+    """Ingrandisce piano la slide (da 1 a 1+amount) tenendo il centro: dà movimento senza muovere il testo."""
+    z = 1 + amount * x
+    w, h = int(W / z), int(H / z)
+    box = ((W - w) // 2, (H - h) // 2, (W - w) // 2 + w, (H - h) // 2 + h)
+    return np.asarray(img.crop(box).resize((W, H), Image.BILINEAR))
 
 
 def render(name):
@@ -40,11 +50,11 @@ def render(name):
         n = int(dur * FPS)
         nxt = fr[k + 1][0] if k + 1 < len(fr) else None
         for f in range(n):
+            a = zoom(img, f / n)
             t = (f - (n - FADE * FPS)) / (FADE * FPS)
             if nxt is not None and t > 0:
-                p.stdin.write((img * (1 - t) + nxt * t).astype(np.uint8).tobytes())
-            else:
-                p.stdin.write(img.tobytes())
+                a = (a * (1 - t) + zoom(nxt, 0) * t).astype(np.uint8)
+            p.stdin.write(a.tobytes())
     p.stdin.close()
     if p.wait():
         raise RuntimeError("ffmpeg non ha completato il video")
