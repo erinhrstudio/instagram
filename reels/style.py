@@ -53,6 +53,28 @@ ACCENTS = {
 }
 
 
+def _ruota(hue, sat_k=0.75):
+    """Stesso accento del rosa (luminosità e saturazione), con la tinta ruotata a `hue` gradi."""
+    import colorsys
+    lum = lambda c: 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]
+
+    def r(c):
+        h, l, sat = colorsys.rgb_to_hls(*(v / 255 for v in c))
+        sat *= sat_k  # tinte più calde del rosa: un po' meno sature per restare morbide
+        out = colorsys.hls_to_rgb(hue / 360, l, sat)
+        while lum(out) > lum([v / 255 for v in c]) + 0.005 and l > 0.05:  # stessa luminosità percepita del rosa
+            l -= 0.005
+            out = colorsys.hls_to_rgb(hue / 360, l, sat)
+        return tuple(round(v * 255) for v in out)
+    rosa = ACCENTS["rosa"]
+    return dict(PINK=r(rosa["PINK"]), PINK_SOFT=r(rosa["PINK_SOFT"]), BAND=r(rosa["BAND"]),
+                GLOW=r(rosa["GLOW"]), DIM=tuple(r(c) for c in rosa["DIM"]))
+
+
+# una tinta per serie: chitarre ambra, pedali verde, storia del fuzz viola
+ACCENTS.update(ambra=_ruota(38), verde=_ruota(150), viola=_ruota(275))
+
+
 def set_accent(name="rosa"):
     globals().update(ACCENTS[name])
 
@@ -166,22 +188,24 @@ class Canvas:
         self.rect((x, y + 9, x + 28, y + 12), fill=PINK)
         self.text((x + 44, y), s, f, fill=PINK_SOFT, tracking=4)
 
-    def portrait(self, path, focus=(0.5, 0.35), zoom=1.0, fade_from=0.45, darken=0.15):
+    def portrait(self, path, focus=(0.5, 0.35), zoom=1.0, fade_from=0.45, darken=0.15, colore=None):
         """Foto a tutto schermo in bianco e nero, primo piano, con sfumatura scura in basso per il testo.
 
         focus: punto (0-1) della foto da tenere al centro, es. gli occhi. zoom > 1 stringe il primo piano.
         """
         from PIL import ImageOps
         W, H = self.w * S, self.h * S
-        ph = ImageOps.grayscale(Image.open(path))
-        ph = ImageOps.autocontrast(ph, cutoff=1)
+        orig = Image.open(path).convert("RGB")
+        ph = ImageOps.autocontrast(ImageOps.grayscale(orig), cutoff=1)
+        if colore:  # bianco e nero tranne le tinte indicate (es. il corpo della chitarra)
+            ph = _colore_selettivo(orig, ph, colore)
         scale = max(W / ph.width, H / ph.height) * zoom
         ph = ph.resize((int(ph.width * scale) + 1, int(ph.height * scale) + 1), Image.LANCZOS)
         cx, cy = focus[0] * ph.width, focus[1] * ph.height
         left = int(min(max(cx - W / 2, 0), ph.width - W))
         top = int(min(max(cy - H * 0.4, 0), ph.height - H))
         ph = ph.crop((left, top, left + W, top + H))
-        a = np.asarray(ph, np.float32)[..., None].repeat(3, 2)
+        a = np.asarray(ph.convert("RGB"), np.float32)
         a = a * (1 - darken) + np.array(INK, np.float32) * darken  # leggero abbassamento
         yy = np.linspace(0, 1, H, dtype=np.float32)[:, None, None]
         grad = np.clip((yy - fade_from) / (1 - fade_from), 0, 1) ** 1.2
@@ -194,3 +218,15 @@ class Canvas:
 
     def final(self):
         return self.img.resize((self.w, self.h), Image.LANCZOS)
+
+
+def _colore_selettivo(orig, grigio, colore):
+    """Tiene a colori solo i pixel con tinta tra colore["tinta"] = [da, a] gradi e saturazione sufficiente."""
+    from PIL import ImageFilter
+    hsv = np.asarray(orig.convert("HSV"), np.float32)
+    h, s_, v = hsv[..., 0] * 360 / 255, hsv[..., 1] / 255, hsv[..., 2] / 255
+    lo, hi = colore["tinta"]
+    dentro = (h >= lo) | (h <= hi) if lo > hi else (h >= lo) & (h <= hi)
+    m = (dentro & (s_ > colore.get("sat", 0.35)) & (v > 0.12)).astype(np.float32)
+    mask = Image.fromarray((m * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(3))
+    return Image.composite(orig, grigio.convert("RGB"), mask)

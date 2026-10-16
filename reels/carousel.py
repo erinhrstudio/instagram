@@ -73,7 +73,7 @@ def heading(c, s, y=190):
 def slide_cover(c, s, i, n, root):
     if s.get("photo"):
         c.portrait(root / s["photo"], focus=tuple(s.get("focus", (0.5, 0.35))), zoom=s.get("zoom", 1.0),
-                   fade_from=s.get("fade_from", 0.45), darken=s.get("darken", 0.15))
+                   fade_from=s.get("fade_from", 0.45), darken=s.get("darken", 0.15), colore=s.get("colore"))
     else:
         wave(c, s.get("wave_seed", zlib.crc32((s.get("title") or s["hook"][0]).encode())))
     c.header(BRAND, f"{i:02d} / {n:02d}")
