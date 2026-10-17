@@ -33,10 +33,21 @@ def tosse(n, rng):
     return x / np.abs(x).max()
 
 
+VOCE_VERA = ROOT / "posts" / "buchi" / "voce_giuseppe.wav"   # la voce di Giuseppe (17/10), seconda presa
+S_VERA = (0.74, 0.852)                                        # la S di "batteri-S-ta" in quel file, trovata dall'energia sopra 4 kHz
+
+
 def clips():
-    voce, fon = tts(FRASE)
+    if VOCE_VERA.exists():
+        from scipy.io import wavfile
+        sr, voce = wavfile.read(VOCE_VERA)
+        assert sr == SR
+        voce = voce.astype(float) / 32768
+        s0, d = S_VERA[0], S_VERA[1] - S_VERA[0]
+    else:
+        voce, fon = tts(FRASE)
+        s0, d = [(a, b) for p, a, b in fon if p == "s"][0]      # la prima S: "batteri-S-ta"
     voce = voce / np.abs(voce).max() * 0.8
-    s0, d = [(a, b) for p, a, b in fon if p == "s"][0]      # la prima S: "batteri-S-ta"
     i0, i1 = int(s0 * SR), int((s0 + d) * SR)
     r = int(0.004 * SR)
     buco = voce.copy()
