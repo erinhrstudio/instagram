@@ -85,7 +85,15 @@ if __name__ == "__main__":
     print("prese:", [(round(a, 2), round(b, 2)) for a, b in ps])
     k = int(sys.argv[3]) - 1 if len(sys.argv) > 3 else int(np.argmax([b - a for a, b in ps]))
     a, b = ps[k]
-    a, b = max(0, a - 0.15), min(len(x) / SR, b + 0.2)
+    # la fine della frase spesso è debole ("-tto"): allungo finché c'è ancora voce sopra il fondo
+    fondo = np.percentile(db, 15)
+    j = int(b * 100)
+    while j < len(db) - 1 and j < int(b * 100) + 60:
+        if (db[j:j + 8] > fondo + 12).any():
+            j += 1
+        else:
+            break
+    a, b = max(0, a - 0.12), min(len(x) / SR, j / 100 + 0.08)
     quiete = db < soglia - 6
     idx = np.where(quiete)[0]
     rumore = np.concatenate([x[i * int(0.01 * SR):(i + 1) * int(0.01 * SR)] for i in idx]) if len(idx) > 20 else x[:int(0.3 * SR)]

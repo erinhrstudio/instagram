@@ -21,20 +21,28 @@ TOSSE1, TOSSE2, DOMANDA, BUCO1, BUCO2, SPIEGA, FINE, END = 0.5, 3.9, 7.2, 9.6, 1
 
 
 def tosse(n, rng):
-    """Colpo di tosse sintetico: rumore filtrato con attacco secco e coda breve."""
+    """Colpo di tosse sintetico: soffio rauco con le formanti di una "e" aperta, attacco non troppo secco
+    e una coda lunga, più un po' di voce (ronzio a ~130 Hz) per non sembrare un colpo di martello."""
+    t = np.arange(n) / SR
     x = rng.standard_normal(n)
     X = np.fft.rfft(x)
     f = np.fft.rfftfreq(n, 1 / SR)
-    X *= np.exp(-((np.log(f + 1) - np.log(900)) ** 2) / 0.9)
-    x = np.fft.irfft(X, n)
-    t = np.arange(n) / SR
-    env = (1 - np.exp(-t / 0.004)) * np.exp(-t / 0.07) + 0.5 * np.exp(-np.maximum(t - 0.06, 0) / 0.05) * (t > 0.06)
-    x *= env
-    return x / np.abs(x).max()
+    g = sum(a / (1 + ((f - fc) / bw) ** 2) for fc, bw, a in [(550, 180, 1.0), (1700, 260, 0.7), (2600, 350, 0.45), (3800, 600, 0.25)])
+    g *= (f > 150)
+    x = np.fft.irfft(X * g, n)
+    x /= np.abs(x).max()
+    f0 = 130 * (1 + 0.03 * np.sin(2 * np.pi * 7 * t))                       # voce rauca, leggermente instabile
+    ph = 2 * np.pi * np.cumsum(f0) / SR
+    voce = sum(np.sin(k * ph) / k for k in range(1, 12))
+    voce *= 1 + 0.4 * rng.standard_normal(n)
+    voce /= np.abs(voce).max()
+    env = np.minimum(t / 0.018, 1) * np.exp(-np.maximum(t - 0.035, 0) / 0.11)
+    y = (0.75 * x + 0.3 * voce) * env
+    return y / np.abs(y).max()
 
 
 VOCE_VERA = ROOT / "posts" / "buchi" / "voce_giuseppe.wav"   # la voce di Giuseppe (17/10), terza registrazione, ultima presa
-S_VERA = (0.901, 1.022)                                       # la S di "batteri-S-ta" in quel file, trovata dall'energia sopra 4 kHz
+S_VERA = (0.871, 0.992)                                       # la S di "batteri-S-ta" in quel file, trovata dall'energia sopra 4 kHz
 
 
 def clips():
@@ -56,7 +64,7 @@ def clips():
     buco[i1:i1 + r] *= np.linspace(0, 1, r)
     rng = np.random.default_rng(3)
     m = int(0.02 * SR)
-    c = tosse(i1 - i0 + 2 * m + int(0.12 * SR), rng) * 0.95
+    c = tosse(i1 - i0 + 2 * m + int(0.10 * SR), rng) * 0.7
     con_tosse = buco.copy()
     con_tosse[i0 - m:i0 - m + len(c)] += c
     return con_tosse, buco, (s0, s0 + d)
