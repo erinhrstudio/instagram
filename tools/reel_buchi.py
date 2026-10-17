@@ -33,8 +33,8 @@ def tosse(n, rng):
     return x / np.abs(x).max()
 
 
-VOCE_VERA = ROOT / "posts" / "buchi" / "voce_giuseppe.wav"   # la voce di Giuseppe (17/10), registrazione "Meglio"
-S_VERA = (0.779, 0.91)                                         # la S di "batteri-S-ta" in quel file, trovata dall'energia sopra 4 kHz
+VOCE_VERA = ROOT / "posts" / "buchi" / "voce_giuseppe.wav"   # la voce di Giuseppe (17/10), terza registrazione, ultima presa
+S_VERA = (0.901, 1.022)                                       # la S di "batteri-S-ta" in quel file, trovata dall'energia sopra 4 kHz
 
 
 def clips():
