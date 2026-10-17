@@ -110,7 +110,7 @@ def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < DOMANDA:
         c.kicker(0, 300, "ASCOLTA LA FRASE", center=True)
-        centered(c, 360, "C'È UNA TOSSE.", 140, WHITE)
+        centered(c, 360, "C'È UN COLPO.", 140, WHITE)
         centered(c, 500, "CAPISCI TUTTO?", 140, style.PINK)
         onda(c, 900, CON, playing(t, [TOSSE1, TOSSE2]))
         centered(c, 1240, "ASCOLTALA DUE VOLTE", 30, MUTED, "sans", 700, 4)
@@ -121,7 +121,7 @@ def draw(c, t):
         centered(c, 860, "SÌ, VERO?", 90, fade(TEXT, k(DOMANDA + 1.0)))
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "ORA SENZA LA TOSSE", center=True)
+        c.kicker(0, 300, "ORA SENZA IL COLPO", center=True)
         centered(c, 360, "STESSA FRASE.", 140, fade(WHITE, k(BUCO1)))
         centered(c, 500, "SENTI IL BUCO?", 140, fade(style.PINK, k(BUCO1 + 0.2)))
         onda(c, 900, BUCO, playing(t, [BUCO1, BUCO2]), gap_col=style.PINK)
@@ -133,7 +133,7 @@ def draw(c, t):
         centered(c, 360, "LA S NON C'ERA", 130, fade(WHITE, k(SPIEGA)))
         centered(c, 490, "NEANCHE PRIMA.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
         paragraph(c, 700, ["Nella prima versione ho tolto la S",
-                           "di \"batterista\" e ci ho messo una tosse.",
+                           "di \"batterista\" e ci ho messo un colpo.",
                            "Il cervello sa che dovrebbe esserci",
                            "e la ricostruisce da solo.",
                            "Senti una lettera che non c'è.",
@@ -141,7 +141,7 @@ def draw(c, t):
                            "· Richard Warren · 1970"], SPIEGA + 0.5, k)
         return
     centered(c, 400, "RIASCOLTA", 160, fade(WHITE, k(FINE)))
-    centered(c, 560, "CON LA TOSSE.", 140, fade(WHITE, k(FINE + 0.2)))
+    centered(c, 560, "CON IL COLPO.", 140, fade(WHITE, k(FINE + 0.2)))
     centered(c, 720, "ORA LA SENTI MANCARE?", 100, fade(style.PINK, k(FINE + 0.4)))
     onda(c, 1000, CON, playing(t, [FINE + 0.6]), gap_col=style.PINK, k=k(FINE + 0.5, 0.4))
 
