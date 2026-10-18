@@ -86,17 +86,34 @@ def sinewave(F, A, n):
     return out / np.abs(out).max() * 0.8
 
 
-VOCE, _ = tts(FRASE, speed=120)
+VOCE_VERA = ROOT / "posts" / "fischi-parole" / "voce_giuseppe.wav"   # la frase detta da Giuseppe
+if VOCE_VERA.exists():
+    from scipy.io import wavfile
+    VOCE = wavfile.read(VOCE_VERA)[1].astype(float) / 32768
+else:
+    VOCE, _ = tts(FRASE, speed=120)
 VOCE = VOCE / np.abs(VOCE).max() * 0.8
 F_TR, A_TR = formanti(VOCE)
 FISCHI = sinewave(F_TR, A_TR, len(VOCE))
 DUR = len(VOCE) / SR
-S1, S2, DOMANDA, VERA, S3, SPIEGA, FINE, END = 0.4, 4.0, 7.6, 10.0, 14.0, 17.8, 23.4, 27.4
+# i tempi seguono la durata della frase
+S1 = 0.4
+S2 = S1 + DUR + 0.3
+DOMANDA = S2 + DUR + 0.3
+VERA = DOMANDA + 2.4
+S3 = VERA + DUR + 0.6
+SPIEGA = S3 + DUR + 0.5
+FINE = SPIEGA + 5.6
+END = FINE + 0.4 + DUR + 0.6
 
 
 def build():
     a = np.zeros(int(END * SR))
-    for t0, x in [(S1, FISCHI), (S2, FISCHI), (VERA, VOCE), (S3, FISCHI), (FINE + 0.4, FISCHI)]:
+    # la voce vera allo stesso volume medio dei fischi (con un limite sui picchi)
+    rms = lambda x: np.sqrt(np.mean(x[np.abs(x) > 0.01] ** 2))
+    voce = VOCE * min(rms(FISCHI) / rms(VOCE) * 0.75, 2.0)
+    voce = 0.92 * np.tanh(voce / 0.92)
+    for t0, x in [(S1, FISCHI), (S2, FISCHI), (VERA, voce), (S3, FISCHI), (FINE + 0.4, FISCHI)]:
         i = int(t0 * SR)
         a[i:i + len(x)] += x
     return a
