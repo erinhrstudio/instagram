@@ -10,13 +10,14 @@ import subprocess
 import sys
 from pathlib import Path
 
+import imageio_ffmpeg
 import numpy as np
 from faster_whisper import WhisperModel
 
 
 def carica(audio):
     """Audio a 16 kHz mono con ffmpeg (evita il decoder av di faster-whisper)."""
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(audio), "-ac", "1", "-ar", "16000", "-f", "s16le", "-"],
+    raw = subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-v", "error", "-i", str(audio), "-ac", "1", "-ar", "16000", "-f", "s16le", "-"],
                          check=True, capture_output=True).stdout
     return np.frombuffer(raw, np.int16).astype(np.float32) / 32768
 
