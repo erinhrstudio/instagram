@@ -66,6 +66,9 @@ def formato(oggi=None):
     if not coda.get("reel_da"):
         return "carosello"
     oggi = oggi or datetime.now(ROMA).date()
+    # giorni carosello trasformati in Reel (dal 19/10: 4 Reel e 3 caroselli a settimana)
+    if oggi.isoformat() in coda.get("reel_extra", []):
+        return "reel"
     return "reel" if (oggi - date.fromisoformat(coda["reel_da"])).days % 2 == 0 else "carosello"
 
 
