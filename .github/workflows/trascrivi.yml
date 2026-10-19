@@ -1,0 +1,37 @@
+name: "Trascrivi un memo vocale"
+
+on:
+  workflow_dispatch:
+    inputs:
+      audio:
+        description: "Percorso del file audio nel repo (es. posts/musica-triste/memo.m4a)"
+        required: true
+      modello:
+        description: "Modello Whisper (small, medium, large-v3)"
+        default: "medium"
+
+jobs:
+  trascrivi:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install faster-whisper
+      - name: Trascrivi
+        env:
+          AUDIO: ${{ inputs.audio }}
+          MODELLO: ${{ inputs.modello }}
+        run: python -m tools.trascrivi "$AUDIO" "$MODELLO"
+      - name: Salva la trascrizione
+        run: |
+          git config user.name "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          git add posts/
+          if ! git diff --cached --quiet; then
+            git commit -m "Trascrizione memo"
+            git pull --rebase -q origin main && git push
+          fi
