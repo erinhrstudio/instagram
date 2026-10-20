@@ -4,6 +4,8 @@ on:
   schedule:
     # ogni giorno alle 16:30 e 17:30 UTC: reels/coda.py pubblica solo dalle 18 ora italiana
     # (18:30 sia con l'ora legale sia con l'ora solare) e solo nel giorno giusto
+    # GitHub spesso parte con 30 minuti di ritardo: un primo tentativo prima (coda.py aspetta comunque le 18)
+    - cron: "5 16 * * *"
     - cron: "30 16 * * *"
     - cron: "30 17 * * *"
   workflow_dispatch:
