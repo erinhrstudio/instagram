@@ -6,7 +6,7 @@
 4. Nei momenti più intensi rilascia dopamina. E conta quanto ti piace, non quanto è allegra.   [DA REGISTRARE]
 5. Così una canzone triste spesso non ti porta tristezza. Ti porta nostalgia.   [DA REGISTRARE]
 6. Perché la musica riapre ricordi pieni di dettagli. Soprattutto le canzoni che ascoltavi a vent'anni.   [DA REGISTRARE]
-7. Non piangi per la canzone. Piangi perché, per un istante, ti ha restituito qualcuno. E magari quel qualcuno eri proprio tu.   [take memo ~44.5–53.6]
+7. Non piangi per la canzone. Piangi perché, per un istante, ti ha restituito qualcuno. E magari quel qualcuno eri proprio tu.   [take memo 46.55–53.65, dice "...canzone, ma piangi perché..."]
    (1 s di silenzio)
 8. Qual è la canzone che ti riporta indietro?   [take memo 58.13–60.57 + schermata finale]
 
