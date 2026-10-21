@@ -1,0 +1,184 @@
+{
+ "music": "The White Stripes — Seven Nation Army",
+ "caption": "Si comprava dal catalogo dei grandi magazzini. Oggi la cercano tutti 🎸\n\nAnni '50 e '60: la catena americana Montgomery Ward vende chitarre col marchio Airline. La più famosa, costruita da Valco a Chicago, ha il corpo in vetroresina (Res-O-Glas) ed è soprannominata \"JB Hutto\", dal bluesman che la suonava. Poi arriva Jack White, con la sua Airline rossa del '64 nei White Stripes, e i prezzi delle originali esplodono.\n\nNel 2001 in Canada Michael Robinson, commerciante di chitarre rare, fonda Eastwood per rifare nuove queste chitarre dimenticate: Airline (di cui ha comprato il marchio), Kay, Harmony, Teisco, Wandrè.\n\nNelle slide: com'è fatta e chi la usa.\n\nMandalo a chi dice che serve una chitarra cara 💸\n\n#erinhrstudio #1eyedpet #eastwoodguitars #airline #jackwhite",
+ "accent": "ambra",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA CHITARRA · 02",
+   "subtitle": "Airline · Eastwood Guitars",
+   "footer": "CHITARRE DA CONOSCERE",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": 1.0,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "SI COMPRAVA",
+    "DAL CATALOGO",
+    "DEI GRANDI",
+    "MAGAZZINI."
+   ],
+   "colore": {
+    "tinta": [
+     335,
+     15
+    ],
+    "sat": 0.35
+   }
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL CATALOGO",
+   "statement": [
+    "NON ERA UNA",
+    "CHITARRA DA STAR."
+   ],
+   "footer": "USA · ANNI '50 E '60"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — AIRLINE",
+   "statement": [
+    "IL MARCHIO DEI",
+    "GRANDI MAGAZZINI"
+   ],
+   "footer": "",
+   "body": [
+    "Montgomery Ward, catena americana,",
+    "vende chitarre col nome Airline.",
+    "Le costruiscono fabbriche",
+    "di Chicago, come Valco."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — IL CORPO",
+   "statement": [
+    "NON È LEGNO:",
+    "È VETRORESINA"
+   ],
+   "footer": "",
+   "body": [
+    "La più famosa, di Valco, ha",
+    "due gusci di Res-O-Glas",
+    "con una striscia di acero",
+    "al centro per manico e pickup."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "04 — IL SOPRANNOME",
+   "statement": [
+    "\"JB HUTTO\""
+   ],
+   "footer": "",
+   "body": [
+    "Il bluesman di Chicago",
+    "la suonava così tanto",
+    "che oggi quel modello",
+    "porta il suo nome."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "05 — ANNI 2000",
+   "statement": [
+    "JACK WHITE",
+    "LA RIPORTA IN VITA"
+   ],
+   "footer": "",
+   "body": [
+    "Con i White Stripes suona",
+    "una Airline rossa del 1964.",
+    "Le originali passano da qualche",
+    "centinaio a qualche migliaio di dollari."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "06 — EASTWOOD",
+   "statement": [
+    "CHI LE",
+    "RICOSTRUISCE"
+   ],
+   "footer": "",
+   "body": [
+    "2001, Canada. Michael Robinson",
+    "commercia chitarre rare: costano",
+    "troppo e spesso suonano male.",
+    "Così inizia a rifarle nuove."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — COSA RIFÀ",
+   "title": "LE DIMENTICATE",
+   "items": [
+    [
+     "Airline",
+     "Ne ha comprato il marchio"
+    ],
+    [
+     "Kay, Harmony, Teisco",
+     "Le economiche anni '60"
+    ],
+    [
+     "Wandrè",
+     "Le italiane di design"
+    ],
+    [
+     "Attenzione",
+     "L'Airline '59 nuova è in mogano, non vetroresina"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "08 — CHI LE USA",
+   "title": "4 NOMI",
+   "items": [
+    [
+     "Jack White",
+     "La sua è un'Airline originale"
+    ],
+    [
+     "Warren Ellis",
+     "Bad Seeds: chitarra tenore firmata"
+    ],
+    [
+     "G. Love",
+     "Airline con il suo nome"
+    ],
+    [
+     "Richard Lloyd",
+     "Television: Classic 6 firmata"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "DICE CHE SERVE",
+    "UNA CHITARRA CARA"
+   ],
+   "footer": "PROSSIMA CHITARRA: FENDER JAZZMASTER",
+   "size": 80
+  }
+ ]
+}
