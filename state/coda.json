@@ -31,27 +31,35 @@
     "buchi",
     "telecaster",
     "parole-fantasma",
-    "brian-molko",
     "fischi-parole",
+    "brian-molko",
     "chelsea-wolfe",
-    "beat-infinito",
     "cat-power",
-    "fischio-silenzio",
+    "beat-infinito",
     "donita-sparks",
-    "rumore-nota",
+    "fischio-silenzio",
     "morgan-lander",
+    "rumore-nota",
     "battito-binaurale",
-    "julie-christmas",
     "scale-zigzag",
-    "genevieve-racette",
+    "julie-christmas",
     "galoppo",
+    "genevieve-racette",
     "brody-dalle"
   ],
-  "reel_da": "2026-10-06",
+  "reel_da": "2026-10-07",
   "salta": [
     "2026-10-18"
   ],
   "reel_extra": [
-    "2026-10-23"
-  ]
+    "2026-10-23",
+    "2026-10-30"
+  ],
+  "orari": {
+    "da": "2026-10-22",
+    "ore": [
+      12,
+      18
+    ]
+  }
 }

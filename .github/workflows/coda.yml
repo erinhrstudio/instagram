@@ -2,11 +2,15 @@ name: Caroselli in coda
 
 on:
   schedule:
-    # ogni giorno alle 16:30 e 17:30 UTC: reels/coda.py pubblica solo dalle 18 ora italiana
-    # (18:30 sia con l'ora legale sia con l'ora solare) e solo nel giorno giusto
-    # GitHub spesso parte con 30 minuti di ritardo: un primo tentativo prima (coda.py aspetta comunque le 18)
+    # dal 22/10 un giorno alle 12 e uno alle 18 ora italiana (reels/coda.py decide l'ora e il giorno).
+    # Ora legale: 12 = 10 UTC, 18 = 16 UTC; ora solare (dal 26/10): 12 = 11 UTC, 18 = 17 UTC.
+    # GitHub spesso parte in ritardo o salta un giro: più tentativi, coda.py non pubblica mai due volte.
+    - cron: "5 10 * * *"
+    - cron: "5 11 * * *"
+    - cron: "40 11 * * *"
     - cron: "5 16 * * *"
     - cron: "30 16 * * *"
+    - cron: "5 17 * * *"
     - cron: "30 17 * * *"
   workflow_dispatch:
 

@@ -17,14 +17,23 @@ STATE = ROOT / "state" / "published.json"
 
 
 ROMA = ZoneInfo("Europe/Rome")
-ORA = 18  # si pubblica dalle 18 ora italiana (il workflow gira alle 16:30 e 17:30 UTC)
+ORA = 18  # ora di uscita (ora italiana) se coda.json non ha "orari"
+
+
+def ora_uscita(oggi):
+    """Dal 22/10 si alterna: un giorno alle 12, il giorno dopo alle 18 ("orari" in coda.json)."""
+    o = json.loads(CODA.read_text()).get("orari")
+    if not o or oggi < date.fromisoformat(o["da"]):
+        return ORA
+    return o["ore"][(oggi - date.fromisoformat(o["da"])).days % len(o["ore"])]
 
 
 def prossimo(oggi=None, manuale=False):
     if oggi is None and not manuale:
         adesso = datetime.now(ROMA)
-        if adesso.hour < ORA:
-            return None, f"sono le {adesso:%H:%M} in Italia, si pubblica dalle {ORA}"
+        ora = ora_uscita(adesso.date())
+        if adesso.hour < ora:
+            return None, f"sono le {adesso:%H:%M} in Italia, oggi si pubblica dalle {ora}"
         oggi = adesso.date()
     oggi = oggi or datetime.now(ROMA).date()
     reel_day = formato(oggi) == "reel"
