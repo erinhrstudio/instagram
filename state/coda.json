@@ -33,26 +33,29 @@
     "parole-fantasma",
     "fischi-parole",
     "brian-molko",
+    "brody-dalle",
+    "eastwood",
     "chelsea-wolfe",
-    "cat-power",
     "beat-infinito",
-    "donita-sparks",
+    "jazzmaster",
+    "cat-power",
     "fischio-silenzio",
-    "morgan-lander",
+    "rickenbacker",
+    "donita-sparks",
     "rumore-nota",
+    "mosrite",
+    "morgan-lander",
     "battito-binaurale",
-    "scale-zigzag",
+    "mustang",
     "julie-christmas",
-    "galoppo",
+    "scale-zigzag",
+    "danelectro",
     "genevieve-racette",
-    "brody-dalle"
+    "galoppo"
   ],
   "reel_da": "2026-10-06",
   "salta": [
     "2026-10-18"
-  ],
-  "reel_extra": [
-    "2026-10-29"
   ],
   "orari": {
     "da": "2026-10-22",
@@ -60,5 +63,9 @@
       12,
       18
     ]
-  }
+  },
+  "formato_da_post": true,
+  "reel_manuali": [
+    "chelsea-wolfe"
+  ]
 }

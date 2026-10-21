@@ -51,6 +51,10 @@ def prossimo(oggi=None, manuale=False):
         return None, f"ultimo post della coda il {max(date_coda)}"
     for n in coda["post"]:
         if f"post:{n}" not in fatti:
+            if coda.get("formato_da_post"):
+                if not pronto(n):
+                    continue  # post non ancora costruito (es. aspetta la foto): passa al successivo
+                reel_day = formato_post(n, coda) == "reel"
             if reel_day:
                 # l'API pubblica i Reel senza musica di libreria: se il Reel ha già il suo audio
                 # (reel_musica.txt dice NESSUNA) esce in automatico, altrimenti lo pubblica Giuseppe dall'app
@@ -69,9 +73,27 @@ def audio_proprio(nome):
     return f.exists() and f.read_text(encoding="utf-8").strip().upper().startswith("NESSUNA")
 
 
+def pronto(nome):
+    """Il post esiste: slide del carosello o video del Reel."""
+    return (ROOT / "posts" / nome / "01.jpg").exists() or (ROOT / "media" / "tiktok" / f"{nome}.mp4").exists() and audio_proprio(nome)
+
+
+def formato_post(nome, coda):
+    """Dal 22/10 il formato lo decide il post: Reel se ha il suo audio o è in "reel_manuali"."""
+    return "reel" if audio_proprio(nome) or nome in coda.get("reel_manuali", []) else "carosello"
+
+
 def formato(oggi=None):
-    """Dal giorno "reel_da" si alterna: un giorno Reel, il giorno dopo carosello."""
+    """Formato di oggi. Con "formato_da_post" è quello del prossimo post pronto;
+    altrimenti dal giorno "reel_da" si alterna: un giorno Reel, il giorno dopo carosello."""
     coda = json.loads(CODA.read_text())
+    if coda.get("formato_da_post"):
+        state = json.loads(STATE.read_text()) if STATE.exists() else []
+        fatti = {s["id"] for s in state}
+        for n in coda["post"]:
+            if f"post:{n}" not in fatti and pronto(n):
+                return formato_post(n, coda)
+        return "carosello"
     if not coda.get("reel_da"):
         return "carosello"
     oggi = oggi or datetime.now(ROMA).date()
