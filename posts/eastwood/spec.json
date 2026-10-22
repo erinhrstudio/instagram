@@ -1,6 +1,6 @@
 {
- "music": "The White Stripes — Seven Nation Army",
- "caption": "Si comprava dal catalogo dei grandi magazzini. Oggi la cercano tutti 🎸\n\nAnni '50 e '60: la catena americana Montgomery Ward vende chitarre col marchio Airline. La più famosa, costruita da Valco a Chicago, ha il corpo in vetroresina (Res-O-Glas) ed è soprannominata \"JB Hutto\", dal bluesman che la suonava. Poi arriva Jack White, con la sua Airline rossa del '64 nei White Stripes, e i prezzi delle originali esplodono.\n\nNel 2001 in Canada Michael Robinson, commerciante di chitarre rare, fonda Eastwood per rifare nuove queste chitarre dimenticate: Airline (di cui ha comprato il marchio), Kay, Harmony, Teisco, Wandrè.\n\nNelle slide: com'è fatta e chi la usa.\n\nMandalo a chi dice che serve una chitarra cara 💸\n\n#erinhrstudio #1eyedpet #eastwoodguitars #airline #jackwhite",
+ "music": "Ramones — Blitzkrieg Bop",
+ "caption": "Le chitarre dimenticate tornano nuove. Questa è la mia 🎸\n\nNel 2001 in Canada Michael Robinson, commerciante di chitarre rare, si stanca di originali carissime e spesso scomode e fonda Eastwood per rifarle nuove: Airline, Mosrite, Kay, Harmony, Teisco, Wandrè.\n\nLa mia è una Sidejack, ispirata alle Mosrite anni '60: le chitarre dei Ventures, poi di Johnny Ramone. E nelle slide c'è anche l'Airline in vetroresina dei grandi magazzini, riportata in vita da Jack White.\n\nMandalo a chi dice che serve una chitarra cara 💸\n\n#erinhrstudio #1eyedpet #eastwoodguitars #mosrite #chitarra",
  "accent": "ambra",
  "slides": [
   {
@@ -8,7 +8,7 @@
    "bg": "pieno",
    "photo": "foto.jpg",
    "kicker": "ANATOMIA DI UNA CHITARRA · 02",
-   "subtitle": "Airline · Eastwood Guitars",
+   "subtitle": "Eastwood Sidejack · la mia",
    "footer": "CHITARRE DA CONOSCERE",
    "focus": [
     0.5,
@@ -18,15 +18,15 @@
    "fade_from": 0.3,
    "darken": 0.3,
    "hook": [
-    "SI COMPRAVA",
-    "DAL CATALOGO",
-    "DEI GRANDI",
-    "MAGAZZINI."
+    "LE CHITARRE",
+    "DIMENTICATE",
+    "TORNANO",
+    "NUOVE."
    ],
    "colore": {
     "tinta": [
-     335,
-     15
+     18,
+     50
     ],
     "sat": 0.35
    }
@@ -34,100 +34,104 @@
   {
    "type": "band",
    "bg": "sale-dolce",
-   "kicker": "01 — IL CATALOGO",
+   "kicker": "01 — IL PROBLEMA",
    "statement": [
-    "NON ERA UNA",
-    "CHITARRA DA STAR."
+    "LE ORIGINALI",
+    "COSTANO TROPPO."
    ],
-   "footer": "USA · ANNI '50 E '60"
+   "footer": "E SPESSO SUONANO MALE"
   },
   {
    "type": "band",
    "bg": "base",
-   "kicker": "02 — AIRLINE",
+   "kicker": "02 — EASTWOOD",
    "statement": [
-    "IL MARCHIO DEI",
-    "GRANDI MAGAZZINI"
+    "CANADA,",
+    "2001"
    ],
    "footer": "",
    "body": [
-    "Montgomery Ward, catena americana,",
-    "vende chitarre col nome Airline.",
-    "Le costruiscono fabbriche",
-    "di Chicago, come Valco."
+    "Michael Robinson commercia",
+    "chitarre rare anni '50-'70.",
+    "Invece di cercarle,",
+    "inizia a rifarle nuove."
    ]
   },
   {
    "type": "band",
    "bg": "fascia",
-   "kicker": "03 — IL CORPO",
+   "kicker": "03 — LA MIA",
    "statement": [
-    "NON È LEGNO:",
-    "È VETRORESINA"
+    "SIDEJACK"
    ],
    "footer": "",
    "body": [
-    "La più famosa, di Valco, ha",
-    "due gusci di Res-O-Glas",
-    "con una striscia di acero",
-    "al centro per manico e pickup."
+    "Si ispira alle Mosrite anni '60:",
+    "forma da Strato al contrario,",
+    "due P-90 e leva del vibrato.",
+    "Eastwood la fa dal 2002."
    ]
   },
   {
    "type": "band",
    "bg": "scende",
-   "kicker": "04 — IL SOPRANNOME",
+   "kicker": "04 — MOSRITE",
    "statement": [
-    "\"JB HUTTO\""
+    "DAI VENTURES",
+    "AI RAMONES"
    ],
    "footer": "",
    "body": [
-    "Il bluesman di Chicago",
-    "la suonava così tanto",
-    "che oggi quel modello",
-    "porta il suo nome."
+    "Le Mosrite diventano famose",
+    "nei primi anni '60 con i Ventures.",
+    "Poi Johnny Ramone",
+    "ne fa la sua chitarra."
    ]
   },
   {
    "type": "band",
    "bg": "base",
-   "kicker": "05 — ANNI 2000",
+   "kicker": "05 — L'ALTRA STORIA",
    "statement": [
-    "JACK WHITE",
-    "LA RIPORTA IN VITA"
+    "AIRLINE: SI COMPRAVA",
+    "AI GRANDI MAGAZZINI"
    ],
    "footer": "",
    "body": [
-    "Con i White Stripes suona",
-    "una Airline rossa del 1964.",
-    "Le originali passano da qualche",
-    "centinaio a qualche migliaio di dollari."
+    "Montgomery Ward la vende",
+    "negli anni '50 e '60.",
+    "La più famosa, di Valco,",
+    "ha il corpo in vetroresina."
    ]
   },
   {
    "type": "band",
    "bg": "fascia",
-   "kicker": "06 — EASTWOOD",
+   "kicker": "06 — JACK WHITE",
    "statement": [
-    "CHI LE",
-    "RICOSTRUISCE"
+    "LA RIPORTA",
+    "IN VITA"
    ],
    "footer": "",
    "body": [
-    "2001, Canada. Michael Robinson",
-    "commercia chitarre rare: costano",
-    "troppo e spesso suonano male.",
-    "Così inizia a rifarle nuove."
+    "Con i White Stripes suona",
+    "un'Airline rossa del 1964.",
+    "Le originali passano da qualche",
+    "centinaio a qualche migliaio di dollari."
    ]
   },
   {
    "type": "list",
-   "kicker": "07 — COSA RIFÀ",
+   "kicker": "07 — COSA RIFÀ EASTWOOD",
    "title": "LE DIMENTICATE",
    "items": [
     [
      "Airline",
      "Ne ha comprato il marchio"
+    ],
+    [
+     "Mosrite",
+     "La serie Sidejack"
     ],
     [
      "Kay, Harmony, Teisco",
@@ -136,10 +140,6 @@
     [
      "Wandrè",
      "Le italiane di design"
-    ],
-    [
-     "Attenzione",
-     "L'Airline '59 nuova è in mogano, non vetroresina"
     ]
    ],
    "footer": ""
