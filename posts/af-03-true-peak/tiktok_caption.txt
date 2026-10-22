@@ -1,0 +1,4 @@
+0 dBFS sul meter, distorsione nel lettore? Colpa degli inter-sample peak 📈
+Lo standard EBU R 128 dice: massimo −1 dBTP.
+Tu quanto margine lasci? 👇
+#erinhrstudio #1eyedpet #mastering #mixing #audiofact

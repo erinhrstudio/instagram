@@ -1,0 +1,114 @@
+{
+ "music": "Daft Punk — Harder, Better, Faster, Stronger",
+ "accent": "acqua",
+ "caption": "Il compressore distorce il tuo basso? Se è troppo veloce, sì 🔊\n\nUn'onda a 40 Hz dura 25 millisecondi. Se il release è più corto, il compressore non segue più il volume ma l'onda stessa, e la deforma: nascono armoniche che non c'erano. Nelle slide: i numeri e l'A/B da rifare in Reaper.\n\nEN · A 40 Hz cycle lasts 25 ms. Release times shorter than that make the compressor track the waveform, not the level, adding distortion.\n\nFonti: FabFilter Pro-C manual · Giannoulis, Massberg & Reiss, JAES 2012.\n\nSalvalo per il prossimo mix di basso 💾\n\n#erinhrstudio #1eyedpet #mixing #compressione #audiofact",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "ERIN AUDIO FACT · 12",
+   "subtitle": "Mixing · tempi del compressore",
+   "footer": "AUDIO FACT · VERIFICATO",
+   "hook": [
+    "IL COMPRESSORE",
+    "DISTORCE",
+    "IL TUO BASSO?"
+   ],
+   "hook_size": 92,
+   "wave_seed": 1212
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL SINTOMO",
+   "statement": [
+    "BASSO SPORCO,",
+    "CASSA CHE GRACCHIA"
+   ],
+   "footer": "E NON HAI MESSO SATURAZIONE"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — I NUMERI",
+   "statement": [
+    "UN'ONDA A 40 HZ",
+    "DURA 25 MS"
+   ],
+   "footer": "",
+   "body": [
+    "Se il release è più corto",
+    "di un ciclo, il compressore",
+    "non segue il volume:",
+    "segue l'onda stessa."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — COSA SUCCEDE",
+   "statement": [
+    "DEFORMA",
+    "LA FORMA D'ONDA"
+   ],
+   "footer": "",
+   "body": [
+    "Il guadagno cambia dentro",
+    "ogni ciclo: nascono armoniche",
+    "che non c'erano.",
+    "Su voce e piatti si nota meno."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — PROVALO IN REAPER",
+   "title": "A/B IN 3 PASSI",
+   "items": [
+    [
+     "Sorgente",
+     "Un basso o una sinusoide a 40-60 Hz"
+    ],
+    [
+     "Release",
+     "Release al minimo, poi 100 ms o più"
+    ],
+    [
+     "Ascolta",
+     "Pareggia il livello e ascolta nota e coda"
+    ],
+    [
+     "Guarda",
+     "Con l'analizzatore compaiono armoniche nuove"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "05 — NOTA ONESTA",
+   "statement": [
+    "NON È UN DIVIETO"
+   ],
+   "footer": "FONTI: FABFILTER PRO-C · GIANNOULIS ET AL., JAES 2012",
+   "body": [
+    "A volte quella sporcizia",
+    "è proprio il suono che vuoi.",
+    "Basta sapere da dove viene."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "SALVALO PER",
+    "IL PROSSIMO",
+    "MIX DI BASSO"
+   ],
+   "footer": "ERIN AUDIO FACT",
+   "size": 80
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+Inverti la fase e hai risolto? Non sempre 🎙️🎙️
+
+Il tasto Ø inverte il segno dell'onda, non sposta il tempo. Se due microfoni sono a distanze diverse, il suono arriva a uno dei due in ritardo e alcune frequenze si cancellano. Invertire la polarità sistema una parte e ne peggiora un'altra. Nelle slide: l'A/B da rifare in Reaper e il numero da ricordare (1 m = 2,9 ms).
+
+EN · Polarity flips the sign, not the timing. With spaced mics, inverting may fix some frequencies and hurt others: align first, then flip.
+
+Fonte: Shure, "Phase cancellation and microphone placement".
+
+Salvalo per la prossima ripresa a due microfoni 💾
+
+#erinhrstudio #1eyedpet #recording #homestudio #audiofact

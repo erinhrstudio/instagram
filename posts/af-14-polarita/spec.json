@@ -1,0 +1,115 @@
+{
+ "music": "Diana Ross — Upside Down",
+ "accent": "acqua",
+ "caption": "Inverti la fase e hai risolto? Non sempre 🎙️🎙️\n\nIl tasto Ø inverte il segno dell'onda, non sposta il tempo. Se due microfoni sono a distanze diverse, il suono arriva a uno dei due in ritardo e alcune frequenze si cancellano. Invertire la polarità sistema una parte e ne peggiora un'altra. Nelle slide: l'A/B da rifare in Reaper e il numero da ricordare (1 m = 2,9 ms).\n\nEN · Polarity flips the sign, not the timing. With spaced mics, inverting may fix some frequencies and hurt others: align first, then flip.\n\nFonte: Shure, \"Phase cancellation and microphone placement\".\n\nSalvalo per la prossima ripresa a due microfoni 💾\n\n#erinhrstudio #1eyedpet #recording #homestudio #audiofact",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "ERIN AUDIO FACT · 14",
+   "subtitle": "Recording · polarità e ritardo",
+   "footer": "AUDIO FACT · VERIFICATO",
+   "hook": [
+    "INVERTI LA FASE",
+    "E HAI RISOLTO?"
+   ],
+   "hook_size": 92,
+   "wave_seed": 1414
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL PROBLEMA",
+   "statement": [
+    "DUE MICROFONI,",
+    "UN SUONO VUOTO."
+   ],
+   "footer": "RULLANTE SOPRA E SOTTO, CHITARRA, PIANO"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — COSA FA IL TASTO Ø",
+   "statement": [
+    "CAMBIA IL SEGNO,",
+    "NON IL TEMPO"
+   ],
+   "footer": "",
+   "body": [
+    "Inverte l'onda: dove andava su",
+    "ora va giù. Ma se un microfono",
+    "è più lontano, il suono ci arriva",
+    "dopo: e quello resta un ritardo."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — PERCHÉ NON BASTA",
+   "statement": [
+    "SISTEMA ALCUNE",
+    "FREQUENZE, NE ROVINA ALTRE"
+   ],
+   "footer": "",
+   "body": [
+    "Un ritardo cancella frequenze",
+    "diverse a seconda dell'altezza:",
+    "invertire la polarità aggiusta",
+    "una parte della somma e peggiora l'altra."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — PROVALO IN REAPER",
+   "title": "A/B IN 3 PASSI",
+   "items": [
+    [
+     "Registra",
+     "Registra una sorgente con due microfoni a distanze diverse"
+    ],
+    [
+     "Ascolta",
+     "Ascolta: normale, poi con la polarità invertita"
+    ],
+    [
+     "Allinea",
+     "Poi allinea a mano la traccia lontana di qualche ms"
+    ],
+    [
+     "Regola",
+     "Il suono fa circa 34 cm per millisecondo: 1 m = 2,9 ms"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "05 — NOTA ONESTA",
+   "statement": [
+    "SPESSO SERVE",
+    "TUTTE E DUE"
+   ],
+   "footer": "FONTE: SHURE · PHASE CANCELLATION",
+   "body": [
+    "Allineamento e polarità",
+    "non si escludono:",
+    "prima il tempo, poi il segno,",
+    "poi decide l'orecchio."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "SALVALO PER",
+    "LA PROSSIMA",
+    "RIPRESA A DUE MIC"
+   ],
+   "footer": "ERIN AUDIO FACT",
+   "size": 80
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "music": "2 Unlimited — No Limit",
+ "accent": "acqua",
+ "caption": "0 dBFS sul meter e il pezzo distorce nel lettore? Colpa degli inter-sample peak 📈\n\nIl meter classico legge i campioni. Ma il convertitore ricostruisce un'onda continua, e tra un campione e l'altro può salire oltre 0. Per questo esiste il true peak (ITU-R BS.1770) e lo standard EBU R 128 indica un massimo di −1 dBTP. Nelle slide: come vederlo in Reaper.\n\nEN · Sample peaks don't show what happens between samples. Reconstruction can overshoot 0 dBFS: check a true-peak meter and leave headroom (EBU R 128: −1 dBTP).\n\nFonti: ITU-R BS.1770 · EBU R 128.\n\nSalvalo prima del prossimo master 💾\n\n#erinhrstudio #1eyedpet #mastering #mixing #audiofact",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "ERIN AUDIO FACT · 03",
+   "subtitle": "Mixing · sample peak e true peak",
+   "footer": "AUDIO FACT · VERIFICATO",
+   "hook": [
+    "0 DBFS SUL METER,",
+    "CLIP NEL LETTORE?"
+   ],
+   "hook_size": 92,
+   "wave_seed": 303
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — IL TRUCCO",
+   "statement": [
+    "I CAMPIONI NON",
+    "RACCONTANO TUTTO"
+   ],
+   "footer": "SAMPLE PEAK ≠ TRUE PEAK"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — COSA SUCCEDE",
+   "statement": [
+    "TRA UN CAMPIONE",
+    "E L'ALTRO"
+   ],
+   "footer": "",
+   "body": [
+    "Il convertitore ricostruisce un'onda",
+    "continua: tra due campioni",
+    "può salire più in alto di entrambi.",
+    "Sono gli inter-sample peak."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — PERCHÉ CONTA",
+   "statement": [
+    "LA CONVERSIONE",
+    "LI FA USCIRE"
+   ],
+   "footer": "",
+   "body": [
+    "Lettori, streaming e MP3",
+    "ricostruiscono quell'onda:",
+    "un master a 0 dBFS può",
+    "distorcere fuori dal tuo studio."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — PROVALO IN REAPER",
+   "title": "A/B IN 3 PASSI",
+   "items": [
+    [
+     "Prendi",
+     "Prendi un mix con transienti forti, limitato a 0 dBFS"
+    ],
+    [
+     "Misura",
+     "Leggi il sample peak, poi un meter true peak"
+    ],
+    [
+     "Confronta",
+     "Rifai con il limiter a −1 dBTP e confronta"
+    ],
+    [
+     "Riferimento",
+     "EBU R 128: massimo −1 dBTP"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "05 — NOTA ONESTA",
+   "statement": [
+    "QUANTO MARGINE?",
+    "DIPENDE"
+   ],
+   "footer": "FONTI: ITU-R BS.1770 · EBU R 128",
+   "body": [
+    "Dal materiale e dalla",
+    "destinazione: −1 dBTP è il",
+    "riferimento più usato, alcuni",
+    "distributori chiedono di più."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "SALVALO PRIMA",
+    "DEL PROSSIMO",
+    "MASTER"
+   ],
+   "footer": "ERIN AUDIO FACT",
+   "size": 80
+  }
+ ]
+}

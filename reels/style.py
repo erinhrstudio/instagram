@@ -72,7 +72,7 @@ def _ruota(hue, sat_k=0.75):
 
 
 # una tinta per serie: chitarre ambra, pedali verde, storia del fuzz viola
-ACCENTS.update(ambra=_ruota(38), verde=_ruota(150), viola=_ruota(275))
+ACCENTS.update(ambra=_ruota(38), verde=_ruota(150), viola=_ruota(275), acqua=_ruota(172))  # acqua: ERIN Audio Fact
 
 
 def set_accent(name="rosa"):

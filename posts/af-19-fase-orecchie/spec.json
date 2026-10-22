@@ -1,0 +1,116 @@
+{
+ "music": "Radiohead — Everything In Its Right Place",
+ "accent": "acqua",
+ "caption": "Inverti un solo canale e un tono nascosto nel rumore torna a sentirsi 🎧\n\nStesso rumore nelle due cuffie, un tono a 500 Hz che non senti più. Inverti la polarità del tono in un solo orecchio: riemerge, e resta udibile anche 12-15 dB più piano. Il cervello confronta le due orecchie e lo separa dal rumore (Hirsh, 1948).\n\nEN · Identical noise in both ears, a 500 Hz tone buried inside. Invert the tone in one ear only and it pops out: up to 12-15 dB of release from masking.\n\nFonti: Hirsh, JASA 1948 · Moore, An Introduction to the Psychology of Hearing.\n\nMandalo a chi ascolta solo con una cuffia 🎧\n\n#erinhrstudio #1eyedpet #psicoacustica #cuffie #audiofact",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "",
+   "kicker": "ERIN AUDIO FACT · 19",
+   "subtitle": "Psicoacustica · udito binaurale",
+   "footer": "AUDIO FACT · VERIFICATO",
+   "hook": [
+    "INVERTI UN CANALE",
+    "E IL TONO ESCE",
+    "DAL RUMORE?"
+   ],
+   "hook_size": 92,
+   "wave_seed": 1919
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — L'ESPERIMENTO",
+   "statement": [
+    "STESSO RUMORE,",
+    "STESSO TONO."
+   ],
+   "footer": "CAMBIA SOLO UNA COSA"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — COSA SUCCEDE",
+   "statement": [
+    "IL TONO",
+    "RIEMERGE"
+   ],
+   "footer": "",
+   "body": [
+    "Rumore identico nelle due cuffie,",
+    "un tono a 500 Hz nascosto dentro.",
+    "Inverti il tono in un solo",
+    "orecchio: torna a sentirsi."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — QUANTO",
+   "statement": [
+    "FINO A",
+    "12-15 DB"
+   ],
+   "footer": "HIRSH, 1948",
+   "body": [
+    "Il tono resta udibile anche",
+    "molto più piano. Il cervello",
+    "confronta le due orecchie",
+    "e lo separa dal rumore."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — PROVALO IN CUFFIA",
+   "title": "A/B IN 3 PASSI",
+   "items": [
+    [
+     "Rumore",
+     "Rumore mono identico a sinistra e a destra"
+    ],
+    [
+     "Tono",
+     "Tono a 500 Hz, abbassalo finché sparisce"
+    ],
+    [
+     "Inverti",
+     "Inverti la polarità del solo tono a destra"
+    ],
+    [
+     "Attenzione",
+     "Sugli acuti l'effetto è molto più piccolo"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "05 — NOTA ONESTA",
+   "statement": [
+    "SOLO IN CUFFIA,",
+    "SOLO SUI BASSI"
+   ],
+   "footer": "FONTI: HIRSH, JASA 1948 · MOORE, PSYCHOLOGY OF HEARING",
+   "body": [
+    "Si chiama binaural masking",
+    "level difference: con le casse",
+    "o sopra 1-2 kHz",
+    "l'effetto quasi sparisce."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "ASCOLTA SOLO",
+    "CON UNA CUFFIA"
+   ],
+   "footer": "ERIN AUDIO FACT",
+   "size": 80
+  }
+ ]
+}
