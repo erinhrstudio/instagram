@@ -59,8 +59,8 @@ Corretto. Reso concreto: con due toni (es. 200 e 310 Hz) saturati separatamente 
 
 ## #10 · Psicoacustica · ✏️
 **Gancio:** Un suono può cancellare quello prima?
-Corretto. Aggiunto: il mascheramento all'indietro è breve (circa 20 ms) e debole rispetto a quello in avanti, e si riduce molto con l'allenamento.
-**Fonti:** Moore, An Introduction to the Psychology of Hearing (cap. mascheramento) · Oxenham & Moore (1994), Hearing Research 80, 105–118.
+Corretto. Aggiunto: il mascheramento all'indietro agisce su intervalli molto più brevi di quello in avanti, poche decine di millisecondi. (Da verificare sul manuale di Moore prima della pubblicazione: il dato sull'effetto dell'allenamento.)
+**Fonti:** Moore, An Introduction to the Psychology of Hearing (cap. mascheramento temporale) · Oxenham & Moore (1994), "Modeling the additivity of nonsimultaneous masking", Hearing Research 80, 105–118.
 
 ## #11 · Recording · ✅
 **Gancio:** Il 32-bit float salva tutto?
