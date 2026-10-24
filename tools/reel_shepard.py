@@ -81,7 +81,12 @@ def chiusura_serie(c, t, end, titolo):
     centered(c, y + 34, "PROSSIMA ILLUSIONE", 26, fade(style.PINK, k), "sans", 700, 5)
     size = 64 if len(titolo) <= 26 else 54
     centered(c, y + 82, titolo, size, fade(WHITE, k))
-    centered(c, y + 82 + size + 20, "SEGUI @ERIN.RECORDINGSTUDIO PER NON PERDERLA", 26, fade(TEXT, k), "sans", 600, 2)
+    import os
+    invito = ("ISCRIVITI A @ERINHRSTUDIO PER NON PERDERLA" if os.environ.get("PIATTAFORMA") == "youtube"
+              else "SEGUI @ERIN.RECORDINGSTUDIO PER NON PERDERLA")
+    if titolo.startswith("ALTRE"):
+        invito = invito.replace("PERDERLA", "PERDERLE")
+    centered(c, y + 82 + size + 20, invito, 26, fade(TEXT, k), "sans", 600, 2)
 
 
 def write_mp4(out, audio, end, draw, seed):
