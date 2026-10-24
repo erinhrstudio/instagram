@@ -46,7 +46,46 @@ def paragraph(c, y, lines, k0, k):
         y += 64
 
 
+# Chiusura da serie (dal 24/10): negli ultimi secondi annuncia la prossima illusione,
+# così chi guarda ha un motivo per seguire. La prossima è il Reel con audio proprio
+# che viene dopo questo in state/coda.json.
+TITOLI = {
+    "fischio-silenzio": "IL FISCHIO NEL SILENZIO",
+    "rumore-nota": "IL RUMORE CHE DIVENTA NOTA",
+    "battito-binaurale": "IL BATTITO CHE ESISTE SOLO IN TESTA",
+    "scale-zigzag": "LE SCALE CHE IL CERVELLO RIORDINA",
+    "galoppo": "IL GALOPPO CHE SI SPEZZA IN DUE",
+}
+SERIE_DURATA = 4.5
+
+
+def prossima_illusione(nome):
+    """Titolo della prossima illusione in coda dopo `nome`, "" se `nome` non è nella serie."""
+    import json
+    from reels.coda import audio_proprio
+    coda = json.loads((ROOT / "state" / "coda.json").read_text())["post"]
+    if nome not in coda or nome not in TITOLI:
+        return ""
+    for n in coda[coda.index(nome) + 1:]:
+        if n in TITOLI and audio_proprio(n):
+            return TITOLI[n]
+    return "ALTRE ILLUSIONI IN ARRIVO"
+
+
+def chiusura_serie(c, t, end, titolo):
+    k = min(1, max(0, (t - (end - SERIE_DURATA)) / 0.4))
+    if not titolo or k <= 0:
+        return
+    y = 1250
+    c.line([(140, y), (W - 140, y)], fill=fade(LINE, k), width=2)
+    centered(c, y + 34, "PROSSIMA ILLUSIONE", 26, fade(style.PINK, k), "sans", 700, 5)
+    size = 64 if len(titolo) <= 26 else 54
+    centered(c, y + 82, titolo, size, fade(WHITE, k))
+    centered(c, y + 82 + size + 20, "SEGUI @ERIN.RECORDINGSTUDIO PER NON PERDERLA", 26, fade(TEXT, k), "sans", 600, 2)
+
+
 def write_mp4(out, audio, end, draw, seed):
+    titolo = prossima_illusione(Path(out).stem)
     style.set_accent("azzurro")
     base = Canvas(W, H, seed=seed, bg="pieno")
     base.header("ERIN · HOME RECORDING STUDIO", "PSICOACUSTICA")
@@ -70,6 +109,7 @@ def write_mp4(out, audio, end, draw, seed):
             c.img = base_img.copy()
             c.d = ImageDraw.Draw(c.img)
             draw(c, f / FPS)
+            chiusura_serie(c, f / FPS, end, titolo)
             p.stdin.write(np.asarray(c.final().convert("RGB")).tobytes())
         p.stdin.close()
         if p.wait() != 0:

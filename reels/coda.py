@@ -60,7 +60,7 @@ def prossimo(oggi=None, manuale=False):
                 # (reel_musica.txt dice NESSUNA) esce in automatico, altrimenti lo pubblica Giuseppe dall'app
                 auto = audio_proprio(n)
                 if auto and manuale:
-                    return None, f"{n} ha il suo audio: esce in automatico alle 18:30"
+                    return None, f"{n} ha il suo audio: esce in automatico all'ora di oggi"
                 if not auto and not manuale:
                     return None, f"giorno Reel: {n} lo pubblica Giuseppe dall'app (python -m reels.coda --manuale)"
             return n, "da pubblicare oggi"

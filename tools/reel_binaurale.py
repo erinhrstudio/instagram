@@ -88,7 +88,7 @@ def draw(c, t):
         return
     centered(c, 400, "TOGLI UNA CUFFIA.", 140, fade(WHITE, k(FINE)))
     centered(c, 560, "SPARISCE.", 150, fade(WHITE, k(FINE + 0.2)))
-    centered(c, 720, "MANDALO A CHI HA LE CUFFIE ADESSO", 64, fade(style.PINK, k(FINE + 0.4)))
+    centered(c, 720, "SPARISCE ANCHE A TE? SCRIVILO", 64, fade(style.PINK, k(FINE + 0.4)))
     head(c, 1020, True, True, t, k=k(FINE + 0.6, 0.5))
 
 
