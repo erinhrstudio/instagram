@@ -1,0 +1,63 @@
+name: "YouTube: collega canale"
+
+# Collegamento con il flusso "dispositivo" di Google: il log mostra un codice da inserire
+# su google.com/device; quando Giuseppe lo conferma, il collegamento si salva cifrato
+# (con il client secret) in state/youtube.enc. Il repo è pubblico: niente token in chiaro.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Chiedi il codice e aspetta la conferma
+        env:
+          CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+        run: |
+          set -euo pipefail
+          if [ -z "$CLIENT_ID" ] || [ -z "$CLIENT_SECRET" ]; then
+            echo "::error::Mancano i secrets YOUTUBE_CLIENT_ID / YOUTUBE_CLIENT_SECRET."; exit 1
+          fi
+          python3 - <<'PY'
+          import json, os, time, urllib.parse, urllib.request
+          def post(url, data):
+              req = urllib.request.Request(url, urllib.parse.urlencode(data).encode())
+              try:
+                  return json.load(urllib.request.urlopen(req))
+              except urllib.error.HTTPError as e:
+                  return json.load(e)
+          cid, sec = os.environ["CLIENT_ID"], os.environ["CLIENT_SECRET"]
+          d = post("https://oauth2.googleapis.com/device/code",
+                   {"client_id": cid, "scope": "https://www.googleapis.com/auth/youtube"})
+          if "user_code" not in d:
+              raise SystemExit(f"::error::Richiesta codice fallita: {d}")
+          print(f"CODICE: {d['user_code']}  -> apri {d['verification_url']}", flush=True)
+          fine = time.time() + min(d.get("expires_in", 1800), 1500)
+          while time.time() < fine:
+              time.sleep(d.get("interval", 5))
+              t = post("https://oauth2.googleapis.com/token", {
+                  "client_id": cid, "client_secret": sec, "device_code": d["device_code"],
+                  "grant_type": "urn:ietf:params:oauth:grant-type:device_code"})
+              if t.get("refresh_token"):
+                  print(f"::add-mask::{t['refresh_token']}")
+                  print(f"::add-mask::{t['access_token']}")
+                  open("/tmp/yt.json", "w").write(json.dumps({"refresh_token": t["refresh_token"]}))
+                  print("Collegamento confermato.")
+                  break
+              if t.get("error") not in ("authorization_pending", "slow_down"):
+                  raise SystemExit(f"::error::Collegamento fallito: {t.get('error')} {t.get('error_description','')}")
+          else:
+              raise SystemExit("::error::Tempo scaduto: rilancia il workflow e inserisci il codice subito.")
+          PY
+          openssl enc -aes-256-cbc -pbkdf2 -salt -pass env:CLIENT_SECRET -in /tmp/yt.json -out state/youtube.enc
+          rm -f /tmp/yt.json
+          git config user.name "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          git add state/youtube.enc
+          git commit -m "YouTube collegato"
+          git pull --rebase -q origin main && git push
