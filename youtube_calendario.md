@@ -1,43 +1,43 @@
 # Calendario YouTube Shorts
 
-Illusioni: le carico e programmo io (6 al giorno, ogni mattina alle 9:10). Cantanti: li carichi tu dall'app con la canzone, testi in youtube_cantanti.md.
+Stasera 4 Short, poi dal 27/10 al 9/11 due al giorno: 12:30 e 21:00. Illusioni e cantanti si alternano, e ogni giorno si scambiano l'orario, così dopo due settimane vediamo in Studio quale orario funziona meglio per ciascun tipo. Gli ultimi giorni (10-12/11) chiudono con i video rimasti.
 
-| Giorno | Ora | Short | Tipo | Chi |
+| Giorno | Ora | Short | Tipo | Chi lo pubblica |
 |---|---|---|---|---|
-| lun 26/10 | 20:00 | hayley-williams | Cantante | a mano con la canzone (oggi) |
-| mar 27/10 | 15:00 | scala-infinita | Illusione | automatico · già programmato |
-| mar 27/10 | 18:00 | fischio-silenzio | Illusione | automatico · già programmato |
-| mar 27/10 | 20:00 | billie-eilish | Cantante | a mano con la canzone |
-| mer 28/10 | 15:00 | parole-fantasma | Illusione | automatico · già programmato |
-| mer 28/10 | 20:00 | fiona-apple | Cantante | a mano con la canzone |
-| gio 29/10 | 15:00 | haas | Illusione | automatico · già programmato |
-| gio 29/10 | 20:00 | mia-zapata | Cantante | a mano con la canzone |
-| ven 30/10 | 12:00 | rumore-nota | Illusione | automatico · già programmato |
-| ven 30/10 | 15:00 | piu-forte | Illusione | automatico · già programmato |
-| ven 30/10 | 20:00 | lemonheads | Cantante | a mano con la canzone |
-| sab 31/10 | 15:00 | tritono | Illusione | automatico · lo carico io |
-| sab 31/10 | 20:00 | ks-choice | Cantante | a mano con la canzone |
-| dom 01/11 | 15:00 | fischi-parole | Illusione | automatico · lo carico io |
-| dom 01/11 | 20:00 | converge | Cantante | a mano con la canzone |
-| lun 02/11 | 15:00 | mascheramento | Illusione | automatico · lo carico io |
-| lun 02/11 | 18:00 | battito-binaurale | Illusione | automatico · lo carico io |
-| lun 02/11 | 20:00 | eva-korman | Cantante | a mano con la canzone |
-| mar 03/11 | 15:00 | ottava | Illusione | automatico · lo carico io |
-| mar 03/11 | 20:00 | shawn-james | Cantante | a mano con la canzone |
-| mer 04/11 | 15:00 | melodia-nascosta | Illusione | automatico · lo carico io |
-| mer 04/11 | 20:00 | courtney-love | Cantante | a mano con la canzone |
-| gio 05/11 | 12:00 | scale-zigzag | Illusione | automatico · lo carico io |
-| gio 05/11 | 15:00 | parlato-canto | Illusione | automatico · lo carico io |
-| gio 05/11 | 20:00 | brody-dalle | Cantante | a mano con la canzone |
-| ven 06/11 | 15:00 | beat-infinito | Illusione | automatico · lo carico io |
-| ven 06/11 | 20:00 | brian-molko | Cantante | a mano con la canzone |
-| sab 07/11 | 12:00 | galoppo | Illusione | automatico · lo carico io |
-| sab 07/11 | 20:00 | chelsea-wolfe | Cantante | a mano con la canzone |
-| dom 08/11 | 15:00 | buchi | Illusione | automatico · lo carico io |
-| dom 08/11 | 20:00 | cat-power | Cantante | a mano con la canzone |
-| lun 09/11 | 15:00 | basso-fantasma | Illusione | automatico · lo carico io |
-| lun 09/11 | 20:00 | donita-sparks | Cantante | a mano con la canzone |
-| mar 10/11 | 15:00 | sa-o-fa | Illusione | automatico · lo carico io |
-| mar 10/11 | 20:00 | morgan-lander | Cantante | a mano con la canzone |
-| mer 11/11 | 20:00 | julie-christmas | Cantante | a mano con la canzone |
-| gio 12/11 | 20:00 | genevieve-racette | Cantante | a mano con la canzone |
+| lun 26/10 | 21:20 | billie-eilish | Cantante | tu, dall'app con la canzone |
+| lun 26/10 | 21:20 | hayley-williams | Cantante | tu, dall'app con la canzone |
+| lun 26/10 | 21:20 | parole-fantasma | Illusione | io, in automatico |
+| lun 26/10 | 21:20 | scala-infinita | Illusione | io, in automatico |
+| mar 27/10 | 12:30 | haas | Illusione | io, in automatico |
+| mar 27/10 | 21:00 | fiona-apple | Cantante | tu, dall'app con la canzone |
+| mer 28/10 | 12:30 | mia-zapata | Cantante | tu, dall'app con la canzone |
+| mer 28/10 | 21:00 | fischio-silenzio | Illusione | io, in automatico |
+| gio 29/10 | 12:30 | piu-forte | Illusione | io, in automatico |
+| gio 29/10 | 21:00 | lemonheads | Cantante | tu, dall'app con la canzone |
+| ven 30/10 | 12:30 | ks-choice | Cantante | tu, dall'app con la canzone |
+| ven 30/10 | 21:00 | rumore-nota | Illusione | io, in automatico |
+| sab 31/10 | 12:30 | tritono | Illusione | io, in automatico |
+| sab 31/10 | 21:00 | converge | Cantante | tu, dall'app con la canzone |
+| dom 01/11 | 12:30 | eva-korman | Cantante | tu, dall'app con la canzone |
+| dom 01/11 | 21:00 | fischi-parole | Illusione | io, in automatico |
+| lun 02/11 | 12:30 | mascheramento | Illusione | io, in automatico |
+| lun 02/11 | 21:00 | shawn-james | Cantante | tu, dall'app con la canzone |
+| mar 03/11 | 12:30 | courtney-love | Cantante | tu, dall'app con la canzone |
+| mar 03/11 | 21:00 | battito-binaurale | Illusione | io, in automatico |
+| mer 04/11 | 12:30 | ottava | Illusione | io, in automatico |
+| mer 04/11 | 21:00 | brody-dalle | Cantante | tu, dall'app con la canzone |
+| gio 05/11 | 12:30 | brian-molko | Cantante | tu, dall'app con la canzone |
+| gio 05/11 | 21:00 | scale-zigzag | Illusione | io, in automatico |
+| ven 06/11 | 12:30 | melodia-nascosta | Illusione | io, in automatico |
+| ven 06/11 | 21:00 | chelsea-wolfe | Cantante | tu, dall'app con la canzone |
+| sab 07/11 | 12:30 | cat-power | Cantante | tu, dall'app con la canzone |
+| sab 07/11 | 21:00 | galoppo | Illusione | io, in automatico |
+| dom 08/11 | 12:30 | beat-infinito | Illusione | io, in automatico |
+| dom 08/11 | 21:00 | donita-sparks | Cantante | tu, dall'app con la canzone |
+| lun 09/11 | 12:30 | morgan-lander | Cantante | tu, dall'app con la canzone |
+| lun 09/11 | 21:00 | buchi | Illusione | io, in automatico |
+| mar 10/11 | 12:30 | parlato-canto | Illusione | io, in automatico |
+| mar 10/11 | 21:00 | julie-christmas | Cantante | tu, dall'app con la canzone |
+| mer 11/11 | 12:30 | basso-fantasma | Illusione | io, in automatico |
+| mer 11/11 | 21:00 | genevieve-racette | Cantante | tu, dall'app con la canzone |
+| gio 12/11 | 12:30 | sa-o-fa | Illusione | io, in automatico |
