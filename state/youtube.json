@@ -13,7 +13,8 @@
   ],
   "uscita_roma": "2026-10-26 21:20",
   "publish_at": "2026-10-26T20:20:00Z",
-  "video_id": "4FNb8ZzjL2w"
+  "video_id": "4FNb8ZzjL2w",
+  "sincronizzato": "2026-10-26T20:20:00Z"
  },
  {
   "nome": "parole-fantasma",
@@ -29,7 +30,8 @@
   ],
   "uscita_roma": "2026-10-26 21:20",
   "publish_at": "2026-10-26T20:20:00Z",
-  "video_id": "FwwIS8c_hVw"
+  "video_id": "FwwIS8c_hVw",
+  "sincronizzato": "2026-10-26T20:20:00Z"
  },
  {
   "nome": "haas",
@@ -45,7 +47,8 @@
   ],
   "uscita_roma": "2026-10-27 12:30",
   "publish_at": "2026-10-27T11:30:00Z",
-  "video_id": "WWlcFT6smtg"
+  "video_id": "WWlcFT6smtg",
+  "sincronizzato": "2026-10-27T11:30:00Z"
  },
  {
   "nome": "fischio-silenzio",
@@ -61,7 +64,8 @@
   ],
   "uscita_roma": "2026-10-28 21:00",
   "publish_at": "2026-10-28T20:00:00Z",
-  "video_id": "lxGweo_bCco"
+  "video_id": "lxGweo_bCco",
+  "sincronizzato": "2026-10-28T20:00:00Z"
  },
  {
   "nome": "piu-forte",
@@ -77,7 +81,8 @@
   ],
   "uscita_roma": "2026-10-29 12:30",
   "publish_at": "2026-10-29T11:30:00Z",
-  "video_id": "bskPRkiFy_o"
+  "video_id": "bskPRkiFy_o",
+  "sincronizzato": "2026-10-29T11:30:00Z"
  },
  {
   "nome": "rumore-nota",
@@ -93,7 +98,8 @@
   ],
   "uscita_roma": "2026-10-30 21:00",
   "publish_at": "2026-10-30T20:00:00Z",
-  "video_id": "lLO8uk2Q5Qc"
+  "video_id": "lLO8uk2Q5Qc",
+  "sincronizzato": "2026-10-30T20:00:00Z"
  },
  {
   "nome": "tritono",
