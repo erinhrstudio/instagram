@@ -18,13 +18,13 @@ W, H, FPS = 1080, 1920, 30
 
 # (inizio, fine, righe grandi, riga piccola)
 BATTUTE = [
-    (0.0, 2.6, ["LA VOLEVANO", "POPSTAR SOLISTA."], "Hayley Williams · Paramore"),
-    (2.6, 5.0, ["A 14 ANNI", "FIRMA UN CONTRATTO."], ""),
-    (5.0, 7.4, ["L'ETICHETTA", "LA VUOLE DA SOLA."], ""),
-    (7.4, 9.8, ["LEI DICE NO:", "VUOLE UNA BAND."], ""),
+    (0.0, 2.6, ["LA VOLEVANO POPSTAR.", "HA DETTO NO."], "Hayley Williams · Paramore"),
+    (2.6, 5.0, ["A 14 ANNI FIRMA", "IL PRIMO CONTRATTO."], ""),
+    (5.0, 7.4, ["L'ETICHETTA LA VUOLE", "SOLISTA E POP."], ""),
+    (7.4, 9.8, ["LEI INSISTE:", "VUOLE UNA BAND."], ""),
     (9.8, 12.2, ["COSÌ NASCONO", "I PARAMORE."], ""),
-    (12.2, 14.8, ["NEL 2015", "VINCONO UN GRAMMY."], "Best Rock Song · Ain't It Fun"),
-    (14.8, 18.5, ["TU AVRESTI", "DETTO NO?"], "Scrivilo nei commenti"),
+    (12.2, 14.8, ["NEL 2015", "VINCONO UN GRAMMY."], "Best Rock Song con \"Ain't It Fun\""),
+    (14.8, 18.5, ["E TU AVRESTI", "DETTO NO?"], "Alla fama da solista? Scrivilo nei commenti"),
 ]
 FINE = 18.5
 
@@ -56,7 +56,10 @@ def disegna_testo(t, piattaforma):
             continue
         k = min(1, (t - a) / 0.18) if i else 1  # la prima frase c'è dal primo fotogramma
         y = 1350
-        f = font("display", 132)
+        size = 132
+        while max(font("display", size).getlength(r) for r in righe) > 960 * S:
+            size -= 4  # le righe lunghe si stringono per stare dentro i margini
+        f = font("display", size)
         for j, r in enumerate(righe):
             col = PINK if j == len(righe) - 1 else TEXT
             d.text((W * S / 2, (y + (1 - k) * 30) * S), r, font=f, fill=col + (int(255 * k),), anchor="ma")
@@ -88,8 +91,9 @@ def render(piattaforma="instagram"):
     for f in range(n):
         t = f / FPS
         z = 1 + 0.09 * t / FINE
-        w, h = int(base.width / z), int(base.height / z)
-        x0 = (base.width - w) // 2
+        h = int(base.height / z)
+        w = int(h * W / H)  # ritaglio con le stesse proporzioni del video: niente foto schiacciata
+        x0 = int((base.width - w) * 0.45)
         y0 = int((base.height - h) * 0.3)
         fr = base.crop((x0, y0, x0 + w, y0 + h)).resize((W, H), Image.BILINEAR)
         a = np.asarray(fr, dtype=np.float32) * (1 - sf)
