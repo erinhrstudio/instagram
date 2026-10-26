@@ -74,11 +74,37 @@ def carica(it, tok):
     return r.json()
 
 
+def aggiorna(it, tok, adesso):
+    """Video già caricato: lo rende pubblico se la sua ora è passata, altrimenti allinea l'uscita programmata."""
+    if it.get("pubblico"):
+        return
+    ora = it["publish_at"] <= adesso
+    st = ({"privacyStatus": "public", "selfDeclaredMadeForKids": False} if ora else
+          {"privacyStatus": "private", "publishAt": it["publish_at"], "selfDeclaredMadeForKids": False})
+    r = requests.put(f"{API}/videos", params={"part": "status"}, headers={"Authorization": f"Bearer {tok}"},
+                     json={"id": it["video_id"], "status": st}, timeout=30)
+    if r.status_code != 200:
+        print(f"::warning::{it['nome']}: aggiornamento non riuscito {r.status_code} {r.text[:300]}")
+        return
+    if ora:
+        it["pubblico"] = True
+    it["sincronizzato"] = it["publish_at"]
+    print(f"{it['nome']}: " + ("pubblicato adesso" if ora else f"uscita spostata a {it['uscita_roma']}"))
+
+
 def main():
     piano = json.loads(PIANO.read_text())
     adesso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     quanti, solo = int(os.environ.get("QUANTI") or 6), os.environ.get("SOLO", "").strip()
     da_fare = [it for it in piano if not it.get("video_id") and (it["nome"] == solo if solo else True)]
+    da_aggiornare = [it for it in piano if it.get("video_id") and not it.get("pubblico")
+                     and (it["publish_at"] <= adesso or it.get("sincronizzato") != it["publish_at"])
+                     and (it["nome"] == solo if solo else True)]
+    if da_aggiornare:
+        tok = token()
+        for it in da_aggiornare:
+            aggiorna(it, tok, adesso)
+        PIANO.write_text(json.dumps(piano, ensure_ascii=False, indent=1) + "\n")
     passati = [it["nome"] for it in da_fare if it["publish_at"] <= adesso]
     if passati:
         print("::warning::Ora di uscita già passata, saltati:", ", ".join(passati))
@@ -97,6 +123,7 @@ def main():
         v = carica(it, tok)
         st = v.get("status", {})
         it["video_id"] = v["id"]
+        it["sincronizzato"] = it["publish_at"]
         PIANO.write_text(json.dumps(piano, ensure_ascii=False, indent=1) + "\n")
         print(f"{it['nome']}: https://youtu.be/{v['id']} · uscita {st.get('publishAt')} · {st.get('uploadStatus')}")
         if not st.get("publishAt"):
