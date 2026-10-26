@@ -1,0 +1,168 @@
+{
+ "music": "Paramore — Misery Business",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "ANATOMIA DI UNA VOCE",
+   "subtitle": "Hayley Williams · Paramore",
+   "footer": "VOCI DA ASCOLTARE",
+   "focus": [
+    0.42,
+    0.5
+   ],
+   "zoom": 1.1,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "LA VOLEVANO",
+    "POPSTAR SOLISTA.",
+    "HA DETTO NO."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — LA VOCE",
+   "statement": [
+    "HAYLEY WILLIAMS:",
+    "LA VOCE CHE SPINGE."
+   ],
+   "footer": "TENNESSEE · POP PUNK, ROCK, ALTERNATIVE"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — CHI È",
+   "statement": [
+    "A 14 ANNI",
+    "IL PRIMO CONTRATTO"
+   ],
+   "footer": "",
+   "body": [
+    "Nel 2002 si trasferisce a Franklin,",
+    "in Tennessee. Poco dopo firma:",
+    "l'etichetta la vuole popstar solista.",
+    "Lei vuole una band."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — LA CARRIERA",
+   "statement": [
+    "NASCONO",
+    "I PARAMORE"
+   ],
+   "footer": "",
+   "body": [
+    "Con i fratelli Farro forma la band.",
+    "Nel 2015 il primo Grammy con",
+    "Ain't It Fun. Nel 2024 vincono",
+    "anche Best Rock Album con This Is Why."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COM'È FATTA",
+   "title": "LA SUA VOCE",
+   "items": [
+    [
+     "Petto",
+     "Canta pieno, con una spinta enorme"
+    ],
+    [
+     "Grinta",
+     "Un filo di ruvidità quando serve"
+    ],
+    [
+     "Acuti",
+     "Sale in alto senza perdere chiarezza"
+    ],
+    [
+     "Parole",
+     "Si capiscono anche a tutto volume"
+    ]
+   ],
+   "footer": ""
+  },
+  {
+   "type": "list",
+   "kicker": "05 — DA DOVE PARTIRE",
+   "title": "4 BRANI",
+   "items": [
+    [
+     "Misery Business (2007)",
+     "L'esplosione, dal disco Riot!"
+    ],
+    [
+     "The Only Exception (2009)",
+     "Il lato acustico, da Brand New Eyes"
+    ],
+    [
+     "Ain't It Fun (2013)",
+     "Il primo Grammy, dal disco Paramore"
+    ],
+    [
+     "This Is Why (2023)",
+     "Il periodo più recente"
+    ]
+   ],
+   "footer": "IN QUEST'ORDINE"
+  },
+  {
+   "type": "band",
+   "bg": "scende",
+   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "statement": [
+    "SE CERCHI UNA VOCE",
+    "CHE TI DÀ ENERGIA"
+   ],
+   "footer": "",
+   "body": [
+    "Energia punk, melodie pop,",
+    "testi sinceri.",
+    "Una voce che resta davanti",
+    "anche in mezzo alle chitarre."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "07 — PER CHI REGISTRA",
+   "title": "VOCE SOPRA LE CHITARRE",
+   "items": [
+    [
+     "Presenza",
+     "Un tocco tra 2 e 5 kHz, con misura"
+    ],
+    [
+     "Spazio",
+     "Togli un po' alle chitarre dove canta la voce"
+    ],
+    [
+     "Compressione",
+     "Due compressori leggeri invece di uno forte"
+    ],
+    [
+     "Doppia",
+     "Raddoppia solo i ritornelli"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "E TU AVRESTI",
+    "DETTO NO",
+    "ALLA FAMA?"
+   ],
+   "footer": "SCRIVILO NEI COMMENTI · PROSSIMA VOCE: DONITA SPARKS",
+   "size": 80
+  }
+ ],
+ "caption": "La volevano popstar solista. Ha detto no: Hayley Williams 🎙️\n\nNel 2002 si trasferisce a Franklin, in Tennessee, e a 14 anni firma il primo contratto. L'etichetta la vuole solista e pop, lei vuole una band: nascono i Paramore. Nel 2015 il primo Grammy con Ain't It Fun, nel 2024 Best Rock Album con This Is Why.\n\nDa dove partire: Misery Business, The Only Exception, Ain't It Fun, This Is Why.\n\nE tu avresti detto no alla fama? Scrivilo nei commenti 👇\nProssima voce: Donita Sparks delle L7.\n\n#erinhrstudio #1eyedpet #paramore #hayleywilliams #poppunk"
+}
