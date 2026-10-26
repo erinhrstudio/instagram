@@ -31,7 +31,8 @@ jobs:
                   return json.load(urllib.request.urlopen(req))
               except urllib.error.HTTPError as e:
                   return json.load(e)
-          cid, sec = os.environ["CLIENT_ID"], os.environ["CLIENT_SECRET"]
+          cid, sec = os.environ["CLIENT_ID"].strip(), os.environ["CLIENT_SECRET"].strip()
+          print("ID client nel formato giusto:", cid.endswith(".apps.googleusercontent.com"), "| spazi tolti:", cid != os.environ["CLIENT_ID"])
           d = post("https://oauth2.googleapis.com/device/code",
                    {"client_id": cid, "scope": "https://www.googleapis.com/auth/youtube"})
           if "user_code" not in d:

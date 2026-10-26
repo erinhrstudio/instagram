@@ -23,7 +23,7 @@ def token():
     raw = subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-pass", "env:CLIENT_SECRET",
                           "-in", str(ENC)], capture_output=True, check=True).stdout
     r = requests.post("https://oauth2.googleapis.com/token", data={
-        "client_id": os.environ["CLIENT_ID"], "client_secret": os.environ["CLIENT_SECRET"],
+        "client_id": os.environ["CLIENT_ID"].strip(), "client_secret": os.environ["CLIENT_SECRET"].strip(),
         "refresh_token": json.loads(raw)["refresh_token"], "grant_type": "refresh_token"}, timeout=30)
     r.raise_for_status()
     t = r.json()["access_token"]
