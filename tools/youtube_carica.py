@@ -31,6 +31,30 @@ def token():
     return t
 
 
+def gia_sul_canale(tok):
+    """Titoli -> id dei video già sul canale (anche quelli caricati a mano), per non fare doppioni."""
+    h = {"Authorization": f"Bearer {tok}"}
+    ch = requests.get(f"{API}/channels", params={"part": "contentDetails", "mine": "true"}, headers=h, timeout=30)
+    ch.raise_for_status()
+    up = ch.json()["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    out, pagina = {}, None
+    while True:
+        r = requests.get(f"{API}/playlistItems", params={"part": "snippet", "playlistId": up, "maxResults": 50,
+                                                          **({"pageToken": pagina} if pagina else {})},
+                         headers=h, timeout=30)
+        r.raise_for_status()
+        j = r.json()
+        for x in j.get("items", []):
+            out[x["snippet"]["title"].strip().lower()] = x["snippet"]["resourceId"]["videoId"]
+        pagina = j.get("nextPageToken")
+        if not pagina:
+            return out
+
+
+def chiave(titolo):
+    return titolo.replace("#shorts", "").strip().lower()
+
+
 def carica(it, tok):
     meta = {"snippet": {"title": it["titolo"], "description": it["descrizione"], "tags": it["tag"],
                         "categoryId": "10", "defaultLanguage": "it", "defaultAudioLanguage": "it"},
@@ -63,7 +87,13 @@ def main():
         print("Niente da caricare.")
         return
     tok = token()
+    esistenti = {chiave(t): v for t, v in gia_sul_canale(tok).items()}
     for it in da_fare:
+        if chiave(it["titolo"]) in esistenti:
+            it["video_id"] = esistenti[chiave(it["titolo"])]
+            PIANO.write_text(json.dumps(piano, ensure_ascii=False, indent=1) + "\n")
+            print(f"{it['nome']}: già sul canale (https://youtu.be/{it['video_id']}), non lo ricarico")
+            continue
         v = carica(it, tok)
         st = v.get("status", {})
         it["video_id"] = v["id"]
