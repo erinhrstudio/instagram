@@ -34,23 +34,6 @@
   "sincronizzato": "2026-10-26T20:20:00Z"
  },
  {
-  "nome": "haas",
-  "file": "media/tiktok/haas.mp4",
-  "titolo": "In cuffia: da dove arrivava il loop la seconda volta? 🎧 #shorts",
-  "descrizione": "Il volume era identico nei due orecchi e non ho toccato il pan. Ho solo fatto arrivare la destra 8 millisecondi dopo: il cervello fonde i due suoni e li mette dal lato di quello che arriva prima. Oltre una certa soglia, invece, li separa e senti un'eco.\n\nÈ l'effetto Haas (o della precedenza), dal nome di Helmut Haas, 1951. Nel mix si usa per allargare: doppia una chitarra e ritarda una copia di 10-20 ms. Ma controlla sempre in mono, perché sommate le due copie si cancellano a certe frequenze.\n\nSalvalo per il prossimo mix e mandalo a chi allarga tutto col pan 👇\n\nIscriviti: ogni settimana una nuova illusione dell'udito 🎧\n\n#erinhrstudio #1eyedpet #shorts #psicoacustica #illusioniuditive",
-  "tag": [
-   "psicoacustica",
-   "illusioni uditive",
-   "auditory illusion",
-   "home recording",
-   "erinhrstudio"
-  ],
-  "uscita_roma": "2026-10-27 12:30",
-  "publish_at": "2026-10-27T11:30:00Z",
-  "video_id": "WWlcFT6smtg",
-  "sincronizzato": "2026-10-27T11:30:00Z"
- },
- {
   "nome": "fischio-silenzio",
   "file": "media/youtube/fischio-silenzio.mp4",
   "titolo": "Ascolta il rumore, poi il silenzio. Senti un fischio? 🤫 #shorts",
@@ -62,10 +45,27 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-10-28 21:00",
-  "publish_at": "2026-10-28T20:00:00Z",
+  "uscita_roma": "2026-10-27 21:00",
+  "publish_at": "2026-10-27T20:00:00Z",
   "video_id": "lxGweo_bCco",
   "sincronizzato": "2026-10-28T20:00:00Z"
+ },
+ {
+  "nome": "haas",
+  "file": "media/tiktok/haas.mp4",
+  "titolo": "In cuffia: da dove arrivava il loop la seconda volta? 🎧 #shorts",
+  "descrizione": "Il volume era identico nei due orecchi e non ho toccato il pan. Ho solo fatto arrivare la destra 8 millisecondi dopo: il cervello fonde i due suoni e li mette dal lato di quello che arriva prima. Oltre una certa soglia, invece, li separa e senti un'eco.\n\nÈ l'effetto Haas (o della precedenza), dal nome di Helmut Haas, 1951. Nel mix si usa per allargare: doppia una chitarra e ritarda una copia di 10-20 ms. Ma controlla sempre in mono, perché sommate le due copie si cancellano a certe frequenze.\n\nSalvalo per il prossimo mix e mandalo a chi allarga tutto col pan 👇\n\nIscriviti: ogni settimana una nuova illusione dell'udito 🎧\n\n#erinhrstudio #1eyedpet #shorts #psicoacustica #illusioniuditive",
+  "tag": [
+   "psicoacustica",
+   "illusioni uditive",
+   "auditory illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "uscita_roma": "2026-10-28 21:00",
+  "publish_at": "2026-10-28T20:00:00Z",
+  "video_id": "WWlcFT6smtg",
+  "sincronizzato": "2026-10-27T11:30:00Z"
  },
  {
   "nome": "piu-forte",
@@ -79,8 +79,8 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-10-29 12:30",
-  "publish_at": "2026-10-29T11:30:00Z",
+  "uscita_roma": "2026-10-29 21:00",
+  "publish_at": "2026-10-29T20:00:00Z",
   "video_id": "bskPRkiFy_o",
   "sincronizzato": "2026-10-29T11:30:00Z"
  },
@@ -113,8 +113,8 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-10-31 12:30",
-  "publish_at": "2026-10-31T11:30:00Z",
+  "uscita_roma": "2026-10-31 21:00",
+  "publish_at": "2026-10-31T20:00:00Z",
   "video_id": ""
  },
  {
@@ -134,10 +134,10 @@
   "video_id": ""
  },
  {
-  "nome": "mascheramento",
-  "file": "media/tiktok/mascheramento.mp4",
-  "titolo": "Quanti bip hai sentito all'inizio? C'erano sempre, allo stesso volume 🔇 #shorts",
-  "descrizione": "È il mascheramento: quando due suoni occupano le stesse frequenze, il più forte copre l'altro. Nel video non ho alzato i bip, ho solo tolto il rumore intorno alla loro frequenza. È lo stesso principio che usa l'MP3 per risparmiare spazio: elimina ciò che tanto non sentiresti.\n\nNel mix succede a voce e chitarre: invece di alzare tutto, fai spazio con l'EQ sottrattivo, un passa-alto o il sidechain.\n\nRiascolta l'inizio: adesso li senti? Mandalo a chi alza tutto per sentire tutto 🔇\n\nIscriviti: ogni settimana una nuova illusione dell'udito 🎧\n\n#erinhrstudio #1eyedpet #shorts #psicoacustica #illusioniuditive",
+  "nome": "battito-binaurale",
+  "file": "media/youtube/battito-binaurale.mp4",
+  "titolo": "Questo battito esiste solo nella tua testa 🎧 Solo in cuffia. #shorts",
+  "descrizione": "A sinistra una nota a 250 Hz, a destra una a 254 Hz. Nessuna delle due pulsa: ascoltale una alla volta e sono fisse. Insieme, in cuffia, senti un battito 4 volte al secondo. Lo crea il cervello confrontando i due orecchi.\n\nSono i battimenti binaurali (Heinrich Wilhelm Dove, 1839). Niente promesse su sonno, studio o concentrazione: è un'illusione, e basta.\n\nTogli una cuffia: sparisce anche a te? Scrivilo 👇\nProssima illusione: le scale che il cervello riordina.\n\nIscriviti: ogni settimana una nuova illusione dell'udito 🎧\n\n#erinhrstudio #1eyedpet #shorts #psicoacustica #illusioniuditive",
   "tag": [
    "psicoacustica",
    "illusioni uditive",
@@ -145,15 +145,15 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-02 12:30",
-  "publish_at": "2026-11-02T11:30:00Z",
+  "uscita_roma": "2026-11-02 21:00",
+  "publish_at": "2026-11-02T20:00:00Z",
   "video_id": ""
  },
  {
-  "nome": "battito-binaurale",
-  "file": "media/youtube/battito-binaurale.mp4",
-  "titolo": "Questo battito esiste solo nella tua testa 🎧 Solo in cuffia. #shorts",
-  "descrizione": "A sinistra una nota a 250 Hz, a destra una a 254 Hz. Nessuna delle due pulsa: ascoltale una alla volta e sono fisse. Insieme, in cuffia, senti un battito 4 volte al secondo. Lo crea il cervello confrontando i due orecchi.\n\nSono i battimenti binaurali (Heinrich Wilhelm Dove, 1839). Niente promesse su sonno, studio o concentrazione: è un'illusione, e basta.\n\nTogli una cuffia: sparisce anche a te? Scrivilo 👇\nProssima illusione: le scale che il cervello riordina.\n\nIscriviti: ogni settimana una nuova illusione dell'udito 🎧\n\n#erinhrstudio #1eyedpet #shorts #psicoacustica #illusioniuditive",
+  "nome": "mascheramento",
+  "file": "media/tiktok/mascheramento.mp4",
+  "titolo": "Quanti bip hai sentito all'inizio? C'erano sempre, allo stesso volume 🔇 #shorts",
+  "descrizione": "È il mascheramento: quando due suoni occupano le stesse frequenze, il più forte copre l'altro. Nel video non ho alzato i bip, ho solo tolto il rumore intorno alla loro frequenza. È lo stesso principio che usa l'MP3 per risparmiare spazio: elimina ciò che tanto non sentiresti.\n\nNel mix succede a voce e chitarre: invece di alzare tutto, fai spazio con l'EQ sottrattivo, un passa-alto o il sidechain.\n\nRiascolta l'inizio: adesso li senti? Mandalo a chi alza tutto per sentire tutto 🔇\n\nIscriviti: ogni settimana una nuova illusione dell'udito 🎧\n\n#erinhrstudio #1eyedpet #shorts #psicoacustica #illusioniuditive",
   "tag": [
    "psicoacustica",
    "illusioni uditive",
@@ -177,8 +177,8 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-04 12:30",
-  "publish_at": "2026-11-04T11:30:00Z",
+  "uscita_roma": "2026-11-04 21:00",
+  "publish_at": "2026-11-04T20:00:00Z",
   "video_id": ""
  },
  {
@@ -209,8 +209,8 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-06 12:30",
-  "publish_at": "2026-11-06T11:30:00Z",
+  "uscita_roma": "2026-11-06 21:00",
+  "publish_at": "2026-11-06T20:00:00Z",
   "video_id": ""
  },
  {
@@ -241,8 +241,8 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-08 12:30",
-  "publish_at": "2026-11-08T11:30:00Z",
+  "uscita_roma": "2026-11-08 21:00",
+  "publish_at": "2026-11-08T20:00:00Z",
   "video_id": ""
  },
  {
@@ -273,8 +273,8 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-10 12:30",
-  "publish_at": "2026-11-10T11:30:00Z",
+  "uscita_roma": "2026-11-10 21:00",
+  "publish_at": "2026-11-10T20:00:00Z",
   "video_id": ""
  },
  {
@@ -289,8 +289,8 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-11 12:30",
-  "publish_at": "2026-11-11T11:30:00Z",
+  "uscita_roma": "2026-11-11 21:00",
+  "publish_at": "2026-11-11T20:00:00Z",
   "video_id": ""
  },
  {
@@ -305,8 +305,8 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-12 12:30",
-  "publish_at": "2026-11-12T11:30:00Z",
+  "uscita_roma": "2026-11-12 21:00",
+  "publish_at": "2026-11-12T20:00:00Z",
   "video_id": ""
  }
 ]

@@ -1,7 +1,7 @@
 # Short dei cantanti per YouTube
 
 Da caricare dall'app YouTube: **Crea → Short → carica il video**, poi **Aggiungi suono** con la canzone indicata, incolla titolo e descrizione e in **Visibilità** scegli **Programma** con data e ora indicate.
-Billie Eilish (e Hayley Williams) escono stasera: pubblicali subito. Gli altri alternano 12:30 e 21:00 con le illusioni, che carico io.
+Billie Eilish (e Hayley Williams) escono stasera: pubblicali subito. Gli altri escono ogni giorno alle 12:30; le illusioni le pubblico io alle 21:00.
 
 ## 26/10 ore 21:20 · billie-eilish
 
@@ -27,7 +27,7 @@ Iscriviti: ogni settimana una nuova voce da ascoltare 🎧
 #erinhrstudio #1eyedpet #billieeilish #finneas #shorts
 ```
 
-## 27/10 ore 21:00 · fiona-apple
+## 27/10 ore 12:30 · fiona-apple
 
 Video: https://raw.githubusercontent.com/erinhrstudio/instagram/main/media/tiktok/fiona-apple.mp4
 Canzone: Fiona Apple — Shameika
@@ -75,7 +75,7 @@ Iscriviti: ogni settimana una nuova voce da ascoltare 🎧
 #erinhrstudio #1eyedpet #thegits #miazapata #shorts
 ```
 
-## 29/10 ore 21:00 · lemonheads
+## 29/10 ore 12:30 · lemonheads
 
 Video: https://raw.githubusercontent.com/erinhrstudio/instagram/main/media/tiktok/lemonheads.mp4
 Canzone: The Lemonheads — It's a Shame About Ray
@@ -123,7 +123,7 @@ Iscriviti: ogni settimana una nuova voce da ascoltare 🎧
 #erinhrstudio #1eyedpet #kschoice #sambettens #shorts
 ```
 
-## 31/10 ore 21:00 · converge
+## 31/10 ore 12:30 · converge
 
 Video: https://raw.githubusercontent.com/erinhrstudio/instagram/main/media/tiktok/converge.mp4
 Canzone: Converge — Concubine
@@ -171,7 +171,7 @@ Iscriviti: ogni settimana una nuova voce da ascoltare 🎧
 #erinhrstudio #1eyedpet #rolotomassi #evakorman #shorts
 ```
 
-## 02/11 ore 21:00 · shawn-james
+## 02/11 ore 12:30 · shawn-james
 
 Video: https://raw.githubusercontent.com/erinhrstudio/instagram/main/media/tiktok/shawn-james.mp4
 Canzone: Shawn James — Through the Valley
@@ -219,7 +219,7 @@ Iscriviti: ogni settimana una nuova voce da ascoltare 🎧
 #erinhrstudio #1eyedpet #courtneylove #hole #shorts
 ```
 
-## 04/11 ore 21:00 · brody-dalle
+## 04/11 ore 12:30 · brody-dalle
 
 Video: https://raw.githubusercontent.com/erinhrstudio/instagram/main/media/tiktok/brody-dalle.mp4
 Canzone: The Distillers — Drain the Blood
@@ -267,7 +267,7 @@ Iscriviti: ogni settimana una nuova voce da ascoltare 🎧
 #erinhrstudio #1eyedpet #placebo #brianmolko #shorts
 ```
 
-## 06/11 ore 21:00 · chelsea-wolfe
+## 06/11 ore 12:30 · chelsea-wolfe
 
 Video: https://raw.githubusercontent.com/erinhrstudio/instagram/main/media/tiktok/chelsea-wolfe.mp4
 Canzone: Chelsea Wolfe — Feral Love
@@ -315,7 +315,7 @@ Iscriviti: ogni settimana una nuova voce da ascoltare 🎧
 #erinhrstudio #1eyedpet #catpower #chanmarshall #shorts
 ```
 
-## 08/11 ore 21:00 · donita-sparks
+## 08/11 ore 12:30 · donita-sparks
 
 Video: https://raw.githubusercontent.com/erinhrstudio/instagram/main/media/tiktok/donita-sparks.mp4
 Canzone: L7 — Pretend We're Dead
@@ -363,7 +363,7 @@ Iscriviti: ogni settimana una nuova voce da ascoltare 🎧
 #erinhrstudio #1eyedpet #kittie #morganlander #shorts
 ```
 
-## 10/11 ore 21:00 · julie-christmas
+## 10/11 ore 12:30 · julie-christmas
 
 Video: https://raw.githubusercontent.com/erinhrstudio/instagram/main/media/tiktok/julie-christmas.mp4
 Canzone: Julie Christmas — Supernatural
@@ -387,7 +387,7 @@ Iscriviti: ogni settimana una nuova voce da ascoltare 🎧
 #erinhrstudio #1eyedpet #juliechristmas #postmetal #shorts
 ```
 
-## 11/11 ore 21:00 · genevieve-racette
+## 11/11 ore 12:30 · genevieve-racette
 
 Video: https://raw.githubusercontent.com/erinhrstudio/instagram/main/media/tiktok/genevieve-racette.mp4
 Canzone: Geneviève Racette — Instagram
