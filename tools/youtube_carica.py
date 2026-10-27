@@ -120,7 +120,13 @@ def main():
             PIANO.write_text(json.dumps(piano, ensure_ascii=False, indent=1) + "\n")
             print(f"{it['nome']}: già sul canale (https://youtu.be/{it['video_id']}), non lo ricarico")
             continue
-        v = carica(it, tok)
+        try:
+            v = carica(it, tok)
+        except RuntimeError as e:
+            if "uploadLimitExceeded" in str(e) or "quotaExceeded" in str(e):
+                print("::warning::Limite giornaliero di YouTube raggiunto: gli altri li carico al prossimo giro.")
+                return
+            raise
         st = v.get("status", {})
         it["video_id"] = v["id"]
         it["sincronizzato"] = it["publish_at"]
