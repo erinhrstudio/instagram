@@ -14,7 +14,8 @@
   "uscita_roma": "2026-10-26 21:20",
   "publish_at": "2026-10-26T20:20:00Z",
   "video_id": "4FNb8ZzjL2w",
-  "sincronizzato": "2026-10-26T20:20:00Z"
+  "sincronizzato": "2026-10-26T20:20:00Z",
+  "pubblico": true
  },
  {
   "nome": "parole-fantasma",
@@ -31,7 +32,8 @@
   "uscita_roma": "2026-10-26 21:20",
   "publish_at": "2026-10-26T20:20:00Z",
   "video_id": "FwwIS8c_hVw",
-  "sincronizzato": "2026-10-26T20:20:00Z"
+  "sincronizzato": "2026-10-26T20:20:00Z",
+  "pubblico": true
  },
  {
   "nome": "fischio-silenzio",
@@ -115,7 +117,8 @@
   ],
   "uscita_roma": "2026-10-31 21:00",
   "publish_at": "2026-10-31T20:00:00Z",
-  "video_id": ""
+  "video_id": "JF_fI2KTDaI",
+  "sincronizzato": "2026-10-31T20:00:00Z"
  },
  {
   "nome": "fischi-parole",
@@ -131,7 +134,8 @@
   ],
   "uscita_roma": "2026-11-01 21:00",
   "publish_at": "2026-11-01T20:00:00Z",
-  "video_id": ""
+  "video_id": "H3AnfQqsntY",
+  "sincronizzato": "2026-11-01T20:00:00Z"
  },
  {
   "nome": "battito-binaurale",
@@ -147,7 +151,8 @@
   ],
   "uscita_roma": "2026-11-02 21:00",
   "publish_at": "2026-11-02T20:00:00Z",
-  "video_id": ""
+  "video_id": "HoYIQ2hJ-uo",
+  "sincronizzato": "2026-11-02T20:00:00Z"
  },
  {
   "nome": "mascheramento",
@@ -163,7 +168,8 @@
   ],
   "uscita_roma": "2026-11-03 21:00",
   "publish_at": "2026-11-03T20:00:00Z",
-  "video_id": ""
+  "video_id": "T-BigpwBJSM",
+  "sincronizzato": "2026-11-03T20:00:00Z"
  },
  {
   "nome": "ottava",
