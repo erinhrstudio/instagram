@@ -1,0 +1,152 @@
+{
+ "music": "The White Stripes — Seven Nation Army",
+ "accent": "verde",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "PEDALI IMPOSSIBILI · 01",
+   "subtitle": "DigiTech Whammy",
+   "footer": "PEDALI DA CONOSCERE",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": 1.0,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "IL RIFF PIÙ",
+    "CANTATO NEGLI STADI",
+    "NON È UN BASSO."
+   ],
+   "colore": {
+    "tinta": [
+     335,
+     15
+    ],
+    "sat": 0.35
+   }
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — L'INGANNO",
+   "statement": [
+    "SEMBRA UN BASSO.",
+    "È UNA CHITARRA."
+   ],
+   "footer": "THE WHITE STRIPES · SEVEN NATION ARMY · 2003"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — IL TRUCCO",
+   "statement": [
+    "UN'OTTAVA",
+    "SOTTO"
+   ],
+   "footer": "",
+   "body": [
+    "I White Stripes sono in due:",
+    "niente bassista.",
+    "Jack White suona una semiacustica Kay",
+    "nel Whammy, un'ottava sotto."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — COME FUNZIONA",
+   "statement": [
+    "SPOSTA",
+    "LA NOTA"
+   ],
+   "footer": "",
+   "body": [
+    "Un processore digitale cambia",
+    "l'intonazione in tempo reale.",
+    "Muovi il pedale col piede:",
+    "la nota sale o scende, fino a due ottave."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — COSA C'È SOPRA",
+   "title": "I COMANDI",
+   "items": [
+    [
+     "Whammy",
+     "Il pedale piega la nota, fino a 2 ottave"
+    ],
+    [
+     "Harmony",
+     "Aggiunge una seconda voce: terza, quarta, quinta…"
+    ],
+    [
+     "Dive bomb",
+     "La nota precipita, come con la leva"
+    ],
+    [
+     "Detune",
+     "Una copia appena stonata: suono più largo"
+    ]
+   ],
+   "footer": "SUL MODELLO IN FOTO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — CHI LO USA",
+   "title": "3 NOMI",
+   "items": [
+    [
+     "Jack White",
+     "Seven Nation Army, un'ottava sotto"
+    ],
+    [
+     "Tom Morello",
+     "L'assolo di Killing in the Name"
+    ],
+    [
+     "David Gilmour",
+     "Marooned, Pink Floyd, 1994"
+    ]
+   ],
+   "footer": "ASCOLTA COME SUONA DIVERSO OGNI VOLTA"
+  },
+  {
+   "type": "list",
+   "kicker": "06 — PER CHI REGISTRA",
+   "title": "IL WHAMMY IN STUDIO",
+   "items": [
+    [
+     "Posizione",
+     "Primo della catena, prima dei distorsori"
+    ],
+    [
+     "Suona pulito",
+     "Note singole e ben stoppate: lo segue meglio"
+    ],
+    [
+     "Ottava sotto",
+     "Lascia spazio nel mix, se no impasta col basso"
+    ]
+   ],
+   "footer": "CONSIGLI GENERALI, NON UNA REGOLA"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "MANDALO A CHI",
+    "CANTA QUEL RIFF",
+    "ALLO STADIO"
+   ],
+   "footer": "GIOVEDÌ PROSSIMO: IL MU-TRON III",
+   "size": 80
+  }
+ ],
+ "caption": "Il riff più cantato negli stadi non è un basso 🎸\n\nI White Stripes erano in due, senza bassista. In Seven Nation Army Jack White suona una chitarra semiacustica Kay passata nel DigiTech Whammy, impostato un'ottava sotto: ecco da dove arriva quel «basso».\n\nNelle slide: come funziona, cosa c'è sopra, chi lo usa e come registrarlo.\n\nMandalo a chi canta quel riff allo stadio 🏟️\n\n#erinhrstudio #1eyedpet #whammy #pedalboard #chitarra"
+}
