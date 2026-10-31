@@ -1,0 +1,4 @@
+- Oingo Boingo, Tim Burton, primo film Pee-wee's Big Adventure: https://www.masterclass.com/articles/danny-elfmans-movies-and-film-scores-list
+- 4 nomination all'Oscar, nessuna vinta; Grammy per la sigla dei Simpson: https://simple.wikipedia.org/wiki/Danny_Elfman
+- Canzoni di Jack cantate da Elfman, Renato Zero nel doppiaggio italiano: https://movieplayer.it/articoli/nightmare-before-christmas-compie-30-anni-cose-non-sapete_31002/
+- Sigla di Mercoledì (Netflix 2022): https://remezcla.com/film/watch-wednesday-opening-credits-reveal-creepy-imagery-haunting-theme-by-danny-elfman/
