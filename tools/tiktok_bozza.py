@@ -107,7 +107,7 @@ def main(items):
     mancanti = []
     tok = access_token()
     h = {"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8"}
-    chi = requests.get(f"{API}/user/info/?fields=display_name,username", headers=h, timeout=30).json()
+    chi = requests.get(f"{API}/user/info/?fields=open_id,display_name", headers=h, timeout=30).json()
     print("Account TikTok collegato:", chi.get("data", {}).get("user", {}), chi.get("error", {}).get("code"))
     for it in [i.strip() for i in items.split(",") if i.strip()]:
         if it in sent:
