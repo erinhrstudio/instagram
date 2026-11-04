@@ -55,7 +55,7 @@ def grafico(c, y, t_rel, k=1.0, vero=True):
     lo, hi = np.log(NOTE[0]), np.log(NOTE[-1])
     cur = int(t_rel // STEP) % len(NOTE) if t_rel is not None else -1
     for side, yy in [(0, y), (1, y + 260)]:
-        c.text((W / 2, yy - 130), "SINISTRA" if side == 0 else "DESTRA", font("sans", 24, 700),
+        c.text((W / 2, yy - 130), "LEFT" if side == 0 else "RIGHT", font("sans", 24, 700),
                fill=fade(MUTED, k), anchor="mm", tracking=4)
         pts = []
         for i in range(len(NOTE)):
@@ -76,39 +76,39 @@ def grafico(c, y, t_rel, k=1.0, vero=True):
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < VOTA:
-        c.kicker(0, 300, "IN CUFFIA", center=True)
-        centered(c, 360, "COSA SENTI", 150, WHITE)
-        centered(c, 510, "A SINISTRA?", 150, style.PINK)
+        c.kicker(0, 300, "HEADPHONES ON", center=True)
+        centered(c, 360, "WHAT DO YOU HEAR", 150, WHITE)
+        centered(c, 510, "ON THE LEFT?", 150, style.PINK)
         c.text((W / 2, 900), "?", font("display", 300), fill=fade(style.PINK, 0.5 + 0.5 * k(0, 0.5)), anchor="mm")
-        centered(c, 1240, "ACUTE O GRAVI? SALE O SCENDE?", 30, MUTED, "sans", 700, 4)
+        centered(c, 1240, "HIGH OR LOW? UP OR DOWN?", 30, MUTED, "sans", 700, 4)
         return
     if t < RIVELA:
-        c.kicker(0, 300, "QUELLO CHE SENTI DI SOLITO", center=True)
-        centered(c, 360, "ACUTE A UN LATO,", 120, fade(WHITE, k(VOTA)))
-        centered(c, 490, "GRAVI ALL'ALTRO.", 120, fade(style.PINK, k(VOTA + 0.2)))
+        c.kicker(0, 300, "WHAT MOST PEOPLE HEAR", center=True)
+        centered(c, 360, "HIGHS ON ONE SIDE,", 120, fade(WHITE, k(VOTA)))
+        centered(c, 490, "LOWS ON THE OTHER.", 120, fade(style.PINK, k(VOTA + 0.2)))
         grafico(c, 820, None, k=k(VOTA + 0.4), vero=False)
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "QUELLO CHE SUONA DAVVERO", center=True)
+        c.kicker(0, 300, "WHAT IS ACTUALLY PLAYING", center=True)
         centered(c, 360, "ZIG-ZAG", 150, fade(WHITE, k(RIVELA)))
-        centered(c, 510, "IN TUTTI E DUE.", 130, fade(style.PINK, k(RIVELA + 0.2)))
+        centered(c, 510, "IN BOTH EARS.", 130, fade(style.PINK, k(RIVELA + 0.2)))
         grafico(c, 820, t - RIVELA, k=k(RIVELA + 0.3))
         return
     if t < FINE:
-        c.kicker(0, 300, "ILLUSIONE DELLA SCALA", center=True)
-        centered(c, 360, "IL CERVELLO", 150, fade(WHITE, k(SPIEGA)))
-        centered(c, 510, "RIMETTE IN ORDINE.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 720, ["Una scala sale e una scende insieme,",
-                           "e ogni nota cambia orecchio.",
-                           "Il cervello raggruppa le note per altezza,",
-                           "non per orecchio: ti costruisce",
-                           "due melodie che nessuno ha suonato.",
+        c.kicker(0, 300, "THE SCALE ILLUSION", center=True)
+        centered(c, 360, "YOUR BRAIN", 150, fade(WHITE, k(SPIEGA)))
+        centered(c, 510, "SORTS IT OUT.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 720, ["One scale goes up and one goes down together,",
+                           "and every note switches ear.",
+                           "Your brain groups notes by pitch,",
+                           "not by ear: it builds you",
+                           "two melodies nobody played.",
                            "",
                            "· Diana Deutsch · 1975"], SPIEGA + 0.5, k)
         return
-    centered(c, 420, "GIRA LE CUFFIE.", 150, fade(WHITE, k(FINE)))
-    centered(c, 580, "LE ACUTE", 130, fade(style.PINK, k(FINE + 0.3)))
-    centered(c, 710, "SI SPOSTANO?", 130, fade(style.PINK, k(FINE + 0.3)))
+    centered(c, 420, "FLIP YOUR HEADPHONES.", 112, fade(WHITE, k(FINE)))
+    centered(c, 580, "DO THE HIGHS", 130, fade(style.PINK, k(FINE + 0.3)))
+    centered(c, 710, "MOVE?", 130, fade(style.PINK, k(FINE + 0.3)))
     c.text((W / 2, 1010), "?", font("display", 240), fill=fade(style.PINK, 0.6 * k(FINE + 0.8)), anchor="mm")
 
 

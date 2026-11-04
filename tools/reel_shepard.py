@@ -50,11 +50,11 @@ def paragraph(c, y, lines, k0, k):
 # così chi guarda ha un motivo per seguire. La prossima è il Reel con audio proprio
 # che viene dopo questo in state/coda.json.
 TITOLI = {
-    "fischio-silenzio": "IL FISCHIO NEL SILENZIO",
-    "rumore-nota": "IL RUMORE CHE DIVENTA NOTA",
-    "battito-binaurale": "IL BATTITO CHE ESISTE SOLO IN TESTA",
-    "scale-zigzag": "LE SCALE CHE IL CERVELLO RIORDINA",
-    "galoppo": "IL GALOPPO CHE SI SPEZZA IN DUE",
+    "fischio-silenzio": "THE WHISTLE IN THE SILENCE",
+    "rumore-nota": "THE NOISE THAT BECOMES A NOTE",
+    "battito-binaurale": "THE BEAT THAT ONLY EXISTS IN YOUR HEAD",
+    "scale-zigzag": "THE SCALES YOUR BRAIN REARRANGES",
+    "galoppo": "THE GALLOP THAT SPLITS IN TWO",
 }
 SERIE_DURATA = 4.5
 
@@ -69,7 +69,7 @@ def prossima_illusione(nome):
     for n in coda[coda.index(nome) + 1:]:
         if n in TITOLI and audio_proprio(n):
             return TITOLI[n]
-    return "ALTRE ILLUSIONI IN ARRIVO"
+    return "MORE ILLUSIONS COMING"
 
 
 def chiusura_serie(c, t, end, titolo):
@@ -78,14 +78,14 @@ def chiusura_serie(c, t, end, titolo):
         return
     y = 1250
     c.line([(140, y), (W - 140, y)], fill=fade(LINE, k), width=2)
-    centered(c, y + 34, "PROSSIMA ILLUSIONE", 26, fade(style.PINK, k), "sans", 700, 5)
+    centered(c, y + 34, "NEXT ILLUSION", 26, fade(style.PINK, k), "sans", 700, 5)
     size = 64 if len(titolo) <= 26 else 54
     centered(c, y + 82, titolo, size, fade(WHITE, k))
     import os
-    invito = ("ISCRIVITI A @ERINHRSTUDIO PER NON PERDERLA" if os.environ.get("PIATTAFORMA") == "youtube"
-              else "SEGUI @ERIN.RECORDINGSTUDIO PER NON PERDERLA")
-    if titolo.startswith("ALTRE"):
-        invito = invito.replace("PERDERLA", "PERDERLE")
+    invito = ("SUBSCRIBE TO @ERINHRSTUDIO SO YOU DON'T MISS IT" if os.environ.get("PIATTAFORMA") == "youtube"
+              else "FOLLOW @ERIN.RECORDINGSTUDIO SO YOU DON'T MISS IT")
+    if titolo.startswith("MORE"):
+        invito = invito.replace("MISS IT", "MISS THEM")
     centered(c, y + 82 + size + 20, invito, 26, fade(TEXT, k), "sans", 600, 2)
 
 
@@ -93,7 +93,7 @@ def write_mp4(out, audio, end, draw, seed):
     titolo = prossima_illusione(Path(out).stem)
     style.set_accent("azzurro")
     base = Canvas(W, H, seed=seed, bg="pieno")
-    base.header("ERIN · HOME RECORDING STUDIO", "PSICOACUSTICA")
+    base.header("ERIN · HOME RECORDING STUDIO", "PSYCHOACOUSTICS")
     base_img = base.img.copy()
     audio = audio[:int(end * SR)]
     audio = audio / np.abs(audio).max() * 0.89

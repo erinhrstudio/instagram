@@ -87,28 +87,28 @@ def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < SPIEGA:
         rotto = durata(t) < 0.08
-        c.kicker(0, 300, "ACCELERO", center=True)
-        centered(c, 360, "UN GALOPPO" if not rotto else "ORA SONO", 150, WHITE)
-        centered(c, 510, "O DUE RITMI?" if not rotto else "DUE RITMI?", 150, style.PINK)
+        c.kicker(0, 300, "SPEEDING UP", center=True)
+        centered(c, 360, "ONE GALLOP" if not rotto else "NOW IT'S", 150, WHITE)
+        centered(c, 510, "OR TWO RHYTHMS?" if not rotto else "TWO RHYTHMS?", 150, style.PINK)
         trama(c, 900, t)
-        centered(c, 1240, f"{60 / (durata(t) * 4):.0f} GALOPPI AL MINUTO", 30, MUTED, "sans", 700, 4)
+        centered(c, 1240, f"{60 / (durata(t) * 4):.0f} GALLOPS PER MINUTE", 30, MUTED, "sans", 700, 4)
         return
     if t < FINE:
-        c.kicker(0, 300, "SEGREGAZIONE IN FLUSSI", center=True)
-        centered(c, 360, "LE NOTE", 150, fade(WHITE, k(SPIEGA)))
-        centered(c, 510, "SONO LE STESSE.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 720, ["Quando le note acute e gravi si alternano",
-                           "troppo in fretta, il cervello smette",
-                           "di seguirle come una melodia sola",
-                           "e le separa in due flussi.",
-                           "Bach lo usava per far sentire due voci",
-                           "a un solo violino.",
+        c.kicker(0, 300, "STREAM SEGREGATION", center=True)
+        centered(c, 360, "THE NOTES", 150, fade(WHITE, k(SPIEGA)))
+        centered(c, 510, "NEVER CHANGE.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 720, ["When high and low notes alternate",
+                           "too fast, your brain stops",
+                           "following them as one melody",
+                           "and splits them into two streams.",
+                           "Bach used it to make a single violin",
+                           "sound like two voices.",
                            "",
                            "· Leon van Noorden · 1975"], SPIEGA + 0.5, k)
         return
-    centered(c, 420, "IN CHE SECONDO", 140, fade(WHITE, k(FINE)))
-    centered(c, 570, "SI È SPEZZATO?", 140, fade(style.PINK, k(FINE + 0.3)))
-    centered(c, 730, "SCRIVILO NEI COMMENTI", 50, fade(TEXT, k(FINE + 0.6)), "sans", 700, 3)
+    centered(c, 420, "AT WHAT SECOND", 140, fade(WHITE, k(FINE)))
+    centered(c, 570, "DID IT SPLIT?", 140, fade(style.PINK, k(FINE + 0.3)))
+    centered(c, 730, "TELL ME IN THE COMMENTS", 50, fade(TEXT, k(FINE + 0.6)), "sans", 700, 3)
     trama(c, 1010, t, k=k(FINE + 0.4, 0.4), separati=True)
 
 
