@@ -34,10 +34,10 @@ END = 23.5
 
 # (inizio, fine, titolo, riga piccola, suono)
 SCENES = [
-    (0.0, 3.7, ["IL TUO TELEFONO", "NON PUÒ SUONARE", "QUESTA NOTA"], "ASCOLTALO DAL TELEFONO · LA 55 HZ", "pura"),
-    (3.9, 7.6, ["E ADESSO", "LA SENTI?"], "STESSA NOTA", "fantasma"),
-    (7.8, 11.4, ["A 55 HZ", "NON C'È NIENTE"], "SOLO MULTIPLI: 165, 220, 275 HZ…", "fantasma"),
-    (11.6, 16.0, ["IL CERVELLO", "LA RICOSTRUISCE"], "UN RIFF SENZA NESSUNA NOTA BASSA", "riff"),
+    (0.0, 3.7, ["YOUR PHONE", "CAN'T PLAY", "THIS NOTE"], "LISTEN ON YOUR PHONE · 55 HZ A", "pura"),
+    (3.9, 7.6, ["AND NOW", "DO YOU HEAR IT?"], "SAME NOTE", "fantasma"),
+    (7.8, 11.4, ["AT 55 HZ", "THERE'S NOTHING"], "ONLY MULTIPLES: 165, 220, 275 HZ…", "fantasma"),
+    (11.6, 16.0, ["YOUR BRAIN", "REBUILDS IT"], "A RIFF WITH NO LOW NOTES AT ALL", "riff"),
 ]
 SPIEGA = 16.2
 
@@ -116,8 +116,8 @@ def frame(c, t, audio, bins):
         gx0, gx1, gy = 110, W - 110, L["spectrum"]
         lx = lambda hz: gx0 + (np.log10(hz) - np.log10(bins[0])) / (np.log10(bins[-1]) - np.log10(bins[0])) * (gx1 - gx0)
         c.rect((gx0, gy - 380, lx(150), gy), fill=(40, 40, 44))
-        c.text(((gx0 + lx(150)) / 2, gy - 430), "IL TELEFONO", font("sans", 20, 700), fill=MUTED, anchor="ma", tracking=2)
-        c.text(((gx0 + lx(150)) / 2, gy - 404), "QUI NON ARRIVA", font("sans", 20, 700), fill=MUTED, anchor="ma", tracking=2)
+        c.text(((gx0 + lx(150)) / 2, gy - 430), "YOUR PHONE", font("sans", 20, 700), fill=MUTED, anchor="ma", tracking=2)
+        c.text(((gx0 + lx(150)) / 2, gy - 404), "CAN'T GO HERE", font("sans", 20, 700), fill=MUTED, anchor="ma", tracking=2)
         sp = np.max([spectrum(audio, t - d, bins) * (1 - d / 0.3) for d in (0, 0.08, 0.16)], axis=0)
         bw = (gx1 - gx0) / len(sp)
         for j, v in enumerate(sp):
@@ -133,29 +133,29 @@ def frame(c, t, audio, bins):
             c.text((lx(hz), gy + 22), lab, font("sans", 22, 600), fill=MUTED, anchor="ma", tracking=1)
         return
     if t < END - 3.2:
-        c.kicker(0, L["expl"], "LA FONDAMENTALE MANCANTE", center=True)
-        c.text((W / 2, L["expl"] + 80), "NON SENTI LA NOTA.", font("display", 120), fill=fade(WHITE, k(SPIEGA)), anchor="ma")
-        c.text((W / 2, L["expl"] + 200), "LA CALCOLI.", font("display", 120), fill=fade(style.PINK, k(SPIEGA)), anchor="ma")
-        lines = ["165, 220, 275 Hz sono tutti multipli di 55.",
-                 "Il cervello trova il passo comune",
-                 "e ti fa sentire la nota che manca.",
+        c.kicker(0, L["expl"], "THE MISSING FUNDAMENTAL", center=True)
+        c.text((W / 2, L["expl"] + 80), "YOU DON'T HEAR IT.", font("display", 120), fill=fade(WHITE, k(SPIEGA)), anchor="ma")
+        c.text((W / 2, L["expl"] + 200), "YOU COMPUTE IT.", font("display", 120), fill=fade(style.PINK, k(SPIEGA)), anchor="ma")
+        lines = ["165, 220, 275 Hz are all multiples of 55.",
+                 "Your brain finds the common step",
+                 "and makes you hear the missing note.",
                  "",
-                 "È il trucco dei plugin «bass enhancer»:",
-                 "far sentire il basso anche dove non può suonare."]
+                 "It's the trick behind «bass enhancer» plugins:",
+                 "you hear bass even where it can't play."]
         y = L["expl"] + 420
         for i, l in enumerate(lines):
             c.text((W / 2, y), l, font("sans", 38), fill=fade(TEXT, k(SPIEGA + 0.3 + 0.15 * i)), anchor="ma")
             y += 60
         return
     t0 = END - 3.2
-    c.text((W / 2, L["end"]), "ORA RIASCOLTALO", font("display", 130), fill=fade(WHITE, k(t0)), anchor="ma")
-    c.text((W / 2, L["end"] + 130), "IN CUFFIA", font("display", 130), fill=fade(style.PINK, k(t0)), anchor="ma")
+    c.text((W / 2, L["end"]), "NOW REPLAY IT", font("display", 130), fill=fade(WHITE, k(t0)), anchor="ma")
+    c.text((W / 2, L["end"] + 130), "ON HEADPHONES", font("display", 130), fill=fade(style.PINK, k(t0)), anchor="ma")
     c.line([(W / 2 - 80, L["end"] + 330), (W / 2 + 80, L["end"] + 330)], fill=style.PINK, width=2)
-    c.text((W / 2, L["end"] + 380), "E MANDALO A CHI GIURA DI SENTIRE IL BASSO DAL TELEFONO", font("sans", 26, 700),
+    c.text((W / 2, L["end"] + 380), "AND SEND IT TO WHOEVER SWEARS THEY HEAR BASS ON A PHONE", font("sans", 26, 700),
            fill=fade(style.PINK_SOFT, k(t0 + 0.5)), anchor="ma", tracking=2)
 
 
-def render(out, height=1920, page="PSICOACUSTICA", layout=None):
+def render(out, height=1920, page="PSYCHOACOUSTICS", layout=None):
     global H, L
     H, L = height, LAYOUTS[layout or height]
     style.set_accent("azzurro")
@@ -192,7 +192,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 2 and sys.argv[2] == "tiktok":  # versione per TikTok: ... out.mp4 tiktok
         render(out, layout="tiktok")
     elif len(sys.argv) > 2 and sys.argv[2] == "4:5":  # slide video del carosello: ... out.mp4 4:5 "02 / 06"
-        render(out, 1350, sys.argv[3] if len(sys.argv) > 3 else "PSICOACUSTICA")
+        render(out, 1350, sys.argv[3] if len(sys.argv) > 3 else "PSYCHOACOUSTICS")
     else:
         render(out)
     print("scritto", out)

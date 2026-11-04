@@ -91,36 +91,36 @@ def spectrum(c, t, notch, y0=760, y1=1130, x0=140, x1=W - 140, k=1.0):
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < SILENZIO:
-        c.kicker(0, 300, "TEST · ALZA IL VOLUME", center=True)
-        centered(c, 360, "QUANTI BIP", 150, WHITE)
-        centered(c, 510, "SENTI?", 150, style.PINK)
+        c.kicker(0, 300, "TEST · TURN IT UP", center=True)
+        centered(c, 360, "HOW MANY BEEPS", 150, WHITE)
+        centered(c, 510, "DO YOU HEAR?", 150, style.PINK)
         spectrum(c, t, False)
-        centered(c, 1215, "CONTALI", 30, MUTED, "sans", 700, 4)
+        centered(c, 1215, "COUNT THEM", 30, MUTED, "sans", 700, 4)
         return
     if t < BUCO:
-        centered(c, 640, "NESSUNO?", 200, fade(WHITE, k(SILENZIO)))
+        centered(c, 640, "NONE?", 200, fade(WHITE, k(SILENZIO)))
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "STESSI BIP · STESSO VOLUME", center=True)
-        centered(c, 360, "HO SOLO TOLTO", 130, fade(WHITE, k(BUCO)))
-        centered(c, 490, "IL RUMORE INTORNO.", 130, fade(style.PINK, k(BUCO + 0.2)))
+        c.kicker(0, 300, "SAME BEEPS · SAME VOLUME", center=True)
+        centered(c, 360, "I JUST REMOVED", 130, fade(WHITE, k(BUCO)))
+        centered(c, 490, "THE NOISE AROUND THEM.", 130, fade(style.PINK, k(BUCO + 0.2)))
         spectrum(c, t, True)
-        centered(c, 1215, "ERANO LÌ ANCHE PRIMA", 30, fade(MUTED, k(BUCO + 1.5)), "sans", 700, 4)
+        centered(c, 1215, "THEY WERE THERE BEFORE TOO", 30, fade(MUTED, k(BUCO + 1.5)), "sans", 700, 4)
         return
     if t < FINE:
-        c.kicker(0, 300, "MASCHERAMENTO", center=True)
-        centered(c, 360, "UN SUONO NE", 130, fade(WHITE, k(SPIEGA)))
-        centered(c, 490, "CANCELLA UN ALTRO.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 720, ["Se due suoni stanno sulle stesse frequenze,",
-                           "il più forte copre l'altro. Nel mix succede",
-                           "a voce e chitarre: non serve alzare,",
-                           "serve fare il buco con l'EQ.",
+        c.kicker(0, 300, "MASKING", center=True)
+        centered(c, 360, "ONE SOUND", 130, fade(WHITE, k(SPIEGA)))
+        centered(c, 490, "ERASES ANOTHER.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 720, ["When two sounds share the same frequencies,",
+                           "the louder one covers the other. In a mix it happens",
+                           "to vocals and guitars: don't turn up,",
+                           "carve a hole with EQ.",
                            "",
-                           "· È anche il principio con cui l'MP3 risparmia spazio"], SPIEGA + 0.5, k)
+                           "· It's also how MP3 saves space"], SPIEGA + 0.5, k)
         return
-    centered(c, 400, "RIASCOLTA", 160, fade(WHITE, k(FINE)))
-    centered(c, 560, "L'INIZIO.", 160, fade(WHITE, k(FINE + 0.2)))
-    centered(c, 720, "ADESSO LI SENTI?", 110, fade(style.PINK, k(FINE + 0.4)))
+    centered(c, 400, "REPLAY", 160, fade(WHITE, k(FINE)))
+    centered(c, 560, "THE START.", 160, fade(WHITE, k(FINE + 0.2)))
+    centered(c, 720, "CAN YOU HEAR THEM NOW?", 110, fade(style.PINK, k(FINE + 0.4)))
     spectrum(c, t, False, y0=930, y1=1150, k=k(FINE + 0.6, 0.6))
 
 

@@ -78,7 +78,7 @@ def note_at(t):
 def lanes(c, y, t, left=True, right=True, k=1.0):
     """Due tracce di rumore, sinistra e destra: sembrano uguali."""
     rng = np.random.default_rng(int(t * 30))
-    for i, (lab, on) in enumerate([("SINISTRO", left), ("DESTRO", right)]):
+    for i, (lab, on) in enumerate([("LEFT", left), ("RIGHT", right)]):
         yy = y + i * 190
         c.text((W / 2, yy - 70), lab, font("sans", 24, 700), fill=fade(MUTED, k), anchor="mm", tracking=4)
         x0, x1, n = 150, W - 150, 60
@@ -110,43 +110,43 @@ def staff(c, y, t, k=1.0, show=True):
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < SINISTRO:
-        c.kicker(0, 300, "SOLO IN CUFFIA", center=True)
-        centered(c, 360, "È SOLO RUMORE.", 130, WHITE)
-        centered(c, 490, "O NO?", 150, style.PINK)
+        c.kicker(0, 300, "HEADPHONES ONLY", center=True)
+        centered(c, 360, "IT'S JUST NOISE.", 130, WHITE)
+        centered(c, 490, "OR IS IT?", 150, style.PINK)
         lanes(c, 800, t)
         staff(c, 1140, t, show=t > 2.2, k=k(2.2, 0.6))
-        centered(c, 1240, "SENTI UNA MELODIA?", 30, MUTED, "sans", 700, 4)
+        centered(c, 1240, "DO YOU HEAR A MELODY?", 30, MUTED, "sans", 700, 4)
         return
     if t < ANCORA:
-        c.kicker(0, 300, "ORA SOLO L'ORECCHIO SINISTRO", center=True)
-        centered(c, 360, "STESSO RUMORE.", 130, fade(WHITE, k(SINISTRO)))
-        centered(c, 490, "LA MELODIA?", 150, fade(style.PINK, k(SINISTRO + 0.2)))
+        c.kicker(0, 300, "NOW ONLY THE LEFT EAR", center=True)
+        centered(c, 360, "SAME NOISE.", 130, fade(WHITE, k(SINISTRO)))
+        centered(c, 490, "THE MELODY?", 150, fade(style.PINK, k(SINISTRO + 0.2)))
         lanes(c, 800, t, right=False)
         staff(c, 1140, t, show=False)
-        centered(c, 1240, "SPARITA", 30, fade(MUTED, k(SINISTRO + 1.5)), "sans", 700, 4)
+        centered(c, 1240, "GONE", 30, fade(MUTED, k(SINISTRO + 1.5)), "sans", 700, 4)
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "E ORA TUTTI E DUE", center=True)
-        centered(c, 360, "ECCOLA", 150, fade(WHITE, k(ANCORA)))
-        centered(c, 510, "DI NUOVO.", 150, fade(style.PINK, k(ANCORA + 0.2)))
+        c.kicker(0, 300, "AND NOW BOTH", center=True)
+        centered(c, 360, "THERE IT IS", 150, fade(WHITE, k(ANCORA)))
+        centered(c, 510, "AGAIN.", 150, fade(style.PINK, k(ANCORA + 0.2)))
         lanes(c, 800, t)
         staff(c, 1140, t, k=k(ANCORA + 0.3))
-        centered(c, 1240, "FRA MARTINO, NEL RUMORE", 30, fade(MUTED, k(ANCORA + 1.2)), "sans", 700, 4)
+        centered(c, 1240, "FRÈRE JACQUES, IN THE NOISE", 30, fade(MUTED, k(ANCORA + 1.2)), "sans", 700, 4)
         return
     if t < FINE:
-        c.kicker(0, 300, "MELODIA DI HUGGINS", center=True)
-        centered(c, 360, "NON È IN NESSUN", 120, fade(WHITE, k(SPIEGA)))
-        centered(c, 480, "DEI DUE ORECCHI.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 690, ["Ai due orecchi arriva lo stesso rumore.",
-                           "A destra ho solo invertito una fettina",
-                           "di frequenze, nota per nota.",
-                           "Il cervello confronta i due lati",
-                           "e la differenza diventa una melodia.",
+        c.kicker(0, 300, "HUGGINS PITCH", center=True)
+        centered(c, 360, "IT'S NOT IN EITHER", 120, fade(WHITE, k(SPIEGA)))
+        centered(c, 480, "OF YOUR EARS.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 690, ["Both ears get the same noise.",
+                           "On the right I just flipped a thin slice",
+                           "of frequencies, note by note.",
+                           "Your brain compares the two sides",
+                           "and the difference becomes a melody.",
                            "",
-                           "· Cramer e Huggins · 1958"], SPIEGA + 0.5, k)
+                           "· Cramer and Huggins · 1958"], SPIEGA + 0.5, k)
         return
-    centered(c, 400, "TOGLI UNA CUFFIA.", 140, fade(WHITE, k(FINE)))
-    centered(c, 560, "DOV'È FINITA?", 140, fade(style.PINK, k(FINE + 0.3)))
+    centered(c, 400, "TAKE ONE SIDE OFF.", 140, fade(WHITE, k(FINE)))
+    centered(c, 560, "WHERE DID IT GO?", 140, fade(style.PINK, k(FINE + 0.3)))
     lanes(c, 840, t, k=k(FINE + 0.6, 0.5))
     staff(c, 1180, t - FINE, k=k(FINE + 0.6, 0.5))
 

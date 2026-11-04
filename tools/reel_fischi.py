@@ -147,44 +147,44 @@ def playing(t, starts):
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < DOMANDA:
-        c.kicker(0, 300, "TRE FISCHI", center=True)
-        centered(c, 360, "COSA", 160, WHITE)
-        centered(c, 520, "DICONO?", 160, style.PINK)
+        c.kicker(0, 300, "THREE WHISTLES", center=True)
+        centered(c, 360, "WHAT ARE", 160, WHITE)
+        centered(c, 520, "THEY SAYING?", 160, style.PINK)
         tracce(c, 760, 1120, playing(t, [S1, S2]))
-        centered(c, 1240, "ASCOLTA DUE VOLTE", 30, MUTED, "sans", 700, 4)
+        centered(c, 1240, "LISTEN TWICE", 30, MUTED, "sans", 700, 4)
         return
     if t < VERA:
-        centered(c, 520, "NIENTE?", 190, fade(WHITE, k(DOMANDA)))
-        centered(c, 720, "ORA LA FRASE VERA.", 100, fade(style.PINK, k(DOMANDA + 0.6)))
+        centered(c, 520, "NOTHING?", 190, fade(WHITE, k(DOMANDA)))
+        centered(c, 720, "NOW THE REAL SENTENCE.", 100, fade(style.PINK, k(DOMANDA + 0.6)))
         return
     if t < S3:
-        c.kicker(0, 300, "LA FRASE ORIGINALE", center=True)
+        c.kicker(0, 300, "THE ORIGINAL SENTENCE (ITALIAN)", center=True)
         centered(c, 420, "IL BASSO SUONAVA", 110, fade(WHITE, k(VERA)))
         centered(c, 540, "TROPPO FORTE", 110, fade(WHITE, k(VERA + 0.3)))
         centered(c, 660, "NEL RITORNELLO", 110, fade(style.PINK, k(VERA + 0.6)))
         tracce(c, 820, 1120, playing(t, [VERA]), col=(200, 196, 210))
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "DI NUOVO I FISCHI", center=True)
-        centered(c, 360, "E ADESSO", 160, fade(WHITE, k(S3)))
-        centered(c, 520, "LA CAPISCI?", 160, fade(style.PINK, k(S3 + 0.2)))
+        c.kicker(0, 300, "THE WHISTLES AGAIN", center=True)
+        centered(c, 360, "AND NOW", 160, fade(WHITE, k(S3)))
+        centered(c, 520, "CAN YOU GET IT?", 160, fade(style.PINK, k(S3 + 0.2)))
         tracce(c, 760, 1120, playing(t, [S3]))
         return
     if t < FINE:
         c.kicker(0, 300, "SINE-WAVE SPEECH", center=True)
-        centered(c, 360, "IL CERVELLO", 150, fade(WHITE, k(SPIEGA)))
-        centered(c, 510, "CAMBIA MODALITÀ.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 720, ["Ho tolto la voce e lasciato solo tre fischi",
-                           "che seguono le sue risonanze.",
-                           "Finché non sai che è una frase, senti fischi.",
-                           "Quando lo sai, il cervello la sente come voce",
-                           "e non torna più indietro.",
+        centered(c, 360, "YOUR BRAIN", 150, fade(WHITE, k(SPIEGA)))
+        centered(c, 510, "SWITCHES MODE.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 720, ["I removed the voice and kept three whistles",
+                           "that follow its resonances.",
+                           "Until you know it's a sentence, you hear whistles.",
+                           "Once you know, your brain hears it as a voice",
+                           "and never goes back.",
                            "",
-                           "· Remez, Rubin, Pisoni e Carrell · 1981"], SPIEGA + 0.5, k)
+                           "· Remez, Rubin, Pisoni and Carrell · 1981"], SPIEGA + 0.5, k)
         return
-    centered(c, 420, "PROVA A NON", 160, fade(WHITE, k(FINE)))
-    centered(c, 580, "CAPIRLA.", 160, fade(WHITE, k(FINE + 0.2)))
-    centered(c, 760, "MANDALO A CHI NON L'HA ANCORA SENTITA", 36, fade(style.PINK, k(FINE + 0.6)), "sans", 700, 2)
+    centered(c, 420, "TRY NOT TO", 160, fade(WHITE, k(FINE)))
+    centered(c, 580, "GET IT.", 160, fade(WHITE, k(FINE + 0.2)))
+    centered(c, 760, "SEND IT TO SOMEONE WHO HASN'T HEARD IT", 36, fade(style.PINK, k(FINE + 0.6)), "sans", 700, 2)
     tracce(c, 900, 1150, playing(t, [FINE + 0.4]), k=k(FINE + 0.4, 0.4))
 
 

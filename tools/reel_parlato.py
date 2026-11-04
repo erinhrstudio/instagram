@@ -67,34 +67,34 @@ def frame(c, t, events):
     if t < loop_end + 0.3:
         cur = max((e for e in events if e[0] - 0.1 <= t), key=lambda e: e[0], default=events[0])
         n = cur[2]
-        c.kicker(0, 300, "ESPERIMENTO · ALZA IL VOLUME", center=True)
+        c.kicker(0, 300, "EXPERIMENT · TURN IT UP", center=True)
         if n == 0:
-            centered(c, 380, "ASCOLTA", 150, WHITE)
-            centered(c, 530, "QUESTA FRASE", 150, style.PINK)
+            centered(c, 380, "LISTEN TO", 150, WHITE)
+            centered(c, 530, "THIS SENTENCE", 150, style.PINK)
         else:
-            centered(c, 380, "ORA SOLO", 150, WHITE)
-            centered(c, 530, "LEI, IN LOOP", 150, style.PINK)
+            centered(c, 380, "NOW JUST", 150, WHITE)
+            centered(c, 530, "THIS, ON LOOP", 150, style.PINK)
         centered(c, 760, f"«{FRASE}»", 46, TEXT, "serif")
         if n > 0:
             centered(c, 860, f"{n}", 300, fade(WHITE, k(cur[0] - 0.1, 0.1)))
-            centered(c, 1180, "CANTA GIÀ?" if n >= 5 else "RIPETIZIONE", 30, MUTED, "sans", 700, 4)
+            centered(c, 1180, "SINGING YET?" if n >= 5 else "REPETITION", 30, MUTED, "sans", 700, 4)
         return
     t0 = loop_end + 0.3
     if t < t0 + 3.2:
-        centered(c, 520, "LA STAI", 180, fade(WHITE, k(t0)))
-        centered(c, 700, "CANTANDO?", 180, fade(style.PINK, k(t0 + 0.3)))
+        centered(c, 520, "ARE YOU", 180, fade(WHITE, k(t0)))
+        centered(c, 700, "SINGING IT?", 180, fade(style.PINK, k(t0 + 0.3)))
         return
     t1 = t0 + 3.2
     if t < END - 3.0:
         c.kicker(0, 330, "SPEECH-TO-SONG", center=True)
-        centered(c, 400, "NON HO CAMBIATO", 130, fade(WHITE, k(t1)))
-        centered(c, 535, "NIENTE.", 130, fade(style.PINK, k(t1 + 0.2)))
-        lines = ["Ripetendola, il cervello smette di",
-                 "ascoltare il significato e segue",
-                 "le altezze della voce: la melodia",
-                 "che c'era già.",
+        centered(c, 400, "I DIDN'T CHANGE", 130, fade(WHITE, k(t1)))
+        centered(c, 535, "A THING.", 130, fade(style.PINK, k(t1 + 0.2)))
+        lines = ["On repeat, your brain stops listening",
+                 "to the meaning and follows",
+                 "the pitch of the voice: the melody",
+                 "that was already there.",
                  "",
-                 "Illusione scoperta da Diana Deutsch, 1995"]
+                 "Illusion discovered by Diana Deutsch, 1995"]
         y = 760
         for i, l in enumerate(lines):
             last = i == len(lines) - 1
@@ -103,15 +103,15 @@ def frame(c, t, events):
             y += 64
         return
     t2 = END - 3.0
-    centered(c, 560, "RIASCOLTALO", 160, fade(WHITE, k(t2)))
-    centered(c, 720, "DALL'INIZIO", 160, fade(style.PINK, k(t2 + 0.2)))
-    centered(c, 960, "LA PRIMA VOLTA ADESSO CANTA", 32, fade(style.PINK_SOFT, k(t2 + 0.6)), "sans", 700, 3)
+    centered(c, 560, "PLAY IT AGAIN", 160, fade(WHITE, k(t2)))
+    centered(c, 720, "FROM THE START", 160, fade(style.PINK, k(t2 + 0.2)))
+    centered(c, 960, "NOW EVEN THE FIRST TIME SINGS", 32, fade(style.PINK_SOFT, k(t2 + 0.6)), "sans", 700, 3)
 
 
 def render(out):
     style.set_accent("azzurro")
     base = Canvas(W, H, seed=44, bg="pieno")
-    base.header("ERIN · HOME RECORDING STUDIO", "PSICOACUSTICA")
+    base.header("ERIN · HOME RECORDING STUDIO", "PSYCHOACOUSTICS")
     base_img = base.img.copy()
     with tempfile.TemporaryDirectory() as td:
         td = Path(td)

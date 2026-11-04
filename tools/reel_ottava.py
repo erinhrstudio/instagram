@@ -50,7 +50,7 @@ def head(c, cy, show=None, t=0.0, k=1.0):
     c.ellipse((W / 2 - r, cy - r, W / 2 + r, cy + r), outline=fade(LINE, k), width=3)
     for side, x in [(-1, W / 2 - r - 22), (1, W / 2 + r + 22)]:
         c.ellipse((x - 22, cy - 50, x + 22, cy + 50), outline=fade((120, 116, 128), k), width=3)
-        lab = "SINISTRA" if side < 0 else "DESTRA"
+        lab = "LEFT" if side < 0 else "RIGHT"
         c.text((W / 2 + side * 330, cy + 205), lab, font("sans", 26, 700), fill=fade(MUTED, k),
                anchor="mm", tracking=4)
     if show is None:
@@ -64,45 +64,45 @@ def head(c, cy, show=None, t=0.0, k=1.0):
         y = cy - 70 if hi else cy + 70
         col = style.PINK if hi else (150, 146, 160)
         c.ellipse((x - 34, y - 34, x + 34, y + 34), fill=fade(col, k))
-        c.text((x, y + (-62 if hi else 62)), "ACUTA" if hi else "GRAVE", font("sans", 24, 700),
+        c.text((x, y + (-62 if hi else 62)), "HIGH" if hi else "LOW", font("sans", 24, 700),
                fill=fade(TEXT, k), anchor="mm", tracking=3)
 
 
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < VOTA:
-        c.kicker(0, 300, "SOLO IN CUFFIA", center=True)
-        centered(c, 360, "DOVE SENTI", 150, WHITE)
-        centered(c, 510, "LA NOTA ACUTA?", 150, style.PINK)
+        c.kicker(0, 300, "HEADPHONES ONLY", center=True)
+        centered(c, 360, "WHERE DO YOU HEAR", 150, WHITE)
+        centered(c, 510, "THE HIGH NOTE?", 150, style.PINK)
         head(c, 900, None, t)
-        centered(c, 1232, "SINISTRA O DESTRA?", 30, MUTED, "sans", 700, 4)
+        centered(c, 1232, "LEFT OR RIGHT?", 30, MUTED, "sans", 700, 4)
         return
     if t < RIVELA:
-        centered(c, 520, "SCRIVILO:", 180, fade(WHITE, k(VOTA)))
-        centered(c, 700, "SINISTRA", 150, fade(style.PINK, k(VOTA + 0.3)))
-        centered(c, 850, "O DESTRA?", 150, fade(style.PINK, k(VOTA + 0.3)))
+        centered(c, 520, "TELL ME:", 180, fade(WHITE, k(VOTA)))
+        centered(c, 700, "LEFT", 150, fade(style.PINK, k(VOTA + 0.3)))
+        centered(c, 850, "OR RIGHT?", 150, fade(style.PINK, k(VOTA + 0.3)))
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "COSA SUONA DAVVERO", center=True)
-        centered(c, 360, "L'ACUTA SALTA", 140, fade(WHITE, k(RIVELA)))
-        centered(c, 500, "DA UN LATO ALL'ALTRO.", 110, fade(style.PINK, k(RIVELA + 0.2)))
+        c.kicker(0, 300, "WHAT'S REALLY PLAYING", center=True)
+        centered(c, 360, "THE HIGH NOTE JUMPS", 140, fade(WHITE, k(RIVELA)))
+        centered(c, 500, "FROM SIDE TO SIDE.", 110, fade(style.PINK, k(RIVELA + 0.2)))
         head(c, 900, t - RIVELA, k=k(RIVELA + 0.3))
-        centered(c, 1232, "OGNI QUARTO DI SECONDO", 30, fade(MUTED, k(RIVELA + 0.6)), "sans", 700, 4)
+        centered(c, 1232, "EVERY QUARTER OF A SECOND", 30, fade(MUTED, k(RIVELA + 0.6)), "sans", 700, 4)
         return
     if t < FINE:
-        c.kicker(0, 300, "ILLUSIONE DELL'OTTAVA", center=True)
-        centered(c, 360, "IL CERVELLO", 140, fade(WHITE, k(SPIEGA)))
-        centered(c, 500, "SI INVENTA UNA NOTA.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 720, ["Ogni orecchio riceve acuta e grave a turno.",
-                           "Il cervello prende l'altezza da un orecchio",
-                           "e la posizione dall'altro: senti un suono",
-                           "che, così, non esiste.",
+        c.kicker(0, 300, "OCTAVE ILLUSION", center=True)
+        centered(c, 360, "YOUR BRAIN", 140, fade(WHITE, k(SPIEGA)))
+        centered(c, 500, "MAKES UP A NOTE.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 720, ["Each ear gets the high and low note in turn.",
+                           "Your brain takes the pitch from one ear",
+                           "and the position from the other: you hear",
+                           "a sound that doesn't exist.",
                            "",
                            "· Diana Deutsch · 1974"], SPIEGA + 0.5, k)
         return
-    centered(c, 400, "GIRA LE CUFFIE", 150, fade(WHITE, k(FINE)))
-    centered(c, 550, "AL CONTRARIO.", 150, fade(WHITE, k(FINE + 0.2)))
-    centered(c, 720, "L'ACUTA RESTA DOV'ERA?", 100, fade(style.PINK, k(FINE + 0.4)))
+    centered(c, 400, "FLIP YOUR", 150, fade(WHITE, k(FINE)))
+    centered(c, 550, "HEADPHONES.", 150, fade(WHITE, k(FINE + 0.2)))
+    centered(c, 720, "DOES THE HIGH NOTE STAY PUT?", 100, fade(style.PINK, k(FINE + 0.4)))
     head(c, 990, None, t, k=k(FINE + 0.8, 0.5))
 
 

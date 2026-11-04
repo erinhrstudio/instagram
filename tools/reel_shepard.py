@@ -125,7 +125,7 @@ def spectrum(c, offset, y0, y1, k=1.0, x0=W / 2 - 300, x1=W / 2 + 300):
     """Le componenti come barre orizzontali su un asse in ottave: la luminosità è l'ampiezza."""
     c.line([(x0 - 30, y1), (x0 - 30, y0)], fill=LINE, width=2)
     c.text((x0 - 50, y0 - 10), "HIGH", font("sans", 22, 700), fill=MUTED, anchor="rm", tracking=3)
-    c.text((x0 - 50, y1 + 10), "BASSI", font("sans", 22, 700), fill=MUTED, anchor="rm", tracking=3)
+    c.text((x0 - 50, y1 + 10), "LOW", font("sans", 22, 700), fill=MUTED, anchor="rm", tracking=3)
     for j in range(NOCT):
         o = (j + offset) % NOCT
         a = float(amp(o)) * k
@@ -144,7 +144,7 @@ def spectrogram(c, tnow, y0, y1, k=1.0, window=10.0, x0=150, x1=W - 150, span=2.
     """Spettrogramma che scorre: ogni ottava è una diagonale che sale, nasce in basso e svanisce in alto."""
     c.line([(x0, y1 + 14), (x1, y1 + 14)], fill=LINE, width=2)
     c.text((x0, y0 - 34), "HIGH", font("sans", 22, 700), fill=MUTED, anchor="la", tracking=3)
-    c.text((x0, y1 + 30), "BASSI", font("sans", 22, 700), fill=MUTED, anchor="la", tracking=3)
+    c.text((x0, y1 + 30), "LOW", font("sans", 22, 700), fill=MUTED, anchor="la", tracking=3)
     n = 60
     ts = tnow - window + window * np.arange(n + 1) / n
     xs = x1 - (tnow - ts) / window * (x1 - x0)
@@ -206,42 +206,42 @@ def scala(out):
     def draw(c, t):
         k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
         if t < RISE + 0.4:
-            c.kicker(0, 300, "ESPERIMENTO · ASCOLTA FINO IN FONDO", center=True)
-            centered(c, 360, "QUESTO SUONO", 140, WHITE)
-            centered(c, 500, "SALE PER SEMPRE", 140, style.PINK)
+            c.kicker(0, 300, "EXPERIMENT · LISTEN TILL THE END", center=True)
+            centered(c, 360, "THIS SOUND", 140, WHITE)
+            centered(c, 500, "RISES FOREVER", 140, style.PINK)
             spectrogram(c, min(t, RISE), 740, 1150)
-            msg = ("SALE DA 1 SECONDO" if int(t) == 1 else "SALE DA %d SECONDI" % int(t)) if t >= 1 else "SALE…"
+            msg = ("RISING FOR 1 SECOND" if int(t) == 1 else "RISING FOR %d SECONDS" % int(t)) if t >= 1 else "RISING…"
             if t >= 8:
-                msg = "ORMAI DOVREBBE ESSERE ALTISSIMO"
+                msg = "BY NOW IT SHOULD BE SKY HIGH"
             centered(c, 1222, msg, 30, MUTED, "sans", 700, 4)
             return
         if t < SPIEGA:
-            c.kicker(0, 300, "LA PROVA", center=True)
-            centered(c, 360, "ASCOLTA L'INIZIO…", 120, fade(WHITE, k(RISE + 0.4)))
-            centered(c, 490, "…E LA FINE.", 120, fade(style.PINK, k(E_START - 0.3)))
+            c.kicker(0, 300, "THE PROOF", center=True)
+            centered(c, 360, "HEAR THE START…", 120, fade(WHITE, k(RISE + 0.4)))
+            centered(c, 490, "…AND THE END.", 120, fade(style.PINK, k(E_START - 0.3)))
             on_s = S_START <= t < S_END
             on_e = E_START <= t < E_END
-            for x, lab, on, kk in [(W / 2 - 200, "INIZIO", on_s, k(S_START - 0.3)),
-                                   (W / 2 + 200, "FINE", on_e, k(E_START - 0.3))]:
+            for x, lab, on, kk in [(W / 2 - 200, "START", on_s, k(S_START - 0.3)),
+                                   (W / 2 + 200, "END", on_e, k(E_START - 0.3))]:
                 spectrum(c, 0, 720, 1020, k=0.35 + 0.65 * on, x0=x - 120, x1=x + 120) if kk > 0 else None
                 c.text((x, 1060), lab, font("sans", 30, 700), fill=fade(WHITE if on else MUTED, kk),
                        anchor="ma", tracking=4)
             if t >= E_END:
-                centered(c, 1150, "SONO IDENTICI.", 90, fade(style.PINK, k(E_END)))
+                centered(c, 1150, "THEY'RE IDENTICAL.", 90, fade(style.PINK, k(E_END)))
             return
         if t < FINE:
-            c.kicker(0, 300, "SCALA DI SHEPARD", center=True)
-            centered(c, 360, "NON SALE.", 140, fade(WHITE, k(SPIEGA)))
-            centered(c, 500, "GIRA IN TONDO.", 140, fade(style.PINK, k(SPIEGA + 0.2)))
-            paragraph(c, 720, ["Ogni nota è fatta di più ottave insieme.",
-                               "In alto svaniscono, in basso rientrano",
-                               "piano: il cervello sente solo la salita.",
+            c.kicker(0, 300, "SHEPARD TONE", center=True)
+            centered(c, 360, "IT DOESN'T RISE.", 140, fade(WHITE, k(SPIEGA)))
+            centered(c, 500, "IT GOES IN CIRCLES.", 140, fade(style.PINK, k(SPIEGA + 0.2)))
+            paragraph(c, 720, ["Every note is several octaves at once.",
+                               "At the top they fade, at the bottom they",
+                               "sneak back in: your brain only hears the climb.",
                                "",
                                "· Roger Shepard 1964 · Jean-Claude Risset"], SPIEGA + 0.5, k)
             return
-        centered(c, 420, "RIASCOLTALO", 150, fade(WHITE, k(FINE)))
-        centered(c, 570, "E TROVA IL PUNTO", 150, fade(WHITE, k(FINE + 0.2)))
-        centered(c, 720, "IN CUI RICOMINCIA.", 150, fade(style.PINK, k(FINE + 0.4)))
+        centered(c, 420, "PLAY IT AGAIN", 150, fade(WHITE, k(FINE)))
+        centered(c, 570, "AND FIND WHERE", 150, fade(WHITE, k(FINE + 0.2)))
+        centered(c, 720, "IT STARTS OVER.", 150, fade(style.PINK, k(FINE + 0.4)))
         spectrogram(c, t - FINE, 960, 1190, k=k(FINE + 0.6, 0.8), window=4.0)
 
     write_mp4(out, a, END, draw, seed=51)
@@ -249,7 +249,7 @@ def scala(out):
 
 # --------------------------------------------------------------------------- paradosso del tritono
 
-NOTE = ["DO", "DO#", "RE", "RE#", "MI", "FA", "FA#", "SOL", "SOL#", "LA", "LA#", "SI"]
+NOTE = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 PAIRS = [(0, 6), (9, 3)]           # DO→FA#, LA→RE#: entrambe mezza ottava esatta
 TONE, GAPT = 0.55, 0.12
 
@@ -308,39 +308,39 @@ def tritono(out):
         if t < VOTA:
             cur = playing(t)
             i = 0 if t < 4.3 else 1
-            c.kicker(0, 300, "TEST · NON C'È UNA RISPOSTA GIUSTA", center=True)
-            centered(c, 360, "SALE", 150, WHITE)
-            centered(c, 510, "O SCENDE?", 150, style.PINK)
+            c.kicker(0, 300, "TEST · THERE'S NO RIGHT ANSWER", center=True)
+            centered(c, 360, "UP", 150, WHITE)
+            centered(c, 510, "OR DOWN?", 150, style.PINK)
             lit = {cur[2]} if cur else set()
             wheel(c, W / 2, 930, 180, lit)
-            centered(c, 1222, f"COPPIA {i + 1} DI 2", 30, MUTED, "sans", 700, 4)
+            centered(c, 1222, f"PAIR {i + 1} OF 2", 30, MUTED, "sans", 700, 4)
             return
         if t < RIVELA:
-            centered(c, 470, "SCRIVILO", 200, fade(WHITE, k(VOTA)))
-            centered(c, 690, "SU O GIÙ?", 200, fade(style.PINK, k(VOTA + 0.4)))
-            centered(c, 950, "PRIMA COPPIA, SECONDA COPPIA", 32, fade(TEXT, k(VOTA + 0.9)), "sans", 600, 3)
+            centered(c, 470, "TELL ME", 200, fade(WHITE, k(VOTA)))
+            centered(c, 690, "UP OR DOWN?", 200, fade(style.PINK, k(VOTA + 0.4)))
+            centered(c, 950, "FIRST PAIR, SECOND PAIR", 32, fade(TEXT, k(VOTA + 0.9)), "sans", 600, 3)
             return
         if t < SPIEGA:
-            c.kicker(0, 300, "IL TRUCCO", center=True)
-            centered(c, 360, "È ESATTAMENTE", 120, fade(WHITE, k(RIVELA)))
-            centered(c, 480, "MEZZA OTTAVA.", 120, fade(style.PINK, k(RIVELA + 0.2)))
+            c.kicker(0, 300, "THE TRICK", center=True)
+            centered(c, 360, "IT'S EXACTLY", 120, fade(WHITE, k(RIVELA)))
+            centered(c, 480, "HALF AN OCTAVE.", 120, fade(style.PINK, k(RIVELA + 0.2)))
             wheel(c, W / 2, 870, 170, {0, 6} if t < RIVELA + 2.2 else {9, 3})
-            centered(c, 1175, "NÉ SOPRA NÉ SOTTO: DI FRONTE", 30, fade(TEXT, k(RIVELA + 0.6)), "sans", 700, 3)
+            centered(c, 1175, "NOT ABOVE, NOT BELOW: OPPOSITE", 30, fade(TEXT, k(RIVELA + 0.6)), "sans", 700, 3)
             return
         if t < FINE:
-            c.kicker(0, 300, "PARADOSSO DEL TRITONO", center=True)
-            centered(c, 360, "IL TUO CERVELLO", 130, fade(WHITE, k(SPIEGA)))
-            centered(c, 490, "HA SCELTO PER TE.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
-            paragraph(c, 720, ["Queste note non hanno un'ottava precisa:",
-                               "decide il cervello. Persone diverse",
-                               "sentono direzioni opposte, e conta",
-                               "anche la lingua con cui sei cresciuto.",
+            c.kicker(0, 300, "TRITONE PARADOX", center=True)
+            centered(c, 360, "YOUR BRAIN", 130, fade(WHITE, k(SPIEGA)))
+            centered(c, 490, "CHOSE FOR YOU.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
+            paragraph(c, 720, ["These notes have no exact octave:",
+                               "your brain decides. Different people",
+                               "hear opposite directions, and even the",
+                               "language you grew up with matters.",
                                "",
-                               "· Diana Deutsch · 1986 e 1991"], SPIEGA + 0.5, k)
+                               "· Diana Deutsch · 1986 and 1991"], SPIEGA + 0.5, k)
             return
-        centered(c, 420, "MANDALO", 170, fade(WHITE, k(FINE)))
-        centered(c, 590, "A UN AMICO", 170, fade(WHITE, k(FINE + 0.2)))
-        centered(c, 760, "E CHIEDIGLI COSA SENTE.", 90, fade(style.PINK, k(FINE + 0.4)))
+        centered(c, 420, "SEND IT", 170, fade(WHITE, k(FINE)))
+        centered(c, 590, "TO A FRIEND", 170, fade(WHITE, k(FINE + 0.2)))
+        centered(c, 760, "AND ASK WHAT THEY HEAR.", 90, fade(style.PINK, k(FINE + 0.4)))
         cur = playing(t, [(FINE + 1.2, 0)])
         wheel(c, W / 2, 1065, 100, {cur[2]} if cur else set())
 

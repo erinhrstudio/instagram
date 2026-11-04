@@ -44,7 +44,7 @@ def head(c, cy, left, right, t, k=1.0):
         c.ellipse((x - 22, cy - 50, x + 22, cy + 50), outline=fade(col, k), width=4)
         c.text((W / 2 + side * 330, cy), f"{f:.0f} Hz" if on else "—", font("display", 64),
                fill=fade(TEXT if on else MUTED, k), anchor="mm")
-        c.text((W / 2 + side * 330, cy + 70), "SINISTRA" if side < 0 else "DESTRA", font("sans", 24, 700),
+        c.text((W / 2 + side * 330, cy + 70), "LEFT" if side < 0 else "RIGHT", font("sans", 24, 700),
                fill=fade(MUTED, k), anchor="mm", tracking=4)
     if left and right:
         p = 0.5 + 0.5 * np.cos(2 * np.pi * (FR - FL) * t)
@@ -55,40 +55,40 @@ def head(c, cy, left, right, t, k=1.0):
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < SOLO_S:
-        c.kicker(0, 300, "SOLO IN CUFFIA", center=True)
-        centered(c, 360, "SENTI", 160, WHITE)
-        centered(c, 520, "IL BATTITO?", 160, style.PINK)
+        c.kicker(0, 300, "HEADPHONES ONLY", center=True)
+        centered(c, 360, "DO YOU HEAR", 160, WHITE)
+        centered(c, 520, "THE BEAT?", 160, style.PINK)
         head(c, 900, True, True, t)
-        centered(c, 1240, "DUE NOTE FISSE, NIENTE RITMO", 30, MUTED, "sans", 700, 4)
+        centered(c, 1240, "TWO STEADY NOTES, NO RHYTHM", 30, MUTED, "sans", 700, 4)
         return
     if t < ANCORA:
         sx = t < SOLO_D
-        c.kicker(0, 300, "ORA SOLO UN ORECCHIO", center=True)
-        centered(c, 360, "SINISTRA:" if sx else "DESTRA:", 150, fade(WHITE, k(SOLO_S if sx else SOLO_D)))
-        centered(c, 510, "NESSUN BATTITO.", 140, fade(style.PINK, k((SOLO_S if sx else SOLO_D) + 0.2)))
+        c.kicker(0, 300, "NOW JUST ONE EAR", center=True)
+        centered(c, 360, "LEFT:" if sx else "RIGHT:", 150, fade(WHITE, k(SOLO_S if sx else SOLO_D)))
+        centered(c, 510, "NO BEAT.", 140, fade(style.PINK, k((SOLO_S if sx else SOLO_D) + 0.2)))
         head(c, 900, sx, not sx, t)
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "TUTTI E DUE", center=True)
-        centered(c, 360, "ECCOLO.", 160, fade(WHITE, k(ANCORA)))
-        centered(c, 520, "4 VOLTE AL SECONDO.", 110, fade(style.PINK, k(ANCORA + 0.2)))
+        c.kicker(0, 300, "BOTH EARS", center=True)
+        centered(c, 360, "THERE IT IS.", 160, fade(WHITE, k(ANCORA)))
+        centered(c, 520, "4 TIMES PER SECOND.", 110, fade(style.PINK, k(ANCORA + 0.2)))
         head(c, 900, True, True, t)
         return
     if t < FINE:
-        c.kicker(0, 300, "BATTIMENTI BINAURALI", center=True)
-        centered(c, 360, "IL BATTITO", 150, fade(WHITE, k(SPIEGA)))
-        centered(c, 510, "NON È NELL'AUDIO.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 710, ["Le due note differiscono di 4 Hz.",
-                           "Il cervello confronta i due orecchi",
-                           "e quella differenza la senti come un battito.",
-                           "Nessuna prova che aiuti a dormire o studiare:",
-                           "è solo un'illusione, e bellissima.",
+        c.kicker(0, 300, "BINAURAL BEATS", center=True)
+        centered(c, 360, "THE BEAT", 150, fade(WHITE, k(SPIEGA)))
+        centered(c, 510, "ISN'T IN THE AUDIO.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 710, ["The two notes are 4 Hz apart.",
+                           "Your brain compares the two ears",
+                           "and you hear that difference as a beat.",
+                           "No proof it helps you sleep or study:",
+                           "it's just an illusion, and a beautiful one.",
                            "",
                            "· Heinrich Wilhelm Dove · 1839"], SPIEGA + 0.5, k)
         return
-    centered(c, 400, "TOGLI UNA CUFFIA.", 140, fade(WHITE, k(FINE)))
-    centered(c, 560, "SPARISCE.", 150, fade(WHITE, k(FINE + 0.2)))
-    centered(c, 720, "SPARISCE ANCHE A TE? SCRIVILO", 64, fade(style.PINK, k(FINE + 0.4)))
+    centered(c, 400, "TAKE ONE SIDE OFF.", 140, fade(WHITE, k(FINE)))
+    centered(c, 560, "IT'S GONE.", 150, fade(WHITE, k(FINE + 0.2)))
+    centered(c, 720, "GONE FOR YOU TOO? TELL ME", 64, fade(style.PINK, k(FINE + 0.4)))
     head(c, 1020, True, True, t, k=k(FINE + 0.6, 0.5))
 
 

@@ -84,30 +84,30 @@ def pulse(c, cy, t, k=1.0):
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < SPIEGA:
-        c.kicker(0, 300, "ASCOLTA FINO ALLA FINE", center=True)
-        centered(c, 360, "CHE PAROLA", 160, WHITE)
-        centered(c, 520, "SENTI?", 160, style.PINK)
+        c.kicker(0, 300, "LISTEN TILL THE END", center=True)
+        centered(c, 360, "WHAT WORD", 160, WHITE)
+        centered(c, 520, "DO YOU HEAR?", 160, style.PINK)
         pulse(c, 900, t)
         if t > 7.5:
-            centered(c, 1120, "È ANCORA LA STESSA?", 70, fade(TEXT, k(7.5, 0.5)))
-        centered(c, 1240, "TIENILA A MENTE", 30, MUTED, "sans", 700, 4)
+            centered(c, 1120, "IS IT STILL THE SAME?", 70, fade(TEXT, k(7.5, 0.5)))
+        centered(c, 1240, "REMEMBER IT", 30, MUTED, "sans", 700, 4)
         return
     if t < LOOP2:
-        c.kicker(0, 300, "LA VERITÀ", center=True)
-        centered(c, 360, "SOLO DUE SILLABE:", 120, fade(WHITE, k(SPIEGA)))
+        c.kicker(0, 300, "THE TRUTH", center=True)
+        centered(c, 360, "JUST TWO SYLLABLES:", 120, fade(WHITE, k(SPIEGA)))
         centered(c, 490, "RO · MA", 170, fade(style.PINK, k(SPIEGA + 0.2)))
         for i, p in enumerate(PAROLE):
             x = W / 2 + (i % 3 - 1) * 290
             y = 790 + (i // 3) * 110
             c.text((x, y), p, font("display", 80), fill=fade(TEXT, k(SPIEGA + 0.6 + 0.25 * i)), anchor="mm")
-        paragraph(c, 1020, ["Ripetute senza pause, il cervello",
-                            "cerca un significato e cambia parola da solo.",
+        paragraph(c, 1020, ["Repeated with no gaps, your brain looks",
+                            "for meaning and switches words on its own.",
                             "",
-                            "· Warren 1961 · Diana Deutsch, parole fantasma"], SPIEGA + 2.0, k)
+                            "· Warren 1961 · Diana Deutsch, phantom words"], SPIEGA + 2.0, k)
         return
-    centered(c, 400, "SCRIVI LA TUA", 160, fade(WHITE, k(LOOP2)))
-    centered(c, 560, "NEI COMMENTI.", 160, fade(WHITE, k(LOOP2 + 0.2)))
-    centered(c, 730, "QUANTE NE HAI SENTITE?", 100, fade(style.PINK, k(LOOP2 + 0.4)))
+    centered(c, 400, "WRITE YOURS", 160, fade(WHITE, k(LOOP2)))
+    centered(c, 560, "IN THE COMMENTS.", 160, fade(WHITE, k(LOOP2 + 0.2)))
+    centered(c, 730, "HOW MANY DID YOU HEAR?", 100, fade(style.PINK, k(LOOP2 + 0.4)))
     pulse(c, 1030, t, k=k(LOOP2 + 0.6, 0.5))
 
 

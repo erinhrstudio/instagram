@@ -47,7 +47,7 @@ def head(c, cy, x_src=None, k=1.0, t=0.0):
     for side in (-1, 1):
         x = W / 2 + side * (r + 22)
         c.ellipse((x - 22, cy - 50, x + 22, cy + 50), outline=fade((120, 116, 128), k), width=3)
-        c.text((W / 2 + side * 330, cy + 205), "SINISTRA" if side < 0 else "DESTRA",
+        c.text((W / 2 + side * 330, cy + 205), "LEFT" if side < 0 else "RIGHT",
                font("sans", 26, 700), fill=fade(MUTED, k), anchor="mm", tracking=4)
     if x_src is not None:
         p = 0.5 + 0.5 * np.sin(t * 2 * np.pi * 100 / 60)
@@ -58,7 +58,7 @@ def head(c, cy, x_src=None, k=1.0, t=0.0):
 
 def lanes(c, y, delay_ms, k):
     """Due tracce con la stessa forma d'onda; la destra spostata del ritardo (esagerato per vederlo)."""
-    for i, (lab, off) in enumerate([("SINISTRA", 0), ("DESTRA", delay_ms)]):
+    for i, (lab, off) in enumerate([("LEFT", 0), ("RIGHT", delay_ms)]):
         yy = y + i * 140
         c.text((150, yy - 75), lab, font("sans", 24, 700), fill=fade(MUTED, k), anchor="la", tracking=3)
         x0 = 150 + off * 12
@@ -72,49 +72,49 @@ def lanes(c, y, delay_ms, k):
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < SPOSTA:
-        c.kicker(0, 300, "SOLO IN CUFFIA", center=True)
-        centered(c, 360, "DA DOVE", 150, WHITE)
-        centered(c, 510, "ARRIVA?", 150, style.PINK)
+        c.kicker(0, 300, "HEADPHONES ONLY", center=True)
+        centered(c, 360, "WHERE IS IT", 150, WHITE)
+        centered(c, 510, "COMING FROM?", 150, style.PINK)
         head(c, 900, 0, t=t)
-        centered(c, 1232, "AL CENTRO, VERO?", 30, MUTED, "sans", 700, 4)
+        centered(c, 1232, "IN THE CENTER, RIGHT?", 30, MUTED, "sans", 700, 4)
         return
     if t < VOTA:
-        c.kicker(0, 300, "SOLO IN CUFFIA", center=True)
-        centered(c, 360, "E ADESSO", 150, WHITE)
-        centered(c, 510, "DA DOVE ARRIVA?", 130, style.PINK)
+        c.kicker(0, 300, "HEADPHONES ONLY", center=True)
+        centered(c, 360, "AND NOW", 150, WHITE)
+        centered(c, 510, "WHERE IS IT FROM?", 130, style.PINK)
         head(c, 900, None)
-        centered(c, 1232, "NON HO TOCCATO IL PAN", 30, MUTED, "sans", 700, 4)
+        centered(c, 1232, "I DIDN'T TOUCH THE PAN", 30, MUTED, "sans", 700, 4)
         return
     if t < RIVELA:
-        centered(c, 560, "A SINISTRA,", 170, fade(WHITE, k(VOTA)))
-        centered(c, 740, "VERO?", 170, fade(style.PINK, k(VOTA + 0.3)))
+        centered(c, 560, "ON THE LEFT,", 170, fade(WHITE, k(VOTA)))
+        centered(c, 740, "RIGHT?", 170, fade(style.PINK, k(VOTA + 0.3)))
         return
     if t < ECO:
-        c.kicker(0, 300, "IL TRUCCO", center=True)
-        centered(c, 360, "STESSO VOLUME.", 130, fade(WHITE, k(RIVELA)))
-        centered(c, 490, f"DESTRA IN RITARDO DI {HAAS_MS} ms.", 90, fade(style.PINK, k(RIVELA + 0.3)))
+        c.kicker(0, 300, "THE TRICK", center=True)
+        centered(c, 360, "SAME VOLUME.", 130, fade(WHITE, k(RIVELA)))
+        centered(c, 490, f"RIGHT DELAYED BY {HAAS_MS} ms.", 90, fade(style.PINK, k(RIVELA + 0.3)))
         lanes(c, 780, HAAS_MS, k(RIVELA + 0.6))
-        centered(c, 1232, "IL CERVELLO SEGUE CHI ARRIVA PRIMA", 30, fade(MUTED, k(RIVELA + 1.2)), "sans", 700, 3)
+        centered(c, 1232, "YOUR BRAIN FOLLOWS WHAT ARRIVES FIRST", 30, fade(MUTED, k(RIVELA + 1.2)), "sans", 700, 3)
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "E SE ESAGERO?", center=True)
+        c.kicker(0, 300, "WHAT IF I PUSH IT?", center=True)
         centered(c, 360, f"{ECO_MS} ms:", 150, fade(WHITE, k(ECO)))
-        centered(c, 510, "DIVENTA UN'ECO.", 140, fade(style.PINK, k(ECO + 1.2)))
+        centered(c, 510, "IT BECOMES AN ECHO.", 140, fade(style.PINK, k(ECO + 1.2)))
         lanes(c, 780, ECO_MS / 4, k(ECO + 0.3))
         return
     if t < FINE:
-        c.kicker(0, 300, "EFFETTO HAAS", center=True)
-        centered(c, 360, "PER ALLARGARE", 130, fade(WHITE, k(SPIEGA)))
-        centered(c, 490, "UN MIX.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 720, ["Doppia una chitarra e ritarda una copia",
-                           "di 10-20 ms: diventa larghissima.",
-                           "Ma controlla in mono: sommate, le due",
-                           "copie si cancellano a certe frequenze.",
+        c.kicker(0, 300, "HAAS EFFECT", center=True)
+        centered(c, 360, "TO WIDEN", 130, fade(WHITE, k(SPIEGA)))
+        centered(c, 490, "A MIX.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 720, ["Double a guitar and delay one copy",
+                           "by 10-20 ms: it gets super wide.",
+                           "But check in mono: summed, the two",
+                           "copies cancel out at some frequencies.",
                            "",
                            "· Helmut Haas · 1951"], SPIEGA + 0.5, k)
         return
-    centered(c, 470, "SALVALO", 190, fade(WHITE, k(FINE)))
-    centered(c, 680, "PER IL PROSSIMO MIX.", 120, fade(style.PINK, k(FINE + 0.3)))
+    centered(c, 470, "SAVE IT", 190, fade(WHITE, k(FINE)))
+    centered(c, 680, "FOR YOUR NEXT MIX.", 120, fade(style.PINK, k(FINE + 0.3)))
 
 
 if __name__ == "__main__":

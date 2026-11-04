@@ -73,41 +73,41 @@ def frame(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     cur = next((p for p in PLAY if p[0] <= t < p[0] + BAR), None)
     if t < BLIND_END:
-        c.kicker(0, 300, "BLIND TEST · IN CUFFIA", center=True)
-        centered(c, 360, "QUALE SUONA", 140, WHITE)
-        centered(c, 500, "MEGLIO?", 140, style.PINK)
+        c.kicker(0, 300, "BLIND TEST · HEADPHONES", center=True)
+        centered(c, 360, "WHICH ONE", 140, WHITE)
+        centered(c, 500, "SOUNDS BETTER?", 140, style.PINK)
         if cur:
             centered(c, 700, cur[1], 520, WHITE)
             pulse(c, t, cur[0], 1235)
-        centered(c, 1305, "PRIMO ASCOLTO" if t < 2 * BAR else "ANCORA UNA VOLTA", 28, MUTED, "sans", 600, 4)
+        centered(c, 1305, "FIRST LISTEN" if t < 2 * BAR else "ONE MORE TIME", 28, MUTED, "sans", 600, 4)
         return
     if t < REVEAL:
-        centered(c, 620, "SCEGLI.", 200, fade(WHITE, k(BLIND_END)))
-        centered(c, 860, "SCOMMETTO B.", 120, fade(style.PINK, k(BLIND_END + 0.7)))
+        centered(c, 620, "PICK ONE.", 200, fade(WHITE, k(BLIND_END)))
+        centered(c, 860, "I BET B.", 120, fade(style.PINK, k(BLIND_END + 0.7)))
         return
     if t < HONEST:
-        centered(c, 300, "SONO IDENTICI.", 150, fade(WHITE, k(REVEAL)))
-        centered(c, 460, "STESSO LOOP, STESSO MIX.", 34, fade(TEXT, k(REVEAL + 0.4)), "sans", 600, 3)
-        centered(c, 510, "B È SOLO PIÙ FORTE.", 34, fade(style.PINK_SOFT, k(REVEAL + 0.8)), "sans", 700, 3)
+        centered(c, 300, "THEY'RE IDENTICAL.", 150, fade(WHITE, k(REVEAL)))
+        centered(c, 460, "SAME LOOP, SAME MIX.", 34, fade(TEXT, k(REVEAL + 0.4)), "sans", 600, 3)
+        centered(c, 510, "B IS JUST LOUDER.", 34, fade(style.PINK_SOFT, k(REVEAL + 0.8)), "sans", 700, 3)
         meters(c, 1080, k(REVEAL + 1.0, 0.6), k(REVEAL + 1.0, 0.6))
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "ORA ALLO STESSO VOLUME", center=True)
-        centered(c, 360, "LA DIFFERENZA", 140, WHITE)
-        centered(c, 500, "C'È ANCORA?", 140, style.PINK)
+        c.kicker(0, 300, "NOW AT THE SAME VOLUME", center=True)
+        centered(c, 360, "IS THE DIFFERENCE", 140, WHITE)
+        centered(c, 500, "STILL THERE?", 140, style.PINK)
         if cur:
             centered(c, 700, cur[1], 520, WHITE)
             pulse(c, t, cur[0], 1235)
         return
     if t < FINE:
-        c.kicker(0, 330, "PERCHÉ CI CASCHI", center=True)
-        centered(c, 400, "PIÙ FORTE", 150, fade(WHITE, k(SPIEGA)))
-        centered(c, 550, "SEMBRA MEGLIO", 150, fade(style.PINK, k(SPIEGA)))
-        lines = ["A volume basso l'orecchio sente meno",
-                 "bassi e meno acuti. Alzando, tornano.",
-                 "Il cervello lo scambia per qualità.",
+        c.kicker(0, 330, "WHY YOU FALL FOR IT", center=True)
+        centered(c, 400, "LOUDER", 150, fade(WHITE, k(SPIEGA)))
+        centered(c, 550, "SEEMS BETTER", 150, fade(style.PINK, k(SPIEGA)))
+        lines = ["At low volume your ear hears less",
+                 "lows and highs. Turn it up, they return.",
+                 "Your brain mistakes that for quality.",
                  "",
-                 "Curve isofoniche · Fletcher e Munson, 1933"]
+                 "Equal-loudness curves · Fletcher and Munson, 1933"]
         y = 820
         for i, l in enumerate(lines):
             col = MUTED if i == 4 else TEXT
@@ -115,18 +115,18 @@ def frame(c, t):
                    fill=fade(col, k(SPIEGA + 0.3 + 0.2 * i)), anchor="ma", tracking=0 if i < 4 else 2)
             y += 64
         return
-    centered(c, 420, "PRIMA DI GIUDICARE", 110, fade(WHITE, k(FINE)))
-    centered(c, 540, "UN PLUGIN:", 110, fade(WHITE, k(FINE)))
-    centered(c, 680, "STESSO VOLUME.", 150, fade(style.PINK, k(FINE + 0.3)))
+    centered(c, 420, "BEFORE JUDGING", 110, fade(WHITE, k(FINE)))
+    centered(c, 540, "A PLUGIN:", 110, fade(WHITE, k(FINE)))
+    centered(c, 680, "SAME VOLUME.", 150, fade(style.PINK, k(FINE + 0.3)))
     c.line([(W / 2 - 80, 920), (W / 2 + 80, 920)], fill=style.PINK, width=2)
-    centered(c, 970, "TU QUALE AVEVI SCELTO? A O B", 32, fade(style.PINK_SOFT, k(FINE + 0.8)), "sans", 700, 3)
+    centered(c, 970, "WHICH ONE DID YOU PICK? A OR B", 32, fade(style.PINK_SOFT, k(FINE + 0.8)), "sans", 700, 3)
 
 
 def render(out):
     style.set_accent("azzurro")
     audio = build_audio()
     base = Canvas(W, H, seed=33, bg="pieno")
-    base.header("ERIN · HOME RECORDING STUDIO", "PSICOACUSTICA")
+    base.header("ERIN · HOME RECORDING STUDIO", "PSYCHOACOUSTICS")
     base_img = base.img.copy()
     with tempfile.TemporaryDirectory() as td:
         wav = Path(td) / "a.wav"

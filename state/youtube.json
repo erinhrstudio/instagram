@@ -435,5 +435,243 @@
   "publish_at": "2026-11-04T17:36:00Z",
   "video_id": "DZi8KY2aeyk",
   "sincronizzato": "2026-11-04T17:36:00Z"
+ },
+ {
+  "nome": "scala-infinita-en",
+  "file": "media/youtube/en/scala-infinita.mp4",
+  "titolo": "This sound rises for 14 seconds and ends exactly where it started 🔁 #shorts",
+  "descrizione": "It's the Shepard tone (Roger Shepard, 1964; the continuous version is by Jean-Claude Risset): every note is several octaves at once. The top ones fade out, the bottom ones sneak back in, and your brain only follows the climb.\n\nIt's the trick behind the endless stairs in Super Mario 64 and, as Christopher Nolan has explained, behind the nonstop tension in the Dunkirk score.\n\nIn your tracks: a riser built this way builds tension without ever peaking.\n\nPlay it again and find where it starts over. Then send it to someone who swears they have perfect pitch 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-05 12:00",
+  "publish_at": "2026-11-05T11:00:00Z"
+ },
+ {
+  "nome": "haas-en",
+  "file": "media/youtube/en/haas.mp4",
+  "titolo": "Headphones on: where was the loop coming from the second time? 🎧 #shorts",
+  "descrizione": "The volume was identical in both ears and I didn't touch the pan. I just made the right side arrive 8 milliseconds later: your brain fuses the two sounds and places them on the side of whichever arrives first. Past a certain point, though, it splits them and you hear an echo.\n\nIt's the Haas effect (or precedence effect), named after Helmut Haas, 1951. In a mix it's used for width: double a guitar and delay one copy by 10-20 ms. But always check in mono, because summed together the two copies cancel out at some frequencies.\n\nSave it for your next mix and send it to someone who widens everything with the pan 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-05 15:00",
+  "publish_at": "2026-11-05T14:00:00Z"
+ },
+ {
+  "nome": "tritono-en",
+  "file": "media/youtube/en/tritono.mp4",
+  "titolo": "Up or down? Write it before reading, for the first and second pair 👇 #shorts",
+  "descrizione": "Each pair is two notes exactly half an octave apart, made only of stacked octaves: they have no exact pitch, so your brain decides whether the second one is above or below. Different people hear opposite directions.\n\nIt's the tritone paradox, discovered by Diana Deutsch in 1986. In 1991 she showed that even the language you grew up with matters: Californians and people from southern England tended to hear opposite directions.\n\nSend it to a friend and ask what they hear: you probably won't agree.\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-05 18:00",
+  "publish_at": "2026-11-05T17:00:00Z"
+ },
+ {
+  "nome": "battito-binaurale-en",
+  "file": "media/youtube/en/battito-binaurale.mp4",
+  "titolo": "This beat only exists inside your head 🎧 Headphones only. #shorts",
+  "descrizione": "Left: a note at 250 Hz. Right: a note at 254 Hz. Neither one pulses: listen to them one at a time and they're steady. Together, on headphones, you hear a beat 4 times per second. Your brain creates it by comparing the two ears.\n\nThese are binaural beats (Heinrich Wilhelm Dove, 1839). No promises about sleep, study or focus: it's an illusion, that's all.\n\nTake one side off: is it gone for you too? Tell me 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-05 21:00",
+  "publish_at": "2026-11-05T20:00:00Z"
+ },
+ {
+  "nome": "mascheramento-en",
+  "file": "media/youtube/en/mascheramento.mp4",
+  "titolo": "How many beeps did you hear at the start? They were always there, same volume 🔇 #shorts",
+  "descrizione": "It's masking: when two sounds share the same frequencies, the louder one covers the other. In the video I didn't turn the beeps up, I just removed the noise around their frequency. MP3 uses the same principle to save space: it throws away what you wouldn't hear anyway.\n\nIn a mix it happens to vocals and guitars: instead of turning everything up, make room with subtractive EQ, a high-pass or sidechain.\n\nReplay the start: can you hear them now? Send it to someone who turns everything up to hear everything 🔇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-06 12:00",
+  "publish_at": "2026-11-06T11:00:00Z"
+ },
+ {
+  "nome": "ottava-en",
+  "file": "media/youtube/en/ottava.mp4",
+  "titolo": "Headphones on: which side did you hear the high note on? 🎧 #shorts",
+  "descrizione": "In reality the high note jumps from one ear to the other every quarter of a second, and so does the low one. Your brain takes the pitch from one ear and the position from the other, and makes you hear a combination that isn't in the headphones.\n\nIt's the octave illusion, discovered by Diana Deutsch in 1974. According to her research, right-handed people tend to hear the high note on the right.\n\nNow flip your headphones: did the high note stay put? Tell me which side you hear it on 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-06 15:00",
+  "publish_at": "2026-11-06T14:00:00Z"
+ },
+ {
+  "nome": "melodia-nascosta-en",
+  "file": "media/youtube/en/melodia-nascosta.mp4",
+  "titolo": "Each ear only hears noise. Your brain hears Frère Jacques 🎧 #shorts",
+  "descrizione": "Put your headphones on. Both ears get the exact same noise, but on the right I flipped a very thin slice of frequencies, note by note. On its own, each ear only hears hiss. Together, your brain compares the two sides and the difference becomes a melody that exists in neither.\n\nIt's called Huggins pitch (Cramer and Huggins, 1958). You won't hear it from a phone speaker, and if you take one side off it disappears. Not everyone catches it right away: turn it up a bit and listen again.\n\nSend it to someone who swears they have perfect pitch 👂\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-06 18:00",
+  "publish_at": "2026-11-06T17:00:00Z"
+ },
+ {
+  "nome": "piu-forte-en",
+  "file": "media/youtube/en/piu-forte.mp4",
+  "titolo": "Did you like B more? It was the exact same loop, just 3 dB louder 🎧 #shorts",
+  "descrizione": "At higher volume your ear hears more lows and highs (equal-loudness curves, Fletcher and Munson 1933), and your brain mistakes that for a better sound. That's why so many plugins and presets seem to \"improve\" a mix: often they just make it louder.\n\nBefore judging a plugin, match the volume and compare with your eyes closed.\n\nWhich one did you pick, A or B? 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-06 21:00",
+  "publish_at": "2026-11-06T20:00:00Z"
+ },
+ {
+  "nome": "basso-fantasma-en",
+  "file": "media/youtube/en/basso-fantasma.mp4",
+  "titolo": "Your phone can't play this note. Yet you hear it 📱 #shorts",
+  "descrizione": "First a pure A at 55 Hz, which almost disappears from a phone speaker. Then the same note made only of harmonics (165, 220, 275 Hz…): there's nothing at 55 Hz, but you still hear the bass. It's the missing fundamental: your brain finds the common step between the harmonics and rebuilds the note.\n\nIn a mix it works like this: a saturated copy of the bass adds harmonics and makes it come through even on small speakers.\n\nListen on your phone, then on headphones. And send it to someone who mixes only on their phone 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-07 12:00",
+  "publish_at": "2026-11-07T11:00:00Z"
+ },
+ {
+  "nome": "sa-o-fa-en",
+  "file": "media/youtube/en/sa-o-fa.mp4",
+  "titolo": "On the phone: SA or FA? Four syllables, try to guess them 📞 #shorts",
+  "descrizione": "The same syllables, first through a phone filter (300-3400 Hz), then without it. The S lives above 4 kHz: the phone cuts it, and SA and FA become almost the same. That's why on the phone we spell things out: \"S as in Sierra, F as in Foxtrot\".\n\nIt's the same trick as Yanny/Laurel: faced with a sound that's missing pieces, your brain picks the most likely guess.\n\nWhich ones were the S? Tell me in the comments 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-07 15:00",
+  "publish_at": "2026-11-07T14:00:00Z"
+ },
+ {
+  "nome": "parole-fantasma-en",
+  "file": "media/youtube/en/parole-fantasma.mp4",
+  "titolo": "What word do you hear? Write it in the comments before reading 👇 #shorts",
+  "descrizione": "The video only has two Italian syllables, RO and MA, repeated with no gaps. Yet after a few seconds your brain starts switching words on its own: Roma, amor, mora, ramo, ora, aroma… and everyone hears different ones.\n\nIt's the verbal transformation effect (Richard Warren, 1961), a cousin of Diana Deutsch's phantom words: when a sound repeats, your brain keeps looking for a meaning.\n\nHow many words did you hear?\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "it",
+  "uscita_roma": "2026-11-07 18:00",
+  "publish_at": "2026-11-07T17:00:00Z"
+ },
+ {
+  "nome": "fischi-parole-en",
+  "file": "media/youtube/en/fischi-parole.mp4",
+  "titolo": "Just whistles… until you hear the real sentence 🐦 #shorts",
+  "descrizione": "I removed the voice and kept only three whistles that follow its resonances (the formants). On first listen they sound like birds or an old modem. After hearing the original sentence (it's in Italian), most people can't stop understanding it: the brain switches to \"speech mode\" and never goes back.\n\nIt's called sine-wave speech (Remez, Rubin, Pisoni and Carrell, 1981). It doesn't work the same way for everyone.\n\nTry not to get it, and send it to someone who hasn't heard it yet 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "it",
+  "uscita_roma": "2026-11-07 21:00",
+  "publish_at": "2026-11-07T20:00:00Z"
+ },
+ {
+  "nome": "buchi-en",
+  "file": "media/youtube/en/buchi.mp4",
+  "titolo": "Did you catch every word? Listen again: one letter is missing from that sentence 👂 #shorts",
+  "descrizione": "I removed the S from \"batterista\" (Italian for drummer) and put a burst of noise in its place. Almost nobody notices it's gone: your brain knows it should be there and rebuilds it on its own. With silence instead of the noise, though, you hear the gap right away.\n\nIt's called phonemic restoration. In Richard Warren's experiment (1970), 19 out of 20 listeners didn't notice the missing sound.\n\nReplay the start: now do you notice it missing?\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "it",
+  "uscita_roma": "2026-11-08 12:00",
+  "publish_at": "2026-11-08T11:00:00Z"
+ },
+ {
+  "nome": "parlato-canto-en",
+  "file": "media/youtube/en/parlato-canto.mp4",
+  "titolo": "When did you start hearing it sing? Third time? Fifth? 🔁 #shorts",
+  "descrizione": "It's the speech-to-song illusion, discovered by psychologist Diana Deutsch in 1995: repeat a spoken phrase exactly and, after a few loops, your brain stops following the meaning and listens only to the pitch of the voice. The melody was already there.\n\nIn your tracks it works with a looped vocal sample: after a few repeats it becomes a hook.\n\nPlay it again from the start: the first phrase sings now. At which repetition did it happen for you? 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "it",
+  "uscita_roma": "2026-11-08 15:00",
+  "publish_at": "2026-11-08T14:00:00Z"
  }
 ]

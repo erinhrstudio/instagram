@@ -99,17 +99,17 @@ def big(c, y, lines, k, second=None):
 def frame(c, t, audio, events, bins):
     k = lambda t0: min(1, max(0, (t - t0) / 0.25))
     if t < ROUND1:
-        big(c, L["title"], ["AL TELEFONO", "SA O FA?"], k(0))
-        c.text((W / 2, L["small"]), "USA LE CUFFIE · QUATTRO SILLABE", font("sans", 30, 500), fill=MUTED, anchor="ma", tracking=2)
+        big(c, L["title"], ["ON THE PHONE", "SA OR FA?"], k(0))
+        c.text((W / 2, L["small"]), "USE HEADPHONES · FOUR SYLLABLES", font("sans", 30, 500), fill=MUTED, anchor="ma", tracking=2)
     elif t < END - 5.2:
         filt = t < ROUND2
         r0 = ROUND1 if filt else ROUND2
         if filt and t >= ROUND1 + 4 * STEP:
-            big(c, L["title"], ["QUALI ERANO", "LE S?"], k(ROUND1 + 4 * STEP))
-            c.text((W / 2, L["small"]), "SCRIVILO NEI COMMENTI, POI ASCOLTA SENZA FILTRO", font("sans", 28, 500),
+            big(c, L["title"], ["WHICH ONES", "WERE S?"], k(ROUND1 + 4 * STEP))
+            c.text((W / 2, L["small"]), "COMMENT YOUR GUESS, THEN HEAR IT UNFILTERED", font("sans", 28, 500),
                    fill=MUTED, anchor="ma", tracking=2)
         else:
-            c.kicker(0, L["title"], "AL TELEFONO · 300–3400 HZ" if filt else "SENZA FILTRO · TUTTE LE FREQUENZE", center=True)
+            c.kicker(0, L["title"], "ON THE PHONE · 300–3400 HZ" if filt else "UNFILTERED · ALL FREQUENCIES", center=True)
             for i, n in enumerate(ORDER):
                 x = W / 2 + (i - 1.5) * 210
                 on = r0 + i * STEP <= t
@@ -133,23 +133,23 @@ def frame(c, t, audio, events, bins):
         if filt:
             for hz in (LO, HI):
                 c.line([(lx(hz), gy - 330), (lx(hz), gy + 12)], fill=style.PINK_SOFT, width=2)
-        for hz, lab in [(300, "300"), (1000, "1K"), (3400, "3,4K"), (7000, "7K")]:
+        for hz, lab in [(300, "300"), (1000, "1K"), (3400, "3.4K"), (7000, "7K")]:
             c.text((lx(hz), gy + 22), lab, font("sans", 22, 600), fill=MUTED, anchor="ma", tracking=1)
-        c.text((W / 2, gy + 80), "LA S VIVE SOPRA I 4 KHZ", font("sans", 26, 700), fill=style.PINK_SOFT,
+        c.text((W / 2, gy + 80), "THE S LIVES ABOVE 4 KHZ", font("sans", 26, 700), fill=style.PINK_SOFT,
                anchor="ma", tracking=4)
     else:
         t0 = END - 5.2
-        c.kicker(0, L["end"], "PSICOACUSTICA", center=True)
-        big(c, L["end"] + 80, ["IL TELEFONO", "TAGLIA LA S"], k(t0))
-        c.text((W / 2, L["end"] + 440), "Per questo diciamo", font("serif", 52), fill=fade(TEXT, k(t0 + 0.4)), anchor="ma")
-        c.text((W / 2, L["end"] + 510), "“S come Savona, F come Firenze”.", font("serif", 52),
+        c.kicker(0, L["end"], "PSYCHOACOUSTICS", center=True)
+        big(c, L["end"] + 80, ["YOUR PHONE", "CUTS THE S"], k(t0))
+        c.text((W / 2, L["end"] + 440), "That's why we spell it out:", font("serif", 52), fill=fade(TEXT, k(t0 + 0.4)), anchor="ma")
+        c.text((W / 2, L["end"] + 510), "“S as in Sierra, F as in Foxtrot”.", font("serif", 52),
                fill=fade(TEXT, k(t0 + 0.4)), anchor="ma")
         c.line([(W / 2 - 80, L["end"] + 650), (W / 2 + 80, L["end"] + 650)], fill=style.PINK, width=2)
-        c.text((W / 2, L["end"] + 710), "STESSO TRUCCO DI YANNY / LAUREL", font("sans", 30, 700),
+        c.text((W / 2, L["end"] + 710), "SAME TRICK AS YANNY / LAUREL", font("sans", 30, 700),
                fill=fade(style.PINK_SOFT, k(t0 + 0.8)), anchor="ma", tracking=5)
 
 
-def render(out, height=1920, page="PSICOACUSTICA", layout=None):
+def render(out, height=1920, page="PSYCHOACOUSTICS", layout=None):
     global H, L
     H, L = height, LAYOUTS[layout or height]
     style.set_accent("azzurro")
@@ -187,7 +187,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 2 and sys.argv[2] == "tiktok":  # versione per TikTok: ... out.mp4 tiktok
         render(out, layout="tiktok")
     elif len(sys.argv) > 2 and sys.argv[2] == "4:5":
-        render(out, 1350, sys.argv[3] if len(sys.argv) > 3 else "PSICOACUSTICA")
+        render(out, 1350, sys.argv[3] if len(sys.argv) > 3 else "PSYCHOACOUSTICS")
     else:
         render(out)
     print("scritto", out)

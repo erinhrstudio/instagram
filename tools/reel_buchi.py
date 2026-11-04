@@ -109,40 +109,40 @@ def playing(t, starts):
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < DOMANDA:
-        c.kicker(0, 300, "ASCOLTA LA FRASE", center=True)
-        centered(c, 360, "C'È UN COLPO.", 140, WHITE)
-        centered(c, 500, "CAPISCI TUTTO?", 140, style.PINK)
+        c.kicker(0, 300, "LISTEN TO THE SENTENCE", center=True)
+        centered(c, 360, "THERE'S A HIT.", 140, WHITE)
+        centered(c, 500, "IS IT ALL CLEAR?", 140, style.PINK)
         onda(c, 900, CON, playing(t, [TOSSE1, TOSSE2]))
-        centered(c, 1240, "ASCOLTALA DUE VOLTE", 30, MUTED, "sans", 700, 4)
+        centered(c, 1240, "LISTEN TWICE", 30, MUTED, "sans", 700, 4)
         return
     if t < BUCO1:
-        centered(c, 520, "HAI SENTITO", 160, fade(WHITE, k(DOMANDA)))
-        centered(c, 680, "TUTTE LE PAROLE?", 120, fade(style.PINK, k(DOMANDA + 0.3)))
-        centered(c, 860, "SÌ, VERO?", 90, fade(TEXT, k(DOMANDA + 1.0)))
+        centered(c, 520, "DID YOU HEAR", 160, fade(WHITE, k(DOMANDA)))
+        centered(c, 680, "EVERY WORD?", 120, fade(style.PINK, k(DOMANDA + 0.3)))
+        centered(c, 860, "YES, RIGHT?", 90, fade(TEXT, k(DOMANDA + 1.0)))
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "ORA SENZA IL COLPO", center=True)
-        centered(c, 360, "STESSA FRASE.", 140, fade(WHITE, k(BUCO1)))
-        centered(c, 500, "SENTI IL BUCO?", 140, fade(style.PINK, k(BUCO1 + 0.2)))
+        c.kicker(0, 300, "NOW WITHOUT THE HIT", center=True)
+        centered(c, 360, "SAME SENTENCE.", 140, fade(WHITE, k(BUCO1)))
+        centered(c, 500, "HEAR THE GAP?", 140, fade(style.PINK, k(BUCO1 + 0.2)))
         onda(c, 900, BUCO, playing(t, [BUCO1, BUCO2]), gap_col=style.PINK)
         centered(c, 1150, "IL BATTERI _ TA", 70, fade(TEXT, k(BUCO2)))
-        centered(c, 1240, "MANCA UNA LETTERA", 30, fade(MUTED, k(BUCO2 + 0.5)), "sans", 700, 4)
+        centered(c, 1240, "ONE LETTER IS MISSING", 30, fade(MUTED, k(BUCO2 + 0.5)), "sans", 700, 4)
         return
     if t < FINE:
-        c.kicker(0, 300, "RIPRISTINO FONEMICO", center=True)
-        centered(c, 360, "LA S NON C'ERA", 130, fade(WHITE, k(SPIEGA)))
-        centered(c, 490, "NEANCHE PRIMA.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 700, ["Nella prima versione ho tolto la S",
-                           "di \"batterista\" e ci ho messo un colpo.",
-                           "Il cervello sa che dovrebbe esserci",
-                           "e la ricostruisce da solo.",
-                           "Senti una lettera che non c'è.",
+        c.kicker(0, 300, "PHONEMIC RESTORATION", center=True)
+        centered(c, 360, "THE S WASN'T THERE", 130, fade(WHITE, k(SPIEGA)))
+        centered(c, 490, "BEFORE EITHER.", 130, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 700, ["In the first version I removed the S",
+                           "in \"batterista\" (drummer) and put a hit there.",
+                           "Your brain knows it should be there",
+                           "and rebuilds it on its own.",
+                           "You hear a letter that isn't there.",
                            "",
                            "· Richard Warren · 1970"], SPIEGA + 0.5, k)
         return
-    centered(c, 400, "RIASCOLTA", 160, fade(WHITE, k(FINE)))
-    centered(c, 560, "CON IL COLPO.", 140, fade(WHITE, k(FINE + 0.2)))
-    centered(c, 720, "ORA LA SENTI MANCARE?", 100, fade(style.PINK, k(FINE + 0.4)))
+    centered(c, 400, "REPLAY IT", 160, fade(WHITE, k(FINE)))
+    centered(c, 560, "WITH THE HIT.", 140, fade(WHITE, k(FINE + 0.2)))
+    centered(c, 720, "NOW DO YOU NOTICE IT MISSING?", 100, fade(style.PINK, k(FINE + 0.4)))
     onda(c, 1000, CON, playing(t, [FINE + 0.6]), gap_col=style.PINK, k=k(FINE + 0.5, 0.4))
 
 
