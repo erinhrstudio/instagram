@@ -104,7 +104,8 @@
   "uscita_roma": "2026-10-29 21:00",
   "publish_at": "2026-10-29T20:00:00Z",
   "video_id": "lLO8uk2Q5Qc",
-  "sincronizzato": "2026-10-29T20:00:00Z"
+  "sincronizzato": "2026-10-29T20:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "tritono",
@@ -139,7 +140,8 @@
   "uscita_roma": "2026-10-30 21:00",
   "publish_at": "2026-10-30T20:00:00Z",
   "video_id": "H3AnfQqsntY",
-  "sincronizzato": "2026-10-30T20:00:00Z"
+  "sincronizzato": "2026-10-30T20:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "battito-binaurale",
@@ -174,7 +176,8 @@
   "uscita_roma": "2026-10-31 21:00",
   "publish_at": "2026-10-31T20:00:00Z",
   "video_id": "T-BigpwBJSM",
-  "sincronizzato": "2026-10-31T20:00:00Z"
+  "sincronizzato": "2026-10-31T20:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "ottava",
@@ -209,7 +212,8 @@
   "uscita_roma": "2026-11-01 21:00",
   "publish_at": "2026-11-01T20:00:00Z",
   "video_id": "7MhsYpmVmv4",
-  "sincronizzato": "2026-11-01T20:00:00Z"
+  "sincronizzato": "2026-11-01T20:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "melodia-nascosta",
@@ -226,7 +230,8 @@
   "uscita_roma": "2026-11-02 21:00",
   "publish_at": "2026-11-02T20:00:00Z",
   "video_id": "hYE8bpgL13g",
-  "sincronizzato": "2026-11-02T20:00:00Z"
+  "sincronizzato": "2026-11-02T20:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "galoppo",
@@ -243,7 +248,8 @@
   "uscita_roma": "2026-11-03 21:00",
   "publish_at": "2026-11-03T20:00:00Z",
   "video_id": "ac-jTrTqQm0",
-  "sincronizzato": "2026-11-03T20:00:00Z"
+  "sincronizzato": "2026-11-03T20:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "beat-infinito",
@@ -278,7 +284,7 @@
   "uscita_roma": "2027-12-31 21:00 (rinviato: versione inglese)",
   "publish_at": "2027-12-31T20:00:00Z",
   "video_id": "vB1djJyqAfk",
-  "sincronizzato": "2026-11-04T20:00:00Z",
+  "sincronizzato": "2027-12-31T20:00:00Z",
   "rinviato_da": "2026-11-04T20:00:00Z"
  },
  {
@@ -296,7 +302,7 @@
   "uscita_roma": "2027-12-31 21:00 (rinviato: versione inglese)",
   "publish_at": "2027-12-31T20:00:00Z",
   "video_id": "21RDj06Sxp4",
-  "sincronizzato": "2026-11-05T20:00:00Z",
+  "sincronizzato": "2027-12-31T20:00:00Z",
   "rinviato_da": "2026-11-05T20:00:00Z"
  },
  {
@@ -314,7 +320,7 @@
   "uscita_roma": "2027-12-31 21:00 (rinviato: versione inglese)",
   "publish_at": "2027-12-31T20:00:00Z",
   "video_id": "6AYG5NJnya4",
-  "sincronizzato": "2026-11-06T20:00:00Z",
+  "sincronizzato": "2027-12-31T20:00:00Z",
   "rinviato_da": "2026-11-06T20:00:00Z"
  },
  {
@@ -332,7 +338,7 @@
   "uscita_roma": "2027-12-31 21:00 (rinviato: versione inglese)",
   "publish_at": "2027-12-31T20:00:00Z",
   "video_id": "ykeYahvEweg",
-  "sincronizzato": "2026-11-07T20:00:00Z",
+  "sincronizzato": "2027-12-31T20:00:00Z",
   "rinviato_da": "2026-11-07T20:00:00Z"
  },
  {
@@ -350,7 +356,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-04 18:28",
-  "publish_at": "2026-11-04T17:28:00Z"
+  "publish_at": "2026-11-04T17:28:00Z",
+  "video_id": "Ltjyuz9_l10",
+  "sincronizzato": "2026-11-04T17:28:00Z"
  },
  {
   "nome": "rumore-nota-en",
@@ -367,7 +375,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-04 18:30",
-  "publish_at": "2026-11-04T17:30:00Z"
+  "publish_at": "2026-11-04T17:30:00Z",
+  "video_id": "XCa8YE-jhG8",
+  "sincronizzato": "2026-11-04T17:30:00Z"
  },
  {
   "nome": "beat-infinito-en",
@@ -384,7 +394,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-04 18:32",
-  "publish_at": "2026-11-04T17:32:00Z"
+  "publish_at": "2026-11-04T17:32:00Z",
+  "video_id": "86Z8l3AXBJc",
+  "sincronizzato": "2026-11-04T17:32:00Z"
  },
  {
   "nome": "scale-zigzag-en",
@@ -401,7 +413,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-04 18:34",
-  "publish_at": "2026-11-04T17:34:00Z"
+  "publish_at": "2026-11-04T17:34:00Z",
+  "video_id": "4pSz9Ms5rBk",
+  "sincronizzato": "2026-11-04T17:34:00Z"
  },
  {
   "nome": "galoppo-en",
@@ -418,6 +432,8 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-04 18:36",
-  "publish_at": "2026-11-04T17:36:00Z"
+  "publish_at": "2026-11-04T17:36:00Z",
+  "video_id": "DZi8KY2aeyk",
+  "sincronizzato": "2026-11-04T17:36:00Z"
  }
 ]
