@@ -5,9 +5,9 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "foto.jpg",
-   "kicker": "ANATOMIA DI UNA VOCE",
+   "kicker": "ANATOMY OF A VOICE",
    "subtitle": "Geneviève Racette · Québec",
-   "footer": "VOCI DA ASCOLTARE",
+   "footer": "VOICES WORTH HEARING",
    "focus": [
     0.5,
     0.4
@@ -16,153 +16,153 @@
    "fade_from": 0.3,
    "darken": 0.3,
    "hook": [
-    "UNA COVER",
-    "SU INSTAGRAM",
-    "LE HA CAMBIATO LA VITA."
+    "ONE COVER",
+    "ON INSTAGRAM",
+    "CHANGED HER LIFE."
    ]
   },
   {
    "type": "band",
    "bg": "sale-dolce",
-   "kicker": "01 — LA VOCE",
+   "kicker": "01 — THE VOICE",
    "statement": [
     "GENEVIÈVE RACETTE:",
-    "LA VOCE LIMPIDA."
+    "THE CLEAR VOICE."
    ],
    "footer": "QUÉBEC · FOLK"
   },
   {
    "type": "band",
    "bg": "base",
-   "kicker": "02 — CHI È",
+   "kicker": "02 — WHO SHE IS",
    "statement": [
-    "DUE LINGUE,",
-    "UNA CHITARRA"
+    "TWO LANGUAGES,",
+    "ONE GUITAR"
    ],
    "footer": "",
    "body": [
-    "Cantautrice folk di Dorval,",
-    "vicino a Montréal. Canta in francese",
-    "e in inglese, spesso",
-    "nello stesso disco."
+    "A folk singer-songwriter from Dorval,",
+    "near Montréal. She sings in French",
+    "and in English, often",
+    "on the same album."
    ]
   },
   {
    "type": "band",
    "bg": "fascia",
-   "kicker": "03 — LA SVOLTA",
+   "kicker": "03 — THE TURNING POINT",
    "statement": [
-    "LA COVER CHE",
-    "L'HA FATTA NOTARE"
+    "THE COVER THAT",
+    "GOT HER NOTICED"
    ],
    "footer": "",
    "body": [
-    "Dallas Green (City and Colour) vede",
-    "una sua cover su Instagram e la invita",
-    "sul palco a Osheaga nel 2019.",
-    "Poi duettano nel suo disco Satellite."
+    "Dallas Green (City and Colour) saw",
+    "one of her covers on Instagram and invited her",
+    "on stage at Osheaga in 2019.",
+    "Then they sang a duet on his album Satellite."
    ]
   },
   {
    "type": "list",
-   "kicker": "04 — COM'È FATTA",
-   "title": "LA SUA VOCE",
+   "kicker": "04 — HOW IT WORKS",
+   "title": "HER VOICE",
    "items": [
     [
-     "Timbro",
-     "Pulito e liquido"
+     "Tone",
+     "Clean and liquid"
     ],
     [
-     "Vicinanza",
-     "Sembra cantare a un metro da te"
+     "Closeness",
+     "She seems to sing a metre away from you"
     ],
     [
-     "Lingue",
-     "Passa dal francese all'inglese"
+     "Languages",
+     "She moves from French to English"
     ],
     [
-     "Intorno",
-     "Chitarra acustica, folk, americana"
+     "Around her",
+     "Acoustic guitar, folk, americana"
     ]
    ],
    "footer": ""
   },
   {
    "type": "list",
-   "kicker": "05 — DA DOVE PARTIRE",
-   "title": "4 BRANI",
+   "kicker": "05 — WHERE TO START",
+   "title": "4 SONGS",
    "items": [
     [
      "The Reasons (I'll Be Alright) (2024)",
-     "La porta d'ingresso, dal disco Golden"
+     "The way in, from the album Golden"
     ],
     [
      "Same Old Me (2024)",
-     "Il primo singolo di Golden"
+     "The first single from Golden"
     ],
     [
      "Instagram (2024)",
-     "Un titolo, una storia"
+     "One title, one story"
     ],
     [
      "X2 (2024)",
-     "Sempre da Golden"
+     "Also from Golden"
     ]
    ],
-   "footer": "IN QUEST'ORDINE"
+   "footer": "IN THIS ORDER"
   },
   {
    "type": "band",
    "bg": "scende",
-   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "kicker": "06 — WHY LISTEN",
    "statement": [
-    "SE TI PIACCIONO",
-    "LE VOCI SENZA TRUCCO"
+    "IF YOU LIKE",
+    "VOICES WITH NO TRICKS"
    ],
    "footer": "",
    "body": [
-    "Niente effetti, niente urla:",
-    "una voce, una chitarra",
-    "e una storia per canzone.",
+    "No effects, no screaming:",
+    "one voice, one guitar",
+    "and a story in every song.",
     ""
    ]
   },
   {
    "type": "list",
-   "kicker": "07 — PER CHI REGISTRA",
-   "title": "VOCE E CHITARRA",
+   "kicker": "07 — FOR THOSE WHO RECORD",
+   "title": "VOICE AND GUITAR",
    "items": [
     [
-     "Due microfoni",
-     "Uno per la voce, uno per la chitarra"
+     "Two mics",
+     "One for the voice, one for the guitar"
     ],
     [
-     "Fase",
-     "Controlla che non si cancellino a vicenda"
+     "Phase",
+     "Check they don't cancel each other out"
     ],
     [
-     "Compressione",
-     "Poca: la dinamica è la bellezza"
+     "Compression",
+     "Light: the dynamics are the beauty"
     ],
     [
-     "Stanza",
-     "Registra in una stanza morbida, non in bagno"
+     "Room",
+     "Record in a soft room, not the bathroom"
     ]
    ],
-   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+   "footer": "GENERAL TIPS, NOT HER CHAIN"
   },
   {
    "type": "band",
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "HAI MAI",
-    "CANTATO",
-    "UNA COVER?"
+    "HAVE YOU EVER",
+    "SUNG",
+    "A COVER?"
    ],
-   "footer": "SCRIVI QUALE · POTREBBE ESSERE LA PROSSIMA",
+   "footer": "TELL ME WHICH · IT COULD BE THE NEXT ONE",
    "size": 80
   }
  ],
- "caption": "Una cover su Instagram le ha cambiato la vita: Geneviève Racette 🎙️\n\nCantautrice folk del Québec, canta in francese e in inglese. Dallas Green (City and Colour) ha visto una sua cover su Instagram e l'ha invitata sul palco a Osheaga nel 2019. Con No Water, No Flowers ha vinto il premio come artista emergente dell'anno ai Canadian Folk Music Awards.\n\nDa dove partire: The Reasons (I'll Be Alright), Same Old Me, Instagram, X2.\n\nMandalo a chi canta cover su Instagram: potrebbe essere la prossima 🎸\n\n#erinhrstudio #1eyedpet #genevieveracette #folk #quebec"
+ "caption": "One cover on Instagram changed her life: Geneviève Racette 🎙️\n\nA folk singer-songwriter from Québec, she sings in French and in English. Dallas Green (City and Colour) saw one of her covers on Instagram and invited her on stage at Osheaga in 2019. With No Water, No Flowers she won Emerging Artist of the Year at the Canadian Folk Music Awards.\n\nWhere to start: The Reasons (I'll Be Alright), Same Old Me, Instagram, X2.\n\nSend it to someone who sings covers on Instagram: they could be next 🎸\n\n#erinhrstudio #1eyedpet #genevieveracette #folk #quebec"
 }

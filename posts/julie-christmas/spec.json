@@ -5,9 +5,9 @@
    "type": "cover",
    "bg": "pieno",
    "photo": "foto.jpg",
-   "kicker": "ANATOMIA DI UNA VOCE",
+   "kicker": "ANATOMY OF A VOICE",
    "subtitle": "Julie Christmas · Made Out of Babies · Battle of Mice",
-   "footer": "VOCI DA ASCOLTARE",
+   "footer": "VOICES WORTH HEARING",
    "focus": [
     0.5,
     0.3
@@ -16,153 +16,153 @@
    "fade_from": 0.3,
    "darken": 0.3,
    "hook": [
-    "SUSSURRA COME",
-    "UNA FILASTROCCA.",
-    "POI URLA."
+    "SHE WHISPERS",
+    "LIKE A NURSERY RHYME.",
+    "THEN SHE SCREAMS."
    ]
   },
   {
    "type": "band",
    "bg": "sale-dolce",
-   "kicker": "01 — LA VOCE",
+   "kicker": "01 — THE VOICE",
    "statement": [
     "JULIE CHRISTMAS:",
-    "LA FIABA E L'INCUBO."
+    "THE FAIRY TALE AND THE NIGHTMARE."
    ],
    "footer": "BROOKLYN · NOISE ROCK"
   },
   {
    "type": "band",
    "bg": "base",
-   "kicker": "02 — CHI È",
+   "kicker": "02 — WHO SHE IS",
    "statement": [
-    "NATA A NATALE,",
-    "DI NOME E DI FATTO"
+    "BORN ON CHRISTMAS,",
+    "NAME AND ALL"
    ],
    "footer": "",
    "body": [
-    "Nasce a Brooklyn il 25 dicembre 1975.",
-    "Canta nei Made Out of Babies e nei",
-    "Battle of Mice. Nel 2010 esce",
-    "il suo primo disco solista, The Bad Wife."
+    "Born in Brooklyn on 25 December 1975.",
+    "She sang in Made Out of Babies and",
+    "Battle of Mice. In 2010 came",
+    "her first solo album, The Bad Wife."
    ]
   },
   {
    "type": "band",
    "bg": "fascia",
-   "kicker": "03 — L'ATTESA",
+   "kicker": "03 — THE WAIT",
    "statement": [
-    "14 ANNI",
-    "DI ATTESA"
+    "A 14-YEAR",
+    "WAIT"
    ],
    "footer": "",
    "body": [
-    "Il secondo disco solista, Ridiculous",
-    "and Full of Blood, arriva nel 2024.",
-    "Nel mezzo, Mariner (2016):",
-    "un disco intero con i Cult of Luna."
+    "Her second solo album, Ridiculous",
+    "and Full of Blood, arrived in 2024.",
+    "In between, Mariner (2016):",
+    "a whole album with Cult of Luna."
    ]
   },
   {
    "type": "list",
-   "kicker": "04 — COM'È FATTA",
-   "title": "LA SUA VOCE",
+   "kicker": "04 — HOW IT WORKS",
+   "title": "HER VOICE",
    "items": [
     [
-     "Sussurro",
-     "Quasi una filastrocca, all'orecchio"
+     "Whisper",
+     "Almost a nursery rhyme, in your ear"
     ],
     [
-     "Urlo",
-     "Da strega, arriva senza preavviso"
+     "Scream",
+     "A witch's scream, with no warning"
     ],
     [
-     "Il colpo",
-     "Passa dall'uno all'altro nella stessa frase"
+     "The hit",
+     "She switches within the same line"
     ],
     [
-     "Intorno",
-     "Chitarre enormi, post-metal"
+     "Around her",
+     "Huge guitars, post-metal"
     ]
    ],
    "footer": ""
   },
   {
    "type": "list",
-   "kicker": "05 — DA DOVE PARTIRE",
-   "title": "4 BRANI",
+   "kicker": "05 — WHERE TO START",
+   "title": "4 SONGS",
    "items": [
     [
      "Supernatural (2024)",
-     "La porta d'ingresso: tutta la sua voce in un brano"
+     "The way in: her whole voice in one song"
     ],
     [
      "The Ash (2024)",
-     "Dallo stesso disco, più cupa"
+     "Same album, darker"
     ],
     [
      "The Wreck of S.S. Needle (2016)",
-     "Con i Cult of Luna, dal disco Mariner"
+     "With Cult of Luna, from Mariner"
     ],
     [
      "Bow (2010)",
-     "Dal primo disco solista, The Bad Wife"
+     "From her first solo album, The Bad Wife"
     ]
    ],
-   "footer": "IN QUEST'ORDINE"
+   "footer": "IN THIS ORDER"
   },
   {
    "type": "band",
    "bg": "scende",
-   "kicker": "06 — PERCHÉ ASCOLTARLA",
+   "kicker": "06 — WHY LISTEN",
    "statement": [
-    "SE TI PIACCIONO",
-    "LE STORIE"
+    "IF YOU LIKE",
+    "STORIES"
    ],
    "footer": "",
    "body": [
-    "Ogni brano è un piccolo teatro:",
-    "personaggi, sussurri, grida.",
-    "Ascoltala come un racconto,",
-    "dall'inizio alla fine."
+    "Every song is a small theatre:",
+    "characters, whispers, screams.",
+    "Listen to it like a story,",
+    "from start to finish."
    ]
   },
   {
    "type": "list",
-   "kicker": "07 — PER CHI REGISTRA",
-   "title": "SUSSURRO E URLO",
+   "kicker": "07 — FOR THOSE WHO RECORD",
+   "title": "WHISPER AND SCREAM",
    "items": [
     [
-     "Sussurro",
-     "Vicino al microfono: la voce si scalda"
+     "Whisper",
+     "Close to the mic: the voice gets warmer"
     ],
     [
-     "Urlo",
-     "Fai un passo indietro o gira la testa"
+     "Scream",
+     "Step back or turn your head"
     ],
     [
      "Gain",
-     "Regolalo sull'urlo, non sul sussurro"
+     "Set it for the scream, not the whisper"
     ],
     [
      "Volume",
-     "Automazione a mano, invece di schiacciare tutto"
+     "Ride it by hand instead of crushing everything"
     ]
    ],
-   "footer": "CONSIGLI GENERALI, NON LA SUA CATENA"
+   "footer": "GENERAL TIPS, NOT HER CHAIN"
   },
   {
    "type": "band",
    "bg": "sale",
    "kicker": "",
    "statement": [
-    "SUSSURRO",
-    "O URLO?",
-    "COSA TI COLPISCE?"
+    "WHISPER",
+    "OR SCREAM?",
+    "WHAT HITS YOU?"
    ],
-   "footer": "SCRIVILO NEI COMMENTI · PROSSIMA VOCE: GENEVIÈVE RACETTE",
+   "footer": "TELL ME IN THE COMMENTS · NEXT VOICE: GENEVIÈVE RACETTE",
    "size": 80
   }
  ],
- "caption": "Sussurra come una filastrocca, poi urla senza preavviso: Julie Christmas 🎙️\n\nNata a Brooklyn il giorno di Natale, ha cantato nei Made Out of Babies e nei Battle of Mice. Nel 2016 ha fatto un disco intero con i Cult of Luna, Mariner, e nel 2024 è tornata da solista dopo 14 anni con Ridiculous and Full of Blood.\n\nDa dove partire: Supernatural, The Ash, The Wreck of S.S. Needle, Bow.\n\nMandalo a chi ama le voci che fanno paura 🖤\n\n#erinhrstudio #1eyedpet #juliechristmas #postmetal #cultofluna"
+ "caption": "She whispers like a nursery rhyme, then screams without warning: Julie Christmas 🎙️\n\nBorn in Brooklyn on Christmas Day, she sang in Made Out of Babies and Battle of Mice. In 2016 she made a whole album with Cult of Luna, Mariner, and in 2024 she came back solo after 14 years with Ridiculous and Full of Blood.\n\nWhere to start: Supernatural, The Ash, The Wreck of S.S. Needle, Bow.\n\nSend it to someone who loves scary voices 🖤\n\n#erinhrstudio #1eyedpet #juliechristmas #postmetal #cultofluna"
 }
