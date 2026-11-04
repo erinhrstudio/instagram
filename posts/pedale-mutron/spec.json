@@ -1,0 +1,152 @@
+{
+ "music": "Stevie Wonder — Higher Ground",
+ "accent": "verde",
+ "slides": [
+  {
+   "type": "cover",
+   "bg": "pieno",
+   "photo": "foto.jpg",
+   "kicker": "IMPOSSIBLE PEDALS · 02",
+   "subtitle": "Musitronics Mu-Tron III",
+   "footer": "PEDALS WORTH KNOWING",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": 1.0,
+   "fade_from": 0.3,
+   "darken": 0.3,
+   "hook": [
+    "THE WAH IN",
+    "HIGHER GROUND",
+    "ISN'T A WAH."
+   ],
+   "colore": {
+    "tinta": [
+     335,
+     15
+    ],
+    "sat": 0.35
+   }
+  },
+  {
+   "type": "band",
+   "bg": "sale-dolce",
+   "kicker": "01 — THE TRICK",
+   "statement": [
+    "NOBODY IS",
+    "MOVING A PEDAL."
+   ],
+   "footer": "STEVIE WONDER · HIGHER GROUND · 1973"
+  },
+  {
+   "type": "band",
+   "bg": "base",
+   "kicker": "02 — WHERE IT CAME FROM",
+   "statement": [
+    "1972:",
+    "THE FIRST ONE"
+   ],
+   "footer": "",
+   "body": [
+    "Musitronics, designed by Mike Beigel.",
+    "The first envelope-controlled filter",
+    "in a box: a synth idea,",
+    "squeezed into a pedal."
+   ]
+  },
+  {
+   "type": "band",
+   "bg": "fascia",
+   "kicker": "03 — HOW IT WORKS",
+   "statement": [
+    "YOUR TOUCH",
+    "MOVES THE FILTER"
+   ],
+   "footer": "",
+   "body": [
+    "It follows how hard you play:",
+    "the harder the note, the more it opens.",
+    "Light-sensitive parts steer the filter,",
+    "on two 9V batteries."
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "04 — WHAT'S ON IT",
+   "title": "THE CONTROLS",
+   "items": [
+    [
+     "Mode",
+     "Low-pass, band-pass or high-pass"
+    ],
+    [
+     "Peak",
+     "How sharp the resonance gets"
+    ],
+    [
+     "Gain",
+     "How hard your signal hits it"
+    ],
+    [
+     "Range · Drive",
+     "Low or high sweep, up or down"
+    ]
+   ],
+   "footer": "ON THE MODEL IN THE PHOTO"
+  },
+  {
+   "type": "list",
+   "kicker": "05 — WHO USED IT",
+   "title": "3 NAMES",
+   "items": [
+    [
+     "Stevie Wonder",
+     "The clavinet on Higher Ground"
+    ],
+    [
+     "Jerry Garcia",
+     "His lead guitar with the Grateful Dead"
+    ],
+    [
+     "Bootsy Collins",
+     "Bass with Parliament-Funkadelic"
+    ]
+   ],
+   "footer": "LISTEN FOR THE QUACK"
+  },
+  {
+   "type": "list",
+   "kicker": "06 — FOR THOSE WHO RECORD",
+   "title": "THE MU-TRON IN THE STUDIO",
+   "items": [
+    [
+     "Dynamics",
+     "Play soft and hard: that's what it reads"
+    ],
+    [
+     "Compressor",
+     "After it, not before, or it flattens the sweep"
+    ],
+    [
+     "Gain",
+     "Set it so soft notes barely open it"
+    ]
+   ],
+   "footer": "GENERAL TIPS, NOT A RULE"
+  },
+  {
+   "type": "band",
+   "bg": "sale",
+   "kicker": "",
+   "statement": [
+    "SEND IT TO",
+    "YOUR FUNK",
+    "BASS PLAYER"
+   ],
+   "footer": "NEXT THURSDAY: THE TUBE SCREAMER",
+   "size": 80
+  }
+ ],
+ "caption": "The wah in Higher Ground isn't a wah 🎹\n\nNobody is rocking a pedal: Stevie Wonder's clavinet goes through a Mu-Tron III, an envelope filter. The harder he plays, the more the filter opens. Musitronics, 1972, designed by Mike Beigel: the first envelope-controlled filter in a box.\n\nIn the slides: how it works, the controls, who used it and how to record it.\n\nSend it to your funk bass player 🎸\n\n#erinhrstudio #1eyedpet #mutron #envelopefilter #pedalboard"
+}
