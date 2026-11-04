@@ -1,11 +1,9 @@
-Il compressore distorce il tuo basso? Se è troppo veloce, sì 🔊
+Is your compressor distorting your bass? If it's too fast, yes 🔊
 
-Un'onda a 40 Hz dura 25 millisecondi. Se il release è più corto, il compressore non segue più il volume ma l'onda stessa, e la deforma: nascono armoniche che non c'erano. Nelle slide: i numeri e l'A/B da rifare in Reaper.
+A 40 Hz wave lasts 25 milliseconds. If the release is shorter than that, the compressor stops following the level and follows the wave itself, bending it: new harmonics appear that weren't there. In the slides: the numbers and an A/B you can redo in Reaper.
 
-EN · A 40 Hz cycle lasts 25 ms. Release times shorter than that make the compressor track the waveform, not the level, adding distortion.
+Sources: FabFilter Pro-C manual · Giannoulis, Massberg & Reiss, JAES 2012.
 
-Fonti: FabFilter Pro-C manual · Giannoulis, Massberg & Reiss, JAES 2012.
+Save it for your next bass mix 💾
 
-Salvalo per il prossimo mix di basso 💾
-
-#erinhrstudio #1eyedpet #mixing #compressione #audiofact
+#erinhrstudio #1eyedpet #mixing #compression #audiofact

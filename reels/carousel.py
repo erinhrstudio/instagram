@@ -91,7 +91,7 @@ def slide_cover(c, s, i, n, root):
         y += t2 * 0.92
     if s.get("subtitle"):
         centered(c, y + 16, [s["subtitle"]], "serif", 36, TEXT)
-    footer(c, s.get("footer", "HOME RECORDING · STORIA"), "SCORRI  →")
+    footer(c, s.get("footer", "HOME RECORDING · HISTORY"), "SWIPE  →")
 
 
 def hook_cover(c, s):
@@ -107,7 +107,7 @@ def hook_cover(c, s):
         y += lh
     if s.get("subtitle"):
         centered(c, y + 14, [s["subtitle"]], "serif", 36, TEXT)
-    footer(c, s.get("footer", "HOME RECORDING · STORIA"), "SCORRI  →")
+    footer(c, s.get("footer", "HOME RECORDING · HISTORY"), "SWIPE  →")
 
 
 def wave(c, seed, cy=470, amp=190):
