@@ -73,27 +73,27 @@ def gauge(c, cy, t, k=1.0):
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < SPIEGA:
-        c.kicker(0, 300, "ASCOLTA IL BEAT", center=True)
-        centered(c, 360, "ACCELERA.", 160, WHITE)
-        centered(c, 520, "PER SEMPRE.", 160, style.PINK)
+        c.kicker(0, 300, "LISTEN TO THE BEAT", center=True)
+        centered(c, 360, "IT SPEEDS UP.", 160, WHITE)
+        centered(c, 520, "FOREVER.", 160, style.PINK)
         gauge(c, 870, t)
-        centered(c, 1240, "QUANDO SI FERMA?", 30, MUTED, "sans", 700, 4)
+        centered(c, 1240, "WHEN DOES IT STOP?", 30, MUTED, "sans", 700, 4)
         return
     if t < FINE:
-        c.kicker(0, 300, "RITMO DI RISSET", center=True)
-        centered(c, 360, "NON ACCELERA.", 140, fade(WHITE, k(SPIEGA)))
-        centered(c, 500, "GIRA IN TONDO.", 140, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 710, ["Sono tanti strati dello stesso beat,",
-                           "ognuno veloce il doppio dell'altro.",
-                           "I più veloci svaniscono, i più lenti entrano",
-                           "piano: l'orecchio segue solo chi accelera.",
-                           "È il gemello della scala infinita.",
+        c.kicker(0, 300, "RISSET RHYTHM", center=True)
+        centered(c, 360, "IT DOESN'T SPEED UP.", 110, fade(WHITE, k(SPIEGA)))
+        centered(c, 500, "IT GOES IN CIRCLES.", 110, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 710, ["Many layers of the same beat,",
+                           "each one twice as fast as the next.",
+                           "The fastest fade out, the slowest fade in",
+                           "quietly: your ear only follows the speed-up.",
+                           "It's the twin of the endless scale.",
                            "",
                            "· Jean-Claude Risset"], SPIEGA + 0.5, k)
         return
     centered(c, 400, f"{bpm_finto(SPIEGA):.0f} BPM?", 170, fade(WHITE, k(FINE)))
-    centered(c, 580, "È SEMPRE LO STESSO GIRO.", 110, fade(style.PINK, k(FINE + 0.3)))
-    centered(c, 760, "MANDALO AL TUO BATTERISTA", 50, fade(TEXT, k(FINE + 0.8)), "sans", 700, 3)
+    centered(c, 580, "IT'S THE SAME LOOP.", 110, fade(style.PINK, k(FINE + 0.3)))
+    centered(c, 760, "SEND IT TO YOUR DRUMMER", 50, fade(TEXT, k(FINE + 0.8)), "sans", 700, 3)
 
 
 if __name__ == "__main__":

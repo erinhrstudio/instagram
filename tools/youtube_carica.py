@@ -56,8 +56,13 @@ def chiave(titolo):
 
 
 def carica(it, tok):
-    meta = {"snippet": {"title": it["titolo"], "description": it["descrizione"], "tags": it["tag"],
-                        "categoryId": "10", "defaultLanguage": "it", "defaultAudioLanguage": "it"},
+    lingua = it.get("lingua", "it")
+    snippet = {"title": it["titolo"], "description": it["descrizione"], "tags": it["tag"],
+               "categoryId": "10", "defaultLanguage": lingua}
+    audio = it.get("lingua_audio", lingua)
+    if audio:  # "" = video senza voce
+        snippet["defaultAudioLanguage"] = audio
+    meta = {"snippet": snippet,
             "status": {"privacyStatus": "private", "publishAt": it["publish_at"],
                        "selfDeclaredMadeForKids": False}}
     h = {"Authorization": f"Bearer {tok}"}

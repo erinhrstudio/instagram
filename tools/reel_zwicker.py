@@ -42,8 +42,8 @@ def spectrum(c, t, y0=760, y1=1100, x0=140, x1=W - 140, on=True, ghost=0.0, k=1.
     rng = np.random.default_rng(int(t * 12))
     n = 48
     c.line([(x0, y1 + 8), (x1, y1 + 8)], fill=LINE, width=2)
-    c.text((x0, y1 + 24), "GRAVI", font("sans", 22, 700), fill=MUTED, anchor="la", tracking=3)
-    c.text((x1, y1 + 24), "ACUTI", font("sans", 22, 700), fill=MUTED, anchor="ra", tracking=3)
+    c.text((x0, y1 + 24), "LOW", font("sans", 22, 700), fill=MUTED, anchor="la", tracking=3)
+    c.text((x1, y1 + 24), "HIGH", font("sans", 22, 700), fill=MUTED, anchor="ra", tracking=3)
     fb = 60 * (14000 / 60) ** (np.arange(n) / (n - 1))
     bw = (x1 - x0) / n
     for i, fr in enumerate(fb):
@@ -63,35 +63,35 @@ def spectrum(c, t, y0=760, y1=1100, x0=140, x1=W - 140, on=True, ghost=0.0, k=1.
 def draw(c, t):
     k = lambda t0, d=0.25: min(1, max(0, (t - t0) / d))
     if t < SILENZIO:
-        c.kicker(0, 300, "MEGLIO IN CUFFIA · VOLUME MEDIO", center=True)
-        centered(c, 360, "ASCOLTA IL RUMORE.", 120, WHITE)
-        centered(c, 490, "POI IL SILENZIO.", 120, style.PINK)
+        c.kicker(0, 300, "BEST ON HEADPHONES · MEDIUM VOLUME", center=True)
+        centered(c, 360, "LISTEN TO THE NOISE.", 120, WHITE)
+        centered(c, 490, "THEN THE SILENCE.", 120, style.PINK)
         spectrum(c, t)
         left = max(0, int(np.ceil(SILENZIO - t)))
-        centered(c, 1240, f"SILENZIO TRA {left} SECONDI" if left > 1 else "SILENZIO TRA 1 SECONDO", 30, MUTED, "sans", 700, 4)
+        centered(c, 1240, f"SILENCE IN {left} SECONDS" if left > 1 else "SILENCE IN 1 SECOND", 30, MUTED, "sans", 700, 4)
         return
     if t < SPIEGA:
-        c.kicker(0, 300, "ADESSO NON SUONA NIENTE", center=True)
-        centered(c, 360, "SENTI", 150, fade(WHITE, k(SILENZIO)))
-        centered(c, 510, "UN FISCHIO?", 150, fade(style.PINK, k(SILENZIO + 0.2)))
+        c.kicker(0, 300, "NOTHING IS PLAYING NOW", center=True)
+        centered(c, 360, "DO YOU HEAR", 150, fade(WHITE, k(SILENZIO)))
+        centered(c, 510, "A WHISTLE?", 150, fade(style.PINK, k(SILENZIO + 0.2)))
         spectrum(c, t, on=False, ghost=0.35 + 0.35 * np.sin((t - SILENZIO) * 3) ** 2 if t > SILENZIO + 1 else 0)
-        centered(c, 1240, "IL VIDEO È MUTO, GIURO", 30, fade(MUTED, k(SILENZIO + 2.0)), "sans", 700, 4)
+        centered(c, 1240, "THE VIDEO IS SILENT, I SWEAR", 30, fade(MUTED, k(SILENZIO + 2.0)), "sans", 700, 4)
         return
     if t < FINE:
-        c.kicker(0, 300, "TONO DI ZWICKER", center=True)
-        centered(c, 360, "IL FISCHIO", 140, fade(WHITE, k(SPIEGA)))
-        centered(c, 500, "È NELLA TESTA.", 140, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 710, ["Nel rumore mancava una fetta di frequenze.",
-                           "Quando il rumore si spegne, l'udito",
-                           "riempie per qualche secondo quel buco",
-                           "con una nota che non esiste.",
-                           "Non succede a tutti: a te sì?",
+        c.kicker(0, 300, "ZWICKER TONE", center=True)
+        centered(c, 360, "THE WHISTLE", 140, fade(WHITE, k(SPIEGA)))
+        centered(c, 500, "IS IN YOUR HEAD.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 710, ["The noise had a slice of frequencies missing.",
+                           "When the noise stops, your hearing",
+                           "fills that gap for a few seconds",
+                           "with a note that doesn't exist.",
+                           "Not everyone hears it: do you?",
                            "",
                            "· Eberhard Zwicker · 1964"], SPIEGA + 0.5, k)
         return
-    centered(c, 420, "SÌ O NO?", 190, fade(WHITE, k(FINE)))
-    centered(c, 620, "SCRIVILO NEI COMMENTI.", 110, fade(style.PINK, k(FINE + 0.3)))
-    centered(c, 800, "E RIPROVA IN CUFFIA, AL BUIO", 50, fade(TEXT, k(FINE + 0.8)), "sans", 700, 3)
+    centered(c, 420, "YES OR NO?", 190, fade(WHITE, k(FINE)))
+    centered(c, 620, "TELL ME IN THE COMMENTS.", 110, fade(style.PINK, k(FINE + 0.3)))
+    centered(c, 800, "THEN TRY AGAIN ON HEADPHONES, IN THE DARK", 34, fade(TEXT, k(FINE + 0.8)), "sans", 700, 3)
 
 
 if __name__ == "__main__":

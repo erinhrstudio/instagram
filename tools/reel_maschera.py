@@ -70,8 +70,8 @@ def spectrum(c, t, notch, y0=760, y1=1130, x0=140, x1=W - 140, k=1.0):
     rng = np.random.default_rng(int(t * 12))
     n = 48
     c.line([(x0, y1 + 8), (x1, y1 + 8)], fill=LINE, width=2)
-    c.text((x0, y1 + 24), "GRAVI", font("sans", 22, 700), fill=MUTED, anchor="la", tracking=3)
-    c.text((x1, y1 + 24), "ACUTI", font("sans", 22, 700), fill=MUTED, anchor="ra", tracking=3)
+    c.text((x0, y1 + 24), "LOW", font("sans", 22, 700), fill=MUTED, anchor="la", tracking=3)
+    c.text((x1, y1 + 24), "HIGH", font("sans", 22, 700), fill=MUTED, anchor="ra", tracking=3)
     fb = 40 * (16000 / 40) ** (np.arange(n) / (n - 1))
     bw = (x1 - x0) / n
     for i, fr in enumerate(fb):

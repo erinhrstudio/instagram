@@ -275,10 +275,11 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-04 21:00",
-  "publish_at": "2026-11-04T20:00:00Z",
+  "uscita_roma": "2027-12-31 21:00 (rinviato: versione inglese)",
+  "publish_at": "2027-12-31T20:00:00Z",
   "video_id": "vB1djJyqAfk",
-  "sincronizzato": "2026-11-04T20:00:00Z"
+  "sincronizzato": "2026-11-04T20:00:00Z",
+  "rinviato_da": "2026-11-04T20:00:00Z"
  },
  {
   "nome": "parlato-canto",
@@ -292,10 +293,11 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-05 21:00",
-  "publish_at": "2026-11-05T20:00:00Z",
+  "uscita_roma": "2027-12-31 21:00 (rinviato: versione inglese)",
+  "publish_at": "2027-12-31T20:00:00Z",
   "video_id": "21RDj06Sxp4",
-  "sincronizzato": "2026-11-05T20:00:00Z"
+  "sincronizzato": "2026-11-05T20:00:00Z",
+  "rinviato_da": "2026-11-05T20:00:00Z"
  },
  {
   "nome": "basso-fantasma",
@@ -309,10 +311,11 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-06 21:00",
-  "publish_at": "2026-11-06T20:00:00Z",
+  "uscita_roma": "2027-12-31 21:00 (rinviato: versione inglese)",
+  "publish_at": "2027-12-31T20:00:00Z",
   "video_id": "6AYG5NJnya4",
-  "sincronizzato": "2026-11-06T20:00:00Z"
+  "sincronizzato": "2026-11-06T20:00:00Z",
+  "rinviato_da": "2026-11-06T20:00:00Z"
  },
  {
   "nome": "sa-o-fa",
@@ -326,9 +329,95 @@
    "home recording",
    "erinhrstudio"
   ],
-  "uscita_roma": "2026-11-07 21:00",
-  "publish_at": "2026-11-07T20:00:00Z",
+  "uscita_roma": "2027-12-31 21:00 (rinviato: versione inglese)",
+  "publish_at": "2027-12-31T20:00:00Z",
   "video_id": "ykeYahvEweg",
-  "sincronizzato": "2026-11-07T20:00:00Z"
+  "sincronizzato": "2026-11-07T20:00:00Z",
+  "rinviato_da": "2026-11-07T20:00:00Z"
+ },
+ {
+  "nome": "fischio-silenzio-en",
+  "file": "media/youtube/en/fischio-silenzio.mp4",
+  "titolo": "Listen to the noise, then the silence. Do you hear a whistle? 🤫 #shorts",
+  "descrizione": "The noise is missing a slice of frequencies, between 2.8 and 4 kHz. When it stops, the video is truly silent, yet many people hear a faint note for a few seconds, close to the lower edge of that gap. It's the Zwicker tone (Eberhard Zwicker, 1964): your hearing fills the gap with a note that doesn't exist.\n\nNot everyone hears it. Best with headphones, medium volume, in the dark.\n\nYes or no? Tell me in the comments 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-04 18:28",
+  "publish_at": "2026-11-04T17:28:00Z"
+ },
+ {
+  "nome": "rumore-nota-en",
+  "file": "media/youtube/en/rumore-nota.mp4",
+  "titolo": "The same tiny piece of noise, repeated faster, becomes a note 🎹 #shorts",
+  "descrizione": "The sound never changes: it's always the same noise, looped shorter and shorter. Once per second it's a hiss, ten times is a rhythm, a hundred times is a note. Above 20-30 repetitions per second your brain stops counting them and hears a pitch.\n\nIt's the repeated noise studied by Guttman and Julesz (1963). For producers: a super short loop of any sound is already a synth. Try it on your sampler.\n\nSave it for your next session 💾\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-04 18:30",
+  "publish_at": "2026-11-04T17:30:00Z"
+ },
+ {
+  "nome": "beat-infinito-en",
+  "file": "media/youtube/en/beat-infinito.mp4",
+  "titolo": "This beat speeds up. Forever. When does it stop? 🥁 #shorts",
+  "descrizione": "It never stops, because it isn't really speeding up: it's many layers of the same beat, each one twice as fast as the other. As they speed up, the fastest fade out and the slowest fade in, so your ear only follows the ones that are accelerating.\n\nIt's the Risset rhythm, the rhythmic twin of the endless scale (Jean-Claude Risset).\n\nAt what second did you catch the trick? Tell me in the comments 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-04 18:32",
+  "publish_at": "2026-11-04T17:32:00Z"
+ },
+ {
+  "nome": "scale-zigzag-en",
+  "file": "media/youtube/en/scale-zigzag.mp4",
+  "titolo": "Two zig-zag scales. Your brain puts them back in order 🎧 #shorts",
+  "descrizione": "In the video one scale goes up and one goes down at the same time, and every note jumps from one ear to the other. Almost nobody hears it that way: you usually hear the high notes on one side and the low notes on the other, like two melodies nobody played.\n\nIt's Diana Deutsch's scale illusion (1975): your brain groups sounds by pitch, not by ear.\n\nFlip your headphones: do the highs move? Tell me 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-04 18:34",
+  "publish_at": "2026-11-04T17:34:00Z"
+ },
+ {
+  "nome": "galoppo-en",
+  "file": "media/youtube/en/galoppo.mp4",
+  "titolo": "I speed up a gallop: at some point it splits in two 🐎 #shorts",
+  "descrizione": "It's always two notes alternating, high and low, in a gallop rhythm. Slowly it's one gallop. As it speeds up, your brain stops following them as one melody and splits them into two rhythms: one above, one below. The notes never change.\n\nIt's auditory stream segregation (Leon van Noorden, 1975). Bach used it to make a single violin sound like two voices.\n\nAt what second did it split for you? 👇\n\nSubscribe: a new hearing illusion every week 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #auditoryillusion",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "sound illusion",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-04 18:36",
+  "publish_at": "2026-11-04T17:36:00Z"
  }
 ]

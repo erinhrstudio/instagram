@@ -16,8 +16,8 @@ from tools.reel_shepard import SR, W, WHITE, centered, fade, paragraph, write_mp
 
 ROOT = Path(__file__).resolve().parent.parent
 # (lunghezza del loop in secondi, come lo senti)
-FASI = [(1.0, "FRUSCIO"), (0.25, "RITMO"), (0.1, "RITMO VELOCE"), (0.04, "RONZIO"),
-        (0.01, "NOTA · 100 Hz"), (0.005, "NOTA · 200 Hz"), (0.0025, "NOTA · 400 Hz")]
+FASI = [(1.0, "HISS"), (0.25, "RHYTHM"), (0.1, "FAST RHYTHM"), (0.04, "BUZZ"),
+        (0.01, "NOTE · 100 Hz"), (0.005, "NOTE · 200 Hz"), (0.0025, "NOTE · 400 Hz")]
 FASE = 2.2
 SPIEGA = len(FASI) * FASE + 0.3
 FINE, END = SPIEGA + 6.0, SPIEGA + 10.8
@@ -66,7 +66,7 @@ def loopbar(c, y, L, t, k=1.0):
         if show > 1:
             c.line([(xa, y - 90), (xa, y + 90)], fill=fade(LINE, k), width=2)
     lab = f"{L * 1000:.1f} ms" if L < 0.01 else f"{L * 1000:.0f} ms"
-    c.text((W / 2, y + 140), f"LOOP DA {lab}  ·  {1 / L:.0f} VOLTE AL SECONDO".replace("·  1 VOLTE", "·  1 VOLTA"),
+    c.text((W / 2, y + 140), f"{lab} LOOP  ·  {1 / L:.0f} TIMES PER SECOND".replace("·  1 TIMES", "·  ONCE"),
            font("sans", 28, 700), fill=fade(MUTED, k), anchor="mm", tracking=3)
 
 
@@ -75,28 +75,28 @@ def draw(c, t):
     if t < SPIEGA:
         i = min(int(t // FASE), len(FASI) - 1)
         L, nome = FASI[i]
-        c.kicker(0, 300, "SEMPRE LO STESSO RUMORE", center=True)
-        centered(c, 360, "ACCORCIO", 150, WHITE)
-        centered(c, 510, "IL LOOP.", 150, style.PINK)
+        c.kicker(0, 300, "ALWAYS THE SAME NOISE", center=True)
+        centered(c, 360, "I SHORTEN", 150, WHITE)
+        centered(c, 510, "THE LOOP.", 150, style.PINK)
         loopbar(c, 860, L, t)
         centered(c, 1140, nome, 90, fade(WHITE, k(i * FASE, 0.3)))
         return
     if t < FINE:
-        c.kicker(0, 300, "RUMORE RIPETUTO", center=True)
-        centered(c, 360, "UNA NOTA", 150, fade(WHITE, k(SPIEGA)))
-        centered(c, 510, "È UNA RIPETIZIONE.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
-        paragraph(c, 720, ["Se lo stesso suono si ripete più di",
-                           "20-30 volte al secondo, il cervello",
-                           "smette di sentire le ripetizioni",
-                           "e sente un'altezza: una nota.",
-                           "Anche se il suono è puro rumore.",
+        c.kicker(0, 300, "REPEATED NOISE", center=True)
+        centered(c, 360, "A NOTE", 150, fade(WHITE, k(SPIEGA)))
+        centered(c, 510, "IS A REPETITION.", 120, fade(style.PINK, k(SPIEGA + 0.2)))
+        paragraph(c, 720, ["If the same sound repeats more than",
+                           "20-30 times a second, your brain",
+                           "stops hearing the repeats",
+                           "and hears a pitch: a note.",
+                           "Even if the sound is pure noise.",
                            "",
-                           "· Guttman e Julesz · 1963"], SPIEGA + 0.5, k)
+                           "· Guttman and Julesz · 1963"], SPIEGA + 0.5, k)
         return
-    centered(c, 400, "PER CHI PRODUCE:", 120, fade(WHITE, k(FINE)))
-    centered(c, 540, "UN LOOP CORTISSIMO", 110, fade(style.PINK, k(FINE + 0.2)))
-    centered(c, 660, "È UN SYNTH.", 110, fade(style.PINK, k(FINE + 0.4)))
-    centered(c, 800, "PROVALO COL TUO SAMPLER E SALVALO", 40, fade(TEXT, k(FINE + 0.8)), "sans", 700, 3)
+    centered(c, 400, "FOR PRODUCERS:", 120, fade(WHITE, k(FINE)))
+    centered(c, 540, "A TINY LOOP", 110, fade(style.PINK, k(FINE + 0.2)))
+    centered(c, 660, "IS A SYNTH.", 110, fade(style.PINK, k(FINE + 0.4)))
+    centered(c, 800, "TRY IT ON YOUR SAMPLER AND SAVE THIS", 40, fade(TEXT, k(FINE + 0.8)), "sans", 700, 3)
 
 
 if __name__ == "__main__":

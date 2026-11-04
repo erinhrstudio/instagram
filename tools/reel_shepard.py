@@ -124,7 +124,7 @@ def write_mp4(out, audio, end, draw, seed):
 def spectrum(c, offset, y0, y1, k=1.0, x0=W / 2 - 300, x1=W / 2 + 300):
     """Le componenti come barre orizzontali su un asse in ottave: la luminosità è l'ampiezza."""
     c.line([(x0 - 30, y1), (x0 - 30, y0)], fill=LINE, width=2)
-    c.text((x0 - 50, y0 - 10), "ACUTI", font("sans", 22, 700), fill=MUTED, anchor="rm", tracking=3)
+    c.text((x0 - 50, y0 - 10), "HIGH", font("sans", 22, 700), fill=MUTED, anchor="rm", tracking=3)
     c.text((x0 - 50, y1 + 10), "BASSI", font("sans", 22, 700), fill=MUTED, anchor="rm", tracking=3)
     for j in range(NOCT):
         o = (j + offset) % NOCT
@@ -143,7 +143,7 @@ RISE = 14.0
 def spectrogram(c, tnow, y0, y1, k=1.0, window=10.0, x0=150, x1=W - 150, span=2.2):
     """Spettrogramma che scorre: ogni ottava è una diagonale che sale, nasce in basso e svanisce in alto."""
     c.line([(x0, y1 + 14), (x1, y1 + 14)], fill=LINE, width=2)
-    c.text((x0, y0 - 34), "ACUTI", font("sans", 22, 700), fill=MUTED, anchor="la", tracking=3)
+    c.text((x0, y0 - 34), "HIGH", font("sans", 22, 700), fill=MUTED, anchor="la", tracking=3)
     c.text((x0, y1 + 30), "BASSI", font("sans", 22, 700), fill=MUTED, anchor="la", tracking=3)
     n = 60
     ts = tnow - window + window * np.arange(n + 1) / n
