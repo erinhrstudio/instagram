@@ -1,0 +1,18 @@
+Video: https://raw.githubusercontent.com/erinhrstudio/instagram/main/media/tiktok/af-12-compressore-bassi.mp4
+Song (add it in the YouTube app): Daft Punk — Harder, Better, Faster, Stronger, from the start
+
+Title:
+Is your compressor distorting your bass? 🔊 #shorts
+
+Description:
+Is your compressor distorting your bass? If it's too fast, yes 🔊
+
+A 40 Hz wave lasts 25 milliseconds. If the release is shorter than that, the compressor stops following the level and follows the wave itself, bending it: new harmonics appear that weren't there. Try it in Reaper: release at minimum, then 100 ms, level-matched.
+
+Sources: FabFilter Pro-C manual · Giannoulis, Massberg & Reiss, JAES 2012.
+
+Save it for your next bass mix 💾
+
+Subscribe: a new verified Audio Fact every week 🎚️
+
+#erinhrstudio #1eyedpet #mixing #compression #shorts
