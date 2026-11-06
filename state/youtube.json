@@ -458,7 +458,8 @@
   "uscita_roma": "2026-11-05 12:00",
   "publish_at": "2026-11-05T11:00:00Z",
   "video_id": "2HrmSLKRyv8",
-  "sincronizzato": "2026-11-05T11:00:00Z"
+  "sincronizzato": "2026-11-05T11:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "haas-en",
@@ -477,7 +478,8 @@
   "uscita_roma": "2026-11-05 15:00",
   "publish_at": "2026-11-05T14:00:00Z",
   "video_id": "weLSKpZcjpU",
-  "sincronizzato": "2026-11-05T14:00:00Z"
+  "sincronizzato": "2026-11-05T14:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "tritono-en",
@@ -496,7 +498,8 @@
   "uscita_roma": "2026-11-05 18:00",
   "publish_at": "2026-11-05T17:00:00Z",
   "video_id": "fUJ97cX5nQo",
-  "sincronizzato": "2026-11-05T17:00:00Z"
+  "sincronizzato": "2026-11-05T17:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "battito-binaurale-en",
@@ -515,7 +518,8 @@
   "uscita_roma": "2026-11-05 21:00",
   "publish_at": "2026-11-05T20:00:00Z",
   "video_id": "O1hdECpz310",
-  "sincronizzato": "2026-11-05T20:00:00Z"
+  "sincronizzato": "2026-11-05T20:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "mascheramento-en",
@@ -532,7 +536,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-06 12:00",
-  "publish_at": "2026-11-06T11:00:00Z"
+  "publish_at": "2026-11-06T11:00:00Z",
+  "video_id": "TvV4P9YdFR4",
+  "sincronizzato": "2026-11-06T11:00:00Z"
  },
  {
   "nome": "ottava-en",
@@ -549,7 +555,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-06 15:00",
-  "publish_at": "2026-11-06T14:00:00Z"
+  "publish_at": "2026-11-06T14:00:00Z",
+  "video_id": "hClXXrDH_Kg",
+  "sincronizzato": "2026-11-06T14:00:00Z"
  },
  {
   "nome": "melodia-nascosta-en",
@@ -566,7 +574,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-06 18:00",
-  "publish_at": "2026-11-06T17:00:00Z"
+  "publish_at": "2026-11-06T17:00:00Z",
+  "video_id": "vPjF1YASSyo",
+  "sincronizzato": "2026-11-06T17:00:00Z"
  },
  {
   "nome": "piu-forte-en",
@@ -583,7 +593,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-06 21:00",
-  "publish_at": "2026-11-06T20:00:00Z"
+  "publish_at": "2026-11-06T20:00:00Z",
+  "video_id": "GyDCSbebae0",
+  "sincronizzato": "2026-11-06T20:00:00Z"
  },
  {
   "nome": "basso-fantasma-en",
