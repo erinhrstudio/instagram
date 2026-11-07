@@ -108,7 +108,7 @@ def draw(c, t):
         return
     centered(c, 420, "AT WHAT SECOND", 140, fade(WHITE, k(FINE)))
     centered(c, 570, "DID IT SPLIT?", 140, fade(style.PINK, k(FINE + 0.3)))
-    centered(c, 730, "TELL ME IN THE COMMENTS", 50, fade(TEXT, k(FINE + 0.6)), "sans", 700, 3)
+    centered(c, 730, "SEND IT TO A FRIEND: SAME SECOND?", 44, fade(TEXT, k(FINE + 0.6)), "sans", 700, 3)
     trama(c, 1010, t, k=k(FINE + 0.4, 0.4), separati=True)
 
 

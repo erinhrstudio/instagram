@@ -55,7 +55,15 @@ TITOLI = {
     "battito-binaurale": "THE BEAT THAT ONLY EXISTS IN YOUR HEAD",
     "scale-zigzag": "THE SCALES YOUR BRAIN REARRANGES",
     "galoppo": "THE GALLOP THAT SPLITS IN TWO",
+    "melodia-misteriosa": "THE SONG YOU KNOW BUT CAN'T NAME",
+    "test-udito": "HOW HIGH CAN YOU STILL HEAR?",
+    "davanti-dietro": "IN FRONT OF YOU OR BEHIND?",
+    "armonica-stonata": "ONE NOTE OR TWO?",
+    "continuita": "THE TONE THAT NEVER STOPS",
 }
+# Dal 9/11 le illusioni sono una serie numerata (piano 1.000 follower): il numero va sul video e nel finale.
+NUMERI = {"galoppo": 18, "melodia-misteriosa": 19, "test-udito": 20, "davanti-dietro": 21,
+          "armonica-stonata": 22, "continuita": 23}
 SERIE_DURATA = 4.5
 
 
@@ -68,7 +76,7 @@ def prossima_illusione(nome):
         return ""
     for n in coda[coda.index(nome) + 1:]:
         if n in TITOLI and audio_proprio(n):
-            return TITOLI[n]
+            return (f"#{NUMERI[n]} · " if n in NUMERI else "") + TITOLI[n]
     return "MORE ILLUSIONS COMING"
 
 
@@ -80,20 +88,30 @@ def chiusura_serie(c, t, end, titolo):
     c.line([(140, y), (W - 140, y)], fill=fade(LINE, k), width=2)
     centered(c, y + 34, "NEXT ILLUSION", 26, fade(style.PINK, k), "sans", 700, 5)
     size = 64 if len(titolo) <= 26 else 54
+    size = 64 if len(titolo) <= 26 else (54 if len(titolo) <= 34 else 46)
     centered(c, y + 82, titolo, size, fade(WHITE, k))
     import os
     invito = ("SUBSCRIBE TO @ERINHRSTUDIO SO YOU DON'T MISS IT" if os.environ.get("PIATTAFORMA") == "youtube"
               else "FOLLOW @ERIN.RECORDINGSTUDIO SO YOU DON'T MISS IT")
+    if titolo.startswith("#"):
+        invito = invito.replace("SO YOU DON'T MISS IT", "· A NEW ILLUSION EVERY WEEKDAY")
     if titolo.startswith("MORE"):
         invito = invito.replace("MISS IT", "MISS THEM")
-    centered(c, y + 82 + size + 20, invito, 26, fade(TEXT, k), "sans", 600, 2)
+    centered(c, y + 82 + size + 20, invito, 26 if len(invito) <= 50 else 21, fade(TEXT, k), "sans", 600, 2)
 
 
 def write_mp4(out, audio, end, draw, seed):
     titolo = prossima_illusione(Path(out).stem)
+    numero = NUMERI.get(Path(out).stem)
     style.set_accent("azzurro")
     base = Canvas(W, H, seed=seed, bg="pieno")
     base.header("ERIN · HOME RECORDING STUDIO", "PSYCHOACOUSTICS")
+    if numero:  # etichetta della serie, visibile anche sulla copertina
+        lab = f"AUDIO ILLUSION #{numero}"
+        f_ = font("sans", 30, 700)
+        wl = base.textlength(lab, f_, tracking=6)
+        base.rect((W / 2 - wl / 2 - 28, 196, W / 2 + wl / 2 + 28, 250), fill=style.PINK, radius=27)
+        base.text((W / 2, 223), lab, f_, fill=(31, 31, 31), anchor="mm", tracking=6)
     base_img = base.img.copy()
     audio = audio[:int(end * SR)]
     audio = audio / np.abs(audio).max() * 0.89
