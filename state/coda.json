@@ -78,5 +78,35 @@
   "formato_da_post": true,
   "reel_manuali": [
     "chelsea-wolfe"
-  ]
+  ],
+  "settimana": {
+    "da": "2026-11-08",
+    "giorni": [
+      {
+        "formato": "reel",
+        "ora": 12
+      },
+      {
+        "formato": "reel",
+        "ora": 12
+      },
+      {
+        "formato": "reel",
+        "ora": 12
+      },
+      {
+        "formato": "reel",
+        "ora": 12
+      },
+      {
+        "formato": "reel",
+        "ora": 12
+      },
+      {
+        "formato": "carosello",
+        "ora": 18
+      },
+      null
+    ]
+  }
 }

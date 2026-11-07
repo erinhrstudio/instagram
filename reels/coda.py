@@ -20,8 +20,21 @@ ROMA = ZoneInfo("Europe/Rome")
 ORA = 18  # ora di uscita (ora italiana) se coda.json non ha "orari"
 
 
+def giorno(oggi, coda=None):
+    """Piano settimanale ("settimana" in coda.json, dal 9/11): formato e ora del giorno, None se riposo."""
+    coda = coda or json.loads(CODA.read_text())
+    s = coda.get("settimana")
+    if not s or oggi < date.fromisoformat(s["da"]):
+        return False
+    return s["giorni"][oggi.weekday()]
+
+
 def ora_uscita(oggi):
-    """Dal 22/10 si alterna: un giorno alle 12, il giorno dopo alle 18 ("orari" in coda.json)."""
+    """Dal 22/10 si alterna: un giorno alle 12, il giorno dopo alle 18 ("orari" in coda.json).
+    Dal 9/11 l'ora la dà il piano settimanale."""
+    g = giorno(oggi)
+    if g is not False:
+        return g["ora"] if g else ORA
     o = json.loads(CODA.read_text()).get("orari")
     if not o or oggi < date.fromisoformat(o["da"]):
         return ORA
@@ -42,6 +55,9 @@ def prossimo(oggi=None, manuale=False):
         return None, "coda in pausa (\"pausa\": true in state/coda.json)"
     if oggi.isoformat() in coda.get("salta", []):
         return None, "giorno saltato apposta (\"salta\" in state/coda.json)"
+    g = giorno(oggi, coda)
+    if g is None:
+        return None, "giorno di riposo nel piano settimanale"
     state = json.loads(STATE.read_text()) if STATE.exists() else []
     fatti = {s["id"]: date.fromisoformat(s["published_at"][:10]) for s in state}
     if oggi < date.fromisoformat(coda["inizio"]):
@@ -54,6 +70,8 @@ def prossimo(oggi=None, manuale=False):
             if coda.get("formato_da_post"):
                 if not pronto(n):
                     continue  # post non ancora costruito (es. aspetta la foto): passa al successivo
+                if g and formato_post(n, coda) != g["formato"]:
+                    continue  # col piano settimanale ogni giorno ha il suo formato
                 reel_day = formato_post(n, coda) == "reel"
             if reel_day:
                 # l'API pubblica i Reel senza musica di libreria: se il Reel ha già il suo audio
@@ -87,6 +105,9 @@ def formato(oggi=None):
     """Formato di oggi. Con "formato_da_post" è quello del prossimo post pronto;
     altrimenti dal giorno "reel_da" si alterna: un giorno Reel, il giorno dopo carosello."""
     coda = json.loads(CODA.read_text())
+    g = giorno(oggi or datetime.now(ROMA).date(), coda)
+    if g is not False:
+        return g["formato"] if g else "riposo"
     if coda.get("formato_da_post"):
         state = json.loads(STATE.read_text()) if STATE.exists() else []
         fatti = {s["id"] for s in state}
