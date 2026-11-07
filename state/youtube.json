@@ -727,5 +727,22 @@
   "lingua_audio": "",
   "uscita_roma": "2026-11-09 12:00",
   "publish_at": "2026-11-09T11:00:00Z"
+ },
+ {
+  "nome": "test-udito-en",
+  "file": "media/youtube/en/test-udito.mp4",
+  "titolo": "How high can you still hear? 8,000 to 19,000 Hz 🎧 #shorts",
+  "descrizione": "Headphones on, start at low volume. Pure tones climb from 8,000 to 19,000 Hz. Comment the last number you can hear 👇\n\nThe cells that hear the highest pitches sit at the entrance of the cochlea and wear out first: with age, and faster with loud music. Phone speakers, cheap earbuds and compression can cut the top too, so try good headphones.\n\nSend it to a friend: who hears higher?\n\nSubscribe: a new hearing illusion every weekday 🎧\n\n#erinhrstudio #1eyedpet #shorts #psychoacoustics #hearingtest",
+  "tag": [
+   "psychoacoustics",
+   "hearing test",
+   "high frequency test",
+   "home recording",
+   "erinhrstudio"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-10 12:00",
+  "publish_at": "2026-11-10T11:00:00Z"
  }
 ]

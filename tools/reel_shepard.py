@@ -100,7 +100,7 @@ def chiusura_serie(c, t, end, titolo):
     centered(c, y + 82 + size + 20, invito, 26 if len(invito) <= 50 else 21, fade(TEXT, k), "sans", 600, 2)
 
 
-def write_mp4(out, audio, end, draw, seed):
+def write_mp4(out, audio, end, draw, seed, picco=0.89):
     titolo = prossima_illusione(Path(out).stem)
     numero = NUMERI.get(Path(out).stem)
     style.set_accent("azzurro")
@@ -114,7 +114,7 @@ def write_mp4(out, audio, end, draw, seed):
         base.text((W / 2, 223), lab, f_, fill=(31, 31, 31), anchor="mm", tracking=6)
     base_img = base.img.copy()
     audio = audio[:int(end * SR)]
-    audio = audio / np.abs(audio).max() * 0.89
+    audio = audio / np.abs(audio).max() * picco  # picco basso per toni acuti puri
     with tempfile.TemporaryDirectory() as td:
         wav = Path(td) / "a.wav"
         with wave.open(str(wav), "wb") as w:
