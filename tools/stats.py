@@ -9,7 +9,8 @@ import requests
 
 API = "https://graph.instagram.com/v23.0"
 TOK = os.environ["INSTAGRAM_TOKEN"]
-METRICS = ["reach", "views", "saved", "shares", "total_interactions"]
+METRICS = ["reach", "views", "saved", "shares", "total_interactions", "follows", "profile_visits",
+           "ig_reels_avg_watch_time"]
 
 
 def get(path, **params):
@@ -37,9 +38,10 @@ def main():
         ins = insights(m["id"])
         cap = (m.get("caption") or "").split("\n")[0][:45].replace("|", "/")
         rows.append((m["timestamp"][:10], fmt, ins.get("views"), ins.get("reach"), ins.get("saved"),
-                     ins.get("shares"), m.get("like_count"), m.get("comments_count"), cap))
-    print("| data | formato | views | reach | salvati | condivisioni | like | commenti | post |")
-    print("|---|---|---|---|---|---|---|---|---|")
+                     ins.get("shares"), m.get("like_count"), m.get("comments_count"), ins.get("follows"),
+                     ins.get("profile_visits"), ins.get("ig_reels_avg_watch_time"), cap))
+    print("| data | formato | views | reach | salvati | condivisioni | like | commenti | follow | visite profilo | watch ms | post |")
+    print("|---|---|---|---|---|---|---|---|---|---|---|---|")
     for r in rows:
         print("| " + " | ".join("" if v is None else str(v) for v in r) + " |")
     agg = defaultdict(list)
