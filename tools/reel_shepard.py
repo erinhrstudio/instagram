@@ -92,7 +92,7 @@ def chiusura_serie(c, t, end, titolo):
     centered(c, y + 82, titolo, size, fade(WHITE, k))
     import os
     invito = ("SUBSCRIBE TO @ERINHRSTUDIO SO YOU DON'T MISS IT" if os.environ.get("PIATTAFORMA") == "youtube"
-              else "FOLLOW @ERIN.RECORDINGSTUDIO SO YOU DON'T MISS IT")
+              else f"FOLLOW @{os.environ.get('IG_HANDLE', 'erin.recordingstudio').upper()} SO YOU DON'T MISS IT")
     if titolo.startswith("#"):
         invito = invito.replace("SO YOU DON'T MISS IT", "· A NEW ILLUSION EVERY WEEKDAY")
     if titolo.startswith("MORE"):
