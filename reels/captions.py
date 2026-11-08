@@ -1,7 +1,7 @@
 """Regole comuni per le didascalie."""
 import re
 
-BRAND_TAGS = ["#erinhrstudio", "#1eyedpet"]
+BRAND_TAGS = ["#erinsoundlab"]  # dall'8/11: solo il brand nuovo, gli altri 4 si scelgono post per post
 MAX_TAGS = 5  # limite di Instagram per post (dicembre 2025): i brand più i primi 3 hashtag del post
 
 
@@ -17,7 +17,7 @@ def no_emoji(text):
 
 def with_brand_tags(caption):
     caption = no_emoji(caption)
-    """Mette #erinhrstudio e #1eyedpet come primi hashtag (senza duplicarli) e tiene al massimo 5 hashtag."""
+    """Mette #erinsoundlab come primo hashtag (senza duplicarli) e tiene al massimo 5 hashtag."""
     for t in BRAND_TAGS:
         caption = re.sub(rf"(?<!\S){re.escape(t)}(?!\w)\s?", "", caption, flags=re.I)
     seen = []
