@@ -1,7 +1,69 @@
 {
   "ogni_giorni": 1,
-  "inizio": "2026-09-27",
+  "inizio": "2026-11-09",
   "post": [
+    "beat-infinito",
+    "fischio-silenzio",
+    "battito-binaurale",
+    "rumore-nota",
+    "scala-infinita",
+    "tritono",
+    "mascheramento",
+    "scale-zigzag",
+    "galoppo",
+    "melodia-misteriosa",
+    "test-udito",
+    "davanti-dietro",
+    "armonica-stonata",
+    "continuita"
+  ],
+  "reel_da": "2026-10-06",
+  "salta": [
+    "2026-10-18"
+  ],
+  "orari": {
+    "da": "2026-10-22",
+    "ore": [
+      12,
+      18
+    ]
+  },
+  "formato_da_post": true,
+  "reel_manuali": [
+    "chelsea-wolfe"
+  ],
+  "settimana": {
+    "da": "2026-11-08",
+    "giorni": [
+      {
+        "formato": "reel",
+        "ora": 12
+      },
+      {
+        "formato": "reel",
+        "ora": 12
+      },
+      {
+        "formato": "reel",
+        "ora": 12
+      },
+      {
+        "formato": "reel",
+        "ora": 12
+      },
+      {
+        "formato": "reel",
+        "ora": 12
+      },
+      {
+        "formato": "carosello",
+        "ora": 18
+      },
+      null
+    ]
+  },
+  "pausa": true,
+  "post_erin_recordingstudio": [
     "korn",
     "yanny-laurel",
     "billie-eilish",
@@ -63,51 +125,5 @@
     "armonica-stonata",
     "genevieve-racette",
     "continuita"
-  ],
-  "reel_da": "2026-10-06",
-  "salta": [
-    "2026-10-18"
-  ],
-  "orari": {
-    "da": "2026-10-22",
-    "ore": [
-      12,
-      18
-    ]
-  },
-  "formato_da_post": true,
-  "reel_manuali": [
-    "chelsea-wolfe"
-  ],
-  "settimana": {
-    "da": "2026-11-08",
-    "giorni": [
-      {
-        "formato": "reel",
-        "ora": 12
-      },
-      {
-        "formato": "reel",
-        "ora": 12
-      },
-      {
-        "formato": "reel",
-        "ora": 12
-      },
-      {
-        "formato": "reel",
-        "ora": 12
-      },
-      {
-        "formato": "reel",
-        "ora": 12
-      },
-      {
-        "formato": "carosello",
-        "ora": 18
-      },
-      null
-    ]
-  },
-  "pausa": true
+  ]
 }

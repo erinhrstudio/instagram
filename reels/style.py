@@ -72,6 +72,9 @@ def _ruota(hue, sat_k=0.75):
 
 
 # una tinta per serie: chitarre ambra, pedali verde, storia del fuzz viola
+# ERIN Soundlab (nuova pagina, 2026-11-08): lilla del logo come accento, crema del logo come tono morbido
+ACCENTS["soundlab"] = dict(PINK=(204, 158, 210), PINK_SOFT=(242, 216, 186), BAND=(176, 128, 184),
+                           GLOW=(32, 12, 27), DIM=((80, 52, 78), (140, 96, 140), (64, 40, 60)))
 ACCENTS.update(ambra=_ruota(38), verde=_ruota(150), viola=_ruota(275), acqua=_ruota(172))  # acqua: ERIN Audio Fact
 
 

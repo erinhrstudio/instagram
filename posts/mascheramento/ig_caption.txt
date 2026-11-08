@@ -1,0 +1,10 @@
+Audio Illusion #7: How many beeps did you hear at the start? They were always there, same volume 🔇
+
+It's masking: when two sounds share the same frequencies, the louder one covers the other. In the video I didn't turn the beeps up, I just removed the noise around their frequency. MP3 uses the same principle to save space: it throws away what you wouldn't hear anyway.
+
+In a mix it happens to vocals and guitars: instead of turning everything up, make room with subtractive EQ, a high-pass or sidechain.
+
+Replay the start: can you hear them now? Send it to someone who turns everything up to hear everything 🔇
+Next: Illusion #8, the scales your brain rearranges. Follow @erin.studiolab: a new illusion every weekday.
+
+#erinhrstudio #1eyedpet #psychoacoustics #auditoryillusion #headphones

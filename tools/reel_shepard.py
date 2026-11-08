@@ -7,7 +7,7 @@ tritono il paradosso del tritono (Diana Deutsch, 1986): due coppie di note a mez
 
 Uso: python -m tools.reel_shepard scala|tritono media/tiktok/<nome>.mp4
 """
-import subprocess, sys, tempfile, wave
+import os, subprocess, sys, tempfile, wave
 from pathlib import Path
 
 import imageio_ffmpeg
@@ -50,6 +50,10 @@ def paragraph(c, y, lines, k0, k):
 # così chi guarda ha un motivo per seguire. La prossima è il Reel con audio proprio
 # che viene dopo questo in state/coda.json.
 TITOLI = {
+    "beat-infinito": "THE BEAT THAT SPEEDS UP FOREVER",
+    "scala-infinita": "THE SCALE THAT NEVER ENDS",
+    "tritono": "UP OR DOWN?",
+    "mascheramento": "THE BEEPS YOU CAN'T HEAR",
     "fischio-silenzio": "THE WHISTLE IN THE SILENCE",
     "rumore-nota": "THE NOISE THAT BECOMES A NOTE",
     "battito-binaurale": "THE BEAT THAT ONLY EXISTS IN YOUR HEAD",
@@ -62,8 +66,11 @@ TITOLI = {
     "continuita": "THE TONE THAT NEVER STOPS",
 }
 # Dal 9/11 le illusioni sono una serie numerata (piano 1.000 follower): il numero va sul video e nel finale.
-NUMERI = {"galoppo": 18, "melodia-misteriosa": 19, "test-udito": 20, "davanti-dietro": 21,
-          "armonica-stonata": 22, "continuita": 23}
+# numerazione della pagina nuova @erin.studiolab (dal 2026-11-08): le 9 migliori di prima, poi le nuove
+ORDINE_SERIE = ["beat-infinito", "fischio-silenzio", "battito-binaurale", "rumore-nota", "scala-infinita",
+                "tritono", "mascheramento", "scale-zigzag", "galoppo", "melodia-misteriosa", "test-udito",
+                "davanti-dietro", "armonica-stonata", "continuita"]
+NUMERI = {n: i + 1 for i, n in enumerate(ORDINE_SERIE)}
 SERIE_DURATA = 4.5
 
 
@@ -92,7 +99,7 @@ def chiusura_serie(c, t, end, titolo):
     centered(c, y + 82, titolo, size, fade(WHITE, k))
     import os
     invito = ("SUBSCRIBE TO @ERINHRSTUDIO SO YOU DON'T MISS IT" if os.environ.get("PIATTAFORMA") == "youtube"
-              else f"FOLLOW @{os.environ.get('IG_HANDLE', 'erin.recordingstudio').upper()} SO YOU DON'T MISS IT")
+              else f"FOLLOW @{os.environ.get('IG_HANDLE', 'erin.studiolab').upper()} SO YOU DON'T MISS IT")
     if titolo.startswith("#"):
         invito = invito.replace("SO YOU DON'T MISS IT", "· A NEW ILLUSION EVERY WEEKDAY")
     if titolo.startswith("MORE"):
@@ -103,9 +110,9 @@ def chiusura_serie(c, t, end, titolo):
 def write_mp4(out, audio, end, draw, seed, picco=0.89):
     titolo = prossima_illusione(Path(out).stem)
     numero = NUMERI.get(Path(out).stem)
-    style.set_accent("azzurro")
+    style.set_accent(os.environ.get("ACCENTO", "soundlab"))
     base = Canvas(W, H, seed=seed, bg="pieno")
-    base.header("ERIN · HOME RECORDING STUDIO", "PSYCHOACOUSTICS")
+    base.header("ERIN · STUDIOLAB", "AUDIO ILLUSIONS")
     if numero:  # etichetta della serie, visibile anche sulla copertina
         lab = f"AUDIO ILLUSION #{numero}"
         f_ = font("sans", 30, 700)

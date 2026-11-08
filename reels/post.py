@@ -6,7 +6,7 @@ quindi il repository deve essere pubblico.
 
 Uso: python -m reels.post <nome> [--publish | --check] [--reel]
 --check crea i contenitori su Instagram senza pubblicare (verifica che accetti immagini e video).
---reel pubblica il post come Reel verticale (media/tiktok/<nome>.mp4, generato se manca).
+--reel pubblica il post come Reel verticale (media/instagram/<nome>.mp4 se c'è, altrimenti media/tiktok/<nome>.mp4, generato se manca).
 """
 import argparse, json, os, sys
 from datetime import datetime, timezone
@@ -30,7 +30,9 @@ def main():
 
     folder = ROOT / "posts" / a.name
     images = sorted([*folder.glob("[0-9][0-9]*.jpg"), *folder.glob("[0-9][0-9]*.mp4")], key=lambda p: p.name)
-    cap = folder / "reel_caption.txt"
+    cap = folder / "ig_caption.txt"
+    if not cap.exists():
+        cap = folder / "reel_caption.txt"
     if not cap.exists():
         cap = folder / "caption.txt"
     caption = with_brand_tags(cap.read_text(encoding="utf-8").strip())
@@ -77,11 +79,16 @@ def main():
 
 def reel(a):
     folder = ROOT / "posts" / a.name
-    video = ROOT / "media" / "tiktok" / f"{a.name}.mp4"
+    # pagina nuova @erin.studiolab: video e testo propri (media/instagram, ig_caption.txt) se ci sono
+    video = ROOT / "media" / "instagram" / f"{a.name}.mp4"
+    if not video.exists():
+        video = ROOT / "media" / "tiktok" / f"{a.name}.mp4"
     if not video.exists():
         from tools.tiktok_slideshow import render
         render(a.name)
-    cap = folder / "reel_caption.txt"
+    cap = folder / "ig_caption.txt"
+    if not cap.exists():
+        cap = folder / "reel_caption.txt"
     if not cap.exists():
         cap = folder / "caption.txt"
     caption = with_brand_tags(cap.read_text(encoding="utf-8").strip())

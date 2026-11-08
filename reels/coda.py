@@ -93,7 +93,7 @@ def audio_proprio(nome):
 
 def pronto(nome):
     """Il post esiste: slide del carosello o video del Reel."""
-    return (ROOT / "posts" / nome / "01.jpg").exists() or (ROOT / "media" / "tiktok" / f"{nome}.mp4").exists() and audio_proprio(nome)
+    return (ROOT / "posts" / nome / "01.jpg").exists() or any((ROOT / "media" / d / f"{nome}.mp4").exists() for d in ("instagram", "tiktok")) and audio_proprio(nome)
 
 
 def formato_post(nome, coda):
