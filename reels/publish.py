@@ -3,7 +3,7 @@
 Il video viene caricato direttamente (upload "resumable"), senza bisogno di un server pubblico.
 Richiede la variabile d'ambiente INSTAGRAM_TOKEN.
 """
-import os, time
+import json, os, time
 
 import requests
 
@@ -21,16 +21,20 @@ def account(token):
                                timeout=30))
 
 
-def publish_reel_url(urls, caption, token, wait_s=900):
+def publish_reel_url(urls, caption, token, wait_s=900, trial=None):
     """Reel da URL pubblico (video_url): l'upload resumable non è accettato su questo account.
-    Prova ogni URL della lista finché uno viene accettato."""
+    Prova ogni URL della lista finché uno viene accettato.
+    trial="SS_PERFORMANCE" o "MANUAL" lo pubblica come Trial Reel: lo vedono prima solo i non follower;
+    con SS_PERFORMANCE Instagram lo passa ai follower da solo se va bene, con MANUAL lo decidi dall'app."""
     me = account(token)
     uid, err = me["user_id"], None
     for url in urls:
         try:
-            c = _check(requests.post(f"{API}/{uid}/media", data={
-                "media_type": "REELS", "video_url": url, "caption": caption,
-                "share_to_feed": "true", "access_token": token}, timeout=60))
+            data = {"media_type": "REELS", "video_url": url, "caption": caption,
+                    "share_to_feed": "true", "access_token": token}
+            if trial:
+                data["trial_params"] = json.dumps({"graduation_strategy": trial})
+            c = _check(requests.post(f"{API}/{uid}/media", data=data, timeout=60))
             _wait(c["id"], token, wait_s)
             print("  video accettato da", url)
             break

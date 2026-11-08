@@ -24,6 +24,8 @@ def main():
     ap.add_argument("--publish", action="store_true")
     ap.add_argument("--check", action="store_true")
     ap.add_argument("--reel", action="store_true")
+    ap.add_argument("--trial", choices=["SS_PERFORMANCE", "MANUAL"],
+                    help="Reel di prova: lo vedono prima solo i non follower")
     a = ap.parse_args()
     if a.reel:
         return reel(a)
@@ -107,9 +109,9 @@ def reel(a):
     # il video deve essere già nel repository: Instagram lo scarica da un URL pubblico
     urls = [f"https://cdn.jsdelivr.net/gh/{repo}@{ref}/{rel}", f"https://raw.githubusercontent.com/{repo}/{ref}/{rel}"]
     from reels.publish import publish_reel_url
-    res = publish_reel_url(urls, caption, token)
+    res = publish_reel_url(urls, caption, token, trial=a.trial)
     state = json.loads(STATE.read_text()) if STATE.exists() else []
-    state.append({"id": f"post:{a.name}", "media_id": res["media_id"], "formato": "reel",
+    state.append({"id": f"post:{a.name}", "media_id": res["media_id"], "formato": "reel-trial" if a.trial else "reel",
                   "published_at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
     STATE.write_text(json.dumps(state, indent=2) + "\n")
     print(f"Reel pubblicato su @{res['username']}: media {res['media_id']}")

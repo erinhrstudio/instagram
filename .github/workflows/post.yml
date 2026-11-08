@@ -11,9 +11,14 @@ on:
         type: boolean
         default: false
       reel:
-        description: "Pubblica come Reel verticale (media/tiktok/<nome>.mp4) invece che come carosello"
+        description: "Pubblica come Reel verticale (media/instagram/<nome>.mp4, altrimenti media/tiktok) invece che come carosello"
         type: boolean
         default: false
+      trial:
+        description: "Solo Reel: Trial Reel visto prima solo dai non follower (SS_PERFORMANCE = Instagram lo allarga da solo se va bene, MANUAL = decidi tu dall'app)"
+        type: choice
+        options: ["no", "SS_PERFORMANCE", "MANUAL"]
+        default: "no"
 
 permissions:
   contents: write
@@ -40,6 +45,7 @@ jobs:
           ARGS="--check"
           [ "${{ inputs.publish }}" = "true" ] && ARGS="--publish"
           [ "${{ inputs.reel }}" = "true" ] && ARGS="$ARGS --reel"
+          [ "${{ inputs.trial }}" != "no" ] && [ -n "${{ inputs.trial }}" ] && ARGS="$ARGS --trial ${{ inputs.trial }}"
           python -m reels.post "$NAME" $ARGS
       - name: Registra il post pubblicato
         if: inputs.publish
