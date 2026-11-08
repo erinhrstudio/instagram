@@ -90,6 +90,7 @@ BACKDROPS = {
     "fascia":    [(0, 0.183), (1, 0.183), (1, 0.556), (0, 0.556)],  # fascia orizzontale
     "base":      [(0, 0.613), (1, 0.613), (1, 1.0), (0, 1.0)],      # blocco in basso
     "pieno":     [],                                                # solo antracite
+    "griglia":   [],                                                # tela da cassa (pagina erin.soundlab)
 }
 
 
@@ -105,8 +106,17 @@ def charcoal(W, H, seed=0):
     return a[..., None].repeat(3, 2)
 
 
+def griglia(W, H):
+    """Tela da cassa d'amplificatore (assets/sfondo-griglia.png, di Giuseppe), scurita e appena sfocata
+    perché il testo resti leggibile e la trama fitta non sfarfalli dopo la compressione di Instagram."""
+    from PIL import ImageFilter
+    im = Image.open(Path(__file__).resolve().parent.parent / "assets" / "sfondo-griglia.png").convert("RGB")
+    im = im.resize((W, H), Image.LANCZOS).filter(ImageFilter.GaussianBlur(0.6 * W / 1080))
+    return np.asarray(im, np.float32) * 0.45
+
+
 def backdrop(name, W, H, seed=0):
-    a = charcoal(W, H, seed)
+    a = griglia(W, H) if name == "griglia" else charcoal(W, H, seed)
     poly = BACKDROPS[name]
     if poly:
         m = Image.new("L", (W, H), 0)

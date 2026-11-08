@@ -63,7 +63,11 @@ def prossimo(oggi=None, manuale=False):
     if oggi < date.fromisoformat(coda["inizio"]):
         return None, "la coda parte il " + coda["inizio"]
     date_coda = [fatti[f"post:{n}"] for n in coda["post"] if f"post:{n}" in fatti]
-    if date_coda and oggi - max(date_coda) < timedelta(days=coda["ogni_giorni"]):
+    # giorno di lancio ("lancio" in coda.json): quel giorno escono più post, uno per esecuzione
+    lancio = coda.get("lancio") or {}
+    if lancio.get("data") == oggi.isoformat() and sum(d == oggi for d in date_coda) < lancio.get("post", 1):
+        pass
+    elif date_coda and oggi - max(date_coda) < timedelta(days=coda["ogni_giorni"]):
         return None, f"ultimo post della coda il {max(date_coda)}"
     for n in coda["post"]:
         if f"post:{n}" not in fatti:

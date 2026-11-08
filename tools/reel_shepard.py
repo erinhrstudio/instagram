@@ -67,9 +67,7 @@ TITOLI = {
 }
 # Dal 9/11 le illusioni sono una serie numerata (piano 1.000 follower): il numero va sul video e nel finale.
 # numerazione della pagina nuova @erin.soundlab (dal 2026-11-08): le 9 migliori di prima, poi le nuove
-ORDINE_SERIE = ["beat-infinito", "fischio-silenzio", "battito-binaurale", "rumore-nota", "scala-infinita",
-                "tritono", "mascheramento", "scale-zigzag", "galoppo", "melodia-misteriosa", "test-udito",
-                "davanti-dietro", "armonica-stonata", "continuita"]
+ORDINE_SERIE = ["beat-infinito", "mascheramento", "test-udito", "fischio-silenzio", "battito-binaurale", "rumore-nota", "scala-infinita", "tritono", "scale-zigzag", "galoppo", "melodia-misteriosa", "davanti-dietro", "armonica-stonata", "continuita"]
 NUMERI = {n: i + 1 for i, n in enumerate(ORDINE_SERIE)}
 SERIE_DURATA = 4.5
 
@@ -111,7 +109,7 @@ def write_mp4(out, audio, end, draw, seed, picco=0.89):
     titolo = prossima_illusione(Path(out).stem)
     numero = NUMERI.get(Path(out).stem)
     style.set_accent(os.environ.get("ACCENTO", "soundlab"))
-    base = Canvas(W, H, seed=seed, bg="pieno")
+    base = Canvas(W, H, seed=seed, bg=os.environ.get("SFONDO", "griglia"))
     base.header("ERIN · SOUNDLAB", "AUDIO ILLUSIONS")
     if numero:  # etichetta della serie, visibile anche sulla copertina
         lab = f"AUDIO ILLUSION #{numero}"

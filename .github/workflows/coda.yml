@@ -4,14 +4,21 @@ on:
   schedule:
     # dal 22/10 un giorno alle 12 e uno alle 18 ora italiana (reels/coda.py decide l'ora e il giorno).
     # Ora legale: 12 = 10 UTC, 18 = 16 UTC; ora solare (dal 26/10): 12 = 11 UTC, 18 = 17 UTC.
+    # Dal 9/11 (pubblico internazionale) si alternano le 18 e le 20 ora italiana: 17 e 19 UTC in ora solare.
     # GitHub spesso parte in ritardo o salta un giro: più tentativi, coda.py non pubblica mai due volte.
     - cron: "5 10 * * *"
     - cron: "5 11 * * *"
+    - cron: "20 11 * * *"
     - cron: "40 11 * * *"
+    - cron: "55 11 * * *"
     - cron: "5 16 * * *"
     - cron: "30 16 * * *"
     - cron: "5 17 * * *"
     - cron: "30 17 * * *"
+    - cron: "45 17 * * *"
+    - cron: "5 19 * * *"
+    - cron: "30 19 * * *"
+    - cron: "50 19 * * *"
   workflow_dispatch:
 
 permissions:
