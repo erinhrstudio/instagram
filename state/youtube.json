@@ -618,7 +618,8 @@
   "uscita_roma": "2026-11-07 12:00",
   "publish_at": "2026-11-07T11:00:00Z",
   "video_id": "3Wg45MRv9ZA",
-  "sincronizzato": "2026-11-07T11:00:00Z"
+  "sincronizzato": "2026-11-07T11:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "sa-o-fa-en",
@@ -637,7 +638,8 @@
   "uscita_roma": "2026-11-07 15:00",
   "publish_at": "2026-11-07T14:00:00Z",
   "video_id": "ZxmFO2Q3S1o",
-  "sincronizzato": "2026-11-07T14:00:00Z"
+  "sincronizzato": "2026-11-07T14:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "parole-fantasma-en",
@@ -656,7 +658,8 @@
   "uscita_roma": "2026-11-07 18:00",
   "publish_at": "2026-11-07T17:00:00Z",
   "video_id": "SU11Dfw014A",
-  "sincronizzato": "2026-11-07T17:00:00Z"
+  "sincronizzato": "2026-11-07T17:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "fischi-parole-en",
@@ -675,7 +678,8 @@
   "uscita_roma": "2026-11-07 21:00",
   "publish_at": "2026-11-07T20:00:00Z",
   "video_id": "sXNajIqoQ_8",
-  "sincronizzato": "2026-11-07T20:00:00Z"
+  "sincronizzato": "2026-11-07T20:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "buchi-en",
@@ -692,7 +696,9 @@
   "lingua": "en",
   "lingua_audio": "it",
   "uscita_roma": "2026-11-08 12:00",
-  "publish_at": "2026-11-08T11:00:00Z"
+  "publish_at": "2026-11-08T11:00:00Z",
+  "video_id": "S7egpE4zRKk",
+  "sincronizzato": "2026-11-08T11:00:00Z"
  },
  {
   "nome": "parlato-canto-en",
@@ -709,7 +715,9 @@
   "lingua": "en",
   "lingua_audio": "it",
   "uscita_roma": "2026-11-08 15:00",
-  "publish_at": "2026-11-08T14:00:00Z"
+  "publish_at": "2026-11-08T14:00:00Z",
+  "video_id": "FB21hzxn4Xk",
+  "sincronizzato": "2026-11-08T14:00:00Z"
  },
  {
   "nome": "melodia-misteriosa-en",
@@ -726,7 +734,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-09 12:00",
-  "publish_at": "2026-11-09T11:00:00Z"
+  "publish_at": "2026-11-09T11:00:00Z",
+  "video_id": "VX1cwaRbVwE",
+  "sincronizzato": "2026-11-09T11:00:00Z"
  },
  {
   "nome": "test-udito-en",
@@ -743,7 +753,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-10 12:00",
-  "publish_at": "2026-11-10T11:00:00Z"
+  "publish_at": "2026-11-10T11:00:00Z",
+  "video_id": "JJ6e05kMAD8",
+  "sincronizzato": "2026-11-10T11:00:00Z"
  },
  {
   "nome": "davanti-dietro-en",
