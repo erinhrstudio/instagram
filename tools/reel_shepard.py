@@ -66,7 +66,7 @@ TITOLI = {
     "continuita": "THE TONE THAT NEVER STOPS",
 }
 # Dal 9/11 le illusioni sono una serie numerata (piano 1.000 follower): il numero va sul video e nel finale.
-# numerazione della pagina nuova @erin.studiolab (dal 2026-11-08): le 9 migliori di prima, poi le nuove
+# numerazione della pagina nuova @erin.soundlab (dal 2026-11-08): le 9 migliori di prima, poi le nuove
 ORDINE_SERIE = ["beat-infinito", "fischio-silenzio", "battito-binaurale", "rumore-nota", "scala-infinita",
                 "tritono", "mascheramento", "scale-zigzag", "galoppo", "melodia-misteriosa", "test-udito",
                 "davanti-dietro", "armonica-stonata", "continuita"]
@@ -99,7 +99,7 @@ def chiusura_serie(c, t, end, titolo):
     centered(c, y + 82, titolo, size, fade(WHITE, k))
     import os
     invito = ("SUBSCRIBE TO @ERINHRSTUDIO SO YOU DON'T MISS IT" if os.environ.get("PIATTAFORMA") == "youtube"
-              else f"FOLLOW @{os.environ.get('IG_HANDLE', 'erin.studiolab').upper()} SO YOU DON'T MISS IT")
+              else f"FOLLOW @{os.environ.get('IG_HANDLE', 'erin.soundlab').upper()} SO YOU DON'T MISS IT")
     if titolo.startswith("#"):
         invito = invito.replace("SO YOU DON'T MISS IT", "· A NEW ILLUSION EVERY WEEKDAY")
     if titolo.startswith("MORE"):
@@ -112,7 +112,7 @@ def write_mp4(out, audio, end, draw, seed, picco=0.89):
     numero = NUMERI.get(Path(out).stem)
     style.set_accent(os.environ.get("ACCENTO", "soundlab"))
     base = Canvas(W, H, seed=seed, bg="pieno")
-    base.header("ERIN · STUDIOLAB", "AUDIO ILLUSIONS")
+    base.header("ERIN · SOUNDLAB", "AUDIO ILLUSIONS")
     if numero:  # etichetta della serie, visibile anche sulla copertina
         lab = f"AUDIO ILLUSION #{numero}"
         f_ = font("sans", 30, 700)

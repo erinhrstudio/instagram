@@ -79,7 +79,7 @@ def main():
 
 def reel(a):
     folder = ROOT / "posts" / a.name
-    # pagina nuova @erin.studiolab: video e testo propri (media/instagram, ig_caption.txt) se ci sono
+    # pagina nuova @erin.soundlab: video e testo propri (media/instagram, ig_caption.txt) se ci sono
     video = ROOT / "media" / "instagram" / f"{a.name}.mp4"
     if not video.exists():
         video = ROOT / "media" / "tiktok" / f"{a.name}.mp4"
