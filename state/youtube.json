@@ -698,7 +698,8 @@
   "uscita_roma": "2026-11-08 12:00",
   "publish_at": "2026-11-08T11:00:00Z",
   "video_id": "S7egpE4zRKk",
-  "sincronizzato": "2026-11-08T11:00:00Z"
+  "sincronizzato": "2026-11-08T11:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "parlato-canto-en",
@@ -717,7 +718,8 @@
   "uscita_roma": "2026-11-08 15:00",
   "publish_at": "2026-11-08T14:00:00Z",
   "video_id": "FB21hzxn4Xk",
-  "sincronizzato": "2026-11-08T14:00:00Z"
+  "sincronizzato": "2026-11-08T14:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "melodia-misteriosa-en",
@@ -772,7 +774,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-11 12:00",
-  "publish_at": "2026-11-11T11:00:00Z"
+  "publish_at": "2026-11-11T11:00:00Z",
+  "video_id": "ynel5V8WEWI",
+  "sincronizzato": "2026-11-11T11:00:00Z"
  },
  {
   "nome": "armonica-stonata-en",
@@ -789,7 +793,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-12 12:00",
-  "publish_at": "2026-11-12T11:00:00Z"
+  "publish_at": "2026-11-12T11:00:00Z",
+  "video_id": "nasWz8-rhF4",
+  "sincronizzato": "2026-11-12T11:00:00Z"
  },
  {
   "nome": "continuita-en",
@@ -806,6 +812,8 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-13 12:00",
-  "publish_at": "2026-11-13T11:00:00Z"
+  "publish_at": "2026-11-13T11:00:00Z",
+  "video_id": "3mY7aGB_oJs",
+  "sincronizzato": "2026-11-13T11:00:00Z"
  }
 ]
