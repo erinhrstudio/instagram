@@ -69,6 +69,11 @@ TITOLI = {
 # numerazione della pagina nuova @erin.soundlab (dal 2026-11-08): le 9 migliori di prima, poi le nuove
 ORDINE_SERIE = ["beat-infinito", "mascheramento", "test-udito", "fischio-silenzio", "battito-binaurale", "rumore-nota", "scala-infinita", "tritono", "scale-zigzag", "galoppo", "melodia-misteriosa", "davanti-dietro", "armonica-stonata", "continuita"]
 NUMERI = {n: i + 1 for i, n in enumerate(ORDINE_SERIE)}
+# TikTok (@erinhrstudio) continua la numerazione vecchia: con SERIE=tiktok si usano questa e l'ordine del vecchio account
+NUMERI_TIKTOK = {"galoppo": 18, "melodia-misteriosa": 19, "test-udito": 20, "davanti-dietro": 21,
+                 "armonica-stonata": 22, "continuita": 23}
+if os.environ.get("SERIE") == "tiktok":
+    NUMERI = NUMERI_TIKTOK
 SERIE_DURATA = 4.5
 
 
@@ -76,7 +81,8 @@ def prossima_illusione(nome):
     """Titolo della prossima illusione in coda dopo `nome`, "" se `nome` non è nella serie."""
     import json
     from reels.coda import audio_proprio
-    coda = json.loads((ROOT / "state" / "coda.json").read_text())["post"]
+    stato = json.loads((ROOT / "state" / "coda.json").read_text())
+    coda = stato["post_erin_recordingstudio"] if os.environ.get("SERIE") == "tiktok" else stato["post"]
     if nome not in coda or nome not in TITOLI:
         return ""
     for n in coda[coda.index(nome) + 1:]:
