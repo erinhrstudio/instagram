@@ -738,7 +738,8 @@
   "uscita_roma": "2026-11-09 12:00",
   "publish_at": "2026-11-09T11:00:00Z",
   "video_id": "VX1cwaRbVwE",
-  "sincronizzato": "2026-11-09T11:00:00Z"
+  "sincronizzato": "2026-11-09T11:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "test-udito-en",
