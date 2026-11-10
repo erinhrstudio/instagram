@@ -1,0 +1,13 @@
+name: Misura audio YouTube (temporaneo)
+on: workflow_dispatch
+jobs:
+  misura:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg && pip install -q -U yt-dlp numpy
+      - run: |
+          yt-dlp -F "https://www.youtube.com/shorts/JJ6e05kMAD8" || true
+          for f in 139 140 249 250 251; do yt-dlp -f $f -o "yt_$f.%(ext)s" "https://www.youtube.com/shorts/JJ6e05kMAD8" || true; done
+          ls -la yt_* || true
+          python tools/misura_yt.py yt_* media/youtube/en/test-udito.mp4 || true
