@@ -798,7 +798,8 @@
   "uscita_roma": "2026-11-12 12:00",
   "publish_at": "2026-11-12T11:00:00Z",
   "video_id": "nasWz8-rhF4",
-  "sincronizzato": "2026-11-12T11:00:00Z"
+  "sincronizzato": "2026-11-12T11:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "continuita-en",
