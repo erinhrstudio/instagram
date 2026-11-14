@@ -14,7 +14,10 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parent.parent
-ENC = ROOT / "state" / "tiktok.enc"
+# Un collegamento per account: erin (predefinito) o gatti (Mochi, Ciccio e Nunu).
+ACCOUNT = os.environ.get("TIKTOK_ACCOUNT", "erin").strip() or "erin"
+_SUFFIX = "" if ACCOUNT == "erin" else f"_{ACCOUNT}"
+ENC = ROOT / "state" / f"tiktok{_SUFFIX}.enc"
 API = "https://open.tiktokapis.com/v2"
 
 
@@ -24,6 +27,8 @@ def _openssl(args, data):
 
 
 def access_token():
+    if not ENC.exists():
+        sys.exit(f"Account '{ACCOUNT}' non ancora collegato: manca {ENC.relative_to(ROOT)}. Lancia prima «TikTok: collega account».")
     saved = json.loads(_openssl(["-d"], ENC.read_bytes()))
     r = requests.post(f"{API}/oauth/token/", data={
         "client_key": os.environ["CLIENT_KEY"], "client_secret": os.environ["CLIENT_SECRET"],
@@ -34,12 +39,12 @@ def access_token():
     if r.get("refresh_token") and r["refresh_token"] != saved["refresh_token"]:
         saved["refresh_token"] = r["refresh_token"]
         ENC.write_bytes(_openssl(["-salt"], json.dumps(saved).encode()))
-        print("Collegamento rinnovato: state/tiktok.enc aggiornato.")
+        print(f"Collegamento rinnovato: {ENC.name} aggiornato.")
     return r["access_token"]
 
 
 PAGES = "https://erinhrstudio.github.io/instagram/tt"
-SENT = ROOT / "state" / "tiktok_sent.json"
+SENT = ROOT / "state" / f"tiktok{_SUFFIX}_sent.json"
 
 
 class TroppiInSospeso(Exception):

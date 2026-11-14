@@ -7,6 +7,12 @@ on:
         description: "Codice mostrato dalla pagina tiktok.html (vale pochi minuti e una volta sola)"
         required: true
         type: string
+      account:
+        description: "Quale account TikTok stai collegando"
+        required: true
+        default: erin
+        type: choice
+        options: [erin, gatti]
 
 jobs:
   connect:
@@ -23,6 +29,8 @@ jobs:
           CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY_SANDBOX || secrets.TIKTOK_CLIENT_KEY }}
           CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET_SANDBOX || secrets.TIKTOK_CLIENT_SECRET }}
           REDIRECT_URI: https://erinhrstudio.github.io/instagram/tiktok.html
+          # erin -> state/tiktok.enc ; gatti -> state/tiktok_gatti.enc
+          ENC_FILE: ${{ inputs.account == 'gatti' && 'state/tiktok_gatti.enc' || 'state/tiktok.enc' }}
         run: |
           set -euo pipefail
           # il codice si legge dall'evento, così non compare nei log (il repo è pubblico)
@@ -61,11 +69,11 @@ jobs:
           rm -f /tmp/t.json
           # il collegamento si salva cifrato con il client secret: nel repo pubblico resta illeggibile
           printf '{"refresh_token":"%s","open_id":"%s"}' "$(cat /tmp/refresh)" "$(cat /tmp/openid)" \
-            | openssl enc -aes-256-cbc -pbkdf2 -salt -pass env:CLIENT_SECRET -out state/tiktok.enc
+            | openssl enc -aes-256-cbc -pbkdf2 -salt -pass env:CLIENT_SECRET -out "$ENC_FILE"
           rm -f /tmp/refresh /tmp/openid
           git config user.name "reel-bot"
           git config user.email "reel-bot@users.noreply.github.com"
-          git add state/tiktok.enc
-          git commit -m "TikTok collegato"
+          git add "$ENC_FILE"
+          git commit -m "TikTok collegato (${{ inputs.account }})"
           git push
-          echo "Collegamento salvato (cifrato) in state/tiktok.enc."
+          echo "Collegamento salvato (cifrato) in $ENC_FILE."

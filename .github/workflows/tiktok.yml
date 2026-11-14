@@ -7,6 +7,12 @@ on:
         description: "Cosa mandare, separato da virgole: video .mp4 o nomi di post (es. billie-eilish,media/tiktok/sa-o-fa.mp4)"
         required: true
         type: string
+      account:
+        description: "Su quale account TikTok caricare"
+        required: true
+        default: erin
+        type: choice
+        options: [erin, gatti]
 
 permissions:
   contents: write
@@ -29,14 +35,15 @@ jobs:
           CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY_SANDBOX || secrets.TIKTOK_CLIENT_KEY }}
           CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET_SANDBOX || secrets.TIKTOK_CLIENT_SECRET }}
           VIDEO: ${{ inputs.video }}
+          TIKTOK_ACCOUNT: ${{ inputs.account }}
         run: python -m tools.tiktok_bozza "$VIDEO"
       - name: Salva il collegamento rinnovato
         if: always()
         run: |
           git config user.name "reel-bot"
           git config user.email "reel-bot@users.noreply.github.com"
-          git add state/tiktok.enc state/tiktok_sent.json
+          git add state/tiktok*.enc state/tiktok*_sent.json
           if ! git diff --cached --quiet; then
-            git commit -m "TikTok: bozze inviate"
+            git commit -m "TikTok (${{ inputs.account }}): bozze inviate"
             git pull --rebase -q origin main && git push
           fi
