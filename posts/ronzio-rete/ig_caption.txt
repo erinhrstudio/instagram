@@ -1,0 +1,8 @@
+Audio Illusion #17: This hum can tell when a recording was made.
+
+The power grid is never exactly at 50 Hz (60 Hz in the US): it drifts up and down a tiny bit all day. Recordings made near electrical devices capture that hum. Forensic experts compare its drift with grid logs to find when a recording was made, or to spot where it was cut. It's called ENF analysis, and London's Metropolitan Police has kept logs since 2005. The drift on screen is exaggerated so you can see it.
+
+Did you know your recordings carry a timestamp? Send it to a true crime fan.
+Next: Illusion #18, sweet or bitter? Follow @erin.soundlab: a new illusion every weekday.
+
+#erinsoundlab #audioforensics #truecrime #audioengineering #soundscience

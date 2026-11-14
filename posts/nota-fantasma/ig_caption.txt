@@ -1,0 +1,10 @@
+Audio Illusion #15: There are 2 notes. You hear 3.
+
+The file has only two pure tones: one stays at 1000 Hz, one rises. If you hear a third note going down, your ear made it. The inner ear isn't perfectly linear, so two tones together create new ones. The strongest is 2 x A minus B, which falls while B rises. These are combination tones, also called Tartini tones.
+
+Turn the volume up a little. Not everyone hears it, and that's part of the fun.
+
+Did you hear the third note? Yes or no in the comments.
+Next: Illusion #16, which one changed more? Follow @erin.soundlab: a new illusion every weekday.
+
+#erinsoundlab #psychoacoustics #audioillusion #hearing #soundscience

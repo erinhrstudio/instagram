@@ -50,6 +50,11 @@ def paragraph(c, y, lines, k0, k):
 # così chi guarda ha un motivo per seguire. La prossima è il Reel con audio proprio
 # che viene dopo questo in state/coda.json.
 TITOLI = {
+    "nota-fantasma": "THE NOTE YOUR EAR INVENTS",
+    "volume-sale": "WHICH ONE CHANGED MORE?",
+    "ronzio-rete": "THE HUM THAT DATES RECORDINGS",
+    "dolce-amaro": "SWEET OR BITTER?",
+    "bouba-kiki": "WHICH ONE IS BOUBA?",
     "beat-infinito": "THE BEAT THAT SPEEDS UP FOREVER",
     "scala-infinita": "THE SCALE THAT NEVER ENDS",
     "tritono": "UP OR DOWN?",
@@ -67,7 +72,8 @@ TITOLI = {
 }
 # Dal 9/11 le illusioni sono una serie numerata (piano 1.000 follower): il numero va sul video e nel finale.
 # numerazione della pagina nuova @erin.soundlab (dal 2026-11-08): le 9 migliori di prima, poi le nuove
-ORDINE_SERIE = ["beat-infinito", "mascheramento", "test-udito", "fischio-silenzio", "battito-binaurale", "rumore-nota", "scala-infinita", "tritono", "scale-zigzag", "galoppo", "melodia-misteriosa", "davanti-dietro", "armonica-stonata", "continuita"]
+ORDINE_SERIE = ["beat-infinito", "mascheramento", "test-udito", "fischio-silenzio", "battito-binaurale", "rumore-nota", "scala-infinita", "tritono", "scale-zigzag", "galoppo", "melodia-misteriosa", "davanti-dietro", "armonica-stonata", "continuita",
+                 "nota-fantasma", "volume-sale", "ronzio-rete", "dolce-amaro", "bouba-kiki"]
 NUMERI = {n: i + 1 for i, n in enumerate(ORDINE_SERIE)}
 # TikTok (@erinhrstudio) continua la numerazione vecchia: con SERIE=tiktok si usano questa e l'ordine del vecchio account
 NUMERI_TIKTOK = {"galoppo": 18, "melodia-misteriosa": 19, "test-udito": 20, "davanti-dietro": 21,
@@ -75,7 +81,8 @@ NUMERI_TIKTOK = {"galoppo": 18, "melodia-misteriosa": 19, "test-udito": 20, "dav
 if os.environ.get("SERIE") == "tiktok":
     NUMERI = NUMERI_TIKTOK
 # TikTok #24-#28 (14/11): le 5 migliori uscite in italiano, rifatte in inglese
-ORDINE_TIKTOK_EN = ["beat-infinito", "fischio-silenzio", "rumore-nota", "battito-binaurale", "mascheramento"]
+ORDINE_TIKTOK_EN = ["beat-infinito", "fischio-silenzio", "rumore-nota", "battito-binaurale", "mascheramento",
+                    "nota-fantasma", "volume-sale", "ronzio-rete", "dolce-amaro", "bouba-kiki"]
 if os.environ.get("SERIE") == "tiktok-en":
     NUMERI = {n: 24 + i for i, n in enumerate(ORDINE_TIKTOK_EN)}
 SERIE_DURATA = 4.5
