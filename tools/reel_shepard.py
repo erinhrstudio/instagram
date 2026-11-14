@@ -74,6 +74,10 @@ NUMERI_TIKTOK = {"galoppo": 18, "melodia-misteriosa": 19, "test-udito": 20, "dav
                  "armonica-stonata": 22, "continuita": 23}
 if os.environ.get("SERIE") == "tiktok":
     NUMERI = NUMERI_TIKTOK
+# TikTok #24-#28 (14/11): le 5 migliori uscite in italiano, rifatte in inglese
+ORDINE_TIKTOK_EN = ["beat-infinito", "fischio-silenzio", "rumore-nota", "battito-binaurale", "mascheramento"]
+if os.environ.get("SERIE") == "tiktok-en":
+    NUMERI = {n: 24 + i for i, n in enumerate(ORDINE_TIKTOK_EN)}
 SERIE_DURATA = 4.5
 
 
@@ -82,7 +86,7 @@ def prossima_illusione(nome):
     import json
     from reels.coda import audio_proprio
     stato = json.loads((ROOT / "state" / "coda.json").read_text())
-    coda = stato["post_erin_recordingstudio"] if os.environ.get("SERIE") == "tiktok" else stato["post"]
+    coda = {"tiktok": stato["post_erin_recordingstudio"], "tiktok-en": ORDINE_TIKTOK_EN}.get(os.environ.get("SERIE"), stato["post"])
     if nome not in coda or nome not in TITOLI:
         return ""
     for n in coda[coda.index(nome) + 1:]:
