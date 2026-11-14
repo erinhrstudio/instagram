@@ -26,6 +26,8 @@ def giorno(oggi, coda=None):
     s = coda.get("settimana")
     if not s or oggi < date.fromisoformat(s["da"]):
         return False
+    if oggi.isoformat() in s.get("extra", {}):   # giorni singoli fuori piano, es. una domenica
+        return s["extra"][oggi.isoformat()]
     return s["giorni"][oggi.weekday()]
 
 
