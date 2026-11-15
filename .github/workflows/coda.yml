@@ -19,6 +19,8 @@ on:
     - cron: "5 19 * * *"
     - cron: "30 19 * * *"
     - cron: "50 19 * * *"
+    - cron: "5 21 * * *"
+    - cron: "30 21 * * *"
   workflow_dispatch:
 
 permissions:
