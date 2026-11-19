@@ -110,9 +110,18 @@ def reel(a):
     urls = [f"https://cdn.jsdelivr.net/gh/{repo}@{ref}/{rel}", f"https://raw.githubusercontent.com/{repo}/{ref}/{rel}"]
     from reels.publish import publish_reel_url
     res = publish_reel_url(urls, caption, token, trial=a.trial)
+    entry = {"id": f"post:{a.name}", "media_id": res["media_id"], "formato": "reel-trial" if a.trial else "reel",
+             "published_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+    # stesso Reel sulla Pagina Facebook (solo se FB_PAGE_ID e FB_PAGE_TOKEN ci sono; mai per i Trial Reel)
+    from reels import facebook
+    if facebook.configured() and not a.trial:
+        try:
+            entry["fb_video_id"] = facebook.publish_reel(urls, caption)
+            print(f"Reel pubblicato anche su Facebook: video {entry['fb_video_id']}")
+        except Exception as e:
+            print(f"::warning::Facebook non riuscito (Instagram è già uscito): {e}")
     state = json.loads(STATE.read_text()) if STATE.exists() else []
-    state.append({"id": f"post:{a.name}", "media_id": res["media_id"], "formato": "reel-trial" if a.trial else "reel",
-                  "published_at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+    state.append(entry)
     STATE.write_text(json.dumps(state, indent=2) + "\n")
     print(f"Reel pubblicato su @{res['username']}: media {res['media_id']}")
     return 0

@@ -49,6 +49,8 @@ jobs:
         if: steps.coda.outputs.name != ''
         env:
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          FB_PAGE_ID: ${{ vars.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: python -m reels.post "${{ steps.coda.outputs.name }}" --publish ${{ steps.coda.outputs.reel }}
       - name: Registra il post pubblicato
         if: steps.coda.outputs.name != ''

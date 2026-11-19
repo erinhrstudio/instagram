@@ -1,0 +1,25 @@
+name: "Facebook: verifica Pagina"
+
+# Controlla che FB_PAGE_ID e FB_PAGE_TOKEN funzionino, senza pubblicare niente.
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q requests
+      - env:
+          FB_PAGE_ID: ${{ vars.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: |
+          python -c "
+          from reels import facebook
+          if not facebook.configured():
+              raise SystemExit('Mancano FB_PAGE_ID (variabile) o FB_PAGE_TOKEN (secret).')
+          print('Pagina OK:', facebook.check_page()['name'])
+          "
