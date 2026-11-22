@@ -820,5 +820,95 @@
   "video_id": "3mY7aGB_oJs",
   "sincronizzato": "2026-11-13T11:00:00Z",
   "pubblico": true
+ },
+ {
+  "nome": "nota-fantasma-en",
+  "file": "media/youtube/en/nota-fantasma.mp4",
+  "titolo": "There are 2 notes. You hear 3. Did you hear the third one? #shorts",
+  "descrizione": "Audio Illusion #24. The file has only two pure tones: A stays at 1000 Hz, B rises. If you hear a third note going down, your ear made it.\n\nThe inner ear isn't perfectly linear, so two tones played together create new ones. The strongest is 2A minus B, which falls while B rises. These are combination tones, also called Tartini tones, after the violinist who noticed them in the 1700s.\n\nTurn the volume up a little. Not everyone hears it, and that's part of the fun. Yes or no in the comments.\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #psychoacoustics #audioillusion #hearing",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "combination tones",
+   "tartini tones",
+   "hearing test",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-22 21:30",
+  "publish_at": "2026-11-22T20:30:00Z"
+ },
+ {
+  "nome": "volume-sale-en",
+  "file": "media/youtube/en/volume-sale.mp4",
+  "titolo": "Which one changed more, A or B? Most people get it wrong #shorts",
+  "descrizione": "Audio Illusion #25. A goes down by 15 dB, B goes up by 15 dB. Same sound, same amount of change. Most people say B changed more.\n\nA sound getting louder may be something coming closer, so your brain treats it as more urgent and exaggerates the change. John Neuhoff described this bias for rising sounds in Nature in 1998.\n\nComment A or B, then send it to someone and compare.\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #psychoacoustics #audioillusion #mixing",
+  "tag": [
+   "psychoacoustics",
+   "auditory illusion",
+   "looming sounds",
+   "loudness",
+   "mixing",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-23 18:00",
+  "publish_at": "2026-11-23T17:00:00Z"
+ },
+ {
+  "nome": "ronzio-rete-en",
+  "file": "media/youtube/en/ronzio-rete.mp4",
+  "titolo": "This hum can tell when a recording was made #shorts",
+  "descrizione": "Audio Illusion #26. The power grid is never exactly at 50 Hz (60 Hz in the US): it drifts up and down a tiny bit all day. Recordings made near electrical devices capture that hum.\n\nForensic experts compare its drift with grid logs to find when a recording was made, or to spot where it was cut. It's called ENF analysis (Electrical Network Frequency), and London's Metropolitan Police has kept logs since 2005. The drift on screen is exaggerated so you can see it.\n\nSend it to a true crime fan.\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #audioforensics #truecrime #soundscience",
+  "tag": [
+   "audio forensics",
+   "ENF analysis",
+   "true crime",
+   "audio engineering",
+   "sound science",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-24 18:00",
+  "publish_at": "2026-11-24T17:00:00Z"
+ },
+ {
+  "nome": "dolce-amaro-en",
+  "file": "media/youtube/en/dolce-amaro.mp4",
+  "titolo": "Which one tastes sweeter, A or B? Same toffee #shorts",
+  "descrizione": "Audio Illusion #27. In an Oxford study, people ate the same toffee while listening to two soundtracks. With high, soft notes it tasted sweeter. With low, brassy notes it tasted more bitter.\n\nSame toffee. Your brain mixes what you hear into what you taste. Researchers call it sonic seasoning (Crisinel and Spence, 2012).\n\nTry it with your next snack and tell me if it worked.\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #sonicseasoning #foodscience #psychology",
+  "tag": [
+   "sonic seasoning",
+   "food science",
+   "psychology",
+   "auditory illusion",
+   "crossmodal",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-25 18:00",
+  "publish_at": "2026-11-25T17:00:00Z"
+ },
+ {
+  "nome": "bouba-kiki-en",
+  "file": "media/youtube/en/bouba-kiki.mp4",
+  "titolo": "Which shape is Bouba, 1 or 2? Answer fast #shorts",
+  "descrizione": "Audio Illusion #28. Most people pick the round one. In 2001, 95% of people matched Bouba to the round shape and Kiki to the spiky one. A 2022 study with speakers of 25 languages found the same match well above chance.\n\nPsychologist Wolfgang Köhler made it famous in 1929 with the words maluma and takete. Sounds carry shape, before any meaning.\n\nComment 1 or 2. Are you in the other 5%?\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #boubakiki #psychology #linguistics",
+  "tag": [
+   "bouba kiki",
+   "psychology",
+   "linguistics",
+   "auditory illusion",
+   "sound symbolism",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-26 18:00",
+  "publish_at": "2026-11-26T17:00:00Z"
  }
 ]

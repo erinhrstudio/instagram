@@ -85,6 +85,11 @@ ORDINE_TIKTOK_EN = ["beat-infinito", "fischio-silenzio", "rumore-nota", "battito
                     "nota-fantasma", "volume-sale", "ronzio-rete", "dolce-amaro", "bouba-kiki"]
 if os.environ.get("SERIE") == "tiktok-en":
     NUMERI = {n: 24 + i for i, n in enumerate(ORDINE_TIKTOK_EN)}
+# YouTube Shorts (@erinhrstudio) continua la sua numerazione: l'ultima uscita era #23 continuita (13/11).
+# Ogni illusione nuova va aggiunta qui in fondo e renderizzata con SERIE=youtube PIATTAFORMA=youtube in media/youtube/en/.
+ORDINE_YOUTUBE = ["nota-fantasma", "volume-sale", "ronzio-rete", "dolce-amaro", "bouba-kiki"]
+if os.environ.get("SERIE") == "youtube":
+    NUMERI = {n: 24 + i for i, n in enumerate(ORDINE_YOUTUBE)}
 SERIE_DURATA = 4.5
 
 
@@ -93,7 +98,8 @@ def prossima_illusione(nome):
     import json
     from reels.coda import audio_proprio
     stato = json.loads((ROOT / "state" / "coda.json").read_text())
-    coda = {"tiktok": stato["post_erin_recordingstudio"], "tiktok-en": ORDINE_TIKTOK_EN}.get(os.environ.get("SERIE"), stato["post"])
+    coda = {"tiktok": stato["post_erin_recordingstudio"], "tiktok-en": ORDINE_TIKTOK_EN,
+            "youtube": ORDINE_YOUTUBE}.get(os.environ.get("SERIE"), stato["post"])
     if nome not in coda or nome not in TITOLI:
         return ""
     for n in coda[coda.index(nome) + 1:]:
@@ -116,7 +122,8 @@ def chiusura_serie(c, t, end, titolo):
     invito = ("SUBSCRIBE TO @ERINHRSTUDIO SO YOU DON'T MISS IT" if os.environ.get("PIATTAFORMA") == "youtube"
               else f"FOLLOW @{os.environ.get('IG_HANDLE', 'erin.soundlab').upper()} SO YOU DON'T MISS IT")
     if titolo.startswith("#"):
-        invito = invito.replace("SO YOU DON'T MISS IT", "· A NEW ILLUSION EVERY WEEKDAY")
+        ogni = "DAY" if os.environ.get("PIATTAFORMA") == "youtube" else "WEEKDAY"
+        invito = invito.replace("SO YOU DON'T MISS IT", f"· A NEW ILLUSION EVERY {ogni}")
     if titolo.startswith("MORE"):
         invito = invito.replace("MISS IT", "MISS THEM")
     centered(c, y + 82 + size + 20, invito, 26 if len(invito) <= 50 else 21, fade(TEXT, k), "sans", 600, 2)

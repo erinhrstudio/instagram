@@ -1,6 +1,11 @@
 name: "YouTube: carica Shorts programmati"
 
 on:
+  # ogni giorno dopo l'azzeramento della quota (9:00 Roma): carica i nuovi Short in state/youtube.json
+  # e pubblica quelli in uscita. Gli Short escono comunque all'ora programmata (publishAt), anche se il cron ritarda.
+  schedule:
+    - cron: "23 8 * * *"
+    - cron: "47 15 * * *"
   workflow_dispatch:
     inputs:
       quanti:
