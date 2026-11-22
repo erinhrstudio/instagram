@@ -837,7 +837,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-22 21:30",
-  "publish_at": "2026-11-22T20:30:00Z"
+  "publish_at": "2026-11-22T20:30:00Z",
+  "video_id": "Cmfi6sRKKio",
+  "sincronizzato": "2026-11-22T20:30:00Z"
  },
  {
   "nome": "volume-sale-en",
@@ -855,7 +857,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-23 18:00",
-  "publish_at": "2026-11-23T17:00:00Z"
+  "publish_at": "2026-11-23T17:00:00Z",
+  "video_id": "c0BtQr_eL50",
+  "sincronizzato": "2026-11-23T17:00:00Z"
  },
  {
   "nome": "ronzio-rete-en",
@@ -873,7 +877,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-24 18:00",
-  "publish_at": "2026-11-24T17:00:00Z"
+  "publish_at": "2026-11-24T17:00:00Z",
+  "video_id": "PJrpu7TqrTU",
+  "sincronizzato": "2026-11-24T17:00:00Z"
  },
  {
   "nome": "dolce-amaro-en",
@@ -891,7 +897,9 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-25 18:00",
-  "publish_at": "2026-11-25T17:00:00Z"
+  "publish_at": "2026-11-25T17:00:00Z",
+  "video_id": "_QOybLI758g",
+  "sincronizzato": "2026-11-25T17:00:00Z"
  },
  {
   "nome": "bouba-kiki-en",
@@ -909,6 +917,8 @@
   "lingua": "en",
   "lingua_audio": "",
   "uscita_roma": "2026-11-26 18:00",
-  "publish_at": "2026-11-26T17:00:00Z"
+  "publish_at": "2026-11-26T17:00:00Z",
+  "video_id": "ikEzpgFvY-4",
+  "sincronizzato": "2026-11-26T17:00:00Z"
  }
 ]
