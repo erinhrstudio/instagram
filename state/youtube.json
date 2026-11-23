@@ -839,7 +839,8 @@
   "uscita_roma": "2026-11-22 21:30",
   "publish_at": "2026-11-22T20:30:00Z",
   "video_id": "Cmfi6sRKKio",
-  "sincronizzato": "2026-11-22T20:30:00Z"
+  "sincronizzato": "2026-11-22T20:30:00Z",
+  "pubblico": true
  },
  {
   "nome": "volume-sale-en",
@@ -859,7 +860,8 @@
   "uscita_roma": "2026-11-23 18:00",
   "publish_at": "2026-11-23T17:00:00Z",
   "video_id": "c0BtQr_eL50",
-  "sincronizzato": "2026-11-23T17:00:00Z"
+  "sincronizzato": "2026-11-23T17:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "ronzio-rete-en",
