@@ -29,7 +29,7 @@ if CORTO:
     VOTA = GIRO1 + 3 * GRUPPO
     RIVELA = VOTA + 1.5
     SPIEGA = CTA = RIVELA + 3.0
-    END = CTA + 3.5
+    END = CTA + 4.6   # la chiusura "next illusion" (4,5 s) non copre la frase in basso
 CY = 1060
 POS = {"FRONT": (W / 2 + 270, CY), "BEHIND": (W / 2 - 270, CY), "ABOVE": (W / 2, CY - 270)}
 
