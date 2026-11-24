@@ -7,6 +7,7 @@ sentono lo stesso, ed è il gancio per confrontare.
 
 Uso: python -m tools.reel_direzione media/tiktok/davanti-dietro.mp4
 """
+import os
 import sys
 from pathlib import Path
 
@@ -22,6 +23,13 @@ TIPICO = {"A": "FRONT", "B": "BEHIND", "C": "ABOVE"}
 COLPO, PAUSA_COLPO, GRUPPO = 0.35, 0.15, 3.0
 GIRO1, GIRO2 = 1.0, 10.4
 VOTA, RIVELA, SPIEGA, CTA, END = 19.4, 22.0, 25.0, 32.0, 38.5
+CORTO = bool(os.environ.get("CORTO"))   # versione Instagram corta (24/11): un giro solo, niente spiegazione
+if CORTO:
+    GRUPPO, GIRO1, GIRO2 = 2.6, 0.5, 99.0
+    VOTA = GIRO1 + 3 * GRUPPO
+    RIVELA = VOTA + 1.5
+    SPIEGA = CTA = RIVELA + 3.0
+    END = CTA + 3.5
 CY = 1060
 POS = {"FRONT": (W / 2 + 270, CY), "BEHIND": (W / 2 - 270, CY), "ABOVE": (W / 2, CY - 270)}
 
@@ -43,7 +51,7 @@ def colpi(t0):
     return [(t0 + i * GRUPPO, s) for i, s in enumerate(SUONI)]
 
 
-GRUPPI = colpi(GIRO1) + colpi(GIRO2)
+GRUPPI = colpi(GIRO1) + ([] if CORTO else colpi(GIRO2))
 
 
 def build():

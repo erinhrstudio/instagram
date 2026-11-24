@@ -6,6 +6,7 @@ e lo senti continuare sotto il rumore, anche se nei buchi il tono non c'è.
 
 Uso: python -m tools.reel_continuita media/tiktok/continuita.mp4
 """
+import os
 import sys
 from pathlib import Path
 
@@ -22,6 +23,13 @@ CHIEDI, RIVELA = 10.4, 13.0
 GIRO_C = RIVELA + 0.8
 SPIEGA = GIRO_C + LUNGO + 1.0
 CTA, END = SPIEGA + 6.8, SPIEGA + 13.3
+if os.environ.get("CORTO"):   # versione Instagram corta (24/11): giri da 3 s, niente spiegazione
+    LUNGO, GIRO_A, GIRO_B = 3.0, 0.6, 3.9
+    CHIEDI = GIRO_B + LUNGO + 0.2
+    RIVELA = CHIEDI + 1.5
+    GIRO_C = RIVELA + 0.5
+    SPIEGA = CTA = GIRO_C + LUNGO + 0.5
+    END = CTA + 3.5
 
 
 def freq(t):

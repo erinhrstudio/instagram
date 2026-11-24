@@ -6,6 +6,7 @@ diverso da persona a persona). Chi guarda scrive a che numero l'ha sentita: si c
 
 Uso: python -m tools.reel_armonica media/tiktok/armonica-stonata.mp4
 """
+import os
 import sys
 from pathlib import Path
 
@@ -28,6 +29,14 @@ SPIEGA = RIVELA + 6.0
 CTA, END = SPIEGA + 6.8, SPIEGA + 13.3
 EVENTI = ([(T0 + i * PASSO, i) for i in range(5)] + [(RIASCOLTA, 0), (RIASCOLTA + PASSO, 4)]
           + [(ANCORA, 4)])
+if os.environ.get("CORTO"):   # versione Instagram corta (24/11): niente riascolto, niente voto, niente spiegazione
+    DUR, PASSO, T0 = 1.4, 1.8, 0.6
+    RIASCOLTA = 99.0
+    VOTA = RIVELA = T0 + PASSO * len(STONA) + 0.2
+    SOLO, ANCORA = RIVELA + 0.8, RIVELA + 2.4
+    SPIEGA = CTA = RIVELA + 4.2
+    END = CTA + 3.4
+    EVENTI = [(T0 + i * PASSO, i) for i in range(5)] + [(ANCORA, 4)]
 
 
 def complesso(pct, solo=False):
