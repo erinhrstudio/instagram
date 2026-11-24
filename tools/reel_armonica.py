@@ -82,7 +82,7 @@ def passi(c, y, i, k=1.0):
         x = W / 2 + (j - 2) * 130
         on = j == i
         c.ellipse((x - 44, y - 44, x + 44, y + 44), fill=fade(style.PINK if on else (60, 57, 68), k))
-        c.text((x, y), str(j + 1), style.font("display", 60), fill=(31, 31, 31) if on else fade(TEXT, k),
+        c.text((x, y), str(j + 1), style.font("display", 60), fill=style.on_accent() if on else fade(TEXT, k),
                anchor="mm")
 
 

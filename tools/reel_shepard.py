@@ -164,7 +164,7 @@ def write_mp4(out, audio, end, draw, seed, picco=0.89):
         f_ = font("sans", 30, 700)
         wl = base.textlength(lab, f_, tracking=6)
         base.rect((W / 2 - wl / 2 - 28, 196, W / 2 + wl / 2 + 28, 250), fill=style.PINK, radius=27)
-        base.text((W / 2, 223), lab, f_, fill=(31, 31, 31), anchor="mm", tracking=6)
+        base.text((W / 2, 223), lab, f_, fill=style.on_accent(), anchor="mm", tracking=6)
     base_img = base.img.copy()
     audio = audio[:int(end * SR)]
     audio = audio / np.abs(audio).max() * picco  # picco basso per toni acuti puri

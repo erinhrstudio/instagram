@@ -80,8 +80,9 @@ ACCENTS.update(ambra=_ruota(38), verde=_ruota(150), viola=_ruota(275), acqua=_ru
 
 # Viraggio al viola (2026-11-24, Giuseppe: "virare al viola post dopo post"): dal lilla+crema di ERIN Soundlab
 # a un viola pieno, un piccolo passo per Reel. Si mescola in RGB lineare; TINT colora appena la tela da cassa.
-VIOLA_PIENO = dict(PINK=(170, 128, 236), PINK_SOFT=(212, 198, 246), BAND=(128, 88, 204),
-                   GLOW=(20, 12, 40), DIM=((60, 46, 96), (106, 80, 168), (48, 36, 78)), TINT=(0.90, 0.84, 1.12))
+VIOLA_PIENO = dict(PINK=(92, 78, 210), PINK_SOFT=(170, 172, 234), BAND=(58, 44, 160),
+                   GLOW=(8, 8, 36), DIM=((36, 32, 84), (64, 56, 150), (28, 26, 66)), TINT=(0.80, 0.82, 1.22))
+# 2026-11-24 sera, Giuseppe: "viola molto più scuro e tendente al blu" -> indaco scuro (prima era 170,128,236)
 
 
 def viraggio(passo, passi=10):
@@ -103,6 +104,12 @@ def viraggio(passo, passi=10):
 
 
 TINT = (1.0, 1.0, 1.0)  # moltiplicatore RGB della tela da cassa (solo il viraggio lo cambia)
+
+
+def on_accent():
+    """Colore del testo sopra un riempimento d'accento: scuro sugli accenti chiari, bianco su quelli scuri."""
+    lum = 0.2126 * PINK[0] + 0.7152 * PINK[1] + 0.0722 * PINK[2]
+    return (31, 31, 31) if lum > 120 else (245, 243, 250)
 
 
 def set_accent(name="rosa"):
