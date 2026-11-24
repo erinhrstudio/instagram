@@ -55,6 +55,13 @@ TITOLI = {
     "ronzio-rete": "THE HUM THAT DATES RECORDINGS",
     "dolce-amaro": "SWEET OR BITTER?",
     "bouba-kiki": "WHICH ONE IS BOUBA?",
+    "stesso-volume": "SAME LEVEL. WHICH IS LOUDER?",
+    "campana": "THE BELL NOTE THAT ISN'T THERE",
+    "neonati": "WHICH BABY IS FRENCH?",
+    "balena-52": "THE LONELIEST WHALE",
+    "vino": "WHICH WINE DO YOU BUY?",
+    "ratti-tempo": "THE TEMPO RATS DANCE TO",
+    "gomma": "THE SONG THAT GETS STUCK",
     "beat-infinito": "THE BEAT THAT SPEEDS UP FOREVER",
     "scala-infinita": "THE SCALE THAT NEVER ENDS",
     "tritono": "UP OR DOWN?",
@@ -87,7 +94,8 @@ if os.environ.get("SERIE") == "tiktok-en":
     NUMERI = {n: 24 + i for i, n in enumerate(ORDINE_TIKTOK_EN)}
 # YouTube Shorts (@erinhrstudio) continua la sua numerazione: l'ultima uscita era #23 continuita (13/11).
 # Ogni illusione nuova va aggiunta qui in fondo e renderizzata con SERIE=youtube PIATTAFORMA=youtube in media/youtube/en/.
-ORDINE_YOUTUBE = ["nota-fantasma", "volume-sale", "ronzio-rete", "dolce-amaro", "bouba-kiki"]
+ORDINE_YOUTUBE = ["nota-fantasma", "volume-sale", "ronzio-rete", "dolce-amaro", "bouba-kiki",
+                  "stesso-volume", "campana", "neonati", "balena-52", "vino", "ratti-tempo", "gomma"]
 if os.environ.get("SERIE") == "youtube":
     NUMERI = {n: 24 + i for i, n in enumerate(ORDINE_YOUTUBE)}
 SERIE_DURATA = 4.5

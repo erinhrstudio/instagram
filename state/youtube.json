@@ -922,5 +922,131 @@
   "publish_at": "2026-11-26T17:00:00Z",
   "video_id": "ikEzpgFvY-4",
   "sincronizzato": "2026-11-26T17:00:00Z"
+ },
+ {
+  "nome": "stesso-volume-en",
+  "file": "media/youtube/en/stesso-volume.mp4",
+  "titolo": "Same level in the file. Which one is louder, A or B? #shorts",
+  "descrizione": "Audio Illusion #29. A is a low tone at 125 Hz, B a high one at 3,000 Hz. In the file they are exactly the same level. Most people hear B as much louder.\n\nYour ears are far less sensitive to low notes and most sensitive around 2,000-5,000 Hz, where the ear canal resonates. These are the equal-loudness contours, first measured by Fletcher and Munson in 1933 (today ISO 226). Small phone speakers make the gap even bigger.\n\nThat's why bass needs more dB to feel as loud. Comment A or B.\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #psychoacoustics #mixing #audioillusion",
+  "tag": [
+   "psychoacoustics",
+   "equal loudness",
+   "fletcher munson",
+   "mixing",
+   "auditory illusion",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-27 18:00",
+  "publish_at": "2026-11-27T17:00:00Z"
+ },
+ {
+  "nome": "campana-en",
+  "file": "media/youtube/en/campana.mp4",
+  "titolo": "The note you hear in this bell doesn't exist #shorts",
+  "descrizione": "Audio Illusion #30. B is the same bell with the partials at the note you hear removed. The note barely changes.\n\nThe pitch of a bell, the strike note, is not one of its partials. Your brain builds it from three upper partials, the nominal, superquint and octave nominal (ratios 2:3:4), one octave below the nominal. It's a virtual pitch, like the missing fundamental. At the end: the bell without that partial, then the note alone.\n\nDid B change? Comment yes or no. Bell synthesized from the partials of a tuned church bell.\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #psychoacoustics #bells #audioillusion",
+  "tag": [
+   "bell acoustics",
+   "strike note",
+   "virtual pitch",
+   "psychoacoustics",
+   "auditory illusion",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-28 18:00",
+  "publish_at": "2026-11-28T17:00:00Z"
+ },
+ {
+  "nome": "neonati-en",
+  "file": "media/youtube/en/neonati.mp4",
+  "titolo": "One baby is French, one is German. Which one is French? #shorts",
+  "descrizione": "Audio Illusion #31. A researcher team recorded the cries of 60 newborns, 3 to 5 days old. French babies cried with a rising melody, German babies with a falling one, matching the melody of each language. They had heard their mothers' voices in the womb.\n\nA is French (rising), B is German (falling). The cries here are synthesized with the same melodic shapes.\n\nMampe, Friederici, Christophe and Wermke, Current Biology, 2009. Comment A or B before the answer.\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #psychology #language #soundscience",
+  "tag": [
+   "newborn cry",
+   "language",
+   "psychology",
+   "auditory illusion",
+   "sound science",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-29 18:00",
+  "publish_at": "2026-11-29T17:00:00Z"
+ },
+ {
+  "nome": "balena-52-en",
+  "file": "media/youtube/en/balena-52.mp4",
+  "titolo": "The loneliest whale sings at 52 Hz. Can you hear it? #shorts",
+  "descrizione": "Audio Illusion #32. Headphones on. A is a call at 52 Hz, B is around 18 Hz, the range of a blue whale.\n\nUS Navy hydrophones have picked up the 52-hertz whale since 1989. It calls at 52 Hz, much higher than blue whales (10-39 Hz) and fin whales (about 20 Hz). Nobody has ever identified it. 52 Hz is close to a low G sharp on a bass guitar. Most phone speakers can't play B at all.\n\nThe calls here are synthesized at the same pitch. Watkins et al., Deep-Sea Research, 2004. Could you hear B?\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #whales #soundscience #lowend",
+  "tag": [
+   "52 hertz whale",
+   "whale song",
+   "infrasound",
+   "sound science",
+   "low frequency",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-11-30 18:00",
+  "publish_at": "2026-11-30T17:00:00Z"
+ },
+ {
+  "nome": "vino-en",
+  "file": "media/youtube/en/vino.mp4",
+  "titolo": "French music or German music. Which wine do you buy? #shorts",
+  "descrizione": "Audio Illusion #33. For two weeks a supermarket played French accordion music or German beer-hall music next to a display of French and German wines. With French music, French wine outsold German. With German music, the opposite. Almost no customer said the music had influenced them.\n\nNorth, Hargreaves and McKendrick, Nature, 1997. Both tracks here are original, made for this video.\n\nWhich wine would you buy? Comment A or B.\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #musicpsychology #psychology #soundscience",
+  "tag": [
+   "music psychology",
+   "in-store music",
+   "consumer psychology",
+   "sound science",
+   "auditory illusion",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-12-01 18:00",
+  "publish_at": "2026-12-01T17:00:00Z"
+ },
+ {
+  "nome": "ratti-tempo-en",
+  "file": "media/youtube/en/ratti-tempo.mp4",
+  "titolo": "Rats bob their heads at this tempo. Does your head move? #shorts",
+  "descrizione": "Audio Illusion #34. Three tempos: 75, 132 and 264 BPM.\n\nResearchers at the University of Tokyo played music to rats wearing tiny motion sensors. They moved most in time with the beat between 120 and 140 BPM, the same range where humans sync best. One of the tracks was Mozart's Sonata for Two Pianos K.448 at its original 132 BPM.\n\nIto et al., Science Advances, 2022. The beats here are original. Which tempo moved you? Comment it.\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #musicscience #rhythm #psychology",
+  "tag": [
+   "beat synchronization",
+   "music science",
+   "rats",
+   "tempo",
+   "psychology",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-12-02 18:00",
+  "publish_at": "2026-12-02T17:00:00Z"
+ },
+ {
+  "nome": "gomma-en",
+  "file": "media/youtube/en/gomma.mp4",
+  "titolo": "This melody will get stuck in your head. Here's the fix #shorts",
+  "descrizione": "Audio Illusion #35. An original hook, played twice. Sorry.\n\nIn a 2015 study, people heard catchy songs and then tried not to think about them. Chewing gum reduced how often the song came back and how much they 'heard' it. Tapping a finger helped less. Chewing keeps busy the same system you use to sing in your head.\n\nBeaman et al., Quarterly Journal of Experimental Psychology, 2015. Is it stuck now? Send it to a friend.\n\nSubscribe: a new hearing illusion every day.\n\n#erinsoundlab #shorts #earworm #musicpsychology #psychology",
+  "tag": [
+   "earworm",
+   "music psychology",
+   "chewing gum",
+   "catchy melody",
+   "psychology",
+   "erin soundlab"
+  ],
+  "lingua": "en",
+  "lingua_audio": "",
+  "uscita_roma": "2026-12-03 18:00",
+  "publish_at": "2026-12-03T17:00:00Z"
  }
 ]
