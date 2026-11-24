@@ -1,0 +1,9 @@
+Audio Illusion #4, take two. Headphones on, sound up, quiet room.
+
+Listen to the noise, then the silence. The noise is missing a slice of frequencies between 2 and 4 kHz. When it stops, the video is truly silent, yet many people hear a faint whistle for a few seconds. It's the Zwicker tone (Eberhard Zwicker, 1964): your hearing fills the gap with a note that doesn't exist.
+
+Many of you told me you heard nothing the first time, so this version gives you two tries and plays a real reference tone in between, so you know what to listen for. Not everyone hears it, and that's normal.
+
+First try, second, or never? Tell me in the comments.
+
+#erinsoundlab #audioillusion #zwickertone #headphones #psychoacoustics
