@@ -116,6 +116,22 @@ def prossima_illusione(nome):
     return "MORE ILLUSIONS COMING"
 
 
+def accento_instagram(nome):
+    """Viraggio al viola sulla coda di @erin.soundlab (state/coda.json, chiave "viraggio"): ogni Reel in coda
+    dopo `da` è un passo più viola, fino al viola pieno. TikTok e YouTube (SERIE/PIATTAFORMA) restano lilla."""
+    import json
+    if os.environ.get("SERIE") or os.environ.get("PIATTAFORMA"):
+        return "soundlab"
+    stato = json.loads((ROOT / "state" / "coda.json").read_text())
+    v, coda = stato.get("viraggio"), stato["post"]
+    if not v or nome not in coda or v["da"] not in coda:
+        return "soundlab"
+    passo = coda.index(nome) - coda.index(v["da"]) + 1
+    if passo <= 0:
+        return "soundlab"
+    return f"viraggio:{min(passo, v['passi'])}/{v['passi']}"
+
+
 def chiusura_serie(c, t, end, titolo):
     k = min(1, max(0, (t - (end - SERIE_DURATA)) / 0.4))
     if not titolo or k <= 0:
@@ -140,7 +156,7 @@ def chiusura_serie(c, t, end, titolo):
 def write_mp4(out, audio, end, draw, seed, picco=0.89):
     titolo = prossima_illusione(Path(out).stem)
     numero = NUMERI.get(Path(out).stem)
-    style.set_accent(os.environ.get("ACCENTO", "soundlab"))
+    style.set_accent(os.environ.get("ACCENTO") or accento_instagram(Path(out).stem))
     base = Canvas(W, H, seed=seed, bg=os.environ.get("SFONDO", "griglia"))
     base.header("ERIN · SOUNDLAB", "AUDIO ILLUSIONS")
     if numero:  # etichetta della serie, visibile anche sulla copertina

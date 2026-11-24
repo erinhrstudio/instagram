@@ -78,7 +78,40 @@ ACCENTS["soundlab"] = dict(PINK=(204, 158, 210), PINK_SOFT=(242, 216, 186), BAND
 ACCENTS.update(ambra=_ruota(38), verde=_ruota(150), viola=_ruota(275), acqua=_ruota(172))  # acqua: ERIN Audio Fact
 
 
+# Viraggio al viola (2026-11-24, Giuseppe: "virare al viola post dopo post"): dal lilla+crema di ERIN Soundlab
+# a un viola pieno, un piccolo passo per Reel. Si mescola in RGB lineare; TINT colora appena la tela da cassa.
+VIOLA_PIENO = dict(PINK=(170, 128, 236), PINK_SOFT=(212, 198, 246), BAND=(128, 88, 204),
+                   GLOW=(20, 12, 40), DIM=((60, 46, 96), (106, 80, 168), (48, 36, 78)), TINT=(0.90, 0.84, 1.12))
+
+
+def viraggio(passo, passi=10):
+    """Accento al passo `passo` su `passi` (0 = lilla Soundlab, passi = viola pieno)."""
+    f = min(1.0, max(0.0, passo / passi))
+    lin = lambda v: (v / 255) ** 2.2
+    mix = lambda a, b: tuple(round(255 * ((1 - f) * lin(x) + f * lin(y)) ** (1 / 2.2)) for x, y in zip(a, b))
+    da = dict(ACCENTS["soundlab"], TINT=(1.0, 1.0, 1.0))
+    out = {}
+    for k, b in VIOLA_PIENO.items():
+        a = da[k]
+        if k == "DIM":
+            out[k] = tuple(mix(x, y) for x, y in zip(a, b))
+        elif k == "TINT":
+            out[k] = tuple(round((1 - f) * x + f * y, 4) for x, y in zip(a, b))
+        else:
+            out[k] = mix(a, b)
+    return out
+
+
+TINT = (1.0, 1.0, 1.0)  # moltiplicatore RGB della tela da cassa (solo il viraggio lo cambia)
+
+
 def set_accent(name="rosa"):
+    """name: una chiave di ACCENTS oppure "viraggio:N" o "viraggio:N/M" (passo N di M, default 10)."""
+    globals()["TINT"] = (1.0, 1.0, 1.0)
+    if str(name).startswith("viraggio:"):
+        n, _, m = name.split(":", 1)[1].partition("/")
+        globals().update(viraggio(float(n), float(m or 10)))
+        return
     globals().update(ACCENTS[name])
 
 # Sfondi di default dei caroselli: antracite granuloso + fascia rosa.
@@ -112,7 +145,7 @@ def griglia(W, H):
     from PIL import ImageFilter
     im = Image.open(Path(__file__).resolve().parent.parent / "assets" / "sfondo-griglia.png").convert("RGB")
     im = im.resize((W, H), Image.LANCZOS).filter(ImageFilter.GaussianBlur(0.6 * W / 1080))
-    return np.asarray(im, np.float32) * 0.45
+    return np.asarray(im, np.float32) * 0.45 * np.array(TINT, np.float32)
 
 
 def backdrop(name, W, H, seed=0):
