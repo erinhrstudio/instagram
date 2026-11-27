@@ -944,7 +944,8 @@
   "uscita_roma": "2026-11-27 18:00",
   "publish_at": "2026-11-27T17:00:00Z",
   "video_id": "rWk99Ra6btY",
-  "sincronizzato": "2026-11-27T17:00:00Z"
+  "sincronizzato": "2026-11-27T17:00:00Z",
+  "pubblico": true
  },
  {
   "nome": "campana-en",
