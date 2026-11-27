@@ -132,7 +132,7 @@ def accento_instagram(nome):
     return f"viraggio:{min(passo, v['passi'])}/{v['passi']}"
 
 
-def chiusura_serie(c, t, end, titolo):
+def chiusura_serie(c, t, end, titolo, numero=None):
     k = min(1, max(0, (t - (end - SERIE_DURATA)) / 0.4))
     if not titolo or k <= 0:
         return
@@ -150,6 +150,9 @@ def chiusura_serie(c, t, end, titolo):
         invito = invito.replace("SO YOU DON'T MISS IT", f"· A NEW ILLUSION EVERY {ogni}")
     if titolo.startswith("MORE"):
         invito = invito.replace("MISS IT", "MISS THEM")
+    if numero and numero > 1 and not os.environ.get("SERIE") and not os.environ.get("PIATTAFORMA"):
+        # 27/11 (Giuseppe ok): su Instagram il finale porta al profilo invece di "follow so you don't miss it"
+        invito = f"THE OTHER {numero - 1} ARE ON MY PROFILE · @{os.environ.get('IG_HANDLE', 'erin.soundlab').upper()}"
     centered(c, y + 82 + size + 20, invito, 26 if len(invito) <= 50 else 21, fade(TEXT, k), "sans", 600, 2)
 
 
@@ -185,7 +188,7 @@ def write_mp4(out, audio, end, draw, seed, picco=0.89):
             c.img = base_img.copy()
             c.d = ImageDraw.Draw(c.img)
             draw(c, f / FPS)
-            chiusura_serie(c, f / FPS, end, titolo)
+            chiusura_serie(c, f / FPS, end, titolo, numero)
             p.stdin.write(np.asarray(c.final().convert("RGB")).tobytes())
         p.stdin.close()
         if p.wait() != 0:
